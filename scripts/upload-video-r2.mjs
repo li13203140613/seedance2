@@ -2,7 +2,12 @@ import postgres from 'postgres';
 import { readFileSync } from 'fs';
 import { AwsClient } from 'aws4fetch';
 
-const DATABASE_URL = "REDACTED_USE_ENV_VAR";
+const DATABASE_URL = process.env.DATABASE_URL;
+
+if (!DATABASE_URL) {
+  console.error('DATABASE_URL environment variable is required');
+  process.exit(1);
+}
 
 async function main() {
   // 1. Connect to database and get R2 configs
