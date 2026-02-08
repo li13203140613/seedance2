@@ -232,10 +232,10 @@ export function Pricing({
         {banner && (
           <div className="mx-auto mb-8 flex max-w-2xl items-center justify-between rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-6 py-3">
             <div className="flex items-center gap-2">
-              <Zap className="size-4 text-emerald-400" />
-              <span className="text-sm text-emerald-300">{banner.title}</span>
+              <Zap className="size-4 text-emerald-600 dark:text-emerald-400" />
+              <span className="text-sm font-medium text-emerald-700 dark:text-emerald-300">{banner.title}</span>
             </div>
-            <div className="flex items-center gap-1.5 text-sm font-mono text-muted-foreground">
+            <div className="flex items-center gap-1.5 text-sm font-mono text-emerald-700/80 dark:text-emerald-300/80">
               <Clock className="size-3.5" />
               <span>{countdown.d}d</span>
               <span className="font-bold">{pad(countdown.h)}:{pad(countdown.m)}:{pad(countdown.s)}</span>
@@ -309,12 +309,12 @@ export function Pricing({
                     <div className="flex items-center gap-2">
                       <h3 className="text-lg font-bold">{item.title}</h3>
                       {item.annual_badge && (
-                        <Badge variant="outline" className="border-amber-500/50 text-amber-400 text-[10px] px-1.5 py-0">
+                        <Badge variant="outline" className="border-amber-500/50 text-amber-600 dark:text-amber-400 text-[10px] px-1.5 py-0">
                           {item.annual_badge}
                         </Badge>
                       )}
                     </div>
-                    <p className="mt-1 text-sm text-muted-foreground">
+                    <p className="mt-1 text-sm text-muted-foreground min-h-[40px]">
                       {item.description}
                     </p>
                   </div>
@@ -355,7 +355,7 @@ export function Pricing({
                               className={cn(
                                 'flex w-full items-center justify-between px-4 py-2.5 text-sm hover:bg-muted/50 transition-colors',
                                 selectedPack?.product_id === pack.product_id &&
-                                  'bg-muted/30 text-emerald-400'
+                                'bg-muted/30 text-emerald-400'
                               )}
                             >
                               <span>{pack.label}</span>
@@ -374,7 +374,7 @@ export function Pricing({
 
                   {/* Price display */}
                   {!isPayg ? (
-                    <div>
+                    <div className="min-h-[85px]">
                       <div className="flex items-baseline gap-2">
                         {item.original_price && (
                           <span className="text-sm text-muted-foreground line-through">
@@ -392,13 +392,13 @@ export function Pricing({
                         <div className="mt-2 space-y-0.5">
                           <p className="text-xs text-muted-foreground">{item.annual_total}</p>
                           {item.annual_savings && (
-                            <p className="text-xs text-emerald-400">{item.annual_savings}</p>
+                            <p className="text-xs text-emerald-600 dark:text-emerald-400">{item.annual_savings}</p>
                           )}
                         </div>
                       )}
                     </div>
                   ) : (
-                    <div>
+                    <div className="min-h-[85px]">
                       <span className="text-3xl font-bold">
                         {selectedPack?.price || item.price}
                       </span>
@@ -408,7 +408,10 @@ export function Pricing({
                     </div>
                   )}
 
-                  {/* CTA Button */}
+                </CardHeader>
+
+                {/* CTA Button — outside CardHeader so it aligns across cards */}
+                <div className="px-6">
                   {isCurrentPlan ? (
                     <Button variant="outline" className="w-full" disabled>
                       {t('current_plan')}
@@ -418,10 +421,10 @@ export function Pricing({
                       onClick={() => handlePayment(item)}
                       disabled={isLoading}
                       className={cn(
-                        'w-full',
+                        'w-full font-semibold transition-all',
                         isFeatured
-                          ? 'bg-emerald-600 text-white hover:bg-emerald-700'
-                          : 'bg-background border border-border hover:bg-muted'
+                          ? 'bg-emerald-500 text-white hover:bg-emerald-600 shadow-md shadow-emerald-500/20'
+                          : 'bg-white border-2 border-emerald-100 text-emerald-700 hover:bg-emerald-50 hover:border-emerald-200'
                       )}
                       variant={isFeatured ? 'default' : 'outline'}
                     >
@@ -435,7 +438,7 @@ export function Pricing({
                       )}
                     </Button>
                   )}
-                </CardHeader>
+                </div>
 
                 <CardContent className="space-y-4 pt-0">
                   <hr className="border-border/30" />
@@ -447,14 +450,14 @@ export function Pricing({
 
                       {/* Value badge */}
                       {item.value_badge && (
-                        <span className="mt-1 inline-block rounded bg-emerald-500/20 px-2 py-0.5 text-xs text-emerald-400">
+                        <span className="mt-1 inline-block rounded bg-emerald-500/20 px-2 py-0.5 text-xs text-emerald-700 dark:text-emerald-400">
                           {item.value_badge}
                         </span>
                       )}
 
                       {/* Bonus credits */}
                       {item.bonus_credits && (
-                        <div className="mt-1 flex items-center gap-1 text-xs text-amber-400">
+                        <div className="mt-1 flex items-center gap-1 text-xs text-amber-600 dark:text-amber-400">
                           <Gift className="size-3" />
                           <span>{item.bonus_credits}</span>
                         </div>
@@ -474,7 +477,7 @@ export function Pricing({
                   <ul className="space-y-2.5">
                     {item.features?.map((feature, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <Check className="mt-0.5 size-3.5 shrink-0 text-emerald-400" />
+                        <Check className="mt-0.5 size-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" />
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -483,7 +486,7 @@ export function Pricing({
                   {/* Tip box (for pay-as-you-go) */}
                   {item.tip_box && (
                     <div className="rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-4">
-                      <p className="mb-2 text-sm font-semibold text-emerald-400">
+                      <p className="mb-2 text-sm font-semibold text-emerald-700 dark:text-emerald-400">
                         {item.tip_box.title}
                       </p>
                       <ul className="space-y-1">

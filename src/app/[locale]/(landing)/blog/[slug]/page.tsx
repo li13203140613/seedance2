@@ -3,6 +3,10 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { getThemePage } from '@/core/theme';
 import { envConfigs } from '@/config';
 import { Empty } from '@/shared/blocks/common';
+import {
+  BlogPostingJsonLd,
+  BreadcrumbJsonLd,
+} from '@/shared/lib/structured-data';
 import { getPost } from '@/shared/models/post';
 import { DynamicPage } from '@/shared/types/blocks/landing';
 
@@ -55,6 +59,11 @@ export default async function BlogDetailPage({
     return <Empty message={`Post not found`} />;
   }
 
+  const canonicalUrl =
+    locale !== envConfigs.locale
+      ? `${envConfigs.app_url}/${locale}/blog/${slug}`
+      : `${envConfigs.app_url}/blog/${slug}`;
+
   // build page sections
   const page: DynamicPage = {
     sections: {
@@ -69,5 +78,24 @@ export default async function BlogDetailPage({
 
   const Page = await getThemePage('dynamic-page');
 
-  return <Page locale={locale} page={page} />;
+  return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Blog', url: '/blog' },
+          { name: post.title, url: `/blog/${slug}` },
+        ]}
+      />
+      <BlogPostingJsonLd
+        title={post.title}
+        description={post.description || ''}
+        url={canonicalUrl}
+        datePublished={post.created_at}
+        authorName={post.author_name}
+        authorImage={post.author_image}
+      />
+      <Page locale={locale} page={page} />
+    </>
+  );
 }
