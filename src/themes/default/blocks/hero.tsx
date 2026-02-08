@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 import { Link } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common';
+import { LazyVideo } from '@/shared/blocks/common/lazy-video';
 import { VideoGenerator } from '@/shared/blocks/generator/video';
 import { Button } from '@/shared/components/ui/button';
 import { Highlighter } from '@/shared/components/ui/highlighter';
@@ -122,12 +123,8 @@ export function Hero({
               />
               {section.image_invert?.src && (
                 section.image_invert.src.endsWith('.mp4') || section.image_invert.src.endsWith('.webm') ? (
-                  <video
+                  <LazyVideo
                     src={section.image_invert.src}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
                     className="border-border/25 relative z-2 hidden w-full border dark:block"
                   />
                 ) : (
@@ -151,12 +148,8 @@ export function Hero({
               )}
               {section.image?.src && (
                 section.image.src.endsWith('.mp4') || section.image.src.endsWith('.webm') ? (
-                  <video
+                  <LazyVideo
                     src={section.image.src}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
                     className="border-border/25 relative z-2 block w-full border dark:hidden"
                   />
                 ) : (

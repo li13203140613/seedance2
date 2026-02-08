@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 
 import { LazyImage, SmartIcon } from '@/shared/blocks/common';
+import { LazyVideo } from '@/shared/blocks/common/lazy-video';
 import { BorderBeam } from '@/shared/components/magicui/border-beam';
 import {
   Accordion,
@@ -94,13 +95,9 @@ export function FeaturesAccordion({
                     className="size-full overflow-hidden rounded-2xl border shadow-md"
                   >
                     {images[activeItem].image?.endsWith('.mp4') ? (
-                      <video
+                      <LazyVideo
                         src={images[activeItem].image}
                         className="size-full object-cover object-left-top"
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
                       />
                     ) : (
                       <LazyImage

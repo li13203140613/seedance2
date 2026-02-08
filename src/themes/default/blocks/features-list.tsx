@@ -2,6 +2,7 @@
 
 import { Link } from '@/core/i18n/navigation';
 import { LazyImage, SmartIcon } from '@/shared/blocks/common';
+import { LazyVideo } from '@/shared/blocks/common/lazy-video';
 import { Button } from '@/shared/components/ui/button';
 import { ScrollAnimation } from '@/shared/components/ui/scroll-animation';
 import { cn } from '@/shared/lib/utils';
@@ -28,12 +29,8 @@ export function FeaturesList({
           <ScrollAnimation direction="left">
             <div className="mx-auto w-full max-w-[500px] flex-shrink-0 md:mx-0">
               {section.image?.src?.endsWith('.mp4') || section.image?.src?.endsWith('.webm') ? (
-                <video
+                <LazyVideo
                   src={section.image.src}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
                   className="h-auto w-full rounded-lg object-cover"
                 />
               ) : (
