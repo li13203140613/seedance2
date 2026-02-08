@@ -25,7 +25,7 @@ export default async function LandingPage({
   const page: DynamicPage = t.raw('page');
 
   // extract FAQ items for structured data
-  const faqItems = page.sections?.faq?.items || [];
+  const faqItems = (page.sections?.faq?.items || []) as { question: string; answer: string }[];
 
   // load page component
   const Page = await getThemePage('dynamic-page');
