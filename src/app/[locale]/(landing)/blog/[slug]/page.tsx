@@ -84,11 +84,11 @@ export default async function BlogDetailPage({
         items={[
           { name: 'Home', url: '/' },
           { name: 'Blog', url: '/blog' },
-          { name: post.title, url: `/blog/${slug}` },
+          { name: post.title || slug, url: `/blog/${slug}` },
         ]}
       />
       <BlogPostingJsonLd
-        title={post.title}
+        title={post.title || slug}
         description={post.description || ''}
         url={canonicalUrl}
         datePublished={post.created_at}
