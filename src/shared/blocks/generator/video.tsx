@@ -904,7 +904,7 @@ export function VideoGenerator({
                         {t('preview_example')}
                       </div>
                       <video
-                        src="https://image.agent-skills.cc/uploads/ad7d81dd18c2e3a554f532f37c9861aa.mp4"
+                        src="https://image.agent-skills.cc/uploads/wan2-video-demo.mp4"
                         autoPlay
                         loop
                         muted

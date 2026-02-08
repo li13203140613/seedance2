@@ -93,11 +93,22 @@ export function FeaturesAccordion({
                     transition={{ duration: 0.2 }}
                     className="size-full overflow-hidden rounded-2xl border shadow-md"
                   >
-                    <LazyImage
-                      src={images[activeItem].image}
-                      className="size-full object-cover object-left-top dark:mix-blend-lighten"
-                      alt={images[activeItem].alt}
-                    />
+                    {images[activeItem].image?.endsWith('.mp4') ? (
+                      <video
+                        src={images[activeItem].image}
+                        className="size-full object-cover object-left-top"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      />
+                    ) : (
+                      <LazyImage
+                        src={images[activeItem].image}
+                        className="size-full object-cover object-left-top dark:mix-blend-lighten"
+                        alt={images[activeItem].alt}
+                      />
+                    )}
                   </motion.div>
                 </AnimatePresence>
               </div>

@@ -41,16 +41,15 @@
         "show_award": false,
         "show_video_generator": true,
         "image": {
-          "src": "https://picsum.photos/seed/seedancetwo-zh-hero-main/1200/800.webp",
-          "alt": "seedancetwo hero",
-          "width": 1200,
-          "height": 800
+          "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4",
+          "alt": "seedancetwo hero video"
         },
         "image_invert": {
-          "src": "https://picsum.photos/seed/seedancetwo-zh-hero-invert/1200/800.webp",
-          "alt": "seedancetwo hero dark",
-          "width": 1200,
-          "height": 800
+          "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4",
+          "alt": "seedancetwo hero video dark"
+        },
+        "background_video": {
+          "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4"
         },
         "background_image": {
           "src": "https://picsum.photos/seed/seedancetwo-zh-hero-bg/1600/900.webp",
@@ -64,7 +63,7 @@
         "label": "产品简介",
         "description": "seedancetwo 参考 Seedance 风格流程，帮助团队把文本和图片快速转成电影感视频片段。",
         "image": {
-          "src": "https://picsum.photos/seed/seedancetwo-zh-introduce-main/960/640.webp",
+          "src": "https://image.agent-skills.cc/uploads/seedance-hero-main.mp4",
           "alt": "seedancetwo 产品简介"
         },
         "items": [
@@ -119,7 +118,7 @@
             "description": "镜头切换更自然，叙事连续性更强，减少后期拼接成本。",
             "icon": "RiFilmLine",
             "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-zh-benefits-1/960/640.webp",
+              "src": "https://image.agent-skills.cc/uploads/ad7d81dd18c2e3a554f532f37c9861aa.mp4",
               "alt": "多场景连贯输出"
             }
           },

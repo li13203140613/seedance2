@@ -11,15 +11,15 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Create Cinematic AI Videos with seedancetwo",
-        "highlight_text": "seedancetwo",
-        "description": "Generate high-quality videos from text or images with multi-shot storytelling and synchronized audio.<br/>Build scenes faster with natural motion, flexible ratios, and creator-ready output.",
+        "title": "Create Cinematic Seedance Video with seedance2-two",
+        "highlight_text": "seedance2-two",
+        "description": "seedance2-two lets you generate high-quality seedance video from text or images with multi-shot storytelling and synchronized audio.<br/>Build scenes faster with natural motion, flexible ratios, and creator-ready seedance video output.",
         "announcement": {
           "badge": "2026",
-          "title": "Seedancetwo quick start is live",
+          "title": "seedance2-two quick start is live",
           "url": "/#features"
         },
-        "tip": "Text-to-video and image-to-video in one workflow.",
+        "tip": "seedance2-two supports text-to-video and image-to-video seedance video workflows.",
         "buttons": [
           {
             "title": "Start Creating",
@@ -41,67 +41,66 @@
         "show_award": false,
         "show_video_generator": true,
         "image": {
-          "src": "https://picsum.photos/seed/seedancetwo-en-hero-main/1200/800.webp",
-          "alt": "seedancetwo hero",
-          "width": 1200,
-          "height": 800
+          "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4",
+          "alt": "seedance2-two hero seedance video"
         },
         "image_invert": {
-          "src": "https://picsum.photos/seed/seedancetwo-en-hero-invert/1200/800.webp",
-          "alt": "seedancetwo hero dark",
-          "width": 1200,
-          "height": 800
+          "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4",
+          "alt": "seedance2-two hero seedance video dark"
+        },
+        "background_video": {
+          "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4"
         },
         "background_image": {
           "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
-          "alt": "cinematic background"
+          "alt": "seedance2-two cinematic background"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "What is seedancetwo?",
+        "title": "What is seedance2-two?",
         "label": "Overview",
-        "description": "seedancetwo is an AI video generation experience inspired by Seedance-style workflows, helping teams turn prompts and images into cinematic clips quickly.",
+        "description": "seedance2-two is an AI seedance video generation platform that helps teams turn prompts and images into cinematic clips quickly with powerful seedance video tools.",
         "image": {
-          "src": "https://picsum.photos/seed/seedancetwo-en-introduce-main/960/640.webp",
-          "alt": "seedancetwo overview"
+          "src": "https://image.agent-skills.cc/uploads/seedance-hero-main.mp4",
+          "alt": "seedance2-two overview"
         },
         "items": [
           {
-            "title": "Multi-shot storytelling",
-            "description": "Generate coherent multi-scene videos with consistent characters and visual style from a single prompt.",
+            "title": "Multi-shot seedance video storytelling",
+            "description": "Generate coherent multi-scene seedance video with consistent characters and visual style from a single prompt.",
             "icon": "RiMovie2Line",
             "image": {
               "src": "https://picsum.photos/seed/seedancetwo-en-introduce-1/960/640.webp",
-              "alt": "multi-shot storytelling"
+              "alt": "multi-shot seedance video storytelling"
             }
           },
           {
-            "title": "Text to video generation",
-            "description": "Describe a scene in natural language and produce cinematic clips with smooth motion and lighting.",
+            "title": "Text to seedance video generation",
+            "description": "Describe a scene in natural language and produce cinematic seedance video clips with smooth motion and lighting.",
             "icon": "RiQuillPenAiLine",
             "image": {
               "src": "https://picsum.photos/seed/seedancetwo-en-introduce-2/960/640.webp",
-              "alt": "text to video"
+              "alt": "text to seedance video"
             }
           },
           {
-            "title": "Image to video control",
-            "description": "Upload a reference image and animate it into short videos while preserving composition and tone.",
+            "title": "Image to seedance video control",
+            "description": "Upload a reference image and animate it into short seedance video while preserving composition and tone.",
             "icon": "RiImage2Line",
             "image": {
               "src": "https://picsum.photos/seed/seedancetwo-en-introduce-3/960/640.webp",
-              "alt": "image to video"
+              "alt": "image to seedance video"
             }
           },
           {
             "title": "Fast creator workflow",
-            "description": "Iterate quickly with reusable prompts and practical defaults for social, product, and marketing content.",
+            "description": "Iterate quickly with seedance2-two reusable prompts and practical defaults for social, product, and marketing seedance video content.",
             "icon": "RiFlashlightLine",
             "image": {
               "src": "https://picsum.photos/seed/seedancetwo-en-introduce-4/960/640.webp",
-              "alt": "creator workflow"
+              "alt": "seedance2-two creator workflow"
             }
           }
         ],
@@ -110,111 +109,111 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Why teams choose seedancetwo",
+        "title": "Why teams choose seedance2-two",
         "label": "Benefits",
-        "description": "Built for creators and product teams that need high-quality short-form videos with reliable output speed.",
+        "description": "seedance2-two is built for creators and product teams that need high-quality short-form seedance video with reliable output speed.",
         "items": [
           {
-            "title": "Consistent multi-scene results",
-            "description": "Maintain visual continuity across scene transitions for stronger storytelling and less post-editing.",
+            "title": "Consistent multi-scene seedance video results",
+            "description": "Maintain visual continuity across scene transitions for stronger seedance video storytelling and less post-editing.",
             "icon": "RiFilmLine",
             "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-en-benefits-1/960/640.webp",
-              "alt": "consistent scenes"
+              "src": "https://image.agent-skills.cc/uploads/ad7d81dd18c2e3a554f532f37c9861aa.mp4",
+              "alt": "consistent seedance video scenes"
             }
           },
           {
-            "title": "Audio-aware generation",
-            "description": "Support synchronized dialogue and sound cues so generated clips feel more polished and production-ready.",
+            "title": "Audio-aware seedance video generation",
+            "description": "Support synchronized dialogue and sound cues so generated seedance video clips feel more polished and production-ready.",
             "icon": "RiVolumeUpLine",
             "image": {
               "src": "https://picsum.photos/seed/seedancetwo-en-benefits-2/960/640.webp",
-              "alt": "audio synchronization"
+              "alt": "seedance video audio synchronization"
             }
           },
           {
-            "title": "Flexible output formats",
-            "description": "Produce videos in multiple aspect ratios for social feeds, ads, landing pages, and short campaigns.",
+            "title": "Flexible seedance video output formats",
+            "description": "Produce seedance video in multiple aspect ratios for social feeds, ads, landing pages, and short campaigns.",
             "icon": "RiLayoutMasonryLine",
             "image": {
               "src": "https://picsum.photos/seed/seedancetwo-en-benefits-3/960/640.webp",
-              "alt": "format flexibility"
+              "alt": "seedance video format flexibility"
             }
           }
         ]
       },
       "features": {
         "id": "features",
-        "title": "Core capabilities",
-        "description": "Everything needed for a practical first-pass AI video generation workflow.",
+        "title": "seedance2-two core capabilities",
+        "description": "Everything needed for a practical seedance video generation workflow powered by seedance2-two.",
         "items": [
           {
-            "title": "Text-to-video",
-            "description": "Convert detailed prompts into cinematic clips with camera motion, subject behavior, and scene transitions.",
+            "title": "Text-to-seedance-video",
+            "description": "Convert detailed prompts into cinematic seedance video clips with camera motion, subject behavior, and scene transitions.",
             "icon": "RiVideoLine"
           },
           {
-            "title": "Image-to-video",
-            "description": "Turn still images into dynamic video sequences while preserving key visual composition cues.",
+            "title": "Image-to-seedance-video",
+            "description": "Turn still images into dynamic seedance video sequences while preserving key visual composition cues.",
             "icon": "RiImageAddLine"
           },
           {
             "title": "Multi-shot narrative continuity",
-            "description": "Generate connected shots that keep style and character consistency across the full sequence.",
+            "description": "Generate connected shots that keep style and character consistency across the full seedance video sequence.",
             "icon": "RiStoryboardLine"
           },
           {
-            "title": "Cinematic quality output",
-            "description": "Target high-quality exports suitable for social, marketing, and concept demonstration workflows.",
+            "title": "Cinematic quality seedance video output",
+            "description": "Target high-quality seedance video exports suitable for social, marketing, and concept demonstration workflows.",
             "icon": "RiMovieLine"
           },
           {
             "title": "Prompt-level motion control",
-            "description": "Guide pacing, camera intent, and visual focus directly through prompt strategy and shot framing.",
+            "description": "Guide pacing, camera intent, and visual focus directly through seedance2-two prompt strategy and shot framing.",
             "icon": "RiFocus3Line"
           },
           {
-            "title": "Fast iteration loop",
-            "description": "Refine ideas quickly with repeatable parameters and simple controls for teams and solo creators.",
+            "title": "Fast seedance video iteration loop",
+            "description": "Refine seedance video ideas quickly with repeatable parameters and simple controls for teams and solo creators.",
             "icon": "RiLoopLeftLine"
           }
         ]
       },
       "faq": {
         "id": "faq",
-        "title": "Frequently asked questions",
-        "description": "Need help planning your first version? Contact us by email.",
+        "title": "Frequently asked questions about seedance2-two",
+        "description": "Need help planning your first seedance video? Contact us by email.",
         "items": [
           {
-            "question": "What is seedancetwo?",
-            "answer": "seedancetwo is a Seedance-inspired AI video experience for creating cinematic clips from text or image inputs."
+            "question": "What is seedance2-two?",
+            "answer": "seedance2-two is an AI-powered seedance video generator for creating cinematic clips from text or image inputs."
           },
           {
-            "question": "Does it support both text and image inputs?",
-            "answer": "Yes. You can start from a prompt for text-to-video or upload a still image for image-to-video generation."
+            "question": "Does seedance2-two support both text and image inputs?",
+            "answer": "Yes. You can start from a prompt for text-to-seedance-video or upload a still image for image-to-seedance-video generation."
           },
           {
-            "question": "Can it create multi-scene videos?",
-            "answer": "Yes. The workflow is designed for multi-shot storytelling so one generation can include coherent scene changes."
+            "question": "Can seedance2-two create multi-scene seedance video?",
+            "answer": "Yes. seedance2-two is designed for multi-shot storytelling so one generation can include coherent scene changes in your seedance video."
           },
           {
-            "question": "Is audio synchronization supported?",
-            "answer": "The product direction supports synchronized audio and lip-sync style output for more natural video results."
+            "question": "Is audio synchronization supported in seedance2-two?",
+            "answer": "seedance2-two supports synchronized audio and lip-sync style output for more natural seedance video results."
           },
           {
-            "question": "What formats can I export?",
-            "answer": "You can generate assets for common use cases such as landscape, portrait, and square workflows."
+            "question": "What seedance video formats can I export?",
+            "answer": "seedance2-two lets you generate seedance video assets for common use cases such as landscape, portrait, and square workflows."
           },
           {
-            "question": "How can I get support?",
-            "answer": "Email us at support@seedancetwo.com for setup and customization questions."
+            "question": "How can I get seedance2-two support?",
+            "answer": "Email us at support@seedancetwo.com for seedance2-two setup and customization questions."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Launch your first seedancetwo experience",
-        "description": "Start from this quick bootstrap and shape it into your own cinematic AI video product.",
+        "title": "Launch your first seedance2-two seedance video experience",
+        "description": "Start creating seedance video with seedance2-two and shape it into your own cinematic AI video product.",
         "buttons": [
           {
             "title": "Explore Features",

@@ -28,7 +28,7 @@ export function Hero({
     <section
       id={section.id}
       className={cn(
-        `pt-24 pb-8 md:pt-36 md:pb-8`,
+        `relative pt-24 pb-8 md:pt-36 md:pb-8 overflow-hidden`,
         section.className,
         className
       )}
@@ -121,47 +121,81 @@ export function Hero({
                 className="h-3 w-full bg-[repeating-linear-gradient(-45deg,var(--color-foreground),var(--color-foreground)_1px,transparent_1px,transparent_4px)] opacity-5"
               />
               {section.image_invert?.src && (
-                <Image
-                  className="border-border/25 relative z-2 hidden w-full border dark:block"
-                  src={section.image_invert.src}
-                  alt={section.image_invert.alt || section.image?.alt || ''}
-                  width={
-                    section.image_invert.width || section.image?.width || 1200
-                  }
-                  height={
-                    section.image_invert.height || section.image?.height || 630
-                  }
-                  sizes="(max-width: 768px) 100vw, 1200px"
-                  loading="lazy"
-                  fetchPriority="high"
-                  quality={75}
-                  unoptimized={section.image_invert.src.startsWith('http')}
-                />
+                section.image_invert.src.endsWith('.mp4') || section.image_invert.src.endsWith('.webm') ? (
+                  <video
+                    src={section.image_invert.src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="border-border/25 relative z-2 hidden w-full border dark:block"
+                  />
+                ) : (
+                  <Image
+                    className="border-border/25 relative z-2 hidden w-full border dark:block"
+                    src={section.image_invert.src}
+                    alt={section.image_invert.alt || section.image?.alt || ''}
+                    width={
+                      section.image_invert.width || section.image?.width || 1200
+                    }
+                    height={
+                      section.image_invert.height || section.image?.height || 630
+                    }
+                    sizes="(max-width: 768px) 100vw, 1200px"
+                    loading="lazy"
+                    fetchPriority="high"
+                    quality={75}
+                    unoptimized={section.image_invert.src.startsWith('http')}
+                  />
+                )
               )}
               {section.image?.src && (
-                <Image
-                  className="border-border/25 relative z-2 block w-full border dark:hidden"
-                  src={section.image.src}
-                  alt={section.image.alt || section.image_invert?.alt || ''}
-                  width={
-                    section.image.width || section.image_invert?.width || 1200
-                  }
-                  height={
-                    section.image.height || section.image_invert?.height || 630
-                  }
-                  sizes="(max-width: 768px) 100vw, 1200px"
-                  loading="lazy"
-                  fetchPriority="high"
-                  quality={75}
-                  unoptimized={section.image.src.startsWith('http')}
-                />
+                section.image.src.endsWith('.mp4') || section.image.src.endsWith('.webm') ? (
+                  <video
+                    src={section.image.src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="border-border/25 relative z-2 block w-full border dark:hidden"
+                  />
+                ) : (
+                  <Image
+                    className="border-border/25 relative z-2 block w-full border dark:hidden"
+                    src={section.image.src}
+                    alt={section.image.alt || section.image_invert?.alt || ''}
+                    width={
+                      section.image.width || section.image_invert?.width || 1200
+                    }
+                    height={
+                      section.image.height || section.image_invert?.height || 630
+                    }
+                    sizes="(max-width: 768px) 100vw, 1200px"
+                    loading="lazy"
+                    fetchPriority="high"
+                    quality={75}
+                    unoptimized={section.image.src.startsWith('http')}
+                  />
+                )
               )}
             </div>
           </div>
         </div>
       )}
 
-      {section.background_image?.src && (
+      {section.background_video?.src ? (
+        <div className="absolute inset-0 -z-10 hidden h-full w-full overflow-hidden md:block">
+          <div className="from-background/80 via-background/80 to-background absolute inset-0 z-10 bg-gradient-to-b" />
+          <video
+            src={section.background_video.src}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 h-full w-full object-cover opacity-60"
+          />
+        </div>
+      ) : section.background_image?.src ? (
         <div className="absolute inset-0 -z-10 hidden h-full w-full overflow-hidden md:block">
           <div className="from-background/80 via-background/80 to-background absolute inset-0 z-10 bg-gradient-to-b" />
           <Image
@@ -175,7 +209,7 @@ export function Hero({
             unoptimized={section.background_image.src.startsWith('http')}
           />
         </div>
-      )}
+      ) : null}
     </section>
   );
 }
