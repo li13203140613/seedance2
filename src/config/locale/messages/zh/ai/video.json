@@ -41,7 +41,9 @@
     "generated_videos": "视频预览",
     "ready_to_generate": "准备生成",
     "ready_for_generating": "准备生成",
-    "no_videos_generated": "没有生成视频"
+    "no_videos_generated": "没有生成视频",
+    "preview_example": "预览示例",
+    "preview_hint": "在左侧填写表单并点击\"生成视频\"来创建你自己的视频。"
   }
 }
 

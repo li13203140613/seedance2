@@ -5,6 +5,7 @@ export interface PricingGroup {
   title?: string;
   description?: string;
   label?: string;
+  badge?: string;
   is_featured?: boolean;
 }
 
@@ -15,6 +16,21 @@ export interface PricingCurrency {
   original_price: string; // original price text
   payment_product_id?: string;
   payment_providers?: string[];
+}
+
+export interface CreditPack {
+  credits: number;
+  label: string;
+  price: string;
+  amount: number;
+  product_id: string;
+  product_name?: string;
+  is_default?: boolean;
+}
+
+export interface TipBox {
+  title: string;
+  items: string[];
 }
 
 export interface PricingItem {
@@ -44,6 +60,23 @@ export interface PricingItem {
   credits?: number;
   valid_days?: number;
   group?: string;
+
+  // New fields for enhanced pricing display
+  credits_summary?: string;
+  cost_per_100?: string;
+  value_badge?: string;
+  annual_total?: string;
+  annual_savings?: string;
+  bonus_credits?: string;
+  is_payg?: boolean;
+  credit_packs?: CreditPack[];
+  tip_box?: TipBox;
+  annual_badge?: string;
+}
+
+export interface PricingBanner {
+  title?: string;
+  countdown_days?: number;
 }
 
 export interface Pricing {
@@ -54,6 +87,7 @@ export interface Pricing {
   description?: string;
   items?: PricingItem[];
   groups?: PricingGroup[];
+  banner?: PricingBanner;
   className?: string;
   sr_only_title?: string;
 }

@@ -114,6 +114,13 @@ const MODEL_OPTIONS = [
     provider: 'kie',
     scenes: ['text-to-video'],
   },
+  // EvoLink models
+  {
+    value: 'seedance-1.5-pro',
+    label: 'Seedance 1.5 Pro',
+    provider: 'evolink',
+    scenes: ['text-to-video', 'image-to-video'],
+  },
 ];
 
 const PROVIDER_OPTIONS = [
@@ -128,6 +135,10 @@ const PROVIDER_OPTIONS = [
   {
     value: 'kie',
     label: 'Kie',
+  },
+  {
+    value: 'evolink',
+    label: 'EvoLink',
   },
 ];
 
@@ -646,7 +657,7 @@ export function VideoGenerator({
                   </TabsList>
                 </Tabs>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="hidden">
                   <div className="space-y-2">
                     <Label>{t('form.provider')}</Label>
                     <Select
@@ -886,15 +897,29 @@ export function VideoGenerator({
                     ))}
                   </div>
                 ) : (
-                  <div className="flex flex-col items-center justify-center py-16 text-center">
-                    <div className="bg-muted mb-4 flex h-16 w-16 items-center justify-center rounded-full">
-                      <Video className="text-muted-foreground h-10 w-10" />
+                  <div className="space-y-4">
+                    <div className="relative overflow-hidden rounded-lg">
+                      <div className="bg-primary/10 text-primary absolute top-3 left-3 z-10 flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium backdrop-blur-sm">
+                        <Sparkles className="h-3 w-3" />
+                        {t('preview_example')}
+                      </div>
+                      <video
+                        src="https://image.agent-skills.cc/uploads/ad7d81dd18c2e3a554f532f37c9861aa.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="h-auto w-full rounded-lg"
+                        preload="metadata"
+                      />
                     </div>
-                    <p className="text-muted-foreground">
-                      {isGenerating
-                        ? t('ready_to_generate')
-                        : t('no_videos_generated')}
-                    </p>
+                    <div className="text-center">
+                      <p className="text-muted-foreground text-sm">
+                        {isGenerating
+                          ? t('ready_to_generate')
+                          : t('preview_hint')}
+                      </p>
+                    </div>
                   </div>
                 )}
               </CardContent>

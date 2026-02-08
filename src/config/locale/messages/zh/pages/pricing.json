@@ -1,358 +1,403 @@
 {
   "metadata": {
     "title": "价格",
-    "description": "选择方案，立即开始"
+    "description": "选择适合你的方案"
   },
   "page": {
-    "title": "ShipAny 价格表",
+    "title": "Seedance 价格表",
     "sections": {
       "pricing": {
         "id": "pricing",
         "title": "价格",
-        "description": "获取 ShipAny 的全部功能，极速交付你的 AI SaaS 创业项目。",
+        "description": "选择适合你的方案",
+        "banner": {
+          "title": "限时优惠——年度套餐立省 30%",
+          "countdown_days": 1
+        },
         "groups": [
           {
-            "name": "one-time",
-            "title": "按次付费"
-          },
-          {
             "name": "monthly",
-            "title": "包月",
-            "is_featured": true,
-            "label": "立省15%"
+            "title": "月度",
+            "description": "月度套餐——积分每月更新，可随时取消",
+            "is_featured": true
           },
           {
             "name": "yearly",
-            "title": "包年"
+            "title": "每年",
+            "description": "年度计划——所有积分预先发放，一次性付款",
+            "badge": "-30%"
           }
         ],
         "items": [
           {
-            "title": "入门版",
-            "description": "开启你的第一个 SaaS 创业项目。",
-            "features_title": "包含",
+            "title": "Basic 基本的",
+            "description": "非常适合入门",
+            "features_title": "",
             "features": [
-              "100 积分，有效期 1 个月",
-              "NextJS 项目模板",
-              "SEO 友好结构",
-              "支持 Stripe 支付",
-              "Supabase 数据存储",
-              "Google Oauth & 一键登录",
-              "多语言（i18n）支持"
+              "积分每月刷新",
+              "最多 200 张 AI 图像",
+              "最多 40 个 AI 视频",
+              "所有高级模型",
+              "无水印"
             ],
-            "interval": "one-time",
+            "interval": "month",
+            "amount": 990,
+            "currency": "USD",
+            "price": "$9.9",
+            "unit": "/月",
+            "is_featured": false,
+            "credits": 400,
+            "credits_summary": "每月 400 积分",
+            "cost_per_100": "= $2.48",
+            "button": {
+              "title": "订阅",
+              "url": "/#pricing"
+            },
+            "product_id": "basic-monthly",
+            "product_name": "Seedance Basic 月度",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Pro 专业版",
+            "label": "受欢迎的",
+            "description": "最适合创作者和专业人士",
+            "features_title": "",
+            "features": [
+              "积分每月刷新",
+              "最多 800 张 AI 图像",
+              "最多 160 个 AI 视频",
+              "所有高级模型",
+              "优先队列"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/月",
+            "is_featured": true,
+            "credits": 1600,
+            "credits_summary": "每月 1600 积分",
+            "cost_per_100": "= $1.87",
+            "value_badge": "+33% 价值",
+            "button": {
+              "title": "订阅",
+              "url": "/#pricing"
+            },
+            "product_id": "pro-monthly",
+            "product_name": "Seedance Pro 月度",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Pro"
+          },
+          {
+            "title": "Ultra 极端主义者",
+            "description": "适用于团队和高级用户",
+            "features_title": "",
+            "features": [
+              "积分每月刷新",
+              "最多 2,800 张 AI 图像",
+              "最多 560 个 AI 视频",
+              "所有高级模型",
+              "API 访问"
+            ],
+            "interval": "month",
             "amount": 9900,
             "currency": "USD",
             "price": "$99",
-            "original_price": "$199",
-            "currencies": [
-              {
-                "currency": "CNY",
-                "amount": 69900,
-                "price": "¥699",
-                "original_price": "¥1399",
-                "payment_providers": ["stripe"]
-              }
-            ],
-            "unit": "",
+            "unit": "/月",
             "is_featured": false,
-            "tip": "一次付费，畅享无限项目部署！",
+            "credits": 5600,
+            "credits_summary": "每月 5600 积分",
+            "cost_per_100": "= $1.76",
+            "value_badge": "+40% 价值",
             "button": {
-              "title": "获取 ShipAny",
-              "url": "/#pricing",
-              "icon": "RiFlashlightFill"
+              "title": "订阅",
+              "url": "/#pricing"
             },
-            "product_id": "starter",
-            "product_name": "ShipAny 模板入门版",
-            "credits": 100,
+            "product_id": "ultra-monthly",
+            "product_name": "Seedance Ultra 月度",
             "valid_days": 30,
-            "group": "one-time"
+            "group": "monthly",
+            "plan_name": "Ultra"
           },
           {
-            "title": "标准版",
-            "description": "快速交付你的 SaaS 创业项目。",
-            "label": "热门",
-            "features_title": "包含入门版功能，此外",
+            "title": "Pay as you go 按需付费",
+            "description": "一次性购买，无需订阅",
+            "features_title": "",
             "features": [
-              "200 积分，有效期 3 个月",
-              "支持 Vercel 或 Cloudflare 部署",
-              "自动生成隐私政策&服务条款",
-              "集成 Google Analytics",
-              "集成 Google Search Console",
-              "Discord 技术社区",
-              "首个上线项目技术支持",
-              "终身免费更新"
+              "积分永不过期"
             ],
             "interval": "one-time",
-            "amount": 19900,
+            "amount": 3000,
             "currency": "USD",
-            "price": "$199",
-            "original_price": "$299",
-            "currencies": [
-              {
-                "currency": "CNY",
-                "amount": 139900,
-                "price": "¥1399",
-                "original_price": "¥1999",
-                "payment_providers": ["stripe"]
-              }
-            ],
-            "unit": "",
-            "is_featured": true,
-            "tip": "一次付费，畅享无限项目部署！",
-            "button": {
-              "title": "获取 ShipAny",
-              "url": "/#pricing",
-              "icon": "RiFlashlightFill"
-            },
-            "product_id": "standard",
-            "product_name": "ShipAny 模板标准版",
-            "credits": 200,
-            "valid_days": 90,
-            "group": "one-time"
-          },
-          {
-            "title": "高级版",
-            "description": "交付任意 AI SaaS 创业项目。",
-            "features_title": "包含标准版功能，此外",
-            "features": [
-              "300 积分，有效期 1 年",
-              "内置 AI 业务功能",
-              "用户中心",
-              "积分系统",
-              "为你的 SaaS 售卖 API",
-              "后台管理系统",
-              "优先技术支持"
-            ],
-            "interval": "one-time",
-            "amount": 29900,
-            "currency": "USD",
-            "price": "$299",
-            "original_price": "$399",
-            "currencies": [
-              {
-                "currency": "CNY",
-                "amount": 199900,
-                "price": "¥1999",
-                "original_price": "¥2799",
-                "payment_providers": ["stripe", "creem"]
-              }
-            ],
+            "price": "$30",
             "unit": "",
             "is_featured": false,
-            "tip": "一次付费，畅享无限项目部署！",
+            "is_payg": true,
+            "credits": 1200,
+            "cost_per_100": "= $2.50",
+            "tip": "一次性付款",
             "button": {
-              "title": "获取 ShipAny",
-              "url": "/#pricing",
-              "icon": "RiFlashlightFill"
+              "title": "购买积分",
+              "url": "/#pricing"
             },
-            "product_id": "premium",
-            "product_name": "ShipAny 模板高级版",
-            "credits": 300,
+            "product_id": "credits-1200",
+            "product_name": "Seedance 积分 1200",
+            "valid_days": 9999,
+            "group": "monthly",
+            "credit_packs": [
+              {
+                "credits": 500,
+                "label": "500 积分",
+                "price": "$15",
+                "amount": 1500,
+                "product_id": "credits-500",
+                "product_name": "Seedance 积分 500"
+              },
+              {
+                "credits": 1200,
+                "label": "1,200 积分",
+                "price": "$30",
+                "amount": 3000,
+                "product_id": "credits-1200",
+                "product_name": "Seedance 积分 1200",
+                "is_default": true
+              },
+              {
+                "credits": 2800,
+                "label": "2,800 积分",
+                "price": "$60",
+                "amount": 6000,
+                "product_id": "credits-2800",
+                "product_name": "Seedance 积分 2800"
+              },
+              {
+                "credits": 5000,
+                "label": "5,000 积分",
+                "price": "$99",
+                "amount": 9900,
+                "product_id": "credits-5000",
+                "product_name": "Seedance 积分 5000"
+              },
+              {
+                "credits": 8500,
+                "label": "8,500 积分",
+                "price": "$149",
+                "amount": 14900,
+                "product_id": "credits-8500",
+                "product_name": "Seedance 积分 8500"
+              },
+              {
+                "credits": 16000,
+                "label": "16,000 积分",
+                "price": "$249",
+                "amount": 24900,
+                "product_id": "credits-16000",
+                "product_name": "Seedance 积分 16000"
+              }
+            ],
+            "tip_box": {
+              "title": "小贴士：订阅可节省更多",
+              "items": [
+                "每积分成本更低（节省 40-60%）",
+                "所有积分包购买享85折优惠"
+              ]
+            }
+          },
+          {
+            "title": "Basic 基本的",
+            "description": "非常适合入门",
+            "features_title": "",
+            "features": [
+              "所有积分一次性发放",
+              "最多 2,600 张 AI 图像",
+              "最多 520 个 AI 视频",
+              "FLUX 和 Runway 通道",
+              "无水印",
+              "商业许可"
+            ],
+            "interval": "year",
+            "amount": 9480,
+            "currency": "USD",
+            "price": "$7.9",
+            "original_price": "$9.9",
+            "unit": "/月",
+            "is_featured": false,
+            "credits": 4800,
+            "credits_summary": "每年 4800 积分",
+            "cost_per_100": "= $1.82",
+            "annual_total": "每年账单金额为 $94.8",
+            "annual_savings": "每月节省：$24",
+            "bonus_credits": "+400 奖励积分",
+            "annual_badge": "年度的",
+            "button": {
+              "title": "订阅",
+              "url": "/#pricing"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Seedance Basic 年度",
             "valid_days": 365,
-            "group": "one-time"
+            "group": "yearly",
+            "plan_name": "Basic"
           },
           {
-            "title": "入门版",
-            "description": "开启你的第一个 SaaS 创业项目。",
-            "features_title": "包含",
+            "title": "Pro 专业版",
+            "label": "受欢迎的",
+            "description": "最适合创作者和专业人士",
+            "features_title": "",
             "features": [
-              "100 积分，有效期 1 个月",
-              "NextJS 项目模板",
-              "SEO 友好结构",
-              "支持 Stripe 支付",
-              "Supabase 数据存储",
-              "Google Oauth & 一键登录",
-              "多语言（i18n）支持"
+              "所有积分一次性发放",
+              "最多 10,600 张 AI 图像",
+              "最多 2,120 个 AI 视频",
+              "所有高级模型",
+              "优先队列",
+              "优先支持"
             ],
-            "interval": "month",
-            "amount": 8900,
+            "interval": "year",
+            "amount": 23880,
             "currency": "USD",
-            "price": "$89",
-            "original_price": "$99",
-            "unit": "/ 月",
-            "is_featured": false,
-            "tip": "按月付费，畅享无限项目部署！",
-            "button": {
-              "title": "获取 ShipAny",
-              "url": "/#pricing",
-              "icon": "RiFlashlightFill"
-            },
-            "product_id": "starter-monthly",
-            "product_name": "ShipAny 模板入门版包月",
-            "credits": 100,
-            "valid_days": 30,
-            "group": "monthly",
-            "plan_name": "入门版"
-          },
-          {
-            "title": "标准版",
-            "description": "快速交付你的 SaaS 创业项目。",
-            "label": "热门",
-            "features_title": "包含入门版功能，此外",
-            "features": [
-              "200 积分，有效期 1 个月",
-              "支持 Vercel 或 Cloudflare 部署",
-              "自动生成隐私政策&服务条款",
-              "集成 Google Analytics",
-              "集成 Google Search Console",
-              "Discord 技术社区",
-              "首个上线项目技术支持",
-              "终身免费更新"
-            ],
-            "interval": "month",
-            "amount": 16900,
-            "currency": "USD",
-            "price": "$169",
-            "original_price": "$199",
-            "unit": "/ 月",
+            "price": "$19.9",
+            "original_price": "$29.9",
+            "unit": "/月",
             "is_featured": true,
-            "tip": "按月付费，极速上线你的 SaaS 项目。",
+            "credits": 19200,
+            "credits_summary": "每年 19200 积分",
+            "cost_per_100": "= $1.13",
+            "annual_total": "每年账单金额为 $238.8",
+            "annual_savings": "每月节省：$120",
+            "bonus_credits": "+2,000 奖励积分",
+            "annual_badge": "年度的",
             "button": {
-              "title": "获取 ShipAny",
-              "url": "/#pricing",
-              "icon": "RiFlashlightFill"
+              "title": "订阅",
+              "url": "/#pricing"
             },
-            "product_id": "standard-monthly",
-            "product_name": "ShipAny 模板标准版包月",
-            "credits": 200,
-            "valid_days": 30,
-            "group": "monthly",
-            "plan_name": "标准版"
+            "product_id": "pro-yearly",
+            "product_name": "Seedance Pro 年度",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Pro"
           },
           {
-            "title": "高级版",
-            "description": "交付任意 AI SaaS 创业项目。",
-            "features_title": "包含标准版功能，此外",
+            "title": "Ultra 极端主义者",
+            "description": "适用于团队和高级用户",
+            "features_title": "",
             "features": [
-              "300 积分，有效期 1 个月",
-              "内置 AI 业务功能",
-              "用户中心",
-              "积分系统",
-              "为你的 SaaS 售卖 API",
-              "后台管理系统",
-              "优先技术支持"
-            ],
-            "interval": "month",
-            "amount": 24900,
-            "currency": "USD",
-            "price": "$249",
-            "original_price": "$299",
-            "unit": "/ 月",
-            "is_featured": false,
-            "tip": "按月付费，助你交付任何 AI SaaS 项目。",
-            "button": {
-              "title": "获取 ShipAny",
-              "url": "/#pricing",
-              "icon": "RiFlashlightFill"
-            },
-            "product_id": "premium-monthly",
-            "product_name": "ShipAny 模板高级版包月",
-            "credits": 300,
-            "valid_days": 30,
-            "group": "monthly",
-            "plan_name": "高级版"
-          },
-          {
-            "title": "入门版",
-            "description": "开启你的第一个 SaaS 创业项目。",
-            "features_title": "包含",
-            "features": [
-              "100 积分，有效期 1 年",
-              "NextJS 项目模板",
-              "SEO 友好结构",
-              "支持 Stripe 支付",
-              "Supabase 数据存储",
-              "Google Oauth & 一键登录",
-              "多语言（i18n）支持"
+              "所有积分一次性发放",
+              "最多 36,600 张 AI 图像",
+              "最多 7,320 个 AI 视频",
+              "所有高级模型",
+              "API 访问",
+              "专项支持"
             ],
             "interval": "year",
             "amount": 82800,
             "currency": "USD",
             "price": "$69",
-            "original_price": "$89",
-            "unit": "/ 月",
+            "original_price": "$99",
+            "unit": "/月",
             "is_featured": false,
-            "tip": "按年付费，畅享无限项目部署！",
+            "credits": 67200,
+            "credits_summary": "每年 67,200 积分",
+            "cost_per_100": "= $1.12",
+            "annual_total": "每年账单金额为 $828",
+            "annual_savings": "每月节省：$360",
+            "bonus_credits": "+6,000 奖励积分",
+            "annual_badge": "年度的",
             "button": {
-              "title": "获取 ShipAny",
-              "url": "/#pricing",
-              "icon": "RiFlashlightFill"
+              "title": "订阅",
+              "url": "/#pricing"
             },
-            "product_id": "starter-yearly",
-            "product_name": "ShipAny 模板入门版包年",
+            "product_id": "ultra-yearly",
+            "product_name": "Seedance Ultra 年度",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Ultra"
+          },
+          {
+            "title": "Pay as you go 按需付费",
+            "description": "一次性购买，无需订阅",
+            "features_title": "",
+            "features": [
+              "积分永不过期"
+            ],
+            "interval": "one-time",
+            "amount": 3000,
+            "currency": "USD",
+            "price": "$30",
+            "unit": "",
+            "is_featured": false,
+            "is_payg": true,
             "credits": 1200,
-            "valid_days": 365,
-            "group": "yearly",
-            "plan_name": "入门版"
-          },
-          {
-            "title": "标准版",
-            "description": "快速交付你的 SaaS 创业项目。",
-            "label": "热门",
-            "features_title": "包含入门版功能，此外",
-            "features": [
-              "200 积分，有效期 1 年",
-              "支持 Vercel 或 Cloudflare 部署",
-              "自动生成隐私政策&服务条款",
-              "集成 Google Analytics",
-              "集成 Google Search Console",
-              "Discord 技术社区",
-              "首个上线项目技术支持",
-              "终身免费更新"
-            ],
-            "interval": "year",
-            "amount": 154800,
-            "currency": "USD",
-            "price": "$129",
-            "original_price": "$169",
-            "unit": "/ 月",
-            "is_featured": true,
-            "tip": "按年付费，极速上线你的 SaaS 项目。",
+            "cost_per_100": "= $2.50",
+            "tip": "一次性付款",
             "button": {
-              "title": "获取 ShipAny",
-              "url": "/#pricing",
-              "icon": "RiFlashlightFill"
+              "title": "购买积分",
+              "url": "/#pricing"
             },
-            "product_id": "standard-yearly",
-            "product_name": "ShipAny 模板标准版包年",
-            "credits": 2400,
-            "valid_days": 365,
+            "product_id": "credits-1200",
+            "product_name": "Seedance 积分 1200",
+            "valid_days": 9999,
             "group": "yearly",
-            "plan_name": "标准版"
-          },
-          {
-            "title": "高级版",
-            "description": "交付任意 AI SaaS 创业项目。",
-            "features_title": "包含标准版功能，此外",
-            "features": [
-              "300 积分，有效期 1 年",
-              "内置 AI 业务功能",
-              "用户中心",
-              "积分系统",
-              "为你的 SaaS 售卖 API",
-              "后台管理系统",
-              "优先技术支持"
+            "credit_packs": [
+              {
+                "credits": 500,
+                "label": "500 积分",
+                "price": "$15",
+                "amount": 1500,
+                "product_id": "credits-500",
+                "product_name": "Seedance 积分 500"
+              },
+              {
+                "credits": 1200,
+                "label": "1,200 积分",
+                "price": "$30",
+                "amount": 3000,
+                "product_id": "credits-1200",
+                "product_name": "Seedance 积分 1200",
+                "is_default": true
+              },
+              {
+                "credits": 2800,
+                "label": "2,800 积分",
+                "price": "$60",
+                "amount": 6000,
+                "product_id": "credits-2800",
+                "product_name": "Seedance 积分 2800"
+              },
+              {
+                "credits": 5000,
+                "label": "5,000 积分",
+                "price": "$99",
+                "amount": 9900,
+                "product_id": "credits-5000",
+                "product_name": "Seedance 积分 5000"
+              },
+              {
+                "credits": 8500,
+                "label": "8,500 积分",
+                "price": "$149",
+                "amount": 14900,
+                "product_id": "credits-8500",
+                "product_name": "Seedance 积分 8500"
+              },
+              {
+                "credits": 16000,
+                "label": "16,000 积分",
+                "price": "$249",
+                "amount": 24900,
+                "product_id": "credits-16000",
+                "product_name": "Seedance 积分 16000"
+              }
             ],
-            "interval": "year",
-            "amount": 226800,
-            "currency": "USD",
-            "price": "$189",
-            "original_price": "$249",
-            "unit": "/ 月",
-            "is_featured": false,
-            "tip": "按年付费，助你交付任何 AI SaaS 项目。",
-            "button": {
-              "title": "获取 ShipAny",
-              "url": "/#pricing",
-              "icon": "RiFlashlightFill"
-            },
-            "product_id": "premium-yearly",
-            "product_name": "ShipAny 模板高级版包年",
-            "credits": 3600,
-            "valid_days": 365,
-            "group": "yearly",
-            "plan_name": "高级版"
+            "tip_box": {
+              "title": "小贴士：订阅可节省更多",
+              "items": [
+                "每积分成本更低（节省 40-60%）",
+                "所有积分包购买享85折优惠"
+              ]
+            }
           }
         ]
       }

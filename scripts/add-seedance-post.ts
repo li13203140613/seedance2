@@ -1,0 +1,425 @@
+/**
+ * Add Seedance 2.0 Complete Guide blog post to the database
+ *
+ * Usage:
+ *   pnpm tsx scripts/with-env.ts npx tsx scripts/add-seedance-post.ts
+ */
+
+import { db } from '@/core/db';
+import { post } from '@/config/db/schema';
+import { getUuid } from '@/shared/lib/hash';
+import { eq } from 'drizzle-orm';
+
+const slug = 'seedance-2-complete-guide';
+
+const title = 'Seedance 2.0 Complete Guide: From Beginner to Pro – Master AI Video Generation';
+const description = 'The ultimate Seedance 2.0 tutorial covering text-to-video, image-to-video, multi-shot storytelling, audio sync, prompt writing tips, pricing plans, and advanced techniques for creating cinematic AI videos.';
+
+const content = `Seedance 2.0, developed by ByteDance's Seed lab, represents a major leap in AI video generation. Whether you're a content creator, marketer, or filmmaker, this complete guide walks you through everything — from your first text-to-video prompt to advanced multi-shot cinematic storytelling.
+
+<video src="https://image.agent-skills.cc/uploads/ad7d81dd18c2e3a554f532f37c9861aa.mp4" controls width="100%" style="border-radius: 12px; margin-top: 1rem; margin-bottom: 1rem;"></video>
+
+## What is Seedance 2.0?
+
+Seedance 2.0 is the latest AI video generation model from ByteDance (the company behind TikTok and CapCut). It transforms text descriptions or reference images into high-quality 1080p videos with native audio synchronization — meaning lip-sync, dialogue, sound effects, and background music are generated alongside the video, not added as an afterthought.
+
+### Key Highlights
+
+- **Native 2K Resolution** — Output up to 2K quality for cinematic results
+- **Multi-Shot Storytelling** — Automatically split a single prompt into multiple coherent shots
+- **Audio-Video Sync** — Real-time lip-sync in 8+ languages including Chinese dialects
+- **Universal Reference System** — Upload up to 12 reference files (images, videos, audio) to guide generation
+- **@ Mention Control** — Precisely assign each uploaded asset's role with \`@Image1\`, \`@Video1\`, \`@Audio1\` syntax
+
+## Getting Started: Your First Seedance 2.0 Video
+
+### Step 1: Access the Platform
+
+Seedance 2.0 is available on multiple platforms:
+
+- **Dreamina (即梦)** — ByteDance's official creative platform at [dreamina.capcut.com](https://dreamina.capcut.com)
+- **Third-party APIs** — Services like getimg.ai, fluxai.pro, and Atlas Cloud offer Seedance 2.0 API access
+
+Sign up, log in, and select **Seedance 2.0** as your video generation model.
+
+### Step 2: Choose Your Creation Mode
+
+Seedance 2.0 supports three primary modes:
+
+| Mode | Input | Best For |
+|------|-------|----------|
+| **Text-to-Video (T2V)** | Text prompt only | Creative concepts, quick prototyping |
+| **Image-to-Video (I2V)** | Image(s) + text prompt | Product demos, character animation |
+| **Multi-Shot Narrative** | Multiple references + text | Short films, ads, story sequences |
+
+### Step 3: Write Your First Prompt
+
+For a simple text-to-video generation, type a descriptive prompt in the input box. Here's an example:
+
+\`\`\`
+A young woman in a red dress walks through a blooming cherry blossom garden.
+Soft golden hour lighting. Camera slowly dollies forward, following her path.
+Petals drift gently in the breeze.
+\`\`\`
+
+Click **Generate** and wait approximately 40–60 seconds for your 5-second 1080p video.
+
+## Prompt Writing: The Complete Formula
+
+The quality of your Seedance 2.0 output depends heavily on your prompt. Follow this proven structure:
+
+### The Seedance Prompt Formula
+
+\`\`\`
+Prompt = Subject + Movement + Scene + Camera + Style
+\`\`\`
+
+| Element | Description | Example |
+|---------|-------------|---------|
+| **Subject** | Who or what is in the scene | "A bearded chef in a white apron" |
+| **Movement** | What actions are happening | "flips a pancake with a dramatic toss" |
+| **Scene** | Environment and setting | "in a rustic farmhouse kitchen, morning light streaming through windows" |
+| **Camera** | Camera angle and movement | "Medium shot, slow push-in" |
+| **Style** | Visual mood and aesthetic | "Warm cinematic color grading, shallow depth of field" |
+
+### Prompt Length Best Practices
+
+- **Optimal range**: 30–100 words
+- Too short → AI may misinterpret your intent
+- Too long → Loses focus, reduces video quality
+- Focus on the **key visual elements** that matter most
+
+### Camera Movement Keywords
+
+Seedance 2.0 understands natural-language camera descriptions:
+
+| Camera Move | Prompt Keywords |
+|-------------|-----------------|
+| Orbit/Surround | "camera orbits around the subject", "360-degree rotation" |
+| Aerial/Drone | "aerial shot looking down", "drone flyover" |
+| Zoom | "slow zoom in on face", "dramatic zoom out" |
+| Pan | "camera pans left to right", "horizontal pan" |
+| Follow/Track | "camera follows the character", "tracking shot" |
+| Handheld | "handheld camera style", "slight camera shake" |
+| Static | "locked-off camera", "static wide shot" |
+
+### Negative Prompts
+
+Use negative prompts to exclude unwanted elements:
+
+\`\`\`
+Negative: blurry, low quality, distorted faces, extra fingers, watermark
+\`\`\`
+
+Keep negative prompts concise — overly complex exclusions can confuse the model.
+
+## Image-to-Video: Bringing Still Images to Life
+
+### Basic I2V Workflow
+
+1. Switch to **Image-to-Video** mode
+2. Upload your reference image
+3. Add a text prompt describing the desired motion
+4. Generate
+
+### Example
+
+Upload a product photo of headphones, then prompt:
+
+\`\`\`
+The headphones rotate slowly on a reflective black surface.
+Soft studio lighting with blue and purple accents.
+Camera orbits 180 degrees. Sleek commercial aesthetic.
+\`\`\`
+
+### Tips for Better I2V Results
+
+- Use **high-resolution** source images (1080p+)
+- Describe the **motion** you want — the AI already sees the visual from your image
+- Specify camera movement explicitly for more cinematic results
+- Works best with clear subjects and uncluttered backgrounds
+
+## Multi-Shot Storytelling: Director-Level Control
+
+This is Seedance 2.0's most powerful feature — generating multiple coherent video shots from a single prompt while maintaining character consistency, lighting, and narrative flow.
+
+### How Multi-Shot Works
+
+1. Select **Multi-Shot Mode** on the platform
+2. Upload reference images for characters, scenes, and style
+3. Write a narrative prompt describing your story
+4. Seedance 2.0 automatically:
+   - Splits your narrative into distinct shots
+   - Maintains character identity across shots
+   - Creates smooth transitions between scenes
+   - Keeps lighting and atmosphere consistent
+
+### Multi-Shot Prompt Example
+
+\`\`\`
+Shot 1: A detective in a trench coat stands in a dimly lit alley,
+looking at a photograph. Close-up on his face. Rain falling.
+
+Shot 2: Wide shot of a neon-lit city street at night.
+The detective walks toward a jazz club entrance. Camera follows from behind.
+
+Shot 3: Inside the club. Warm amber lighting. The detective sits
+at the bar and orders a drink. Medium shot. Saxophone music plays softly.
+\`\`\`
+
+### Best Practices for Multi-Shot
+
+- Keep each shot description focused on **one key action or moment**
+- Use consistent character descriptions across shots
+- Specify lighting transitions if the scene changes (e.g., outdoor → indoor)
+- Upload character reference images to ensure identity consistency
+
+## The Universal Reference System: @ Mention Control
+
+Seedance 2.0's \`@\` mention system gives you granular control over how each uploaded asset influences the generation.
+
+### Upload Limits
+
+| File Type | Maximum |
+|-----------|---------|
+| Images | 9 files |
+| Videos | 3 files |
+| Audio | 3 files |
+| **Total** | **12 files** |
+
+### @ Syntax Guide
+
+After uploading files, reference them in your prompt:
+
+\`\`\`
+@Image1 as the main character reference.
+@Image2 for the background environment.
+@Video1 for camera movement style.
+@Audio1 as background music.
+
+A young woman (@Image1) walks through a futuristic city (@Image2)
+with smooth tracking camera (@Video1). Ambient electronic soundtrack (@Audio1).
+\`\`\`
+
+### What Each Reference Type Controls
+
+| Reference Type | What It Provides |
+|----------------|-----------------|
+| **Image** | Character appearance, scene composition, style, color palette |
+| **Video** | Camera movement, action rhythm, pacing, motion style |
+| **Audio** | Background music, dialogue sync, sound effects, emotional tone |
+
+## Native Audio-Video Synchronization
+
+One of Seedance 2.0's standout features is native audio generation — the AI creates audio and video simultaneously.
+
+### Audio Capabilities
+
+- **Lip-sync dialogue** in 8+ languages (including Chinese, English, Japanese, Korean, and Chinese dialects)
+- **Environmental sound effects** — rain, traffic, footsteps, wind
+- **Background music** matching the scene's mood
+- **Precise mouth movement** aligned with speech rhythms
+
+### How to Use Audio Features
+
+**Option 1: Auto-generated audio**
+Simply describe sounds in your prompt:
+
+\`\`\`
+A man speaks into a microphone: "Welcome to the show, everyone!"
+Crowd cheering in the background. Upbeat music plays.
+\`\`\`
+
+**Option 2: Audio reference input**
+Upload an audio file and reference it:
+
+\`\`\`
+@Audio1 as the character's voice.
+A woman speaks the dialogue from @Audio1 while sitting at a café table.
+Natural ambient café sounds in the background.
+\`\`\`
+
+## Seedance 2.0 Pricing & Plans
+
+### Free Tier
+
+New users receive free daily credits — enough to experiment with all features including multi-shot narrative, 1080p output, and audio sync. No credit card required.
+
+### Credit Costs
+
+| Resolution | Duration | Credits |
+|-----------|----------|---------|
+| 480p | 5 seconds | 1 credit |
+| 1080p | 5 seconds | 5 credits |
+
+### Subscription Plans
+
+| Plan | Price | Credits/Month |
+|------|-------|---------------|
+| Basic | $19.9/month | 150 credits |
+| Plus | $39.9/month | 800 credits |
+| Pro | $69.9/month | 1,800 credits |
+
+Annual plans offer additional savings. One-time credit packages are also available.
+
+### Cost Comparison
+
+At approximately ¥3.67 per 5-second 1080p video, Seedance 2.0 is one of the most cost-effective AI video generators available — roughly **half the cost** of comparable tools like Kling.
+
+## Advanced Techniques & Pro Tips
+
+### 1. One-Click Video Recreation
+
+Seedance 2.0 can recreate the style of popular videos. Upload a reference video and prompt:
+
+\`\`\`
+Recreate the style and camera movement of @Video1,
+but with a different character: a young man in a blue suit
+walking through a modern art museum.
+\`\`\`
+
+### 2. Video Extension
+
+Generate a 5-second clip, then use the **extension** feature to continue the scene seamlessly, building longer narratives piece by piece.
+
+### 3. Character Replacement
+
+Use the editing tools to swap characters within an existing generated video while maintaining all other scene elements.
+
+### 4. Combining Multiple Reference Types
+
+For maximum control, combine all reference types:
+
+\`\`\`
+@Image1 character face reference
+@Image2 outfit and clothing style
+@Image3 background environment
+@Video1 camera movement pattern
+@Audio1 background music
+
+A woman (@Image1) wearing the outfit from @Image2
+dances gracefully in the setting of @Image3.
+Camera follows the movement pattern of @Video1.
+Music: @Audio1.
+\`\`\`
+
+### 5. Prompt Optimization Checklist
+
+Before generating, verify your prompt includes:
+
+- Clear subject description
+- Specific actions/movements
+- Scene/environment details
+- Camera angle and movement
+- Lighting and mood
+- Style or aesthetic reference
+- Audio elements (if needed)
+
+## Seedance 2.0 vs Competitors
+
+| Feature | Seedance 2.0 | Sora 2 | Kling 3.0 |
+|---------|-------------|--------|-----------|
+| **Best At** | Multi-shot narrative | Physics simulation | Motion fluidity |
+| **Audio Sync** | Native (built-in) | Separate | Limited |
+| **Max Resolution** | 2K | 1080p | 1080p |
+| **Reference Input** | 12 files (image+video+audio) | Text + image | Text + image |
+| **Cost** | ~$0.50/video | ~$1.00/video | ~$1.00/video |
+| **Speed** | ~40s per 5s clip | ~60s per 5s clip | ~50s per 5s clip |
+
+## Common Issues & Troubleshooting
+
+### Characters look different across shots
+Upload a clear, front-facing character reference image and use \`@Image1\` consistently in all shot descriptions.
+
+### Lip-sync doesn't match audio
+Keep dialogue sentences short and clear. Avoid overlapping multiple speakers in one shot.
+
+### Camera movement is jittery
+Seedance 2.0 works best with controlled, single-direction camera moves. Avoid combining multiple camera movements in one shot.
+
+### Video quality is blurry
+Ensure you're generating at 1080p resolution (costs 5 credits vs 1 credit for 480p). Add "high quality, sharp details" to your prompt.
+
+## Conclusion
+
+Seedance 2.0 brings director-level AI video generation to everyone. Its combination of multi-shot storytelling, native audio sync, and universal reference system makes it uniquely powerful for creators who need narrative coherence and cinematic quality.
+
+**Start creating**: Visit [Dreamina](https://dreamina.capcut.com) to try Seedance 2.0 with free credits today.
+
+**Key takeaways**:
+- Use the **prompt formula** (Subject + Movement + Scene + Camera + Style) for consistent results
+- Leverage **@ mentions** to precisely control reference assets
+- Take advantage of **multi-shot mode** for story-driven content
+- Start with **1080p** resolution for quality output at a reasonable cost`;
+
+async function main() {
+  console.log('Checking if post already exists...');
+
+  // Check if post with this slug already exists
+  const [existing] = await db()
+    .select()
+    .from(post)
+    .where(eq(post.slug, slug))
+    .limit(1);
+
+  if (existing) {
+    console.log(`Post with slug "${slug}" already exists (id: ${existing.id}). Updating...`);
+    const [updated] = await db()
+      .update(post)
+      .set({
+        title,
+        description,
+        content,
+        image: '/imgs/features/admin.png',
+        authorName: 'Admin',
+        authorImage: '/logo.png',
+        status: 'published',
+      })
+      .where(eq(post.id, existing.id))
+      .returning();
+
+    console.log('Post updated successfully:', updated.id);
+  } else {
+    // Need a userId - get the first user from the database
+    const { user } = await import('@/config/db/schema');
+    const [firstUser] = await db().select().from(user).limit(1);
+
+    if (!firstUser) {
+      console.error('No users found in the database. Please create a user first.');
+      process.exit(1);
+    }
+
+    console.log(`Using user: ${firstUser.email || firstUser.id}`);
+
+    const [result] = await db()
+      .insert(post)
+      .values({
+        id: getUuid(),
+        userId: firstUser.id,
+        parentId: '',
+        slug,
+        type: 'article',
+        title,
+        description,
+        image: '/imgs/features/admin.png',
+        content,
+        categories: '',
+        tags: 'seedance,ai-video,tutorial,bytedance',
+        authorName: 'Admin',
+        authorImage: '/logo.png',
+        status: 'published',
+        sort: 0,
+      })
+      .returning();
+
+    console.log('Post created successfully:', result.id);
+  }
+
+  console.log(`\nPost is now available at: /blog/${slug}`);
+  process.exit(0);
+}
+
+main().catch((err) => {
+  console.error('Failed to add post:', err);
+  process.exit(1);
+});

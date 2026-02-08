@@ -3,6 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 import { Link } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common';
+import { VideoGenerator } from '@/shared/blocks/generator/video';
 import { Button } from '@/shared/components/ui/button';
 import { Highlighter } from '@/shared/components/ui/highlighter';
 import { cn } from '@/shared/lib/utils';
@@ -106,6 +107,10 @@ export function Hero({
           <SocialAvatars tip={section.avatars_tip || ''} />
         )}
       </div>
+
+      {section.show_video_generator && (
+        <VideoGenerator />
+      )}
 
       {(section.image?.src || section.image_invert?.src) && (
         <div className="border-foreground/10 relative mt-8 border-y sm:mt-16">

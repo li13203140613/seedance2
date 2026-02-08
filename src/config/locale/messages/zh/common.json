@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "ShipAny 模板二",
-    "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 脚手架。提供丰富模板和组件，助您快速上线产品。",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "seedancetwo | 电影感 AI 视频生成器",
+    "description": "seedancetwo 支持文生视频与图生视频，具备多镜头叙事与音画同步能力，可快速产出高质量视频内容。",
+    "keywords": "seedancetwo, AI视频生成, 文生视频, 图生视频, 多镜头叙事, 音画同步"
   },
   "sign": {
     "sign_in_title": "登录",
@@ -23,7 +23,7 @@
     "github_sign_in_title": "使用 GitHub 登录",
     "close_title": "关闭",
     "cancel_title": "取消",
-    "sign_out_title": "登出",
+    "sign_out_title": "退出登录",
     "billing_title": "账单",
     "name_title": "姓名",
     "name_placeholder": "请输入您的姓名",
@@ -37,10 +37,10 @@
     "verify_email_page_title": "请查收邮件",
     "verify_email_page_description": "继续操作前，请点击发送到以下邮箱的验证链接：",
     "verify_email_continue": "继续",
-    "verify_email_tip": "完成验证后，请点击「继续」按钮。",
+    "verify_email_tip": "完成验证后，请点击“继续”按钮。",
     "verify_email_not_verified_yet": "尚未完成验证，请先前往邮箱点击验证链接。",
     "verify_email_account_mismatch": "当前已登录 {current}，本页面等待 {expected} 的验证结果。",
-    "resend_verification_countdown": "重新发送验证邮件（{seconds}秒）",
+    "resend_verification_countdown": "重新发送验证邮件（{seconds}s）",
     "resend_verification_wait": "请等待 {seconds} 秒后再重新发送。",
     "back_to_sign_in": "返回登录"
   },
@@ -50,7 +50,7 @@
     "cancel_title": "取消"
   },
   "locale_detector": {
-    "title": "检测到浏览器语言是: {locale}，是否切换？",
-    "switch_to": "切换到{locale}"
+    "title": "检测到浏览器语言是 {locale}，是否切换？",
+    "switch_to": "切换到 {locale}"
   }
 }

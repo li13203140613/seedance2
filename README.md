@@ -1,19 +1,14 @@
-# ShipAny Template Two
+# Seedance
+
+AI-powered dance video generation platform.
 
 ## Getting Started
 
-read [ShipAny Document](https://shipany.ai/docs/quick-start) to start your AI SaaS project.
-
-## Buy Templates
-
-check [ShipAny Templates](https://shipany.ai/templates) to buy Business Templates.
-
-## Feedback
-
-submit your feedbacks on [Github Issues](https://github.com/shipanyai/shipany-template-two/issues)
+```bash
+pnpm install
+pnpm dev
+```
 
 ## LICENSE
 
-!!! Please do not publicly release ShipAny's Code. Illegal use will be prosecuted
-
-[ShipAny LICENSE](./LICENSE)
+All rights reserved.

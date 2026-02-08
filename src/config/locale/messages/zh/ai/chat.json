@@ -2,10 +2,10 @@
   "sidebar": {
     "header": {
       "brand": {
-        "title": "ShipAny Chat",
+        "title": "Seedance Chat",
         "logo": {
           "src": "/logo.png",
-          "alt": "ShipAny Chat"
+          "alt": "Seedance Chat"
         },
         "url": "/chat"
       },

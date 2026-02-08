@@ -41,7 +41,9 @@
     "generated_videos": "Video Preview",
     "ready_to_generate": "Ready to Generate",
     "ready_for_generating": "Ready for Generating",
-    "no_videos_generated": "No Videos Generated"
+    "no_videos_generated": "No Videos Generated",
+    "preview_example": "Preview Example",
+    "preview_hint": "Fill in the form on the left and click \"Generate Video\" to create your own video."
   }
 }
 

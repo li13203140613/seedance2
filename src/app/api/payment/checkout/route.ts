@@ -33,9 +33,32 @@ export async function POST(req: Request) {
     });
     const pricing = t.raw('page.sections.pricing');
 
-    const pricingItem = pricing.items.find(
+    let pricingItem = pricing.items.find(
       (item: any) => item.product_id === product_id
     );
+
+    // If not found at top level, search inside credit_packs of PAYG items
+    if (!pricingItem) {
+      for (const item of pricing.items) {
+        if (item.is_payg && item.credit_packs?.length) {
+          const pack = item.credit_packs.find(
+            (p: any) => p.product_id === product_id
+          );
+          if (pack) {
+            // Create a merged pricing item from PAYG parent + selected credit pack
+            pricingItem = {
+              ...item,
+              product_id: pack.product_id,
+              product_name: pack.product_name || item.product_name,
+              amount: pack.amount,
+              price: pack.price,
+              credits: pack.credits,
+            };
+            break;
+          }
+        }
+      }
+    }
 
     if (!pricingItem) {
       return respErr('pricing item not found');
