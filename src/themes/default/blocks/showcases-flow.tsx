@@ -1,8 +1,8 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
 
 import { Link } from '@/core/i18n/navigation';
 import { LazyImage } from '@/shared/blocks/common';
@@ -10,6 +10,113 @@ import { SmartIcon } from '@/shared/blocks/common/smart-icon';
 import { Button } from '@/shared/components/ui/button';
 import { cn } from '@/shared/lib/utils';
 import { Section } from '@/shared/types/blocks/landing';
+
+function VideoCard({
+  item,
+  index,
+  onClick,
+}: {
+  item: any;
+  index: number;
+  onClick: () => void;
+}) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+    if (videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play().catch(() => {});
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
+  };
+
+  return (
+    <motion.div
+      className="group relative cursor-zoom-in break-inside-avoid overflow-hidden rounded-xl"
+      onClick={onClick}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      initial={{ opacity: 0, y: 30, scale: 0.95 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, margin: '-50px' }}
+      transition={{
+        duration: 0.6,
+        delay: index * 0.08,
+        ease: [0.22, 1, 0.36, 1] as const,
+      }}
+      whileHover={{ scale: 1.02 }}
+    >
+      <LazyImage
+        src={item.image?.src ?? ''}
+        alt={item.image?.alt ?? ''}
+        className={cn(
+          'h-auto w-full transition-all duration-300',
+          isHovered && item.video ? 'opacity-0' : 'opacity-100'
+        )}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+      />
+      {item.video && (
+        <video
+          ref={videoRef}
+          src={item.video}
+          className={cn(
+            'absolute inset-0 h-full w-full object-cover transition-opacity duration-300',
+            isHovered ? 'opacity-100' : 'opacity-0'
+          )}
+          muted
+          loop
+          playsInline
+          preload="none"
+        />
+      )}
+      {item.video && !isHovered && (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="flex size-12 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm">
+            <Play className="size-5 fill-white text-white" />
+          </div>
+        </div>
+      )}
+      <div className="absolute inset-0 flex flex-col justify-end bg-black/60 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <h3 className="mb-2 translate-y-4 text-sm font-medium text-white transition-transform duration-300 group-hover:translate-y-0">
+          {item.title}
+        </h3>
+        {(item as any).button && (
+          <div
+            className="mt-3 translate-y-4 transition-transform delay-100 duration-300 group-hover:translate-y-0"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Button
+              asChild
+              variant={(item as any).button.variant || 'default'}
+              size={(item as any).button.size || 'sm'}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground h-8 w-full border-0 px-1 py-1.5 text-sm font-medium"
+            >
+              <Link
+                href={(item as any).button.url || ''}
+                target={(item as any).button.target || '_self'}
+              >
+                {(item as any).button.icon && (
+                  <SmartIcon
+                    name={(item as any).button.icon as string}
+                  />
+                )}
+                {(item as any).button.title}
+              </Link>
+            </Button>
+          </div>
+        )}
+      </div>
+    </motion.div>
+  );
+}
 
 export function ShowcasesFlow({
   section,
@@ -61,6 +168,11 @@ export function ShowcasesFlow({
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedIndex, handlePrevious, handleNext]);
+
+  const selectedItem =
+    selectedIndex !== null && filteredItems.length > 0
+      ? filteredItems[selectedIndex]
+      : null;
 
   return (
     <section
@@ -163,62 +275,12 @@ export function ShowcasesFlow({
       {filteredItems.length > 0 ? (
         <div className="container mx-auto columns-1 gap-4 space-y-4 sm:columns-2 lg:columns-3 xl:columns-4">
           {filteredItems.map((item, index) => (
-            <motion.div
+            <VideoCard
               key={index}
-              className="group relative cursor-zoom-in break-inside-avoid overflow-hidden rounded-xl"
+              item={item}
+              index={index}
               onClick={() => setSelectedIndex(index)}
-              initial={{ opacity: 0, y: 30, scale: 0.95 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: '-50px' }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.1,
-                ease: [0.22, 1, 0.36, 1] as const,
-              }}
-              whileHover={{ scale: 1.02 }}
-            >
-              <LazyImage
-                src={item.image?.src ?? ''}
-                alt={item.image?.alt ?? ''}
-                className="h-auto w-full transition-transform duration-300 group-hover:scale-105"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-              />
-              <div className="absolute inset-0 flex flex-col justify-end bg-black/60 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <h3 className="mb-2 translate-y-4 text-sm font-medium text-white transition-transform duration-300 group-hover:translate-y-0">
-                  {item.title}
-                </h3>
-                {/* {item.description && (
-                  <p className="line-clamp-2 translate-y-4 text-sm text-white/80 transition-transform delay-75 duration-300 group-hover:translate-y-0">
-                    {item.description}
-                  </p>
-                )} */}
-                {(item as any).button && (
-                  <div
-                    className="mt-3 translate-y-4 transition-transform delay-100 duration-300 group-hover:translate-y-0"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <Button
-                      asChild
-                      variant={(item as any).button.variant || 'default'}
-                      size={(item as any).button.size || 'sm'}
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground h-8 w-full border-0 px-1 py-1.5 text-sm font-medium"
-                    >
-                      <Link
-                        href={(item as any).button.url || ''}
-                        target={(item as any).button.target || '_self'}
-                      >
-                        {(item as any).button.icon && (
-                          <SmartIcon
-                            name={(item as any).button.icon as string}
-                          />
-                        )}
-                        {(item as any).button.title}
-                      </Link>
-                    </Button>
-                  </div>
-                )}
-              </div>
-            </motion.div>
+            />
           ))}
         </div>
       ) : (
@@ -234,111 +296,113 @@ export function ShowcasesFlow({
       )}
 
       <AnimatePresence>
-        {selectedIndex !== null &&
-          filteredItems &&
-          filteredItems.length > 0 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm md:p-8"
+        {selectedItem && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm md:p-8"
+            onClick={() => setSelectedIndex(null)}
+          >
+            <button
+              className="absolute top-4 right-4 z-50 text-white/70 transition-colors hover:text-white"
               onClick={() => setSelectedIndex(null)}
             >
-              <button
-                className="absolute top-4 right-4 z-50 text-white/70 transition-colors hover:text-white"
-                onClick={() => setSelectedIndex(null)}
-              >
-                <X className="size-8" />
-              </button>
+              <X className="size-8" />
+            </button>
 
-              <button
-                className="absolute top-1/2 left-4 z-50 -translate-y-1/2 rounded-full bg-black/20 p-2 text-white/70 transition-colors hover:bg-black/40 hover:text-white"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handlePrevious();
-                }}
-              >
-                <ChevronLeft className="size-8 md:size-12" />
-              </button>
+            <button
+              className="absolute top-1/2 left-4 z-50 -translate-y-1/2 rounded-full bg-black/20 p-2 text-white/70 transition-colors hover:bg-black/40 hover:text-white"
+              onClick={(e) => {
+                e.stopPropagation();
+                handlePrevious();
+              }}
+            >
+              <ChevronLeft className="size-8 md:size-12" />
+            </button>
 
-              <button
-                className="absolute top-1/2 right-4 z-50 -translate-y-1/2 rounded-full bg-black/20 p-2 text-white/70 transition-colors hover:bg-black/40 hover:text-white"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  handleNext();
-                }}
-              >
-                <ChevronRight className="size-8 md:size-12" />
-              </button>
+            <button
+              className="absolute top-1/2 right-4 z-50 -translate-y-1/2 rounded-full bg-black/20 p-2 text-white/70 transition-colors hover:bg-black/40 hover:text-white"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleNext();
+              }}
+            >
+              <ChevronRight className="size-8 md:size-12" />
+            </button>
 
-              <motion.div
-                key={selectedIndex}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.2 }}
-                className="relative flex h-full w-full items-center justify-center"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <div className="relative max-h-full max-w-full overflow-hidden rounded-lg">
+            <motion.div
+              key={selectedIndex}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+              className="relative flex h-full w-full items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="relative max-h-full max-w-full overflow-hidden rounded-lg">
+                {selectedItem.video ? (
+                  <video
+                    key={selectedItem.video}
+                    src={selectedItem.video}
+                    className="max-h-[85vh] w-auto max-w-full rounded-lg object-contain"
+                    controls
+                    autoPlay
+                    loop
+                    playsInline
+                  />
+                ) : (
                   <LazyImage
-                    src={filteredItems[selectedIndex].image?.src ?? ''}
-                    alt={filteredItems[selectedIndex].image?.alt ?? ''}
+                    src={selectedItem.image?.src ?? ''}
+                    alt={selectedItem.image?.alt ?? ''}
                     className="h-auto max-h-[90vh] w-auto max-w-full object-contain"
                   />
-                  <div className="absolute right-0 bottom-0 left-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-6 text-white">
-                    <h3 className="mb-2 text-2xl font-bold">
-                      {filteredItems[selectedIndex].title}
-                    </h3>
-                    {filteredItems[selectedIndex].description && (
-                      <p className="line-clamp-3 text-base text-white/90">
-                        {filteredItems[selectedIndex].description}
-                      </p>
-                    )}
-                    {(filteredItems[selectedIndex] as any).button && (
-                      <div className="mt-4">
-                        <Button
-                          asChild
-                          variant={
-                            (filteredItems[selectedIndex] as any).button
-                              .variant || 'default'
+                )}
+                <div className="absolute right-0 bottom-0 left-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-6 text-white">
+                  <h3 className="mb-2 text-2xl font-bold">
+                    {selectedItem.title}
+                  </h3>
+                  {selectedItem.description && (
+                    <p className="line-clamp-3 text-base text-white/90">
+                      {selectedItem.description}
+                    </p>
+                  )}
+                  {(selectedItem as any).button && (
+                    <div className="mt-4">
+                      <Button
+                        asChild
+                        variant={
+                          (selectedItem as any).button.variant || 'default'
+                        }
+                        size={
+                          (selectedItem as any).button.size || 'default'
+                        }
+                        className="bg-primary hover:bg-primary/90 h-8 border-0 px-3 py-1.5 text-sm font-medium text-white"
+                      >
+                        <Link
+                          href={(selectedItem as any).button.url || ''}
+                          target={
+                            (selectedItem as any).button.target || '_self'
                           }
-                          size={
-                            (filteredItems[selectedIndex] as any).button.size ||
-                            'default'
-                          }
-                          className="bg-primary hover:bg-primary/90 h-8 border-0 px-3 py-1.5 text-sm font-medium text-white"
                         >
-                          <Link
-                            href={
-                              (filteredItems[selectedIndex] as any).button
-                                .url || ''
-                            }
-                            target={
-                              (filteredItems[selectedIndex] as any).button
-                                .target || '_self'
-                            }
-                          >
-                            {(filteredItems[selectedIndex] as any).button
-                              .icon && (
-                              <SmartIcon
-                                name={
-                                  (filteredItems[selectedIndex] as any).button
-                                    .icon as string
-                                }
-                                className="text-white"
-                              />
-                            )}
-                            {(filteredItems[selectedIndex] as any).button.title}
-                          </Link>
-                        </Button>
-                      </div>
-                    )}
-                  </div>
+                          {(selectedItem as any).button.icon && (
+                            <SmartIcon
+                              name={
+                                (selectedItem as any).button.icon as string
+                              }
+                              className="text-white"
+                            />
+                          )}
+                          {(selectedItem as any).button.title}
+                        </Link>
+                      </Button>
+                    </div>
+                  )}
                 </div>
-              </motion.div>
+              </div>
             </motion.div>
-          )}
+          </motion.div>
+        )}
       </AnimatePresence>
     </section>
   );

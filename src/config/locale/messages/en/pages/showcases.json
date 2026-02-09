@@ -1,148 +1,162 @@
 {
   "metadata": {
-    "title": "Showcases",
-    "description": "Awesome projects built with Seedance"
+    "title": "Seedance 2 Video Showcases - AI Generated Video Examples",
+    "description": "Explore stunning AI-generated video examples created with Seedance 2. From cinematic scenes to creative animations, see what Seedance 2 can do."
   },
   "page": {
-    "title": "Showcases",
+    "title": "Video Showcases",
     "sections": {
       "showcases": {
-        "id": "showcases",
-        "title": "AI SaaS Startups built with Seedance",
-        "description": "Easy to use and fast to ship.",
+        "id": "showcases-flow",
+        "title": "Seedance 2 Video Gallery",
+        "description": "Explore stunning AI-generated videos created with Seedance 2. Hover to preview, click to watch full screen.",
         "groups": [
-          {
-            "name": "all",
-            "title": "All"
-          },
-          {
-            "name": "ai-chatbot",
-            "title": "AI Chatbot"
-          },
-          {
-            "name": "ai-image",
-            "title": "AI Image"
-          },
-          {
-            "name": "ai-video",
-            "title": "AI Video"
-          },
-          {
-            "name": "ai-audio",
-            "title": "AI Audio"
-          },
-          {
-            "name": "ai-music",
-            "title": "AI Music"
-          },
-          {
-            "name": "ai-coding",
-            "title": "AI Coding"
-          },
-          {
-            "name": "other",
-            "title": "Other"
-          }
+          { "name": "all", "title": "All" },
+          { "name": "cinematic", "title": "Cinematic" },
+          { "name": "animation", "title": "Animation" },
+          { "name": "fashion", "title": "Fashion" },
+          { "name": "creative", "title": "Creative" }
         ],
         "items": [
           {
-            "title": "ThinkAny",
-            "description": "AI Search Engine",
-            "url": "https://thinkany.ai",
-            "target": "_blank",
+            "title": "Sunset Laundry",
+            "description": "A girl elegantly hanging laundry on a balcony at golden hour, with realistic cloth physics and natural body movements.",
+            "group": "cinematic",
             "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "showcases"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-1-poster.webp",
+              "alt": "Woman hanging laundry at sunset"
             },
-            "group": "ai-chatbot"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-1.mp4"
           },
           {
-            "title": "HeyBeauty",
-            "description": "AI Virtual Try On",
-            "url": "https://heybeauty.ai",
-            "target": "_blank",
+            "title": "Urban Chase",
+            "description": "A man sprinting through crowded city streets with dynamic camera tracking, showcasing fluid motion and crowd simulation.",
+            "group": "cinematic",
             "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "showcases"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-2-poster.webp",
+              "alt": "Man running through city streets"
             },
-            "group": "ai-image"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-2.mp4"
           },
           {
-            "title": "AI Wallpaper",
-            "description": "AI Wallpaper Generator",
-            "url": "https://aiwallpaper.shop",
-            "target": "_blank",
+            "title": "Coming Home",
+            "description": "A man walking down a hallway toward the front door, with cinematic lighting and character consistency throughout the scene.",
+            "group": "cinematic",
             "image": {
-              "src": "/imgs/cases/1.png",
-              "alt": "showcases"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-4-poster.webp",
+              "alt": "Man walking down hallway"
             },
-            "group": "ai-image"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-4.mp4"
           },
           {
-            "title": "AI Cover",
-            "description": "AI Cover Generator",
-            "url": "https://aicover.design",
-            "target": "_blank",
+            "title": "Chinese Opera",
+            "description": "A traditional Chinese opera performer in elaborate costume with intricate headpiece, performing graceful movements on stage.",
+            "group": "creative",
             "image": {
-              "src": "/imgs/cases/2.png",
-              "alt": "showcases"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-5-poster.webp",
+              "alt": "Chinese opera performer"
             },
-            "group": "ai-image"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-5.mp4"
           },
           {
-            "title": "GPTs Works",
-            "description": "GPTs Directory",
-            "url": "https://gpts.works",
-            "target": "_blank",
+            "title": "Product Showcase",
+            "description": "Elegant ribbon bows in multiple colors and patterns, demonstrating product photography and commercial video generation.",
+            "group": "fashion",
             "image": {
-              "src": "/imgs/cases/3.png",
-              "alt": "showcases"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-8-poster.webp",
+              "alt": "Colorful ribbon bows product display"
             },
-            "group": "other"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-8.mp4"
           },
           {
-            "title": "Melodisco",
-            "description": "AI Music Player",
-            "url": "https://melodis.co",
-            "target": "_blank",
+            "title": "Elevator Scene",
+            "description": "A tense Hitchcock-style elevator scene with dramatic camera work including orbit shots and zoom effects.",
+            "group": "cinematic",
             "image": {
-              "src": "/imgs/cases/4.png",
-              "alt": "showcases"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-10-poster.webp",
+              "alt": "Man in elevator dramatic scene"
             },
-            "group": "ai-music"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-10.mp4"
           },
           {
-            "title": "Pagen",
-            "description": "AI Landing Page Generator",
-            "url": "https://pagen.so",
-            "target": "_blank",
+            "title": "Wuxia Battle",
+            "description": "An epic martial arts duel in an autumn forest with 3D animation style, featuring dynamic combat choreography.",
+            "group": "animation",
             "image": {
-              "src": "/imgs/cases/6.png",
-              "alt": "showcases"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-14-poster.webp",
+              "alt": "Martial arts fight in autumn forest"
             },
-            "group": "ai-coding"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-14.mp4"
           },
           {
-            "title": "SoraFM",
-            "description": "AI Video Generator",
-            "url": "https://sorafm.trys.ai",
-            "target": "_blank",
+            "title": "Supercar Reveal",
+            "description": "A red Lamborghini in an underground parking garage with cinematic lighting, reflections, and automotive showcase style.",
+            "group": "creative",
             "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "showcases"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-16-poster.webp",
+              "alt": "Red Lamborghini in parking garage"
             },
-            "group": "ai-video"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-16.mp4"
           },
           {
-            "title": "PodLM",
-            "description": "AI Podcast Generator",
-            "url": "https://podlm.ai",
-            "target": "_blank",
+            "title": "Angel Awakening",
+            "description": "A fantasy scene of an ethereal angel with glowing wings before a stone angel statue, with stunning VFX and lighting.",
+            "group": "creative",
             "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "showcases"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-17-poster.webp",
+              "alt": "Angel with wings fantasy scene"
             },
-            "group": "ai-audio"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-17.mp4"
+          },
+          {
+            "title": "Fashion Lookbook",
+            "description": "A dynamic fashion shoot with beat-synced outfit changes, showcasing style transitions and model posing.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-19-poster.webp",
+              "alt": "Fashion model posing"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-19.mp4"
+          },
+          {
+            "title": "Funny Horse",
+            "description": "A cartoon horse peeking through a blanket with a fisheye lens effect, demonstrating audio-synchronized animation.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-30-poster.webp",
+              "alt": "Cartoon horse with blanket"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-30.mp4"
+          },
+          {
+            "title": "Sunset Runner",
+            "description": "An anime-style illustration of a young man jogging through city streets at sunset with vibrant colors.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-38-poster.webp",
+              "alt": "Anime runner at sunset"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-38.mp4"
+          },
+          {
+            "title": "Spy Thriller",
+            "description": "A one-take tracking shot of a woman in a red coat walking through a busy European street in spy thriller style.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-40-poster.webp",
+              "alt": "Woman in red coat on European street"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-40.mp4"
+          },
+          {
+            "title": "Fashion Ad",
+            "description": "A stylish fashion advertisement with geometric backgrounds and dynamic text overlays, beat-synced editing.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-45-poster.webp",
+              "alt": "Fashion model with geometric background"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-45.mp4"
           }
         ]
       }

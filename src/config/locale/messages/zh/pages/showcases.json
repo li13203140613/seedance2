@@ -1,148 +1,162 @@
 {
   "metadata": {
-    "title": "案例展示",
-    "description": "用 Seedance 打造的精彩项目"
+    "title": "Seedance 2 视频案例 - AI 生成视频展示",
+    "description": "探索 Seedance 2 创作的精彩 AI 生成视频。从电影级场景到创意动画，一览 Seedance 2 的强大能力。"
   },
   "page": {
-    "title": "案例展示",
+    "title": "视频案例",
     "sections": {
       "showcases": {
-        "id": "showcases",
-        "title": "用 Seedance 构建的 AI SaaS 创业项目",
-        "description": "简单、快速、高效。",
+        "id": "showcases-flow",
+        "title": "Seedance 2 视频画廊",
+        "description": "探索 Seedance 2 创作的精彩 AI 视频。悬停预览，点击全屏观看。",
         "groups": [
-          {
-            "name": "all",
-            "title": "所有项目"
-          },
-          {
-            "name": "ai-chatbot",
-            "title": "AI 聊天机器人"
-          },
-          {
-            "name": "ai-image",
-            "title": "AI 图片"
-          },
-          {
-            "name": "ai-video",
-            "title": "AI 视频"
-          },
-          {
-            "name": "ai-audio",
-            "title": "AI 音频"
-          },
-          {
-            "name": "ai-music",
-            "title": "AI 音乐"
-          },
-          {
-            "name": "ai-coding",
-            "title": "AI 编程"
-          },
-          {
-            "name": "other",
-            "title": "其他"
-          }
+          { "name": "all", "title": "全部" },
+          { "name": "cinematic", "title": "电影级" },
+          { "name": "animation", "title": "动画" },
+          { "name": "fashion", "title": "时尚" },
+          { "name": "creative", "title": "创意" }
         ],
         "items": [
           {
-            "title": "ThinkAny",
-            "description": "AI 搜索引擎",
-            "url": "https://thinkany.ai",
-            "target": "_blank",
+            "title": "夕阳晾衣",
+            "description": "一位女子在阳台上优雅地晾晒衣物，逼真的布料物理和自然的肢体动作。",
+            "group": "cinematic",
             "image": {
-              "src": "/imgs/cases/7.png",
-              "alt": "案例展示"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-1-poster.webp",
+              "alt": "夕阳下晾衣的女子"
             },
-            "group": "ai-chatbot"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-1.mp4"
           },
           {
-            "title": "HeyBeauty",
-            "description": "AI 虚拟试妆",
-            "url": "https://heybeauty.ai",
-            "target": "_blank",
+            "title": "都市追逐",
+            "description": "一位男子在拥挤的城市街头奔跑，动态跟踪镜头，展示流畅运动与人群模拟。",
+            "group": "cinematic",
             "image": {
-              "src": "/imgs/cases/5.png",
-              "alt": "案例展示"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-2-poster.webp",
+              "alt": "在城市街头奔跑的男子"
             },
-            "group": "ai-image"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-2.mp4"
           },
           {
-            "title": "AI Wallpaper",
-            "description": "AI 壁纸生成器",
-            "url": "https://aiwallpaper.shop",
-            "target": "_blank",
+            "title": "回家",
+            "description": "一位男子沿走廊走向家门，电影级灯光与角色一致性的完美呈现。",
+            "group": "cinematic",
             "image": {
-              "src": "/imgs/cases/1.png",
-              "alt": "案例展示"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-4-poster.webp",
+              "alt": "走廊中行走的男子"
             },
-            "group": "ai-image"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-4.mp4"
           },
           {
-            "title": "AI Cover",
-            "description": "AI 封面生成器",
-            "url": "https://aicover.design",
-            "target": "_blank",
+            "title": "京剧表演",
+            "description": "一位身着华丽戏服的京剧演员在舞台上展示优美身段，头饰细节精致入微。",
+            "group": "creative",
             "image": {
-              "src": "/imgs/cases/2.png",
-              "alt": "案例展示"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-5-poster.webp",
+              "alt": "京剧演员"
             },
-            "group": "ai-image"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-5.mp4"
           },
           {
-            "title": "GPTs Works",
-            "description": "GPTs 导航",
-            "url": "https://gpts.works",
-            "target": "_blank",
+            "title": "产品展示",
+            "description": "多色蝴蝶结丝带优雅呈现，展示产品摄影与商业视频生成能力。",
+            "group": "fashion",
             "image": {
-              "src": "/imgs/cases/3.png",
-              "alt": "案例展示"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-8-poster.webp",
+              "alt": "彩色蝴蝶结产品展示"
             },
-            "group": "other"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-8.mp4"
           },
           {
-            "title": "Melodisco",
-            "description": "AI 音乐播放器",
-            "url": "https://melodis.co",
-            "target": "_blank",
+            "title": "电梯悬疑",
+            "description": "希区柯克风格的紧张电梯场景，环绕镜头与变焦效果的完美运用。",
+            "group": "cinematic",
             "image": {
-              "src": "/imgs/cases/4.png",
-              "alt": "案例展示"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-10-poster.webp",
+              "alt": "电梯中的紧张场景"
             },
-            "group": "ai-music"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-10.mp4"
           },
           {
-            "title": "Pagen",
-            "description": "AI 落地页生成器",
-            "url": "https://pagen.so",
-            "target": "_blank",
+            "title": "武侠对决",
+            "description": "秋林中的史诗武术对决，3D 动画风格，精彩的格斗编排。",
+            "group": "animation",
             "image": {
-              "src": "/imgs/cases/6.png",
-              "alt": "案例展示"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-14-poster.webp",
+              "alt": "秋林中的武侠对决"
             },
-            "group": "ai-coding"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-14.mp4"
           },
           {
-            "title": "SoraFM",
-            "description": "AI 视频生成器",
-            "url": "https://sorafm.trys.ai",
-            "target": "_blank",
+            "title": "超跑亮相",
+            "description": "地下停车场中的红色兰博基尼，电影级灯光、倒影与汽车展示风格。",
+            "group": "creative",
             "image": {
-              "src": "/imgs/cases/8.png",
-              "alt": "案例展示"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-16-poster.webp",
+              "alt": "地下停车场中的红色兰博基尼"
             },
-            "group": "ai-video"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-16.mp4"
           },
           {
-            "title": "PodLM",
-            "description": "AI 播客生成器",
-            "url": "https://podlm.ai",
-            "target": "_blank",
+            "title": "天使觉醒",
+            "description": "一位拥有发光翅膀的空灵天使与石像天使的奇幻场景，震撼的特效与光影。",
+            "group": "creative",
             "image": {
-              "src": "/imgs/cases/9.png",
-              "alt": "案例展示"
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-17-poster.webp",
+              "alt": "天使翅膀奇幻场景"
             },
-            "group": "ai-audio"
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-17.mp4"
+          },
+          {
+            "title": "时尚大片",
+            "description": "动态时尚拍摄，节拍同步的换装效果，展示风格切换与模特姿态。",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-19-poster.webp",
+              "alt": "时尚模特"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-19.mp4"
+          },
+          {
+            "title": "搞怪马儿",
+            "description": "鱼眼镜头下裹着毯子的卡通马，音频同步的趣味动画效果。",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-30-poster.webp",
+              "alt": "裹着毯子的卡通马"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-30.mp4"
+          },
+          {
+            "title": "日落奔跑",
+            "description": "动漫风格的城市日落跑步场景，色彩鲜明的插画风格。",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-38-poster.webp",
+              "alt": "日落中的动漫跑者"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-38.mp4"
+          },
+          {
+            "title": "间谍惊悚",
+            "description": "间谍惊悚风格的一镜到底，红衣女子行走在繁忙的欧洲街头。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-40-poster.webp",
+              "alt": "欧洲街头的红衣女子"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-40.mp4"
+          },
+          {
+            "title": "时尚广告",
+            "description": "几何背景搭配动态文字叠加的时尚广告，节拍同步的剪辑风格。",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-45-poster.webp",
+              "alt": "几何背景的时尚模特"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-45.mp4"
           }
         ]
       }
