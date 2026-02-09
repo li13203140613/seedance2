@@ -11,6 +11,15 @@ import { Button } from '@/shared/components/ui/button';
 import { cn } from '@/shared/lib/utils';
 import { Section } from '@/shared/types/blocks/landing';
 
+const ASPECT_PATTERNS = [
+  'aspect-[4/5]',   // tall
+  'aspect-video',   // 16:9 wide
+  'aspect-[4/3]',   // medium
+  'aspect-video',   // 16:9 wide
+  'aspect-[3/4]',   // tall
+  'aspect-[4/3]',   // medium
+];
+
 function VideoCard({
   item,
   index,
@@ -22,6 +31,7 @@ function VideoCard({
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isHovered, setIsHovered] = useState(false);
+  const aspectClass = ASPECT_PATTERNS[index % ASPECT_PATTERNS.length];
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -40,64 +50,67 @@ function VideoCard({
 
   return (
     <motion.div
-      className="group relative cursor-zoom-in break-inside-avoid overflow-hidden rounded-xl"
+      className="group relative cursor-zoom-in overflow-hidden rounded-xl bg-black/5"
       onClick={onClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      initial={{ opacity: 0, y: 30, scale: 0.95 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{
-        duration: 0.6,
-        delay: index * 0.08,
+        duration: 0.5,
+        delay: index * 0.05,
         ease: [0.22, 1, 0.36, 1] as const,
       }}
-      whileHover={{ scale: 1.02 }}
     >
-      <LazyImage
-        src={item.image?.src ?? ''}
-        alt={item.image?.alt ?? ''}
-        className={cn(
-          'h-auto w-full transition-all duration-300',
-          isHovered && item.video ? 'opacity-0' : 'opacity-100'
-        )}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-      />
-      {item.video && (
-        <video
-          ref={videoRef}
-          src={item.video}
+      <div className={cn('relative w-full overflow-hidden', aspectClass)}>
+        <img
+          src={item.image?.src ?? ''}
+          alt={item.image?.alt ?? ''}
+          loading="lazy"
+          decoding="async"
           className={cn(
-            'absolute inset-0 h-full w-full object-cover transition-opacity duration-300',
-            isHovered ? 'opacity-100' : 'opacity-0'
+            'absolute inset-0 h-full w-full object-cover transition-all duration-500',
+            isHovered && item.video ? 'scale-105 opacity-0' : 'opacity-100'
           )}
-          muted
-          loop
-          playsInline
-          preload="none"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
-      )}
-      {item.video && !isHovered && (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="flex size-12 items-center justify-center rounded-full bg-black/50 backdrop-blur-sm">
-            <Play className="size-5 fill-white text-white" />
+        {item.video && (
+          <video
+            ref={videoRef}
+            src={item.video}
+            className={cn(
+              'absolute inset-0 h-full w-full object-cover transition-opacity duration-500',
+              isHovered ? 'opacity-100' : 'opacity-0'
+            )}
+            muted
+            loop
+            playsInline
+            preload="none"
+          />
+        )}
+        {item.video && !isHovered && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="flex size-11 items-center justify-center rounded-full bg-black/40 backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+              <Play className="ml-0.5 size-5 fill-white text-white" />
+            </div>
           </div>
+        )}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-col justify-end bg-gradient-to-t from-black/70 via-black/20 to-transparent p-4 pt-12 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <h3 className="text-sm font-medium text-white drop-shadow-sm">
+            {item.title}
+          </h3>
         </div>
-      )}
-      <div className="absolute inset-0 flex flex-col justify-end bg-black/60 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-        <h3 className="mb-2 translate-y-4 text-sm font-medium text-white transition-transform duration-300 group-hover:translate-y-0">
-          {item.title}
-        </h3>
         {(item as any).button && (
           <div
-            className="mt-3 translate-y-4 transition-transform delay-100 duration-300 group-hover:translate-y-0"
+            className="absolute right-3 bottom-3 z-10 translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
             onClick={(e) => e.stopPropagation()}
           >
             <Button
               asChild
               variant={(item as any).button.variant || 'default'}
-              size={(item as any).button.size || 'sm'}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground h-8 w-full border-0 px-1 py-1.5 text-sm font-medium"
+              size="sm"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground h-7 border-0 px-2.5 text-xs font-medium shadow-lg"
             >
               <Link
                 href={(item as any).button.url || ''}
@@ -273,7 +286,7 @@ export function ShowcasesFlow({
       )}
 
       {filteredItems.length > 0 ? (
-        <div className="container mx-auto columns-1 gap-4 space-y-4 sm:columns-2 lg:columns-3 xl:columns-4">
+        <div className="container mx-auto columns-1 gap-5 space-y-5 sm:columns-2 lg:columns-3">
           {filteredItems.map((item, index) => (
             <VideoCard
               key={index}

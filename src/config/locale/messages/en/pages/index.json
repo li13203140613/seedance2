@@ -22,9 +22,9 @@
         "tip": "seedance2-two supports text-to-video and image-to-video seedance video workflows.",
         "buttons": [
           {
-            "title": "Start Creating",
-            "icon": "Zap",
-            "url": "/#video-generator",
+            "title": "View Showcases",
+            "icon": "Play",
+            "url": "/showcases",
             "target": "_self",
             "variant": "default"
           },
