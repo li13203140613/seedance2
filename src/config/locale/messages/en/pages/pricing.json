@@ -67,6 +67,7 @@
               "Credits refresh monthly",
               "Up to 160 AI videos",
               "All premium models",
+              "No watermark",
               "Priority queue"
             ],
             "interval": "month",
@@ -97,6 +98,8 @@
               "Credits refresh monthly",
               "Up to 560 AI videos",
               "All premium models",
+              "No watermark",
+              "Human support",
               "API access"
             ],
             "interval": "month",
@@ -247,6 +250,7 @@
               "All credits delivered at once",
               "Up to 2,120 AI videos",
               "All premium models",
+              "No watermark",
               "Priority queue",
               "Priority support"
             ],
@@ -283,6 +287,8 @@
               "All credits delivered at once",
               "Up to 7,320 AI videos",
               "All premium models",
+              "No watermark",
+              "Human support",
               "API access",
               "Dedicated support"
             ],

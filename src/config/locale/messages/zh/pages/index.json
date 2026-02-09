@@ -24,15 +24,15 @@
           {
             "title": "开始体验",
             "icon": "Zap",
-            "url": "/#features",
+            "url": "/#video-generator",
             "target": "_self",
             "variant": "default"
           },
           {
-            "title": "查看参考站",
-            "icon": "BookOpenText",
-            "url": "https://seedance2.com/",
-            "target": "_blank",
+            "title": "购买积分",
+            "icon": "CreditCard",
+            "url": "/pricing",
+            "target": "_self",
             "variant": "outline"
           }
         ],
@@ -222,11 +222,11 @@
             "icon": "Zap"
           },
           {
-            "title": "打开参考站",
-            "url": "https://seedance2.com/",
-            "target": "_blank",
+            "title": "购买积分",
+            "url": "/pricing",
+            "target": "_self",
             "variant": "outline",
-            "icon": "BookOpenText"
+            "icon": "CreditCard"
           }
         ],
         "className": "bg-muted"

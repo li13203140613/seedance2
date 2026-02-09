@@ -24,15 +24,15 @@
           {
             "title": "Start Creating",
             "icon": "Zap",
-            "url": "/#features",
+            "url": "/#video-generator",
             "target": "_self",
             "variant": "default"
           },
           {
-            "title": "View Reference Site",
-            "icon": "BookOpenText",
-            "url": "https://seedance2.com/",
-            "target": "_blank",
+            "title": "Buy Credits",
+            "icon": "CreditCard",
+            "url": "/pricing",
+            "target": "_self",
             "variant": "outline"
           }
         ],
@@ -222,11 +222,11 @@
             "icon": "Zap"
           },
           {
-            "title": "Open Reference",
-            "url": "https://seedance2.com/",
-            "target": "_blank",
+            "title": "Buy Credits",
+            "url": "/pricing",
+            "target": "_self",
             "variant": "outline",
-            "icon": "BookOpenText"
+            "icon": "CreditCard"
           }
         ],
         "className": "bg-muted"

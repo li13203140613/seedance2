@@ -303,7 +303,7 @@ export function Pricing({
                   </span>
                 )}
 
-                <CardHeader className="flex-1 space-y-4 pb-4">
+                <CardHeader className="space-y-4 pb-4">
                   {/* Title row */}
                   <div>
                     <div className="flex items-center gap-2">
@@ -410,38 +410,7 @@ export function Pricing({
 
                 </CardHeader>
 
-                {/* CTA Button — outside CardHeader so it aligns across cards */}
-                <div className="px-6">
-                  {isCurrentPlan ? (
-                    <Button variant="outline" className="w-full" disabled>
-                      {t('current_plan')}
-                    </Button>
-                  ) : (
-                    <Button
-                      onClick={() => handlePayment(item)}
-                      disabled={isLoading}
-                      className={cn(
-                        'w-full font-semibold transition-all',
-                        isFeatured
-                          ? 'bg-emerald-500 text-white hover:bg-emerald-600 shadow-md shadow-emerald-500/20'
-                          : 'bg-white border-2 border-emerald-100 text-emerald-700 hover:bg-emerald-50 hover:border-emerald-200'
-                      )}
-                      variant={isFeatured ? 'default' : 'outline'}
-                    >
-                      {isLoading && loadingProductId === item.product_id ? (
-                        <>
-                          <Loader2 className="mr-2 size-4 animate-spin" />
-                          {t('processing')}
-                        </>
-                      ) : (
-                        item.button?.title
-                      )}
-                    </Button>
-                  )}
-                </div>
-
-                <CardContent className="space-y-4 pt-0">
-                  <hr className="border-border/30" />
+                <CardContent className="flex-1 space-y-4 pt-0">
 
                   {/* Credits summary */}
                   {item.credits_summary && (
@@ -499,6 +468,36 @@ export function Pricing({
                     </div>
                   )}
                 </CardContent>
+
+                {/* CTA Button — at the bottom of the card */}
+                <div className="px-6 pb-6">
+                  {isCurrentPlan ? (
+                    <Button variant="outline" className="w-full" disabled>
+                      {t('current_plan')}
+                    </Button>
+                  ) : (
+                    <Button
+                      onClick={() => handlePayment(item)}
+                      disabled={isLoading}
+                      className={cn(
+                        'w-full font-semibold transition-all',
+                        isFeatured
+                          ? 'bg-emerald-500 text-white hover:bg-emerald-600 shadow-md shadow-emerald-500/20'
+                          : 'bg-white border-2 border-emerald-100 text-emerald-700 hover:bg-emerald-50 hover:border-emerald-200'
+                      )}
+                      variant={isFeatured ? 'default' : 'outline'}
+                    >
+                      {isLoading && loadingProductId === item.product_id ? (
+                        <>
+                          <Loader2 className="mr-2 size-4 animate-spin" />
+                          {t('processing')}
+                        </>
+                      ) : (
+                        item.button?.title
+                      )}
+                    </Button>
+                  )}
+                </div>
               </Card>
             );
           })}

@@ -631,7 +631,7 @@ export function VideoGenerator({
   };
 
   return (
-    <section className="py-16 md:py-24">
+    <section id="video-generator" className="py-16 md:py-24">
       <div className="container">
         <div className="mx-auto max-w-6xl">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
