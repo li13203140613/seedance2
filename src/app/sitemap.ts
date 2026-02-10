@@ -31,6 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
+    { path: '/manual', changeFrequency: 'monthly' as const, priority: 0.7 },
   ];
 
   // Generate entries for all static pages with locale alternates

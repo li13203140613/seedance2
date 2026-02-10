@@ -6,6 +6,7 @@ import moment from 'moment';
 import { db } from '@/core/db';
 import { logsSource, pagesSource, postsSource } from '@/core/docs/source';
 import { generateTOC } from '@/core/docs/toc';
+import { envConfigs } from '@/config';
 import { post } from '@/config/db/schema';
 import { MarkdownContent } from '@/shared/blocks/common/markdown-content';
 import {
@@ -141,7 +142,8 @@ export async function getPostsCount({
 }
 
 // get single post, both from local file and database
-// database post has higher priority
+// For non-default locale: local translated file has higher priority
+// For default locale: database post has higher priority
 export async function getPost({
   slug,
   locale,
@@ -151,19 +153,32 @@ export async function getPost({
   locale: string;
   postPrefix?: string;
 }): Promise<BlogPostType | null> {
-  let post: BlogPostType | null = null;
+  const isDefaultLocale = locale === envConfigs.locale;
 
+  // For non-default locale, try local file first (translated content)
+  if (!isDefaultLocale) {
+    const localPost = await getLocalPost({ slug, locale, postPrefix });
+    if (localPost) {
+      // Merge image from DB if local post has no image
+      try {
+        const postData = await findPost({ slug, status: PostStatus.PUBLISHED });
+        if (postData?.image && !localPost.image) {
+          localPost.image = postData.image;
+        }
+      } catch (_e) {
+        // ignore DB errors for image merge
+      }
+      return localPost;
+    }
+  }
+
+  // Try database
+  let post: BlogPostType | null = null;
   try {
-    // get post from database
     const postData = await findPost({ slug, status: PostStatus.PUBLISHED });
     if (postData) {
-      // post exist in database
       const content = postData.content || '';
-
-      // Convert markdown content to MarkdownContent component
       const body = content ? <MarkdownContent content={content} /> : undefined;
-
-      // Generate TOC from content
       const toc = content ? generateTOC(content) : undefined;
 
       post = {
@@ -191,9 +206,8 @@ export async function getPost({
     console.log('get post from database failed:', e);
   }
 
-  // get post from locale file
+  // Fallback to local file
   const localPost = await getLocalPost({ slug, locale, postPrefix });
-
   return localPost;
 }
 
@@ -349,8 +363,18 @@ export async function getPostsAndCategories({
   });
 
   // add remote posts to postsMap
+  // For non-default locales, keep local translated posts instead of overriding with DB (default locale) posts
+  const isDefaultLocale = locale === envConfigs.locale;
   remotePosts.forEach((post) => {
     if (post.slug) {
+      if (!isDefaultLocale && postsMap.has(post.slug)) {
+        // Keep the local translated version, but merge image from DB if local has none
+        const localPost = postsMap.get(post.slug)!;
+        if (!localPost.image && post.image) {
+          postsMap.set(post.slug, { ...localPost, image: post.image });
+        }
+        return;
+      }
       postsMap.set(post.slug, post);
     }
   });

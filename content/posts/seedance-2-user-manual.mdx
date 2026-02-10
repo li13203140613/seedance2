@@ -1,0 +1,885 @@
+---
+title: "Seedance 2.0 User Manual: The Complete Multimodal Video Creation Guide"
+description: "Official Seedance 2.0 user manual covering multimodal input (image, video, audio, text), @ reference system, camera movement replication, creative templates, video extension, beat-synced editing, and 50+ real-world examples."
+created_at: 2026-02-09
+author_name: Admin
+author_image: /logo.png
+image: https://image.agent-skills.cc/uploads/manual/image_001.jpg
+---
+
+Please experience it on the official Seedance website for the best results!
+Official website: https://jimeng.jianying.com/
+# 🌀 Video Seedance 2.0 is now officially live on Seedance! Kill the game!
+Remember when we could only "tell stories" with text and first/last frames? From that day on, we wanted to build a video model that truly understands your expression. Today, it's finally here!
+Seedance 2.0 now supports four input modalities: image, video, audio, and text, offering richer expression and more controllable generation.
+You can use an image to set the visual style, a video to specify character movements and camera changes, and a few seconds of audio to drive the rhythm and atmosphere... combined with prompts, the creative process becomes more natural, more efficient, and more like being a real "director."
+In this upgrade, "reference capability" is the biggest highlight:
+•
+📷 Reference images can precisely reproduce composition and character details
+•
+🎥 Reference videos support replication of camera language, complex action rhythms, and creative effects
+•
+⏱ Videos support smooth extension and continuation, generating consecutive shots based on user prompts — not just generating, but also "continuing to shoot"
+•
+✂️ Editing capabilities are also enhanced, supporting character replacement, deletion, and addition in existing videos
+We know that video creation has never been just about "generation" — it's about control over expression. 2.0 is not just multimodal; it's a truly controllable creative approach.
+Seedance 2.0, multimodal creation, starts here. Dare to imagine boldly, and leave the rest to it.
+## 1.
+Parameter Overview
+Core Dimensions
+Seedance 2.0
+Image Input
+≤ 9 images
+Video Input
+≤ 3 videos, total duration not exceeding 15s
+(Having reference videos costs a bit more)
+Audio Input
+Supports MP3 upload, quantity ≤ 3, total duration not exceeding 15s
+Text Input
+Natural language
+Generation Duration
+≤ 15s, freely selectable from 4-15s
+Audio Output
+Built-in sound effects/background music
+Interaction limit: The current maximum for mixed input is 12 files. It's recommended to prioritize uploading materials that have the greatest impact on visuals or rhythm, and allocate the number of files across different modalities wisely.
+## 2.
+Interaction Format
+⚠️ Note:
+•
+Seedance 2.0 supports the "First/Last Frame" and "All-in-One Reference" entry points. Smart Multi-Frame and Subject Reference cannot be selected. If you only upload a first frame image + prompt, you can use the First/Last Frame entry; if you need multimodal (image, video, audio, text) combined input, you need to enter through the All-in-One Reference entry.
+•
+The current supported interaction method is to specify the purpose of each image, video, and audio through "@material name," for example: @Image1 as the first frame, @Video1 for camera language reference, @Audio1 for background music.
+##### Main Interface:
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_001.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_002.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_003.png)
+Entry: Seedance 2.0 - All-in-One Reference / First & Last Frame
+Opens the local file dialog
+Select files and add them to the input box
+##### How to use @ in All-in-One Reference mode:
+Method 1: Type "@" to invoke reference
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_004.png)
+Type "@"
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_005.png)
+Select reference, it drops into the input box
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_006.png)
+Enter prompt
+Method 2: Click the "@" parameter tool to invoke reference
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_007.png)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_008.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_009.png)
+Click "@"
+Select reference, it drops into the input box
+Enter prompt
+After uploading materials, images, videos, and audio all support hover preview
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_010.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_011.png)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_012.jpg)
+Below are some usage examples and techniques for different scenarios to help you better understand the upgrades in Seedance 2.0's generation quality, control capabilities, and creative expression. If you don't know where to start, take a look at these examples first for inspiration~
+# Seedance 2.0 Capabilities / Upgrade Preview
+## 1.
+Foundational Capabilities Significantly Enhanced: More Stable, Smoother, More Realistic!
+Not just multimodal — Seedance 2.0 is significantly enhanced at the foundational level. Physics are more reasonable, motion is more natural and fluid, instruction understanding is more precise, and style consistency is more stable. It can reliably complete complex actions, continuous movements, and other challenging generation tasks, while also making overall video quality more realistic and smoother. This is a comprehensive evolution of core capabilities!
+Case:
+prompt
+img
+vid1
+A girl is elegantly hanging clothes to dry. After finishing, she reaches into the bucket to grab another piece, and vigorously shakes out the garment.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_013.png)
+
+jimeng-2026-02-06-4829-Fixed camera, a girl is elegantly hanging clothes to dry. After finishing, she reaches into the bucket to grab another piece, and vigorously shakes out the garment
+
+![Image 14](https://image.agent-skills.cc/uploads/manual/image_014.jpg)
+Ultra-strong realism
+The character in the painting has a guilty expression, eyes darting left and right, peeking out of the picture frame. Quickly reaches a hand out of the frame to grab a cola and takes a sip, then shows a satisfied expression. At this moment, footsteps are heard. The character in the painting hurriedly puts the cola back in its original position. Then a western cowboy picks up the cup of cola and walks away. Finally, the camera pushes forward as the scene gradually fades to a pure black background with only a top light illuminating a canned cola. Artistic subtitles and narration appear at the bottom of the screen: "Yikou Cola — a must-try!"
+
+jimeng-2026-02-05-3220-The character in the painting has a guilty expression, eyes darting left and right, peeking out of the picture frame. Quickly reaches a hand out of the frame to grab a cola and takes a sip...
+
+![Image 15](https://image.agent-skills.cc/uploads/manual/image_015.jpg)
+The camera slowly zooms out (revealing the full street view) and follows the female lead as she moves. The wind blows her skirt hem as she walks down a 19th-century London street. As she walks, a steam-powered vehicle approaches from the right side of the street, speeding past her. The wind blows her skirt up, and she frantically uses both hands to press down her skirt hem in shock. Background sound effects include footsteps, crowd noise, car sounds, etc.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_016.jpg)
+
+jimeng-2026-02-05-9575-The camera slowly zooms out (revealing the full street view) and follows the female lead as she moves. The wind blows her skirt hem as she walks down a 19th-century...
+
+![Image 17](https://image.agent-skills.cc/uploads/manual/image_017.jpg)
+The camera follows a man in black as he flees rapidly, with a group of people chasing behind him. The camera switches to a side-tracking shot. The character, in a panic, knocks over a fruit stand on the roadside, gets back up and keeps running. Sounds of a panicked crowd.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_018.png)
+
+jimeng-2026-02-06-5100-The camera follows a man in black as he flees rapidly, with a group of people chasing behind him. The camera tracks from the side. The character, in a panic, knocks over a fruit stand on the roadside...
+
+![Image 19](https://image.agent-skills.cc/uploads/manual/image_019.jpg)
+## 2.
+Multimodal Comprehensive Upgrade: Video Creation Enters the "Free Combination" Era!
+### 2.1
+Seedance 2.0 Multimodal Introduction
+•
+Supports uploading text, images, videos, and audio — all of which can be used as subjects or references. You can reference any content's actions, effects, style, camera movement, characters, scenes, and sounds. As long as the prompt is written clearly, the model can understand it.
+•
+Seedance 2.0 = Multimodal reference capability (can reference anything) + Strong creative generation + Precise instruction response (excellent comprehension)
+•
+Simply describe the visuals and actions you want in natural language. Specify whether it's a reference or an edit. When there are many materials, it's recommended to double-check that each @reference is clearly labeled — don't mix up images, videos, and characters!
+### 2.2
+Special Usage Methods (No limitations — for reference only):
+•
+Have a first/last frame image? Also want to reference video actions?
+ → Write it clearly in the prompt, e.g.: "@Image1 as first frame, reference @Video1's fighting actions"
+•
+Want to extend an existing video?
+ → Specify the extension duration, e.g., "Extend @Video1 by 5s." Note: The selected generation duration should be the duration of the "new portion" (e.g., extend by 5s, generation length should also be set to 5s)
+•
+Want to merge multiple videos?
+ → Describe the composition logic in the prompt, e.g.: "I want to add a scene between @Video1 and @Video2, with the content being xxx"
+•
+No audio material? You can directly reference the sound from a video
+•
+Want to generate continuous actions?
+ → Add continuity descriptions in the prompt, e.g.: "The character transitions directly from jumping to rolling, maintaining smooth and fluid motion" @Image1@Image2@Image3...
+### 2.3
+Those persistently difficult video problems can now truly be solved!
+When making videos, you always run into headaches: faces changing, actions not matching, video extensions looking unnatural, edits that throw off the entire rhythm... This time, multimodal capabilities solve all these "stubborn problems" in one go. Here are the specific use cases below 👇
+#### 2.3.1
+Consistency Comprehensively Improved
+You may have encountered these frustrations: characters looking different between shots, product details getting lost, small text becoming blurry, scenes jumping, camera styles that can't be unified... These common consistency issues in creation can now all be solved in 2.0. From faces to clothing to font details, overall consistency is more stable and precise.
+##### Case:
+prompt
+img1
+img2
+img3
+img4
+vid1
+Generated Result
+The man @Image1 walks tiredly down the hallway after getting off work. His pace slows, and he finally stops at his front door. Close-up of his face — the man takes a deep breath, adjusts his emotions, puts away his negative feelings, and becomes relaxed. Then a close-up of him searching for his keys, inserting them into the lock. After entering the house, his little daughter and a pet dog joyfully run over to greet and hug him. The interior is very warm and cozy. Natural dialogue throughout.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_020.jpg)
+
+jimeng-2026-02-06-3748
+
+![Image 21](https://image.agent-skills.cc/uploads/manual/image_021.jpg)
+Replace the girl in @Video1 with a Chinese opera huadan (female role). The scene is on an exquisite stage. Reference @Video1's camera movements and transition effects. Use camera angles to match the character's movements. Ultimate stage aesthetics, enhanced visual impact.
+
+Discover more amazing videos - Search on Douyin (32)
+
+![Image 22](https://image.agent-skills.cc/uploads/manual/image_022.jpg)
+
+jimeng-2026-02-06-2924
+
+![Image 23](https://image.agent-skills.cc/uploads/manual/image_023.jpg)
+Generate a trailer for a historical time-travel drama using the character from the reference image.
+ 0-3 seconds: The male lead with the appearance of the character in reference Image 1 holds up a basketball, looks up at the camera, and says: "I just wanted to have a drink — am I really about to time-travel...?"
+4-8 seconds: The camera suddenly shakes violently. The playground scene begins to shake intensely, instantly switching to an ancient courtyard on a rainy night. A beautiful woman in ancient costume, with piercing eyes cutting through the rain curtain, gazes toward the camera. Thunder rumbles, robes flutter in the wind. The female lead speaks: "Who dares trespass into my Yongning Marquis residence?" 9-13 seconds: The camera cuts to a man in Ming dynasty official robes sitting in a magistrate's hall, his gaze sharp as a blade. He speaks angrily: "Guards! Seize this 'demon' immediately!" Flashback: The male lead wearing ill-fitting rough linen clothes; desperately running from the guards; his silhouette crossing paths with the female lead in a rainy alley; the male lead wearing official robes walking through the imperial palace. 14-15 seconds: Black screen, the title "Dreams of Splendor" appears, accompanied by heavy drumbeats.
+
+jimeng-2026-02-06-5185-Generate a trailer for a historical time-travel drama using the character from the reference image. 0-3 seconds: Reference Image 1...
+
+![Image 24](https://image.agent-skills.cc/uploads/manual/image_024.png)
+Reference all transitions and camera movements from @Video1. One continuous shot. The scene starts with a chess game. The camera pans left, showing yellow sand on the floor. The camera tilts up to a beach with footprints. A girl in white plain clothes walks further away on the beach. The camera switches to an overhead aerial perspective, with seawater washing the shore (no people). Seamless gradient transition — the washing waves transform into flowing curtains. The camera pulls back, showing a close-up of the girl's face. One continuous shot.
+
+Feb 6 (1)(10)
+
+![Image 25](https://image.agent-skills.cc/uploads/manual/image_025.png)
+
+jimeng-2026-02-06-5842
+
+![Image 26](https://image.agent-skills.cc/uploads/manual/image_026.png)
+0-2 seconds: Quick four-frame flash cuts — red, pink, purple, and leopard print bow ties freeze in sequence. Close-up of satin sheen and the "chéri" brand lettering. Voiceover: "Chéri 자석 리본으로 무궁무진한 아름다움을 연출해 보세요!"
+3-6 seconds: Close-up of the silver magnetic clasp "clicking" together, then gently pulled apart, showing silky texture and convenience. Voiceover: "단 1초 만에 잠그고, 최고의 스타일을 완성하세요!"
+7-12 seconds: Quick cuts of wearing scenes: burgundy bow on coat collar, commuter vibe maxed out; pink bow tied on ponytail, sweet girl street style; purple bow on bag strap, niche luxury; leopard print bow on blazer collar, hot girl energy in full force. Voiceover: "코트, 가방, 헤어 액세서리까지, 다재다능하고 개성 넘치는 스타일을 완성하세요!"
+
+Magnetic Bow Tie
+
+![Image 27](https://image.agent-skills.cc/uploads/manual/image_027.png)
+13-15 seconds: Four bow ties displayed side by side. Brand name: "chéri, 당신에게 즉각적인 아름다움을 선사합니다!"
+Create a commercial-style camera showcase of the handbag in @Image2. The side of the handbag references @Image1, and the surface material of the handbag references @Image3. All details of the handbag should be showcased. Background music should be grand and majestic.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_028.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_029.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_030.png)
+
+Handbag
+
+![Image 31](https://image.agent-skills.cc/uploads/manual/image_031.png)
+Use @Image1 as the first frame of the scene. First-person perspective. Reference @Video1's camera movement effects. The scene above references @Image2, the scene on the left references @Image3, the scene on the right references @Image4.
+
+Real-shot Camera Movement
+
+![Image 32](https://image.agent-skills.cc/uploads/manual/image_032.png)
+
+Horror Film Camera Movement
+
+![Image 33](https://image.agent-skills.cc/uploads/manual/image_033.jpg)
+Previously, getting the model to mimic movie-style blocking, camera movements, or complex actions meant either writing tons of detailed prompts or simply not being able to do it. Now, all you need to do is upload a reference video, and it's done.
+##### Case:
+prompt
+img1
+img2
+img3
+img4
+img5
+img6
+img7
+vid1
+vid2
+vid3
+Generated Result
+Reference the man's appearance from @Image1. He is in the elevator from @Image2. Fully reference all camera movement effects and the protagonist's facial expressions from @Video1. When terrified, use Hitchcock zoom. Then several orbiting shots showing the elevator interior perspective. The elevator door opens, tracking shot walking out of the elevator. The scene outside the elevator references @Image3. The man looks around. Reference @Video1 with mechanical arm multi-angle tracking following the character's line of sight.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_034.jpg)
+
+Jan 30 (4)
+
+![Image 35](https://image.agent-skills.cc/uploads/manual/image_035.png)
+
+jimeng-2026-02-05-8410
+
+![Image 36](https://image.agent-skills.cc/uploads/manual/image_036.jpg)
+Reference the man's appearance from @Image1. He is in the corridor from @Image2. Fully reference all camera movement effects from @Video1, as well as the protagonist's facial expressions. The camera follows the protagonist running around a corner in @Image2. Then in the long corridor from @Image3, the camera goes from a rear tracking angle, circles around from a low angle to the protagonist's front. The camera then pans right 90 degrees to capture the fork in the road from @Image4, suddenly stops, then pans right 180 degrees for a close-up face shot of the protagonist: the protagonist is panting heavily. The camera follows the protagonist's perspective looking around. Reference the rapid left-right orbiting camera movements from @Video1 to showcase the scene. Pull back to the scene from @Image5, continue tracking the protagonist's running from a side angle.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_037.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_038.png)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_039.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_040.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_041.jpg)
+
+Jan 30 (1)
+
+![Image 42](https://image.agent-skills.cc/uploads/manual/image_042.jpg)
+
+jimeng-2026-02-05-3654
+
+![Image 43](https://image.agent-skills.cc/uploads/manual/image_043.jpg)
+The tablet from @Image1 as the main subject. Camera movement references @Video1. Push in to a close-up of the screen. After the camera rotates, the tablet flips to reveal its full appearance. The data streams on the screen keep changing. The surrounding environment gradually transforms into a sci-fi style data space.
+
+Focus & Rotate
+
+![Image 44](https://image.agent-skills.cc/uploads/manual/image_044.jpg)
+
+jimeng-2026-02-05-3975
+
+![Image 45](https://image.agent-skills.cc/uploads/manual/image_045.png)
+The female celebrity from @Image1 as the main subject. Reference @Video1's camera movement style for rhythmic push, pull, pan, and tilt. The celebrity's movements also reference the dance moves of the woman in @Video1, performing energetically on stage.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_046.png)
+
+Push-Pull Dance Camera Movement
+
+![Image 47](https://image.agent-skills.cc/uploads/manual/image_047.png)
+
+jimeng-2026-02-05-2445
+
+![Image 48](https://image.agent-skills.cc/uploads/manual/image_048.jpg)
+Reference the spear character from @Image1 and @Image2, and the dual-blade character from @Image3 and @Image4. Mimic the actions from @Video1. Fight in the maple leaf forest from @Image5.
+
+Jan 30 (7)
+
+![Image 49](https://image.agent-skills.cc/uploads/manual/image_049.jpg)
+
+okI4k2Elxfe5eFYM86DD4BAvIkCfLJ4ApIAIEc
+
+![Image 50](https://image.agent-skills.cc/uploads/manual/image_050.jpg)
+Reference the character movements from Video 1. Reference the orbiting camera language from Video 2. Generate a fight scene between Character 1 and Character 2. The fight takes place under a starry night. White dust rises during the fight. The fight scene is extremely spectacular, and the atmosphere is very tense.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_051.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_052.jpg)
+
+Fight
+
+![Image 53](https://image.agent-skills.cc/uploads/manual/image_053.jpg)
+
+02176967295935700000000000000000000ffffac15af9c90c167
+
+![Image 54](https://image.agent-skills.cc/uploads/manual/image_054.jpg)
+
+jimeng-2026-02-05-5400
+
+![Image 55](https://image.agent-skills.cc/uploads/manual/image_055.png)
+Reference Video 1's camera movements and scene transition rhythm. Replicate using the red supercar from Image 1.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_056.png)
+
+Car Camera Movement
+
+![Image 57](https://image.agent-skills.cc/uploads/manual/image_057.png)
+
+Car Camera Movement
+
+![Image 58](https://image.agent-skills.cc/uploads/manual/image_058.png)
+#### 2.3.3
+Creative Templates / Precise Replication of Complex Effects
+Not just generating images and writing stories — Seedance 2.0 also supports "learning by imitation." Creative transitions, finished ads, movie clips, complex edits — as long as you have reference images or videos, the model can identify action rhythms, camera language, and visual structure, and precisely replicate them. Don't worry if you don't know professional terminology — just clearly describe what you want to reference, such as "reference @Video1's rhythm and camera movement, @Image1's character style," and the model will generate a high-quality version of your own. Be bold! It really can do it.
+##### Case:
+prompt
+img1
+img2
+img3
+img4
+img5
+img6
+img7
+vid1
+Generated Result
+Replace the character in @Video1 with @Image1. @Image1 as the first frame. The character puts on virtual sci-fi glasses. Reference @Video1's camera movement. An extremely close orbiting shot, transitioning from a third-person perspective to the character's subjective POV, traveling through AI virtual glasses, arriving at @Image2's deep blue universe. Several spaceships appear and shuttle toward the distance. The camera follows the spaceships, traveling to @Image3's pixel world. The camera flies low over the pixel mountain and forest world, with trees growing in formation. Then the perspective tilts upward, rapidly traveling to @Image4's light green textured planet. The camera travels and sweeps across the planet's surface.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_059.jpg)
+
+Feb 4
+
+![Image 60](https://image.agent-skills.cc/uploads/manual/image_060.jpg)
+
+jimeng-2026-02-05-6539
+
+![Image 61](https://image.agent-skills.cc/uploads/manual/image_061.png)
+Reference the model's facial features from the first image. The model wears the outfits from reference images 2-6 and leans close to the camera, striking playful, cool, cute, surprised, and stylish poses. Each pose features a different outfit. Each change is accompanied by a camera cut. Reference the fisheye lens effect, ghosting flicker, and dazzling visual effects from the video.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_062.png)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_063.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_064.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_065.png)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_066.png)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_067.png)
+
+Feb 5 (3)
+
+![Image 68](https://image.agent-skills.cc/uploads/manual/image_068.jpg)
+
+jimeng-2026-02-05-8964
+
+![Image 69](https://image.agent-skills.cc/uploads/manual/image_069.jpg)
+Reference the ad creative from the video. Use the provided down jacket images, along with the goose down image and swan image. Pair with the following ad copy: "This is goose down, this is a warm swan, this is a wearable Arctic swan-down jacket. Stay warm for the New Year, live a warm life." Generate a new down jacket advertisement video.
+
+v15-1
+
+![Image 70](https://image.agent-skills.cc/uploads/manual/image_070.jpg)
+
+32
+
+![Image 71](https://image.agent-skills.cc/uploads/manual/image_071.jpg)
+Black and white ink wash style. The character from @Image1 references the effects and actions from @Video1, performing a segment of ink wash Tai Chi kung fu.
+
+Jan 30 (6)
+
+![Image 72](https://image.agent-skills.cc/uploads/manual/image_072.jpg)
+
+jimeng-2026-02-05-1007
+
+![Image 73](https://image.agent-skills.cc/uploads/manual/image_073.jpg)
+Replace the first-frame character of @Video1 with @Image1. Fully reference @Video1's effects and actions. The flower bud in the hand grows rose petals. Cracks extend upward on the face, gradually covered by weeds. The character brushes both hands across their face, the weeds dissolve into particles, and finally transforms into the appearance of @Image2.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_074.png)
+
+Transformation
+
+![Image 75](https://image.agent-skills.cc/uploads/manual/image_075.jpg)
+
+jimeng-2026-02-05-8841
+
+![Image 76](https://image.agent-skills.cc/uploads/manual/image_076.jpg)
+Starting from the ceiling in @Image1, reference @Video1's puzzle-shattering effect for the transition. Replace the "BELIEVE" text with "Seedance," referencing the font from @Image2.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_077.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_078.jpg)
+
+Jan 30 (3)
+
+![Image 79](https://image.agent-skills.cc/uploads/manual/image_079.png)
+
+oAgveDLfVIGKTuAL8uABeQIyleIm2wPCIA4c5E
+
+![Image 80](https://image.agent-skills.cc/uploads/manual/image_080.jpg)
+Starting with a black screen, reference Video 1's particle effects and materials. Golden gilded sand drifts in from the left side of the screen and covers toward the right. Reference @Video1's particle dispersion effect. The text from @Image1 gradually appears in the center of the screen.
+
+AE Opening
+
+![Image 81](https://image.agent-skills.cc/uploads/manual/image_081.jpg)
+
+jimeng-2026-02-05-5566
+
+![Image 82](https://image.agent-skills.cc/uploads/manual/image_082.jpg)
+The character from @Image1 references the actions and expression changes from @Video1, showcasing the abstract act of eating instant noodles.
+
+Jan 21 (8)
+
+![Image 83](https://image.agent-skills.cc/uploads/manual/image_083.jpg)
+
+jimeng-2026-02-05-4864
+
+![Image 84](https://image.agent-skills.cc/uploads/manual/image_084.jpg)
+#### 2.3.4
+Model's Creativity and Plot Completion Capabilities
+##### Case:
+prompt
+img1
+img2
+img3
+img4
+img5
+img6
+img7
+vid1
+Generated Result
+Perform a comic-style dramatization of @Image1 from left to right, top to bottom. Keep the character dialogue consistent with what's shown in the image. Add special sound effects for scene transitions and key plot moments. The overall style should be humorous and witty. The dramatization style references @Video1.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_085.png)
+
+Feb 4 (1) (1)
+
+![Image 86](https://image.agent-skills.cc/uploads/manual/image_086.jpg)
+
+jimeng-2026-02-05-8318-First a fixed camera shot, the subject applies lipstick then presses lips together. The camera starts pushing toward the mirror. The subject uses lipstick on the mirror to...
+
+![Image 87](https://image.agent-skills.cc/uploads/manual/image_087.jpg)
+Reference the storyboard from @Image1's feature segment. Reference @Image1's shot breakdown, shot sizes, camera movements, visuals, and copy. Create a 15-second healing-style opening about "The Four Seasons of Childhood."
+
+jimeng-2026-02-05-7071
+
+![Image 88](https://image.agent-skills.cc/uploads/manual/image_088.jpg)
+Using the audio from Video 1, draw inspiration from Image 1, Image 2, Image 3, Image 4, and Image 5 to create an emotion-driven video. Background music references @Video1.
+
+jimeng-2026-02-05-4263
+
+![Image 89](https://image.agent-skills.cc/uploads/manual/image_089.jpg)
+#### 2.3.5
+Video Extension
+##### Case:
+Generation Duration
+prompt
+img1
+img2
+img3
+img4
+img5
+img6
+img7
+vid1
+Generated Result
+15s
+Extend the 15s video. Reference the image of a donkey riding a motorcycle from @Image1 and @Image2. Add a whimsical advertisement segment.
+Scene 1: Side fixed camera — the donkey rides the motorcycle bursting out of the pen. The nearby chickens are startled.
+Scene 2: The donkey rides the motorcycle spinning on sandy ground. First a close-up of the motorcycle tire, then cut to an overhead aerial shot of the donkey doing spinning stunts on the motorcycle, kicking up smoke.
+Scene 3: Snow mountain background shot — the donkey rides the motorcycle leaping off a hillside. The advertising slogan appears behind the subject through a mask effect (as the donkey and motorcycle fly past) — "Inspire Creativity, Enrich Life" appears in the middle. Finally as the motorcycle flies past, a cloud of dust kicks up.
+
+Feb 5 (10)
+
+![Image 90](https://image.agent-skills.cc/uploads/manual/image_090.jpg)
+
+jimeng-2026-02-05-3767
+
+![Image 91](https://image.agent-skills.cc/uploads/manual/image_091.jpg)
+6s
+Extend the video by 6s. An intense electric guitar melody kicks in. "JUST DO IT" advertising text appears in the middle of the video and gradually fades. The camera tilts up to the ceiling. A muscular man is pulling gymnastics rings. His upper body wears the tight fitness shirt from @Image1, with the "Fitness" logo from @Image2 printed on the back. The man uses his powerful upper body to pull up on the rings. Then "DO SOME SPORT" advertising ending text appears in the middle of the video.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_092.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_093.jpg)
+
+jimeng-2026-02-05-1923
+
+![Image 94](https://image.agent-skills.cc/uploads/manual/image_094.jpg)
+
+jimeng-2026-02-05-3437
+
+![Image 95](https://image.agent-skills.cc/uploads/manual/image_095.jpg)
+15s
+Extend @Video1 by 15 seconds. 1-5 seconds: Light and shadow slowly slide across the wooden table and cup surface through venetian blinds. Tree branches sway with a gentle, breathing-like motion. 6-10 seconds: A coffee bean gently drifts down from the top of the frame. The camera pushes in toward the coffee bean until the screen goes black. 11-15 seconds: English text gradually appears — first line "Lucky Coffee", second line "Breakfast", third line "AM 7:00-10:00".
+
+jimeng-2026-02-04-2947-Time-lapse, a coffee cup growing branches with cookies hanging from them
+
+![Image 96](https://image.agent-skills.cc/uploads/manual/image_096.jpg)
+
+jimeng-2026-02-05-4162
+
+![Image 97](https://image.agent-skills.cc/uploads/manual/image_097.jpg)
+10s
+Extend forward by 10s. In warm afternoon light, the camera starts from the row of awnings at the street corner being lifted by a gentle breeze, then slowly tilts down to small daisies poking out at the base of the wall. Next, the protagonist's red sneakers appear — he's squatting in front of a flower stand on the street, smiling as he gathers a big bunch of sunflowers into his arms, petals brushing against his white T-shirt. As he turns to step onto his skateboard, the flower stand owner shouts with a smile, "Watch out for the flying petals!" He waves at the owner, then starts skating. A few golden petals have already broken free from the bouquet, landing on the skateboard deck.
+
+Sunflower Skateboard
+
+![Image 98](https://image.agent-skills.cc/uploads/manual/image_098.jpg)
+
+jimeng-2026-02-05-5137
+
+![Image 99](https://image.agent-skills.cc/uploads/manual/image_099.jpg)
+#### 2.3.6
+More Accurate Timbre, More Realistic Sound
+##### Case:
+prompt
+img1
+img2
+img3
+vid1
+vid2
+vid3
+Generated Result
+Fixed camera. A central fisheye lens peers downward through a circular opening. Reference the fisheye lens from Video 1. Have the horse from @Video2 look at the fisheye lens. Reference the speaking actions from @Video1. Background BGM references the sound effects from @Video3.
+
+Fisheye
+
+![Image 100](https://image.agent-skills.cc/uploads/manual/image_100.jpg)
+
+jimeng-2026-02-03-3673-Against a red background, suddenly a horse head with a red cloth on top and wide innocent eyes rises from below, then the horse wiggles its ears...
+
+![Image 101](https://image.agent-skills.cc/uploads/manual/image_101.jpg)
+
+Untitled Video — Made with Clipchamp (16)
+
+![Image 102](https://image.agent-skills.cc/uploads/manual/image_102.jpg)
+
+jimeng-2026-02-05-9949
+
+![Image 103](https://image.agent-skills.cc/uploads/manual/image_103.jpg)
+Based on the provided office building promotional photos, generate a 15-second cinematic realistic-style real estate documentary. Use 2.35:1 widescreen, 24fps, with a delicate visual style. The narration voice references @Video1. Capture "the ecosystem of the office building," presenting the operations of different companies within the building, combined with narration explaining how the office building has become a vibrant commercial ecosystem.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_104.png)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_105.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_106.jpg)
+
+Untitled Video — Made with Clipchamp (18)
+
+![Image 107](https://image.agent-skills.cc/uploads/manual/image_107.jpg)
+
+jimeng-2026-02-05-4039
+
+![Image 108](https://image.agent-skills.cc/uploads/manual/image_108.png)
+A roast session dialogue in the "Cat & Dog Roast Room," requiring rich emotions consistent with stand-up comedy performance:
+Meow-chan (cat host, licking fur and rolling eyes): "Guys, who understands — this one next to me does nothing all day but wag his tail, tear up the sofa, and use that 'I'm so good please pet me' look to scam human snacks. He's fiercer than anyone when tearing up the house, yet still has the nerve to be called 'Wangzai' (Lucky Boy) — I think 'Wangchai' (Lucky Wrecker) fits better, hahaha!"
+Wangzai (dog host, tilting head and wagging tail): "You have the nerve to call me out? You sleep 18 hours a day, and when you're awake, all you do is rub against human legs begging for canned food. You shed so much that every piece of black clothing is covered in your fur. After the humans finish sweeping, you turn around and roll on the sofa again. And you still pretend to be some aloof aristocrat?"
+
+jimeng-2026-02-05-9740
+
+![Image 109](https://image.agent-skills.cc/uploads/manual/image_109.png)
+The accompaniment for the Yu Opera classic segment "The Case of Chen Shimei" begins. The black-robed Bao Zheng on the left points at the red-robed Chen Shimei on the right, singing through gritted teeth in Yu Opera: "Blade to sheath, with solid evidence, do you dare not confess?" Chen Shimei's eyes dart back and forth frantically, searching for a way out, his expression extremely embarrassed. At this moment, from off-screen comes a Yu Opera female role's spoken line: "Wait!" Bao Zheng and Chen Shimei both look toward the right side of the frame.
+
+jimeng-2026-02-05-7415
+
+![Image 110](https://image.agent-skills.cc/uploads/manual/image_110.png)
+Generate a 15-second MV video. Keywords: steady composition / subtle push-pull / low-angle heroic feel / documentary but high-end. Ultra-wide establishing shot, low camera slightly tilting up, cliff dirt road and vintage travel car occupying the lower third of the frame, distant sea surface and horizon creating depth, sunset side-backlight volumetric rays piercing through dust particles, cinematic composition, authentic film grain, gentle breeze blowing the edge of clothing.
+
+jimeng-2026-02-05-1458
+
+![Image 111](https://image.agent-skills.cc/uploads/manual/image_111.jpg)
+The girl in the hat at the center sings warmly, saying "I'm so proud of my family!", then turns to embrace the Black girl in the middle. The Black girl responds emotionally, "My sweetie, you're the heart of our family," and hugs her back. The boy in yellow on the left says happily, "Folks, let's dance together to celebrate!" The girl on the far right immediately replies: "I'll bring the music!" Latin music starts playing in the background. The woman in an orange skirt on the left (Julieta) nods with a smile. The braided woman on the right (Luisa) clenches her fist and pumps her arm. Someone in the crowd starts stomping their feet. The children clap along to the rhythm. The whole family is about to form a circle, dancing joyfully to upbeat music, skirts twirling, celebrating on the colorful streets, spreading joy and warmth.
+
+jimeng-2026-02-05-1958
+
+![Image 112](https://image.agent-skills.cc/uploads/manual/image_112.jpg)
+Fixed camera. The standing muscular man (captain) clenches his fist and swings his arm, saying in Spanish: "Raid in three minutes!" The knife-wielder sheathes the blade. The blonde team member stands checking firearms. The green-haired team member grips the tactical flashlight. The Black team member puts his arm around a companion and asks in Spanish: "Flank them?" The captain nods and says in Spanish: "The usual plan — keep them alive for interrogation." The entire team is solemn. Amid the clinking of gear, they complete tactical hand signals, rise in unison with practiced coordination. Everyone is ready for action. The two men on the left also eagerly stand up, preparing for battle.
+
+jimeng-2026-02-05-1805
+
+![Image 113](https://image.agent-skills.cc/uploads/manual/image_113.jpg)
+0-3 seconds: The alarm clock rings at the beginning. Scene 1 appears through a blurry frame.
+3-10 seconds: Quick camera pan, cutting to a close-up of the man's face across the way. The man helplessly calls for the girl to wake up. The tone and voice timbre reference @Video1.
+10-12 seconds: The girl pouts and hides under the blanket.
+12-15 seconds: Cut to a full-body shot of the male lead. He sighs and says: "I really can't do anything about you!"
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_114.png)
+
+Untitled Video — Made with Clipchamp (19)
+
+![Image 115](https://image.agent-skills.cc/uploads/manual/image_115.png)
+
+jimeng-2026-02-05-2906
+
+![Image 116](https://image.agent-skills.cc/uploads/manual/image_116.png)
+The monkey from @Image1 walks toward the milk tea shop counter. The camera follows behind him. A Bichon Frise server from @Image2 is at the bar wiping preparation tools. The monkey orders from the server in a Sichuan accent: "Hey sis, do you have the 'Farewell My Concubine' drink?"
+Cut to close-up.
+The server puts down what she's doing, gives the old man a strange look, and replies: "Nope, want an Americano instead?"
+Cut to the monkey.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_117.png)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_118.png)
+
+jimeng-2026-02-05-8320
+
+![Image 119](https://image.agent-skills.cc/uploads/manual/image_119.jpg)
+He scratches his head and mutters: "No problem...? I have a problem! My grandson told me to buy some milk tea — it's called something like Farewell My Concubine!"
+Using a science-education style and voice, dramatize the content from Image 1. The content includes: Wukong, trying to cross the Flaming Mountain, visits Princess Iron Fan at Emerald Cloud Mountain to borrow the Banana Fan. Princess Iron Fan, because Red Boy was subdued by Wukong and made a disciple of Guanyin, separating mother and son, refuses to lend the fan and even seeks revenge. After Wukong's kind words fail, the two immediately get into an argument — narrate this short story.
+
+00:00
+/
+00:00
+jimeng-2026-02-05-2803
+00:00
+
+![Image 120](https://image.agent-skills.cc/uploads/manual/image_120.png)
+<video src="https://image.agent-skills.cc/uploads/manual/video_001.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+#### 2.3.7
+Stronger Shot Continuity (One Continuous Take)
+##### Case:
+prompt
+img1
+img2
+img3
+img4
+img5
+img6
+img7
+Generated Result
+![Image 121](https://image.agent-skills.cc/uploads/manual/image_121.png)
+![Image 122](https://image.agent-skills.cc/uploads/manual/image_122.png)
+![Image 123](https://image.agent-skills.cc/uploads/manual/image_123.jpg)
+![Image 124](https://image.agent-skills.cc/uploads/manual/image_124.png)
+@Image1@Image2@Image3@Image4@Image5, a one-continuous-take tracking shot, following a runner from the street up the stairs, through a corridor, into the rooftop, and finally overlooking the city.
+
+00:00
+/
+00:00
+oECdEZG7A3kCeBDBBAAF2fh3EfIHSZECqAI18l
+00:00
+
+![Image 125](https://image.agent-skills.cc/uploads/manual/image_125.png)
+<video src="https://image.agent-skills.cc/uploads/manual/video_002.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+Starting with @Image1 as the first frame, the scene zooms into the airplane window view. Clusters of clouds slowly drift into frame. One of them is a cloud decorated with colorful candy beans, always centered in frame. It then slowly morphs into the ice cream from @Image2. The camera pulls back into the cabin interior. The character from @Image3 sitting by the window reaches out to take the ice cream from outside the window, takes a bite, gets cream all over their mouth, and beams with a sweet smile. The audio for this video is @Video1.
+
+jimeng-2026-02-05-4364
+
+![Image 126](https://image.agent-skills.cc/uploads/manual/image_126.png)
+Spy thriller style. @Image1 as the first frame. The camera tracks the female agent in a red trench coat from the front as she walks forward. Full-scene tracking shot. Passersby continuously block the woman in red. At a corner, referencing @Image2's corner building, fixed camera — the woman in red leaves the frame, walks to the corner and disappears. A girl wearing a mask lurks at the corner, glaring menacingly. The masked girl's appearance references @Image3 — reference appearance only, the girl stands at the corner. The camera pans forward toward the female agent in red. She walks into a mansion and disappears. The mansion references @Image4. No camera cuts throughout — one continuous take.
+
+00:00
+/
+00:00
+jimeng-2026-02-05-7710
+00:00
+
+![Image 127](https://image.agent-skills.cc/uploads/manual/image_127.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_003.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+![Image 128](https://image.agent-skills.cc/uploads/manual/image_128.png)
+![Image 129](https://image.agent-skills.cc/uploads/manual/image_129.png)
+From the exterior shot of @Image1, first-person subjective POV with a fast push-in shot into the interior scene of the wooden cabin. A little deer from @Image2 and a sheep from @Image3 are chatting over tea by the fireplace. The camera pushes in for a close-up of the tea cup, with the cup style referencing @Image4.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_130.jpg)
+
+00:00
+/
+00:00
+jimeng-2026-02-05-3336
+00:00
+
+![Image 131](https://image.agent-skills.cc/uploads/manual/image_131.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_004.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+@Image1@Image2@Image3@Image4@Image5, a subjective-POV one-continuous-take thrilling roller coaster shot. The roller coaster goes faster and faster.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_132.png)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_133.jpg)
+
+00:00
+/
+00:00
+jimeng-2026-02-05-6048
+00:00
+
+![Image 134](https://image.agent-skills.cc/uploads/manual/image_134.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_005.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+#### 2.3.8
+High Usability for Video Editing
+Sometimes you already have a video and don't want to start over finding images or redoing everything — you just want to adjust a small segment of action, extend a few seconds, or make a character's performance closer to your vision. Now you can directly use an existing video as input and make targeted modifications to specific segments, actions, or rhythm without changing other content. No need to regenerate from scratch — quick adjustments are now possible.
+![Image 135](https://image.agent-skills.cc/uploads/manual/image_135.jpg)
+![Image 136](https://image.agent-skills.cc/uploads/manual/image_136.jpg)
+![Image 137](https://image.agent-skills.cc/uploads/manual/image_137.jpg)
+##### Case:
+prompt
+img1
+img2
+img3
+img4
+vid1
+Generated Result
+Subvert the plot of @Video1. The man's gaze shifts from tender to ice-cold and ruthless in an instant. In a moment when Rose is completely off guard, he shoves her off the bridge with force, pushing her into the water. The action is swift and decisive, carrying the resolve of a long-premeditated plan, without the slightest hesitation — completely overturning the original deeply affectionate character. The moment the female lead falls into the water, there's no scream — only an expression of utter disbelief. She looks up and screams at the man: "You've been deceiving me from the very beginning!" The man stands on the bridge, a cold smile on his face, and whispers to the water: "This is what you owe my family."
+
+jimeng-2026-02-03-4484-Medium shot, a couple in ancient costumes, standing on a bridge admiring the moon
+
+![Image 138](https://image.agent-skills.cc/uploads/manual/image_138.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_006.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+
+00:00
+/
+00:00
+Pushed into Water
+00:00
+
+![Image 139](https://image.agent-skills.cc/uploads/manual/image_139.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_007.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+Subvert the entire plot of @Video1.
+0-3 seconds: A suited man sits in a bar, composed, lightly swirling a glass of wine. The camera slowly pushes in. Lighting is premium, atmosphere serious. Low ambient sound. The suited man whispers, "This deal... is big."
+3-6 seconds: The woman behind him asks nervously, "How big?" The suited man looks up, lowering his voice: "Very big." Cut to hand close-up — he sets down the wine glass. Aura maxed out.
+6-9 seconds: Suddenly the suited man pulls out from under the table — an absurdly oversized bag of snacks, and drops it on the table with a heavy "thud."
+9-12 seconds: The woman behind him — her hand that was at her waist goes from tense to relaxed. Her entire expression softens. The atmosphere becomes lighthearted.
+
+Man and Woman (1)
+00:00
+
+![Image 140](https://image.agent-skills.cc/uploads/manual/image_140.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_008.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+
+00:00
+/
+00:00
+Snacks
+00:00
+
+![Image 141](https://image.agent-skills.cc/uploads/manual/image_141.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_009.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+![Image 142](https://image.agent-skills.cc/uploads/manual/image_142.jpg)
+![Image 143](https://image.agent-skills.cc/uploads/manual/image_143.jpg)
+![Image 144](https://image.agent-skills.cc/uploads/manual/image_144.jpg)
+![Image 145](https://image.agent-skills.cc/uploads/manual/image_145.jpg)
+13-15 seconds: The suited man hands a pack of snacks to the woman. The camera pulls back to reveal the full bar scene. The image becomes translucent and blurry — subtitle pops up: "No matter how busy, remember to have a snack~"
+Replace the female lead singer in Video 1 with the male lead singer from Image 1. The movements should completely mimic the original video. No camera cuts. Band performing music.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_146.jpg)
+
+Band (1)
+
+![Image 147](https://image.agent-skills.cc/uploads/manual/image_147.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_010.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+
+00:00
+/
+00:00
+Band 2
+00:00
+
+![Image 148](https://image.agent-skills.cc/uploads/manual/image_148.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_011.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+Change the woman's hairstyle in Video 1 to long red hair. The great white shark from Image 1 slowly surfaces, showing half its head, behind her.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_149.jpg)
+
+Water Surface (1)
+00:00
+
+![Image 150](https://image.agent-skills.cc/uploads/manual/image_150.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_012.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+
+00:00
+/
+00:00
+Water Surface
+00:00
+
+![Image 151](https://image.agent-skills.cc/uploads/manual/image_151.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_013.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+![Image 152](https://image.agent-skills.cc/uploads/manual/image_152.jpg)
+![Image 153](https://image.agent-skills.cc/uploads/manual/image_153.jpg)
+![Image 154](https://image.agent-skills.cc/uploads/manual/image_154.jpg)
+![Image 155](https://image.agent-skills.cc/uploads/manual/image_155.jpg)
+The camera in Video 1 pans right. The fried chicken boss busily hands fried chicken to customers in line, saying in Mandarin: "After his, I'll make yours. Everyone please queue up politely." As soon as he finishes speaking, he goes to grab a paper bag to pack the fried chicken. Close-up showing the boss picking up a paper bag printed with Image 1's design. Close-up of the hand handing it to the customer.
+
+Fried Chicken (1)
+00:00
+
+![Image 156](https://image.agent-skills.cc/uploads/manual/image_156.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_014.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+
+00:00
+/
+00:00
+Indian Fried Chicken
+00:00
+
+![Image 157](https://image.agent-skills.cc/uploads/manual/image_157.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_015.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+![Image 158](https://image.agent-skills.cc/uploads/manual/image_158.jpg)
+![Image 159](https://image.agent-skills.cc/uploads/manual/image_159.jpg)
+#### 2.3.9
+Beat-Synced Music Editing
+##### Case:
+prompt
+img1
+img2
+img3
+img4
+img5
+img6
+img7
+vid1
+Generated Result
+The girl in the poster keeps changing outfits. Clothing styles reference @Image1 and @Image2. She carries the bag from @Image3. The video rhythm references @Video.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_160.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_161.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_162.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_163.jpg)
+
+Beat-Synced Music
+
+![Image 164](https://image.agent-skills.cc/uploads/manual/image_164.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_016.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+
+00:00
+/
+00:00
+jimeng-2026-02-05-5881
+00:00
+
+![Image 165](https://image.agent-skills.cc/uploads/manual/image_165.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_017.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+![Image 166](https://image.agent-skills.cc/uploads/manual/image_166.jpg)
+![Image 167](https://image.agent-skills.cc/uploads/manual/image_167.jpg)
+The images from @Image1@Image2@Image3@Image4@Image5@Image6@Image7 are synced to the beat based on the keyframe positions and overall rhythm from @Video. Characters in the scenes have more dynamic movement. The overall visual style is more dreamlike with strong visual tension. Shot sizes of reference images may be adjusted based on the music and visual needs, along with supplementary lighting and shadow changes.
+
+Beat Sync
+
+![Image 168](https://image.agent-skills.cc/uploads/manual/image_168.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_018.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+
+00:00
+/
+00:00
+jimeng-2026-02-05-4918
+00:00
+
+![Image 169](https://image.agent-skills.cc/uploads/manual/image_169.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_019.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+The scenic landscape images from @Image1@Image2@Image3@Image4@Image5@Image6. Reference @Video's visual rhythm. Beat-sync the transitions between scenes matching the visual style and music rhythm.
+
+Feb 5
+
+![Image 170](https://image.agent-skills.cc/uploads/manual/image_170.jpg)
+
+jimeng-2026-02-05-9009
+
+![Image 171](https://image.agent-skills.cc/uploads/manual/image_171.jpg)
+![Image 172](https://image.agent-skills.cc/uploads/manual/image_172.jpg)
+![Image 173](https://image.agent-skills.cc/uploads/manual/image_173.jpg)
+An 8-second intellectual battle-style anime combat clip, fitting a revenge theme. 0-3 seconds: In storyboard Image 1, the female lead turns and sits down. Camera transition. The female lead places a chess piece, and says "You've lost," referencing storyboard Image 2. 3-4 seconds: Quick camera pan, cutting to a close-up of the man's face across the way, referencing storyboard Image 3. The man grits his teeth, extremely dissatisfied with the result. 4-6 seconds: Camera cut, overhead shot. The woman places a chess piece. The people across gasp in amazement, referencing storyboard Image 4. 6-8 seconds: The camera rapidly tilts downward. The screen fades to black for a transition. Then the screen gradually brightens. In a dimly lit room, the woman looks at the moonlight outside the window and quietly says, "We'll see about that," referencing storyboard Image 5.
+
+00:00
+/
+00:00
+jimeng-2026-02-05-3301-3D animation style, medium shot eye-level camera, maintaining park bench scene, 1-2s both stand up arguing, male angrily shouts before...
+00:00
+
+![Image 174](https://image.agent-skills.cc/uploads/manual/image_174.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_020.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+#### 2.3.10
+Better Emotional Performance
+##### Case:
+prompt
+img1
+img2
+img3
+img4
+img5
+img6
+img7
+vid1
+Generated Result
+The woman from @Image1 walks to the mirror. Looking at herself in the mirror. Her pose references @Image2. After a moment of contemplation, she suddenly breaks down screaming. The action of grabbing the mirror, the breakdown screaming emotions and expressions completely reference @Video1.
+
+Emotion 3
+
+![Image 175](https://image.agent-skills.cc/uploads/manual/image_175.jpg)
+
+jimeng-2026-02-05-2315
+
+![Image 176](https://image.agent-skills.cc/uploads/manual/image_176.jpg)
+![Image 177](https://image.agent-skills.cc/uploads/manual/image_177.jpg)
+![Image 178](https://image.agent-skills.cc/uploads/manual/image_178.jpg)
+![Image 179](https://image.agent-skills.cc/uploads/manual/image_179.jpg)
+This is a range hood advertisement. @Image1 as the first frame. A woman elegantly cooking with no smoke. The camera quickly pans right, capturing the man from @Image2, drenched in sweat and red-faced, cooking amid billowing smoke. The camera pans left and pushes in to capture a range hood on @Image1's table surface. The range hood references @Image4. The range hood is furiously extracting smoke.
+
+00:00
+/
+00:00
+jimeng-2026-02-05-6028
+00:00
+
+![Image 180](https://image.agent-skills.cc/uploads/manual/image_180.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_021.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+@Image1 as the first frame. The camera rotates and pushes in. The character suddenly looks up. The character's facial appearance references @Image2. The character begins roaring loudly — intense with a touch of comedic flair, referencing the expression and demeanor from @Image3. Then the character's body transforms into a bear, referencing @Image4.
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_181.jpg)
+![Feishu Docs - Image](https://image.agent-skills.cc/uploads/manual/image_182.jpg)
+
+00:00
+/
+00:00
+jimeng-2026-02-05-2154
+00:00
+
+![Image 183](https://image.agent-skills.cc/uploads/manual/image_183.jpg)
+<video src="https://image.agent-skills.cc/uploads/manual/video_022.mp4" controls width="100%" style={{borderRadius: '12px', marginTop: '0.5rem', marginBottom: '0.5rem'}} />
+![Image 184](https://image.agent-skills.cc/uploads/manual/image_184.jpg)
+![Image 185](https://image.agent-skills.cc/uploads/manual/image_185.jpg)
+![Image 186](https://image.agent-skills.cc/uploads/manual/image_186.jpg)
+![Image 187](https://image.agent-skills.cc/uploads/manual/image_187.jpg)
+# 🏁 A Few Final Words
+Seedance 2.0's multimodal capabilities are continuously evolving, and we will keep updating features and supporting more input combination methods. We hope this user manual helps you unleash your creativity more freely!
+If you encounter any bugs, or have usage suggestions or scenario requests, feel free to leave a comment, send a direct message, or beat the drums to let us know! We will keep optimizing and work together to make Seedance a truly delightful and convenient productivity tool for you ❤️

@@ -157,6 +157,116 @@
               "alt": "Fashion model with geometric background"
             },
             "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-45.mp4"
+          },
+          {
+            "title": "Gymnast Grace",
+            "description": "A gymnast performing on the balance beam in a dimly lit gymnasium with dramatic spotlight, showcasing fluid body movements.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1-poster.webp",
+              "alt": "Gymnast on balance beam"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1.mp4"
+          },
+          {
+            "title": "Balance Beam",
+            "description": "A gymnast walking gracefully on the balance beam with cinematic side-angle framing and atmospheric gym lighting.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2-poster.webp",
+              "alt": "Gymnast walking on balance beam"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2.mp4"
+          },
+          {
+            "title": "Dragon Duel",
+            "description": "A Dragon Ball-inspired martial arts showdown at a traditional Chinese martial arts temple, with dynamic 3D character animation.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals-poster.webp",
+              "alt": "Dragon Ball style martial arts fight"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals.mp4"
+          },
+          {
+            "title": "Street Runners",
+            "description": "Anime-style characters sprinting through a gritty urban alleyway, with dynamic poses and vibrant street fashion aesthetics.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong-poster.webp",
+              "alt": "Anime characters running in city"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong.mp4"
+          },
+          {
+            "title": "War Zone",
+            "description": "Military tanks rolling through city streets in a dramatic wartime scene with realistic vehicle physics and atmospheric effects.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-1-poster.webp",
+              "alt": "Military tanks on city streets"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-1.mp4"
+          },
+          {
+            "title": "Crowd Escape",
+            "description": "A man sprinting through a massive crowd on city streets with cinematic depth of field and realistic crowd dynamics.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-2-poster.webp",
+              "alt": "Man running through crowd"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-2.mp4"
+          },
+          {
+            "title": "Fantasy Voyage",
+            "description": "A young boy on a boat gazing at a fantastical castle city across the ocean, with stunning landscape and atmospheric clouds.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/long4ai-poster.webp",
+              "alt": "Boy on boat with fantasy castle"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/long4ai.mp4"
+          },
+          {
+            "title": "European Stroll",
+            "description": "A first-person street-level walk through a busy European city with natural pedestrian movement and authentic street atmosphere.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle-poster.webp",
+              "alt": "People walking on European street"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle.mp4"
+          },
+          {
+            "title": "Ancient Beauties",
+            "description": "Two girls in traditional Chinese hanfu costumes with elegant hair accessories, in a charming ancient town night market setting.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/qhgy-poster.webp",
+              "alt": "Girls in Chinese hanfu costumes"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/qhgy.mp4"
+          },
+          {
+            "title": "Court Crossover",
+            "description": "An intense basketball crossover scene on a professional court with dynamic camera angles and realistic player movements.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/sino-market-poster.webp",
+              "alt": "Basketball crossover on court"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/sino-market.mp4"
+          },
+          {
+            "title": "Tavern Ambush",
+            "description": "A martial arts warrior fending off ninjas in a traditional Chinese tavern, with fluid combat choreography and dramatic lighting.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai-poster.webp",
+              "alt": "Martial arts fight in tavern"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai.mp4"
           }
         ]
       }

@@ -18,6 +18,9 @@ export const logs = defineDocs({
 
 export default defineConfig({
   mdxOptions: {
+    remarkImageOptions: {
+      external: false,
+    },
     rehypeCodeOptions: {
       themes: {
         light: 'github-light',

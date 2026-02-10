@@ -157,6 +157,116 @@
               "alt": "几何背景的时尚模特"
             },
             "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-45.mp4"
+          },
+          {
+            "title": "体操之美",
+            "description": "体操运动员在昏暗体育馆中聚光灯下的平衡木表演，流畅的肢体动作令人惊叹。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1-poster.webp",
+              "alt": "平衡木上的体操运动员"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1.mp4"
+          },
+          {
+            "title": "平衡之姿",
+            "description": "体操运动员在平衡木上优雅行走，侧面电影级取景与氛围感体育馆灯光。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2-poster.webp",
+              "alt": "平衡木上行走的体操运动员"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2.mp4"
+          },
+          {
+            "title": "龙珠对决",
+            "description": "龙珠风格的武术对决，在中国传统武馆前上演精彩的3D角色动画打斗。",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals-poster.webp",
+              "alt": "龙珠风格武术对决"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals.mp4"
+          },
+          {
+            "title": "街头飞奔",
+            "description": "动漫风格的角色在城市巷道中飞速奔跑，动感十足的姿态与潮流街头美学。",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong-poster.webp",
+              "alt": "城市中奔跑的动漫角色"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong.mp4"
+          },
+          {
+            "title": "战区巡行",
+            "description": "军用坦克在城市街道中行进的战争场景，逼真的载具物理效果与氛围渲染。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-1-poster.webp",
+              "alt": "城市街道上的军用坦克"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-1.mp4"
+          },
+          {
+            "title": "人群突围",
+            "description": "一名男子在城市街头穿越庞大人群奔跑，电影级景深与逼真的人群动态。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-2-poster.webp",
+              "alt": "在人群中奔跑的男子"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-2.mp4"
+          },
+          {
+            "title": "奇幻航程",
+            "description": "少年在小船上远眺海洋彼端的奇幻城堡，壮丽的风景与大气云层渲染。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/long4ai-poster.webp",
+              "alt": "少年望向奇幻城堡"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/long4ai.mp4"
+          },
+          {
+            "title": "欧洲街景",
+            "description": "第一人称视角穿行繁忙的欧洲城市街头，自然的行人走动与真实的街头氛围。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle-poster.webp",
+              "alt": "欧洲街头行人"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle.mp4"
+          },
+          {
+            "title": "古风佳人",
+            "description": "两位身着汉服的少女佩戴精致发饰，在古镇夜市中展现古典之美。",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/qhgy-poster.webp",
+              "alt": "汉服少女"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/qhgy.mp4"
+          },
+          {
+            "title": "篮球过人",
+            "description": "职业球场上的精彩篮球过人场景，动态运镜与逼真的球员动作。",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/sino-market-poster.webp",
+              "alt": "篮球过人场景"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/sino-market.mp4"
+          },
+          {
+            "title": "客栈伏击",
+            "description": "武林侠客在中式客栈中对抗忍者，行云流水的格斗编排与戏剧化灯光。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai-poster.webp",
+              "alt": "客栈武打场景"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai.mp4"
           }
         ]
       }
