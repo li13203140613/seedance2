@@ -54,8 +54,6 @@ export function ManualPage({ data, title, description }: ManualPageProps) {
                   <li key={i}>{h}</li>
                 ))}
               </ul>
-              <p>我们知道，视频创作从来不仅是"生成"，更是对表达的控制。2.0 不只是多模态，更是一种真正可控的创作方式</p>
-              <p>Seedance 2.0，多模态创作，从这里启程。请你们大胆想象，其余的交给它</p>
             </section>
 
             {/* Params */}
