@@ -112,6 +112,7 @@ export default async function RootLayout({
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="_foundr" content="164b3ff165b71525e1f79b446783add3" />
 
         {/* inject locales */}
         {locales ? (

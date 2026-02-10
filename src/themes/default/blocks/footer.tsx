@@ -51,6 +51,58 @@ export function Footer({ footer }: { footer: FooterType }) {
                 </div>
               </div>
             ))}
+
+            <div className="min-w-0 space-y-3 sm:col-span-2">
+              <div className="flex flex-wrap items-center gap-3">
+                <a
+                  href="https://dang.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png"
+                    alt="Dang.ai"
+                    width="150"
+                    height="54"
+                    loading="lazy"
+                  />
+                </a>
+                <a
+                  href="https://startupfa.me"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://startupfa.me/badges/featured-badge-small.webp"
+                    alt="Featured on Startup Fame"
+                    width="224"
+                    height="36"
+                    loading="lazy"
+                  />
+                </a>
+                <a
+                  href="https://twelve.tools"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://twelve.tools/badge0-white.svg"
+                    alt="Featured on Twelve Tools"
+                    width="200"
+                    height="54"
+                    loading="lazy"
+                  />
+                </a>
+                <a
+                  href="https://allinai.tools"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary text-sm duration-150"
+                >
+                  All in AI Tools
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
