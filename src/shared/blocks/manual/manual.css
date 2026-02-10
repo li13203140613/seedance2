@@ -601,10 +601,38 @@
   }
 }
 
-/* dark mode override: keep white bg for manual */
+/* Video placeholder for lazy loading */
+.manual-video-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #1a1a1a;
+  border-radius: 12px;
+}
+
+/* dark mode override: force light theme for entire manual */
 @media (prefers-color-scheme: dark) {
+  .feishu-manual,
+  .feishu-manual .feishu-body,
+  .feishu-manual .feishu-body p,
+  .feishu-manual .feishu-body li,
+  .feishu-manual .feishu-body h1,
+  .feishu-manual .feishu-body h2,
+  .feishu-manual .feishu-body h3,
+  .feishu-manual .feishu-body h4,
+  .feishu-manual .feishu-body h5,
+  .feishu-manual .feishu-body strong,
+  .feishu-manual .feishu-header h1,
+  .feishu-manual .manual-params td,
+  .feishu-manual .manual-params th,
+  .feishu-manual .manual-notice li,
+  .feishu-manual .manual-case__prompt p {
+    color: #1f2329;
+  }
   .feishu-manual {
     background: #ffffff;
+  }
+  .feishu-manual .feishu-header p {
+    color: #8f959e;
   }
 }
 
@@ -612,4 +640,55 @@
 [data-theme='dark'] .feishu-manual,
 .dark .feishu-manual {
   background: #ffffff;
+  color: #1f2329;
+}
+
+[data-theme='dark'] .feishu-manual *,
+.dark .feishu-manual * {
+  color: inherit;
+}
+
+[data-theme='dark'] .feishu-manual .feishu-header p,
+.dark .feishu-manual .feishu-header p {
+  color: #8f959e;
+}
+
+[data-theme='dark'] .feishu-manual .feishu-toc-inner nav a,
+.dark .feishu-manual .feishu-toc-inner nav a {
+  color: #8f959e;
+}
+
+[data-theme='dark'] .feishu-manual .feishu-toc-inner nav a:hover,
+.dark .feishu-manual .feishu-toc-inner nav a:hover {
+  color: #1f2329;
+}
+
+[data-theme='dark'] .feishu-manual .manual-case__prompt-label,
+.dark .feishu-manual .manual-case__prompt-label {
+  color: #3370ff;
+}
+
+[data-theme='dark'] .feishu-manual .manual-case__section-label,
+.dark .feishu-manual .manual-case__section-label {
+  color: #8f959e;
+}
+
+[data-theme='dark'] .feishu-manual .manual-transition,
+.dark .feishu-manual .manual-transition {
+  color: #3370ff;
+}
+
+[data-theme='dark'] .feishu-manual .manual-notice strong,
+.dark .feishu-manual .manual-notice strong {
+  color: #d46b08;
+}
+
+[data-theme='dark'] .feishu-manual .manual-case__duration,
+.dark .feishu-manual .manual-case__duration {
+  color: #0958d9;
+}
+
+[data-theme='dark'] .feishu-manual .manual-case__label,
+.dark .feishu-manual .manual-case__label {
+  color: #389e0d;
 }

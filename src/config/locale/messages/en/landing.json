@@ -89,6 +89,11 @@
               "title": "Features",
               "url": "/#features",
               "target": "_self"
+            },
+            {
+              "title": "User Manual",
+              "url": "/manual",
+              "target": "_self"
             }
           ]
         }

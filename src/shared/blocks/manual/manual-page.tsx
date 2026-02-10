@@ -16,7 +16,7 @@ interface ManualPageProps {
 
 function collectTocItems(sections: ManualSection[], items: { id: string; title: string; level: number }[]) {
   for (const s of sections) {
-    if (s.level <= 3) {
+    if (s.level <= 4) {
       items.push({ id: s.id, title: s.title, level: s.level });
     }
     if (s.subsections) {

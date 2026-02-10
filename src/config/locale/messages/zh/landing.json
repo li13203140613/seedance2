@@ -89,6 +89,11 @@
               "title": "功能",
               "url": "/#features",
               "target": "_self"
+            },
+            {
+              "title": "使用手册",
+              "url": "/manual",
+              "target": "_self"
             }
           ]
         }
