@@ -11,15 +11,16 @@ import { NavItem } from '@/shared/types/blocks/common';
 import { Footer as FooterType } from '@/shared/types/blocks/landing';
 
 const backlinks = [
+  // --- Badge images ---
   {
-    href: 'https://dang.ai',
+    href: 'https://dang.ai/',
     img: 'https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png',
     alt: 'Dang.ai',
     width: 150,
     height: 54,
   },
   {
-    href: 'https://startupfa.me',
+    href: 'https://startupfa.me/s/nano-banana-pro-2',
     img: 'https://startupfa.me/badges/featured-badge-small.webp',
     alt: 'Featured on Startup Fame',
     width: 224,
@@ -33,36 +34,55 @@ const backlinks = [
     height: 54,
   },
   {
-    href: 'https://allinai.tools',
-    label: 'All in AI Tools',
-  },
-  {
     href: 'https://showmebest.ai',
     img: 'https://showmebest.ai/badge/feature-badge-white.webp',
     alt: 'Featured on ShowMeBestAI',
     width: 220,
     height: 60,
   },
-  {
-    href: 'https://nano-banana.cn',
-    label: 'Nano Banana',
-  },
-  {
-    href: 'https://agent-skills.cc',
-    label: 'Agent Skills',
-  },
-  {
-    href: 'https://www.aitoolzdir.com',
-    label: 'AI Toolz Dir',
-  },
-  {
-    href: 'https://www.kdjingpai.com/',
-    label: 'RightAI Tools Directory',
-  },
-  {
-    href: 'https://aitop10.tools/',
-    label: 'AiTop10 Tools Directory',
-  },
+  // --- Text links ---
+  { href: 'https://www.agenthunter.io', label: 'AgentHunter' },
+  { href: 'https://open-launch.com/projects/seedance-2-0-5357', label: 'Open-Launch' },
+  { href: 'https://deeplaunch.io', label: 'DeepLaunch' },
+  { href: 'https://fazier.com/launches/www.seedance2.art', label: 'Fazier' },
+  { href: 'https://turbo0.com/item/nanobanana-pro', label: 'Turbo0' },
+  { href: 'https://findly.tools/seedream-5-0-1', label: 'Findly Tools' },
+  { href: 'https://findly.tools/seedance2-0', label: 'Findly Tools - Seedance' },
+  { href: 'https://goodaitools.com', label: 'Good AI Tools' },
+  { href: 'https://productwing.com', label: 'Product Wing' },
+  { href: 'https://unitelist.com', label: 'Unite List' },
+  { href: 'https://theonestartup.com', label: 'The One Startup' },
+  { href: 'https://dayslaunch.com', label: 'Days Launch' },
+  { href: 'https://logicballs.com', label: 'LogicBalls' },
+  { href: 'https://similarlabs.com/', label: 'SimilarLabs' },
+  { href: 'https://acidtools.com', label: 'Acid Tools' },
+  { href: 'https://www.showmysites.com', label: 'ShowMySites' },
+  { href: 'https://submitaitools.org', label: 'Submit AI Tools' },
+  { href: 'https://aiagentsdirectory.com/agent/seedream5-ai', label: 'AI Agents Directory' },
+  { href: 'https://aiagentsdirectory.com/agent/seedance-20', label: 'AI Agents Directory - Seedance' },
+  { href: 'https://code.market', label: 'Code Market' },
+  { href: 'https://startupfa.st', label: 'Startup Fast' },
+  { href: 'https://dironix.com', label: 'Dironix' },
+  { href: 'https://dofollow.tools', label: 'Dofollow Tools' },
+  { href: 'https://ff2050.com/products/seedance-20', label: 'FF2050' },
+  { href: 'https://aidirs.org/item/seedance-20', label: 'AIDirs' },
+  { href: 'https://auraplusplus.com/projects/seedance-2-0', label: 'Aura++' },
+  { href: 'https://aistage.net', label: 'AIStage' },
+  { href: 'https://aiproductlist.org', label: 'AI Product List' },
+  { href: 'https://www.ai138.com', label: 'AI138' },
+  { href: 'https://mossai.org', label: 'MossAI Tools' },
+  { href: 'https://toolsfine.com', label: 'ToolsFine' },
+  { href: 'https://AIToolly.com/', label: 'AIToolly' },
+  { href: 'https://www.meoai.net/', label: 'MeoAI' },
+  { href: 'https://right-ai.com/', label: 'RightAI Tools' },
+  { href: 'https://aitop10.tools/', label: 'AiTop10 Tools' },
+  { href: 'https://www.seewhatnewai.com', label: 'See What New AI' },
+  { href: 'https://www.aitoolzdir.com', label: 'AI Toolz Dir' },
+  { href: 'https://fast-wan.com/', label: 'Fast Wan' },
+  { href: 'https://viesearch.com/', label: 'Viesearch' },
+  { href: 'https://allinai.tools', label: 'All in AI Tools' },
+  { href: 'https://nano-banana.cn', label: 'Nano Banana' },
+  { href: 'https://agent-skills.cc', label: 'Agent Skills' },
 ] as const;
 
 function BacklinkItem({ item }: { item: (typeof backlinks)[number] }) {
