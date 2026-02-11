@@ -130,6 +130,14 @@ export function Footer({ footer }: { footer: FooterType }) {
                 >
                   Agent Skills
                 </a>
+                <a
+                  href="https://www.aitoolzdir.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary text-sm duration-150"
+                >
+                  AI Toolz Dir
+                </a>
               </div>
             </div>
           </div>
