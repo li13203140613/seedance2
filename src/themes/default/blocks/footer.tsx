@@ -114,6 +114,22 @@ export function Footer({ footer }: { footer: FooterType }) {
                     loading="lazy"
                   />
                 </a>
+                <a
+                  href="https://nano-banana.cn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary text-sm duration-150"
+                >
+                  Nano Banana
+                </a>
+                <a
+                  href="https://agent-skills.cc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary text-sm duration-150"
+                >
+                  Agent Skills
+                </a>
               </div>
             </div>
           </div>
