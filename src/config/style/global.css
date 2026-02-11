@@ -103,6 +103,30 @@ pre {
   }
 }
 
+/* Footer backlinks marquee */
+.footer-marquee-wrap {
+  display: flex;
+  width: max-content;
+  animation: footer-scroll 30s linear infinite;
+}
+.footer-marquee-wrap:hover {
+  animation-play-state: paused;
+}
+.footer-marquee {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0 1.25rem;
+}
+@keyframes footer-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;

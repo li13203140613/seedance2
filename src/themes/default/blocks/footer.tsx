@@ -10,12 +10,85 @@ import { SmartIcon } from '@/shared/blocks/common/smart-icon';
 import { NavItem } from '@/shared/types/blocks/common';
 import { Footer as FooterType } from '@/shared/types/blocks/landing';
 
+const backlinks = [
+  {
+    href: 'https://dang.ai',
+    img: 'https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png',
+    alt: 'Dang.ai',
+    width: 150,
+    height: 54,
+  },
+  {
+    href: 'https://startupfa.me',
+    img: 'https://startupfa.me/badges/featured-badge-small.webp',
+    alt: 'Featured on Startup Fame',
+    width: 224,
+    height: 36,
+  },
+  {
+    href: 'https://twelve.tools',
+    img: 'https://twelve.tools/badge0-white.svg',
+    alt: 'Featured on Twelve Tools',
+    width: 200,
+    height: 54,
+  },
+  {
+    href: 'https://allinai.tools',
+    label: 'All in AI Tools',
+  },
+  {
+    href: 'https://showmebest.ai',
+    img: 'https://showmebest.ai/badge/feature-badge-white.webp',
+    alt: 'Featured on ShowMeBestAI',
+    width: 220,
+    height: 60,
+  },
+  {
+    href: 'https://nano-banana.cn',
+    label: 'Nano Banana',
+  },
+  {
+    href: 'https://agent-skills.cc',
+    label: 'Agent Skills',
+  },
+  {
+    href: 'https://www.aitoolzdir.com',
+    label: 'AI Toolz Dir',
+  },
+] as const;
+
+function BacklinkItem({ item }: { item: (typeof backlinks)[number] }) {
+  return (
+    <a
+      href={item.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={
+        'img' in item
+          ? 'shrink-0'
+          : 'text-muted-foreground hover:text-primary shrink-0 text-sm duration-150'
+      }
+    >
+      {'img' in item ? (
+        <img
+          src={item.img}
+          alt={item.alt}
+          width={item.width}
+          height={item.height}
+          loading="lazy"
+        />
+      ) : (
+        item.label
+      )}
+    </a>
+  );
+}
+
 export function Footer({ footer }: { footer: FooterType }) {
   return (
     <footer
       id={footer.id}
       className={`py-8 sm:py-8 ${footer.className || ''} overflow-x-hidden`}
-      // overflow-x-hidden防止-footer-撑出水平滚动条
     >
       <div className="container space-y-8 overflow-x-hidden">
         <div className="grid min-w-0 gap-12 md:grid-cols-5">
@@ -51,95 +124,6 @@ export function Footer({ footer }: { footer: FooterType }) {
                 </div>
               </div>
             ))}
-
-            <div className="min-w-0 space-y-3 sm:col-span-2">
-              <div className="flex flex-wrap items-center gap-3">
-                <a
-                  href="https://dang.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png"
-                    alt="Dang.ai"
-                    width="150"
-                    height="54"
-                    loading="lazy"
-                  />
-                </a>
-                <a
-                  href="https://startupfa.me"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://startupfa.me/badges/featured-badge-small.webp"
-                    alt="Featured on Startup Fame"
-                    width="224"
-                    height="36"
-                    loading="lazy"
-                  />
-                </a>
-                <a
-                  href="https://twelve.tools"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://twelve.tools/badge0-white.svg"
-                    alt="Featured on Twelve Tools"
-                    width="200"
-                    height="54"
-                    loading="lazy"
-                  />
-                </a>
-                <a
-                  href="https://allinai.tools"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary text-sm duration-150"
-                >
-                  All in AI Tools
-                </a>
-                <a
-                  href="https://showmebest.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="https://showmebest.ai/badge/feature-badge-white.webp"
-                    alt="Featured on ShowMeBestAI"
-                    width="220"
-                    height="60"
-                    loading="lazy"
-                  />
-                </a>
-                <a
-                  href="https://nano-banana.cn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary text-sm duration-150"
-                >
-                  Nano Banana
-                </a>
-                <a
-                  href="https://agent-skills.cc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary text-sm duration-150"
-                >
-                  Agent Skills
-                </a>
-                <a
-                  href="https://www.aitoolzdir.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary text-sm duration-150"
-                >
-                  AI Toolz Dir
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -200,6 +184,22 @@ export function Footer({ footer }: { footer: FooterType }) {
               ))}
             </div>
           ) : null}
+        </div>
+      </div>
+
+      {/* Scrolling backlinks marquee */}
+      <div className="mt-8 overflow-hidden border-t border-dashed border-white/10 pt-6">
+        <div className="footer-marquee-wrap">
+          <div className="footer-marquee">
+            {backlinks.map((item, i) => (
+              <BacklinkItem key={i} item={item} />
+            ))}
+          </div>
+          <div className="footer-marquee" aria-hidden>
+            {backlinks.map((item, i) => (
+              <BacklinkItem key={i} item={item} />
+            ))}
+          </div>
         </div>
       </div>
     </footer>
