@@ -113,6 +113,7 @@ export default async function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="_foundr" content="164b3ff165b71525e1f79b446783add3" />
+        <meta name="msvalidate.01" content="8F6253C0EC4014D320305532A7DD1685" />
 
         {/* inject locales */}
         {locales ? (
