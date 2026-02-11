@@ -42,7 +42,13 @@ const backlinks = [
   },
   // --- Text links ---
   { href: 'https://www.agenthunter.io', label: 'AgentHunter' },
-  { href: 'https://open-launch.com/projects/seedance-2-0-5357', label: 'Open-Launch' },
+  {
+    href: 'https://open-launch.com/projects/seedancetwo2-0',
+    img: 'https://open-launch.com/api/badge/d68f5d47-09ea-46d9-a749-ae0cc9e0cc5e/featured-small.svg',
+    alt: 'Featured on Open-Launch',
+    width: 40,
+    height: 40,
+  },
   { href: 'https://deeplaunch.io', label: 'DeepLaunch' },
   { href: 'https://fazier.com/launches/www.seedance2.art', label: 'Fazier' },
   { href: 'https://turbo0.com/item/nanobanana-pro', label: 'Turbo0' },
