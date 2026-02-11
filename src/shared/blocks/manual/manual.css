@@ -23,6 +23,7 @@
 .feishu-manual .feishu-toc-sidebar {
   width: 220px;
   flex-shrink: 0;
+  padding-top: 600px;
 }
 
 @media (max-width: 1024px) {
