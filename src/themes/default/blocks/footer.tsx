@@ -55,6 +55,14 @@ const backlinks = [
     href: 'https://www.aitoolzdir.com',
     label: 'AI Toolz Dir',
   },
+  {
+    href: 'https://www.kdjingpai.com/',
+    label: 'RightAI Tools Directory',
+  },
+  {
+    href: 'https://aitop10.tools/',
+    label: 'AiTop10 Tools Directory',
+  },
 ] as const;
 
 function BacklinkItem({ item }: { item: (typeof backlinks)[number] }) {
