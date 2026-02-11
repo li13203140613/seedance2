@@ -101,6 +101,19 @@ export function Footer({ footer }: { footer: FooterType }) {
                 >
                   All in AI Tools
                 </a>
+                <a
+                  href="https://showmebest.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://showmebest.ai/badge/feature-badge-white.webp"
+                    alt="Featured on ShowMeBestAI"
+                    width="220"
+                    height="60"
+                    loading="lazy"
+                  />
+                </a>
               </div>
             </div>
           </div>
