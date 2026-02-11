@@ -152,6 +152,15 @@
             "group": "monthly",
             "credit_packs": [
               {
+                "credits": 30,
+                "label": "30 积分",
+                "price": "$1",
+                "amount": 100,
+                "product_id": "credits-30",
+                "product_name": "Seedance 积分 30",
+                "is_default": true
+              },
+              {
                 "credits": 500,
                 "label": "500 积分",
                 "price": "$15",
@@ -165,8 +174,7 @@
                 "price": "$30",
                 "amount": 3000,
                 "product_id": "credits-1200",
-                "product_name": "Seedance 积分 1200",
-                "is_default": true
+                "product_name": "Seedance 积分 1200"
               },
               {
                 "credits": 2800,
@@ -348,6 +356,15 @@
             "group": "yearly",
             "credit_packs": [
               {
+                "credits": 30,
+                "label": "30 积分",
+                "price": "$1",
+                "amount": 100,
+                "product_id": "credits-30",
+                "product_name": "Seedance 积分 30",
+                "is_default": true
+              },
+              {
                 "credits": 500,
                 "label": "500 积分",
                 "price": "$15",
@@ -361,8 +378,7 @@
                 "price": "$30",
                 "amount": 3000,
                 "product_id": "credits-1200",
-                "product_name": "Seedance 积分 1200",
-                "is_default": true
+                "product_name": "Seedance 积分 1200"
               },
               {
                 "credits": 2800,

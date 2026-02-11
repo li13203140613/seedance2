@@ -106,6 +106,14 @@ const PRODUCTS = {
   },
 
   // ==================== Credit Packs (one-time) ====================
+  'credits-30': {
+    name: 'Seedance Credits 30',
+    description: '30 credits starter pack',
+    interval: null, // one-time
+    amount: 100, // $1
+    currency: 'usd',
+    metadata: { type: 'credits', credits: '30' },
+  },
   'credits-500': {
     name: 'Seedance Credits 500',
     description: '500 credits pack',
