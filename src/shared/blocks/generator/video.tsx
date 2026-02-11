@@ -224,8 +224,8 @@ export function VideoGenerator({
     useState<VideoGeneratorTab>('text-to-video');
 
   const [costCredits, setCostCredits] = useState<number>(textToVideoCredits);
-  const [provider, setProvider] = useState(PROVIDER_OPTIONS[0]?.value ?? '');
-  const [model, setModel] = useState(MODEL_OPTIONS[0]?.value ?? '');
+  const [provider, setProvider] = useState('evolink');
+  const [model, setModel] = useState('seedance-1.5-pro');
   const [prompt, setPrompt] = useState('');
   const [referenceImageItems, setReferenceImageItems] = useState<
     ImageUploaderValue[]
