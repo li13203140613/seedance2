@@ -49,7 +49,13 @@ const backlinks = [
     width: 40,
     height: 40,
   },
-  { href: 'https://deeplaunch.io', label: 'DeepLaunch' },
+  {
+    href: 'https://deeplaunch.io',
+    img: 'https://deeplaunch.io/badge/badge_dark.svg',
+    alt: 'Featured on DeepLaunch.io',
+    width: 200,
+    height: 54,
+  },
   { href: 'https://fazier.com/launches/www.seedance2.art', label: 'Fazier' },
   {
     href: 'https://turbo0.com/item/seedance',
