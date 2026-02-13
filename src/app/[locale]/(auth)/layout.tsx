@@ -16,13 +16,9 @@ export default function AuthLayout({
   return (
     <div className="flex h-screen w-screen overflow-hidden">
       {/* Left - Visual Panel (hidden on mobile) */}
-      <div className="hidden lg:flex lg:w-[480px] xl:w-[540px] flex-shrink-0 flex-col relative bg-gradient-to-br from-primary via-primary/90 to-primary/70 overflow-hidden">
-        {/* Decorative overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.15),transparent_60%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(255,255,255,0.08),transparent_50%)]" />
-
-        {/* Logo */}
-        <div className="relative z-10 p-8">
+      <div className="hidden lg:block lg:w-[50%] flex-shrink-0 relative overflow-hidden">
+        {/* Logo overlay */}
+        <div className="absolute top-6 left-6 z-10">
           <BrandLogo
             brand={{
               title: envConfigs.app_name,
@@ -32,23 +28,21 @@ export default function AuthLayout({
               },
               url: '/',
               target: '_self',
-              className: 'brightness-0 invert',
+              className: 'brightness-0 invert drop-shadow-md',
             }}
           />
         </div>
 
-        {/* Video showcase */}
-        <div className="relative z-10 flex flex-1 items-center justify-center p-8 pt-0">
-          <video
-            src="https://image.agent-skills.cc/uploads/wan2-video-demo.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover rounded-2xl"
-            preload="metadata"
-          />
-        </div>
+        {/* Full-bleed video */}
+        <video
+          src="https://image.agent-skills.cc/uploads/wan2-video-demo.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          preload="metadata"
+        />
       </div>
 
       {/* Right - Form Panel */}
