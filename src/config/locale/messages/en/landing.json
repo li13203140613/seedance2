@@ -64,7 +64,11 @@
     "show_theme": true,
     "show_locale": true,
     "topbanner": {
-      "text": ""
+      "text": "Save 30% on yearly plans",
+      "buttonText": "Get 30% OFF Now",
+      "href": "/pricing",
+      "countdownMinutes": 30,
+      "remainingSpots": 9
     }
   },
   "footer": {

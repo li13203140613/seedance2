@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
-import { X } from 'lucide-react';
+import { Clock, X } from 'lucide-react';
 
 import { Link } from '@/core/i18n/navigation';
 import { Button } from '@/shared/components/ui/button';
@@ -53,6 +53,14 @@ export type TopBannerProps = {
    * Optional callback when user clicks the CTA and no `href` is provided.
    */
   onAction?: () => void;
+  /**
+   * Countdown timer in minutes. When provided, shows countdown timer.
+   */
+  countdownMinutes?: number;
+  /**
+   * Remaining spots count. When provided, shows remaining spots.
+   */
+  remainingSpots?: number;
 };
 
 function isExternalHref(href: string) {
@@ -60,6 +68,8 @@ function isExternalHref(href: string) {
     /^https?:\/\//i.test(href) || /^mailto:/i.test(href) || /^tel:/i.test(href)
   );
 }
+
+const COUNTDOWN_STORAGE_KEY = 'promotion_countdown_end';
 
 export function TopBanner({
   enabled = true,
@@ -73,10 +83,52 @@ export function TopBanner({
   dismissedExpiryDays = 7,
   className,
   onAction,
+  countdownMinutes = 30,
+  remainingSpots = 9,
 }: TopBannerProps) {
   const dismissKey = useMemo(() => `top-banner-dismissed:${id}`, [id]);
 
   const [showBanner, setShowBanner] = useState(false);
+  const [countdownSeconds, setCountdownSeconds] = useState(0);
+
+  // Initialize countdown from sessionStorage or create new one
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    let endTime = sessionStorage.getItem(COUNTDOWN_STORAGE_KEY);
+    if (!endTime) {
+      // Set countdown end time: current time + countdownMinutes
+      endTime = String(Date.now() + countdownMinutes * 60 * 1000);
+      sessionStorage.setItem(COUNTDOWN_STORAGE_KEY, endTime);
+    }
+
+    // Calculate remaining seconds
+    const remaining = Math.max(0, Math.floor((parseInt(endTime) - Date.now()) / 1000));
+    setCountdownSeconds(remaining);
+  }, [countdownMinutes]);
+
+  // Countdown timer
+  useEffect(() => {
+    if (!showBanner) return;
+
+    const interval = setInterval(() => {
+      setCountdownSeconds((prev) => {
+        if (prev <= 0) {
+          clearInterval(interval);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [showBanner]);
+
+  const formatCountdown = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+  };
   const [bannerHeight, setBannerHeight] = useState(0);
   const bannerRef = useRef<HTMLDivElement>(null);
   const hasCheckedRef = useRef(false);
@@ -224,6 +276,23 @@ export function TopBanner({
         <div className="container py-2.5">
           <div className="flex items-center justify-between gap-4">
             <div className="flex flex-1 items-center justify-center gap-3">
+              {/* Countdown timer */}
+              {countdownMinutes > 0 && (
+                <div className="flex items-center gap-1 rounded bg-white/20 px-2 py-0.5">
+                  <Clock className="h-3 w-3" />
+                  <span className="text-sm font-mono">
+                    {formatCountdown(countdownSeconds)}
+                  </span>
+                </div>
+              )}
+
+              {/* Remaining spots */}
+              {remainingSpots > 0 && (
+                <span className="text-sm font-medium text-yellow-300">
+                  仅剩 {remainingSpots} 个名额
+                </span>
+              )}
+
               <div
                 className="text-sm"
                 dangerouslySetInnerHTML={{ __html: String(text ?? '') }}

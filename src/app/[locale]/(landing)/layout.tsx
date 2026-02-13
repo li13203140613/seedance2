@@ -32,10 +32,12 @@ export default async function LandingLayout({
           text={header.topbanner?.text}
           buttonText={header.topbanner?.buttonText}
           href={header.topbanner?.href}
-          target={header.topbanner?.target}
+          target={header.topbanner?.target as '_self' | '_blank' | undefined}
           closable
           rememberDismiss
           dismissedExpiryDays={header.topbanner?.dismissedExpiryDays ?? 1}
+          countdownMinutes={header.topbanner?.countdownMinutes}
+          remainingSpots={header.topbanner?.remainingSpots}
         />
       )}
       {children}

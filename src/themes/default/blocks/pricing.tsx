@@ -23,14 +23,23 @@ import {
   Pricing as PricingType,
 } from '@/shared/types/blocks/pricing';
 
-// Countdown timer hook
-function useCountdown(days: number) {
-  const [timeLeft, setTimeLeft] = useState({ d: days, h: 0, m: 0, s: 0 });
+const COUNTDOWN_STORAGE_KEY = 'promotion_countdown_end';
+
+// Countdown timer hook - uses sessionStorage for sync with TopBanner
+function useCountdown() {
+  const [timeLeft, setTimeLeft] = useState({ d: 0, h: 0, m: 0, s: 0 });
 
   useEffect(() => {
-    const end = Date.now() + days * 24 * 60 * 60 * 1000;
     const tick = () => {
-      const diff = Math.max(0, end - Date.now());
+      if (typeof window === 'undefined') return;
+
+      const endTime = sessionStorage.getItem(COUNTDOWN_STORAGE_KEY);
+      if (!endTime) {
+        setTimeLeft({ d: 0, h: 0, m: 0, s: 0 });
+        return;
+      }
+
+      const diff = Math.max(0, parseInt(endTime) - Date.now());
       setTimeLeft({
         d: Math.floor(diff / 86400000),
         h: Math.floor((diff % 86400000) / 3600000),
@@ -38,10 +47,11 @@ function useCountdown(days: number) {
         s: Math.floor((diff % 60000) / 1000),
       });
     };
+
     tick();
     const id = setInterval(tick, 1000);
     return () => clearInterval(id);
-  }, [days]);
+  }, []);
 
   return timeLeft;
 }
@@ -87,7 +97,7 @@ export function Pricing({
 
   // Banner countdown
   const banner = (section as any).banner;
-  const countdown = useCountdown(banner?.countdown_days ?? 1);
+  const countdown = useCountdown();
 
   // Current group info
   const currentGroup = useMemo(

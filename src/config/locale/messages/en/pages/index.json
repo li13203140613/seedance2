@@ -5,6 +5,7 @@
       "introduce",
       "benefits",
       "features",
+      "pricing",
       "faq",
       "cta"
     ],
@@ -14,11 +15,6 @@
         "title": "Create Cinematic Seedance Video with seedance2-two",
         "highlight_text": "seedance2-two",
         "description": "seedance2-two lets you generate high-quality seedance video from text or images with multi-shot storytelling and synchronized audio.<br/>Build scenes faster with natural motion, flexible ratios, and creator-ready seedance video output.",
-        "announcement": {
-          "badge": "2026",
-          "title": "seedance2-two quick start is live",
-          "url": "/#features"
-        },
         "tip": "seedance2-two supports text-to-video and image-to-video seedance video workflows.",
         "buttons": [
           {
@@ -178,6 +174,11 @@
             "icon": "RiLoopLeftLine"
           }
         ]
+      },
+      "pricing": {
+        "id": "pricing",
+        "block": "pricing",
+        "data": {}
       },
       "faq": {
         "id": "faq",

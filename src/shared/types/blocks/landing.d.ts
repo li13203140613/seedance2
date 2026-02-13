@@ -46,6 +46,15 @@ export interface Header extends Section {
   show_locale?: boolean;
   show_sign?: boolean;
   className?: string;
+  topbanner?: {
+    text?: string;
+    buttonText?: string;
+    href?: string;
+    target?: string;
+    dismissedExpiryDays?: number;
+    countdownMinutes?: number;
+    remainingSpots?: number;
+  };
 }
 
 // footer props for footer component
