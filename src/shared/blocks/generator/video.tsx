@@ -11,7 +11,7 @@ import {
   User,
   Video,
 } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 
 import { Link } from '@/core/i18n/navigation';
@@ -250,6 +250,7 @@ export function VideoGenerator({
   srOnlyTitle,
 }: VideoGeneratorProps) {
   const t = useTranslations('ai.video.generator');
+  const locale = useLocale();
 
   const [activeTab, setActiveTab] =
     useState<VideoGeneratorTab>('text-to-video');
@@ -705,7 +706,7 @@ export function VideoGenerator({
                             disabled={!option.available}
                           >
                             {option.label}
-                            {!option.available && ' (即将上线)'}
+                            {!option.available && (locale === 'zh' ? ' (即将上线)' : ' (Coming Soon)')}
                           </SelectItem>
                         ))}
                       </SelectContent>

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { Clock, X } from 'lucide-react';
+import { useLocale } from 'next-intl';
 
 import { Link } from '@/core/i18n/navigation';
 import { Button } from '@/shared/components/ui/button';
@@ -86,6 +87,7 @@ export function TopBanner({
   countdownMinutes = 30,
   remainingSpots = 9,
 }: TopBannerProps) {
+  const locale = useLocale();
   const dismissKey = useMemo(() => `top-banner-dismissed:${id}`, [id]);
 
   const [showBanner, setShowBanner] = useState(false);
@@ -289,7 +291,7 @@ export function TopBanner({
               {/* Remaining spots */}
               {remainingSpots > 0 && (
                 <span className="text-sm font-medium text-yellow-300">
-                  仅剩 {remainingSpots} 个名额
+                  {locale === 'zh' ? `仅剩 ${remainingSpots} 个名额` : `Only ${remainingSpots} spots left`}
                 </span>
               )}
 
