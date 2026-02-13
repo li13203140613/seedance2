@@ -37,7 +37,10 @@
               "Credits refresh monthly",
               "Up to 20 AI videos",
               "All premium models",
-              "No watermark"
+              "No watermark",
+              "Commercial license & unlimited usage",
+              "1080p video resolution",
+              "Up to 12s videos"
             ],
             "interval": "month",
             "amount": 990,
@@ -68,7 +71,10 @@
               "Up to 80 AI videos",
               "All premium models",
               "No watermark",
-              "Priority queue"
+              "Priority queue",
+              "Commercial license & unlimited usage",
+              "1080p video resolution",
+              "Up to 12s videos"
             ],
             "interval": "month",
             "amount": 2990,
@@ -100,7 +106,9 @@
               "All premium models",
               "No watermark",
               "Human support",
-              "API access"
+              "Commercial license & unlimited usage",
+              "1080p video resolution",
+              "Up to 12s videos"
             ],
             "interval": "month",
             "amount": 9900,
@@ -223,7 +231,9 @@
               "Up to 240 AI videos",
               "All premium models",
               "No watermark",
-              "Commercial license"
+              "Commercial license & unlimited usage",
+              "1080p video resolution",
+              "Up to 12s videos"
             ],
             "interval": "year",
             "amount": 9480,
@@ -260,7 +270,10 @@
               "All premium models",
               "No watermark",
               "Priority queue",
-              "Priority support"
+              "Priority support",
+              "Commercial license & unlimited usage",
+              "1080p video resolution",
+              "Up to 12s videos"
             ],
             "interval": "year",
             "amount": 23880,
@@ -297,8 +310,10 @@
               "All premium models",
               "No watermark",
               "Human support",
-              "API access",
-              "Dedicated support"
+              "Dedicated support",
+              "Commercial license & unlimited usage",
+              "1080p video resolution",
+              "Up to 12s videos"
             ],
             "interval": "year",
             "amount": 13080,
