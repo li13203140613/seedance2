@@ -954,30 +954,17 @@ export function VideoGenerator({
                     ))}
                   </div>
                 ) : (
-                  <div className="space-y-4">
-                    <div className="relative overflow-hidden rounded-lg">
-                      <div className="bg-primary/10 text-primary absolute top-3 left-3 z-10 flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium backdrop-blur-sm">
-                        <Sparkles className="h-3 w-3" />
-                        {t('preview_example')}
-                      </div>
+                  <div className="relative overflow-hidden rounded-lg">
                       <video
-                        src="https://image.agent-skills.cc/uploads/wan2-video-demo.mp4"
+                        src="https://image.agent-skills.cc/uploads/manual/video_032.mp4"
                         autoPlay
                         loop
                         muted
                         playsInline
-                        className="h-auto w-full rounded-lg"
+                        className="h-full w-full object-cover rounded-lg"
                         preload="metadata"
                       />
                     </div>
-                    <div className="text-center">
-                      <p className="text-muted-foreground text-sm">
-                        {isGenerating
-                          ? t('ready_to_generate')
-                          : t('preview_hint')}
-                      </p>
-                    </div>
-                  </div>
                 )}
               </CardContent>
             </Card>
