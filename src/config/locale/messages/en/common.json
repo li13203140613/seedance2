@@ -42,7 +42,18 @@
     "verify_email_account_mismatch": "Signed in as {current}. This page is waiting for {expected}.",
     "resend_verification_countdown": "Resend verification email ({seconds}s)",
     "resend_verification_wait": "Please wait {seconds}s before resending.",
-    "back_to_sign_in": "Back to Sign In"
+    "back_to_sign_in": "Back to Sign In",
+    "welcome_back": "Welcome back to {app}!",
+    "please_sign_in": "Please sign in",
+    "welcome_to": "Welcome to {app}!",
+    "create_account": "Create your account",
+    "daily_credits_bonus": "Login daily, unlock extra",
+    "free_credits": "free credits",
+    "agree_terms_prefix": "By continuing, you agree to our",
+    "terms_of_service": "Terms of Service",
+    "privacy_policy": "Privacy Policy",
+    "no_tracking_note": "No tracking, no marketing emails.",
+    "and": "and"
   },
   "payment": {
     "choose_payment_method": "Choose Payment Method",

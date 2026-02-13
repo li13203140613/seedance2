@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Loader2 } from 'lucide-react';
+import { Eye, EyeOff, Loader2, Lock, Mail } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 
@@ -10,7 +10,6 @@ import { Link, useRouter } from '@/core/i18n/navigation';
 import { defaultLocale } from '@/config/locale';
 import { Button } from '@/shared/components/ui/button';
 import { Input } from '@/shared/components/ui/input';
-import { Label } from '@/shared/components/ui/label';
 import { useAppContext } from '@/shared/contexts/app';
 
 import { SocialProviders } from './social-providers';
@@ -28,6 +27,7 @@ export function SignInForm({
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const { configs } = useAppContext();
 
@@ -35,7 +35,8 @@ export function SignInForm({
   const isGithubAuthEnabled = configs.github_auth_enabled === 'true';
   const isEmailAuthEnabled =
     configs.email_auth_enabled !== 'false' ||
-    (!isGoogleAuthEnabled && !isGithubAuthEnabled); // no social providers enabled, auto enable email auth
+    (!isGoogleAuthEnabled && !isGithubAuthEnabled);
+  const hasSocialProviders = isGoogleAuthEnabled || isGithubAuthEnabled;
 
   if (callbackUrl) {
     if (
@@ -58,16 +59,13 @@ export function SignInForm({
   };
 
   const handleSignIn = async () => {
-    if (loading) {
-      return;
-    }
+    if (loading) return;
 
     if (!email || !password) {
       toast.error('email and password are required');
       return;
     }
 
-    // Set loading immediately to avoid duplicate submits before request hooks fire.
     setLoading(true);
 
     try {
@@ -78,15 +76,9 @@ export function SignInForm({
           callbackURL: callbackUrl,
         },
         {
-          onRequest: (ctx) => {
-            // loading is already set above; keep as no-op for safety
-          },
-          onResponse: (ctx) => {
-            // Do NOT reset loading here; navigation may not have completed yet.
-          },
-          onSuccess: (ctx) => {
-            // Keep loading=true until navigation completes.
-          },
+          onRequest: () => {},
+          onResponse: () => {},
+          onSuccess: () => {},
           onError: (e: any) => {
             const status = e?.error?.status;
             if (status === 403) {
@@ -95,13 +87,11 @@ export function SignInForm({
                 email
               )}&callbackUrl=${encodeURIComponent(normalizedCallbackUrl)}`;
 
-              // Send verification email with callback to verify page.
               void authClient.sendVerificationEmail({
                 email,
                 callbackURL: `${base}${verifyPath}`,
               });
 
-              // i18n router will prefix locale automatically; do NOT include locale here.
               router.push(verifyPath);
               return;
             }
@@ -118,84 +108,128 @@ export function SignInForm({
   };
 
   return (
-    <div className={`w-full md:max-w-md ${className}`}>
-      <div className="grid gap-4">
-        {isEmailAuthEnabled && (
-          <form
-            className="grid gap-4"
-            onSubmit={(e) => {
-              e.preventDefault();
-              void handleSignIn();
-            }}
-          >
-            <div className="grid gap-2">
-              <Label htmlFor="email">{t('email_title')}</Label>
-              <Input
-                id="email"
-                type="email"
-                placeholder={t('email_placeholder')}
-                required
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                value={email}
-              />
-            </div>
+    <div className={`w-full ${className || ''}`}>
+      {/* Daily credits promo */}
+      <p className="text-center text-sm text-muted-foreground">
+        {t('daily_credits_bonus')}&nbsp;
+        <span className="text-xl font-bold text-primary">2</span>
+        &nbsp;{t('free_credits')}
+      </p>
 
-            <div className="grid gap-2">
-              {/* <div className="flex items-center">
-              <Label htmlFor="password">{t("password_title")}</Label>
-              <Link href="#" className="ml-auto inline-block text-sm underline">
-                Forgot your password?
-              </Link>
-            </div> */}
+      {/* Social Providers */}
+      {hasSocialProviders && (
+        <div className="mt-4">
+          <SocialProviders
+            configs={configs}
+            callbackUrl={callbackUrl || '/'}
+            loading={loading}
+            setLoading={setLoading}
+          />
+        </div>
+      )}
 
-              <Input
-                id="password"
-                type="password"
-                placeholder={t('password_placeholder')}
-                autoComplete="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
+      {/* OR divider */}
+      {isEmailAuthEnabled && hasSocialProviders && (
+        <div className="flex items-center gap-4 my-5">
+          <div className="h-px flex-1 bg-border" />
+          <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+            {t('or')}
+          </span>
+          <div className="h-px flex-1 bg-border" />
+        </div>
+      )}
 
-            {/* <div className="flex items-center gap-2">
-            <Checkbox
-              id="remember"
-              onClick={() => {
-                setRememberMe(!rememberMe);
-              }}
-            />
-            <Label htmlFor="remember">{t("remember_me_title")}</Label>
-          </div> */}
-
-            <Button type="submit" className="w-full" disabled={loading}>
-              {loading ? (
-                <Loader2 size={16} className="animate-spin" />
-              ) : (
-                <p> {t('sign_in_title')} </p>
-              )}
-            </Button>
-          </form>
-        )}
-
-        <SocialProviders
-          configs={configs}
-          callbackUrl={callbackUrl || '/'}
-          loading={loading}
-          setLoading={setLoading}
-        />
-      </div>
+      {/* Email/Password Form */}
       {isEmailAuthEnabled && (
-        <div className="flex w-full justify-center border-t py-4">
-          <p className="text-center text-xs text-neutral-500">
-            {t('no_account')}
-            <Link href="/sign-up" className="underline">
-              <span className="cursor-pointer dark:text-white/70">
-                {t('sign_up_title')}
-              </span>
+        <form
+          className="space-y-4"
+          onSubmit={(e) => {
+            e.preventDefault();
+            void handleSignIn();
+          }}
+        >
+          {/* Email */}
+          <div className="relative">
+            <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 size-4 text-muted-foreground" />
+            <Input
+              id="email"
+              type="email"
+              placeholder={t('email_placeholder')}
+              required
+              className="h-12 rounded-lg pl-10 text-sm"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+            />
+          </div>
+
+          {/* Password */}
+          <div className="relative">
+            <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 size-4 text-muted-foreground" />
+            <Input
+              id="password"
+              type={showPassword ? 'text' : 'password'}
+              placeholder={t('password_placeholder')}
+              autoComplete="password"
+              required
+              className="h-12 rounded-lg pl-10 pr-10 text-sm"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="absolute right-3.5 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+              tabIndex={-1}
+            >
+              {showPassword ? (
+                <EyeOff className="size-4" />
+              ) : (
+                <Eye className="size-4" />
+              )}
+            </button>
+          </div>
+
+          {/* Login Button */}
+          <Button
+            type="submit"
+            className="w-full h-12 rounded-full text-base font-semibold"
+            disabled={loading}
+          >
+            {loading ? (
+              <Loader2 size={16} className="animate-spin" />
+            ) : (
+              t('sign_in_title')
+            )}
+          </Button>
+        </form>
+      )}
+
+      {/* Sign up link + Terms */}
+      {isEmailAuthEnabled && (
+        <div className="mt-5 space-y-3">
+          <p className="text-center text-sm text-muted-foreground">
+            {t('no_account')}&nbsp;
+            <Link
+              href="/sign-up"
+              className="font-semibold text-foreground underline underline-offset-4 hover:text-primary transition-colors"
+            >
+              {t('sign_up_title')}
+            </Link>
+          </p>
+          <p className="text-center text-xs text-muted-foreground leading-relaxed">
+            {t('agree_terms_prefix')}{' '}
+            <Link
+              href="/terms-of-service"
+              className="text-primary hover:underline"
+            >
+              {t('terms_of_service')}
+            </Link>{' '}
+            {t('and')}{' '}
+            <Link
+              href="/privacy-policy"
+              className="text-primary hover:underline"
+            >
+              {t('privacy_policy')}
             </Link>
           </p>
         </div>

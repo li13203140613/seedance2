@@ -70,7 +70,7 @@ export function SocialProviders({
     providers.push({
       name: 'google',
       title: t('google_sign_in_title'),
-      icon: <RiGoogleFill />,
+      icon: <RiGoogleFill className="size-5" />,
       onClick: () => handleSignIn({ provider: 'google' }),
     });
   }
@@ -79,29 +79,26 @@ export function SocialProviders({
     providers.push({
       name: 'github',
       title: t('github_sign_in_title'),
-      icon: <RiGithubFill />,
+      icon: <RiGithubFill className="size-5" />,
       onClick: () => handleSignIn({ provider: 'github' }),
     });
   }
 
   return (
-    <div
-      className={cn(
-        'flex w-full items-center gap-2',
-        'flex-col justify-between'
-      )}
-    >
+    <div className="flex w-full flex-col gap-3">
       {providers.map((provider) => (
         <Button
           key={provider.name}
           type="button"
-          variant="outline"
-          className={cn('w-full gap-2')}
+          className={cn(
+            'w-full h-12 rounded-full gap-3 text-base font-semibold',
+            'bg-primary text-primary-foreground hover:bg-primary/90'
+          )}
           disabled={loading}
           onClick={provider.onClick}
         >
           {provider.icon}
-          <h3>{provider.title}</h3>
+          <span>{provider.title}</span>
         </Button>
       ))}
     </div>

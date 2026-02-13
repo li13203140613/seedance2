@@ -33,12 +33,57 @@ export function SignModal({ callbackUrl = '/' }: { callbackUrl?: string }) {
   if (isDesktop) {
     return (
       <Dialog open={isShowSignModal} onOpenChange={setIsShowSignModal}>
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle>{t('sign_in_title')}</DialogTitle>
-            <DialogDescription>{t('sign_in_description')}</DialogDescription>
-          </DialogHeader>
-          <SignInForm callbackUrl={callbackUrl} />
+        <DialogContent
+          className="sm:max-w-[860px] p-0 overflow-hidden gap-0 border-0"
+          showCloseButton={false}
+        >
+          <div className="flex">
+            {/* Left - Video Panel */}
+            <div className="hidden md:block w-[380px] flex-shrink-0 relative bg-gradient-to-br from-primary via-primary/90 to-primary/70 overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.15),transparent_60%)]" />
+              <video
+                src="https://image.agent-skills.cc/uploads/wan2-video-demo.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover object-[70%_center]"
+                preload="metadata"
+              />
+            </div>
+
+            {/* Right - Form Panel */}
+            <div className="flex-1 p-8 relative">
+              {/* Close button */}
+              <button
+                onClick={() => setIsShowSignModal(false)}
+                className="absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 ring-offset-background focus:ring-ring focus:ring-2 focus:ring-offset-2 focus:outline-hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
+                </svg>
+                <span className="sr-only">Close</span>
+              </button>
+
+              <DialogHeader>
+                <DialogTitle className="text-2xl font-bold">
+                  {t('sign_in_title')}
+                </DialogTitle>
+              </DialogHeader>
+              <SignInForm callbackUrl={callbackUrl} className="mt-4" />
+            </div>
+          </div>
         </DialogContent>
       </Dialog>
     );
@@ -48,13 +93,16 @@ export function SignModal({ callbackUrl = '/' }: { callbackUrl?: string }) {
     <Drawer open={isShowSignModal} onOpenChange={setIsShowSignModal}>
       <DrawerContent>
         <DrawerHeader className="text-left">
-          <DrawerTitle>{t('sign_in_title')}</DrawerTitle>
-          <DrawerDescription>{t('sign_in_description')}</DrawerDescription>
+          <DrawerTitle className="text-2xl font-bold">
+            {t('sign_in_title')}
+          </DrawerTitle>
         </DrawerHeader>
-        <SignInForm callbackUrl={callbackUrl} className="mt-8 px-4" />
+        <SignInForm callbackUrl={callbackUrl} className="mt-4 px-4" />
         <DrawerFooter className="pt-4">
           <DrawerClose asChild>
-            <Button variant="outline">{t('cancel_title')}</Button>
+            <Button variant="outline" className="rounded-full">
+              {t('cancel_title')}
+            </Button>
           </DrawerClose>
         </DrawerFooter>
       </DrawerContent>

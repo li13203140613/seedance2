@@ -42,7 +42,18 @@
     "verify_email_account_mismatch": "当前已登录 {current}，本页面等待 {expected} 的验证结果。",
     "resend_verification_countdown": "重新发送验证邮件（{seconds}s）",
     "resend_verification_wait": "请等待 {seconds} 秒后再重新发送。",
-    "back_to_sign_in": "返回登录"
+    "back_to_sign_in": "返回登录",
+    "welcome_back": "欢迎回到 {app}！",
+    "please_sign_in": "请登录",
+    "welcome_to": "欢迎加入 {app}！",
+    "create_account": "创建您的账户",
+    "daily_credits_bonus": "每日登录领取额外",
+    "free_credits": "免费积分",
+    "agree_terms_prefix": "继续使用即表示您同意我们的",
+    "terms_of_service": "服务条款",
+    "privacy_policy": "隐私政策",
+    "no_tracking_note": "无追踪，无营销邮件。",
+    "and": "和"
   },
   "payment": {
     "choose_payment_method": "选择支付方式",
