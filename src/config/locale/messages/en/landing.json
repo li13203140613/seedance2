@@ -64,18 +64,18 @@
     "show_theme": true,
     "show_locale": true,
     "topbanner": {
-      "text": "🚀 Seedance 2 is launching on <b>February 24</b> — Pre-sale top-up now for early access!",
-      "buttonText": "Top Up Now",
+      "text": "Save up to 89% on yearly plans",
+      "buttonText": "Get 89% OFF Now",
       "href": "/pricing",
-      "countdownMinutes": 0,
-      "remainingSpots": 0
+      "countdownMinutes": 30,
+      "remainingSpots": 9
     }
   },
   "footer": {
     "id": "footer",
     "brand": {
       "title": "seedancetwo 2.0",
-      "description": "seedancetwo 2.0 helps teams create cinematic seedance video from text and images with multi-shot storytelling and synchronized audio.",
+      "description": "seedancetwo lets you quickly generate cinematic AI videos from text and images, perfect for marketing, content creation, and product showcases.",
       "logo": {
         "src": "/logo.png",
         "alt": "seedancetwo 2.0",

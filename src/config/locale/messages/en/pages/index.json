@@ -3,7 +3,9 @@
     "show_sections": [
       "hero",
       "introduce",
-      "benefits",
+      "benefit-1",
+      "benefit-2",
+      "benefit-3",
       "features",
       "pricing",
       "faq",
@@ -12,15 +14,19 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Create Cinematic Seedance Video with seedancetwo 2.0",
-        "highlight_text": "seedancetwo 2.0",
-        "description": "seedancetwo 2.0 lets you generate high-quality seedance video from text or images with multi-shot storytelling and synchronized audio.<br/>Build scenes faster with natural motion, flexible ratios, and creator-ready seedance video output.",
-        "tip": "seedancetwo 2.0 supports text-to-video and image-to-video seedance video workflows.",
+        "title": "SeeDanceTwo — The Video Model That Understands You",
+        "highlight_text": "SeeDanceTwo",
+        "description": "Multimodal creation starts here. Dream big — and leave the rest to it.",
+        "announcement": {
+          "badge": "NEW",
+          "text": "Seedance 2 launching Feb 24 — Pre-sale top-up for early access",
+          "url": "/pricing"
+        },
         "buttons": [
           {
-            "title": "View Showcases",
-            "icon": "Play",
-            "url": "/showcases",
+            "title": "Get Started",
+            "icon": "Zap",
+            "url": "/#video-generator",
             "target": "_self",
             "variant": "default"
           }
@@ -34,148 +40,145 @@
         },
         "background_image": {
           "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
-          "alt": "seedancetwo 2.0 cinematic background"
+          "alt": "cinematic background"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "What is seedancetwo 2.0?",
+        "title": "What is seedancetwo?",
         "label": "Overview",
-        "description": "seedancetwo 2.0 is an AI seedance video generation platform that helps teams turn prompts and images into cinematic clips quickly with powerful seedance video tools.",
+        "description": "Seedance two accepts four modality inputs — image, video, audio, and text — for richer expression and more controllable generation.",
         "image": {
           "src": "https://image.agent-skills.cc/uploads/video_030.mp4",
-          "alt": "seedancetwo 2.0 overview"
+          "alt": "seedancetwo overview"
         },
         "items": [
           {
-            "title": "Multi-shot seedance video storytelling",
-            "description": "Generate coherent multi-scene seedance video with consistent characters and visual style from a single prompt.",
-            "icon": "RiMovie2Line",
-            "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-1/960/640.webp",
-              "alt": "multi-shot seedance video storytelling"
-            }
-          },
-          {
-            "title": "Text to seedance video generation",
-            "description": "Describe a scene in natural language and produce cinematic seedance video clips with smooth motion and lighting.",
-            "icon": "RiQuillPenAiLine",
-            "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-2/960/640.webp",
-              "alt": "text to seedance video"
-            }
-          },
-          {
-            "title": "Image to seedance video control",
-            "description": "Upload a reference image and animate it into short seedance video while preserving composition and tone.",
+            "title": "Reference Image",
+            "description": "Precisely reproduce composition, character details, and visual style from a reference image.",
             "icon": "RiImage2Line",
             "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-3/960/640.webp",
-              "alt": "image to seedance video"
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-1/960/640.webp",
+              "alt": "reference image"
             }
           },
           {
-            "title": "Fast creator workflow",
-            "description": "Iterate quickly with seedancetwo reusable prompts and practical defaults for social, product, and marketing seedance video content.",
-            "icon": "RiFlashlightLine",
+            "title": "Reference Video",
+            "description": "Replicate camera movements, complex motion rhythms, and creative effects from a reference video.",
+            "icon": "RiMovie2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-2/960/640.webp",
+              "alt": "reference video"
+            }
+          },
+          {
+            "title": "Video Extension",
+            "description": "Smoothly extend and connect shots — generate continuous scenes guided by your prompts. Not just generation, but \"keep shooting.\"",
+            "icon": "RiTimeLine",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-3/960/640.webp",
+              "alt": "video extension"
+            }
+          },
+          {
+            "title": "Video Editing",
+            "description": "Swap characters, remove or add elements in existing videos with targeted edits.",
+            "icon": "RiScissors2Line",
             "image": {
               "src": "https://picsum.photos/seed/seedancetwo-en-introduce-4/960/640.webp",
-              "alt": "seedancetwo creator workflow"
+              "alt": "video editing"
             }
           }
         ],
         "className": "bg-muted"
       },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "Why teams choose seedancetwo 2.0",
-        "label": "Benefits",
-        "description": "seedancetwo 2.0 is built for creators and product teams that need high-quality short-form seedance video with reliable output speed.",
-        "items": [
-          {
-            "title": "Consistent multi-scene seedance video results",
-            "description": "Maintain visual continuity across scene transitions for stronger seedance video storytelling and less post-editing.",
-            "icon": "RiFilmLine",
-            "image": {
-              "src": "https://image.agent-skills.cc/uploads/ad7d81dd18c2e3a554f532f37c9861aa.mp4",
-              "alt": "consistent seedance video scenes"
-            }
-          },
-          {
-            "title": "Audio-aware seedance video generation",
-            "description": "Support synchronized dialogue and sound cues so generated seedance video clips feel more polished and production-ready.",
-            "icon": "RiVolumeUpLine",
-            "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-en-benefits-2/960/640.webp",
-              "alt": "seedance video audio synchronization"
-            }
-          },
-          {
-            "title": "Flexible seedance video output formats",
-            "description": "Produce seedance video in multiple aspect ratios for social feeds, ads, landing pages, and short campaigns.",
-            "icon": "RiLayoutMasonryLine",
-            "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-en-benefits-3/960/640.webp",
-              "alt": "seedance video format flexibility"
-            }
-          }
-        ]
+      "benefit-1": {
+        "block": "features-media",
+        "id": "benefit-1",
+        "image_position": "left",
+        "title": "Core Capabilities Significantly Enhanced: More Stable, Smoother, More Realistic!",
+        "description": "Beyond multimodal, Seedance 2.0 delivers major improvements at the foundational level — more accurate physics, more natural and fluid motion, more precise instruction following, and more consistent style. It handles complex actions, continuous motion, and other challenging generation tasks with ease, making every video more realistic and polished. A true evolution in core capabilities!",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_002.mp4",
+          "alt": "core capabilities significantly enhanced"
+        }
+      },
+      "benefit-2": {
+        "block": "features-media",
+        "id": "benefit-2",
+        "image_position": "right",
+        "title": "Full Multimodal Upgrade: Video Creation Enters the \"Free Combination\" Era!",
+        "description": "Upload text, images, video, or audio — all can serve as source material or references. Reference any content's motion, effects, style, camera work, characters, scenes, or sound. As long as your prompts are clear, the model understands. Seedance 2.0 = Multimodal reference ability (reference anything) + Strong creative generation + Precise instruction response (excellent comprehension).",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4",
+          "alt": "full multimodal upgrade"
+        }
+      },
+      "benefit-3": {
+        "block": "features-media",
+        "id": "benefit-3",
+        "image_position": "left",
+        "title": "Overall Consistency Fully Improved",
+        "description": "Characters looking different between shots, product details lost, small text blurred, scene jumps, inconsistent camera styles... These common consistency issues in creative work are now resolved in 2.0. From faces to clothing to font details, overall consistency is more stable and accurate.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_017.mp4",
+          "alt": "overall consistency fully improved"
+        }
       },
       "features": {
         "id": "features",
         "title": "Core Capabilities",
-        "description": "Ten major upgrades from consistency to emotional performance—making AI video creation more natural and efficient.",
+        "description": "\"Reference ability\" is the biggest highlight. Use an image to set the visual style, a video to specify character movements and camera changes, a few seconds of audio to set the rhythm and mood... Combined with prompts, the creative process becomes more natural, more efficient, and more like being a real \"director.\"",
         "items": [
           {
             "title": "Overall Consistency",
-            "description": "Faces, outfits, text, and scene details stay coherent across multi-shot sequences.",
+            "description": "Character faces, outfits, text, and details stay highly consistent across multiple shots.",
             "icon": "RiShieldCheckLine"
           },
           {
             "title": "Camera & Motion Replication",
-            "description": "Upload a reference video to replicate complex camera work and choreography precisely.",
+            "description": "Upload a reference video to replicate complex choreography and camera movements — no frame-by-frame descriptions needed.",
             "icon": "RiCameraLine"
           },
           {
-            "title": "Creative Template Replication",
-            "description": "Reproduce creative transitions, ad edits, and film clips from reference media.",
+            "title": "Creative Template / Effect Replication",
+            "description": "Creative transitions, ad spots, film clips, and other complex effects can all be precisely reproduced.",
             "icon": "RiMagicLine"
           },
           {
-            "title": "Creative Story Completion",
-            "description": "The model fills in narrative details and creative nuances autonomously.",
+            "title": "Creative & Story Completion",
+            "description": "The model autonomously completes storylines and creative details, making narratives richer and more natural.",
             "icon": "RiQuillPenLine"
           },
           {
             "title": "Video Extension",
-            "description": "Smoothly extend and continue shots with prompt-guided generation.",
+            "description": "Smoothly extend and connect shots — generate continuous scenes guided by prompts. Not just generation, but keep shooting.",
             "icon": "RiTimeLine"
           },
           {
-            "title": "Accurate Voice & Tone",
-            "description": "Natural and lifelike voice timbre for dialogue and narration.",
+            "title": "More Accurate Tone, More Realistic Voice",
+            "description": "Natural and lifelike voice timbre with greatly enhanced expressiveness for dialogue and narration.",
             "icon": "RiVoiceprintLine"
           },
           {
-            "title": "Long-Take Continuity",
-            "description": "Seamless long takes with fluid scene transitions and no visual breaks.",
+            "title": "Smoother Long Takes",
+            "description": "No breaks in long shots — natural scene transitions with greatly enhanced continuity.",
             "icon": "RiFilmLine"
           },
           {
-            "title": "Practical Video Editing",
-            "description": "Make targeted edits to existing videos without full regeneration.",
+            "title": "Highly Usable Video Editing",
+            "description": "Make targeted edits to specific segments of existing videos without regenerating the entire clip.",
             "icon": "RiScissors2Line"
           },
           {
             "title": "Music Beat Sync",
-            "description": "Align visual actions precisely to audio beats for rhythmic videos.",
+            "description": "Audio beats align precisely with on-screen actions, giving videos a strong sense of rhythm.",
             "icon": "RiMusic2Line"
           },
           {
             "title": "Better Emotional Performance",
-            "description": "Improved expressions and body language for stronger narrative impact.",
+            "description": "More nuanced facial expressions and body language for stronger narrative impact.",
             "icon": "RiEmotionLine"
           }
         ]
@@ -187,47 +190,39 @@
       },
       "faq": {
         "id": "faq",
-        "title": "Frequently Asked Questions About seedancetwo",
-        "description": "Everything you need to know about seedancetwo before creating your first seedance2 AI video. Reach out by email anytime.",
+        "title": "Frequently Asked Questions",
+        "description": "If you need help, please contact us by email.",
         "items": [
           {
-            "question": "How many credits does one seedancetwo video cost?",
-            "answer": "Each seedancetwo generation costs credits based on duration and resolution. seedance2 offers flexible credit packs from starter to professional tiers—check the pricing page to find the right plan for your budget."
+            "question": "What is seedancetwo?",
+            "answer": "seedancetwo is an AI video generation experience based on the Seedance model, supporting fast creation of cinematic videos."
           },
           {
-            "question": "What resolution and aspect ratios does seedancetwo support?",
-            "answer": "seedancetwo outputs high-definition video in 16:9 landscape, 9:16 portrait, and 1:1 square. seedance2 formats cover YouTube, TikTok, Instagram Reels, and professional ad campaigns with cinematic quality."
+            "question": "Does it support text-to-video and image-to-video?",
+            "answer": "Yes. You can enter prompts for text-to-video, or upload images for image-to-video generation."
           },
           {
-            "question": "How does seedancetwo keep characters consistent across scenes?",
-            "answer": "seedancetwo locks faces, outfits, and props using its Overall Consistency engine. With seedance2, characters stay visually identical from the first shot to the last across multi-scene projects."
+            "question": "Can it generate multi-shot sequences?",
+            "answer": "Yes. The workflow supports multi-shot storytelling, maintaining scene continuity and style consistency within a single generation."
           },
           {
-            "question": "Can seedancetwo replicate camera movements from a reference video?",
-            "answer": "Yes. Upload a reference clip and seedancetwo reproduces the panning, zooming, and choreography. seedance2 Camera Replication matches professional-grade shots accurately in your seedancetwo workflow."
+            "question": "Does it support audio-visual synchronization?",
+            "answer": "Yes — the product supports audio-visual synchronization and lip-sync, enhancing the natural feel of videos."
           },
           {
-            "question": "Does seedancetwo sync video cuts to background music beats?",
-            "answer": "seedancetwo aligns visual actions and transitions precisely to your audio rhythm. seedance2 Music Beat Sync is ideal for TikTok, Reels, and rhythm-driven seedancetwo showcase content."
+            "question": "What output aspect ratios are available?",
+            "answer": "Content can be generated in common ratios including landscape, portrait, and square, suitable for various publishing channels."
           },
           {
-            "question": "Can I edit parts of a seedancetwo video without regenerating it entirely?",
-            "answer": "Yes. seedancetwo supports practical video editing—modify targeted sections without re-rendering the full clip. seedance2 saves you credits by refining specific frames in your seedancetwo output."
-          },
-          {
-            "question": "Does seedancetwo support lip-sync dialogue and voiceover?",
-            "answer": "seedancetwo generates accurate lip-sync with natural voice timbre for dialogue and narration. seedance2 Voice & Tone technology makes character speech feel authentic in seedancetwo videos."
-          },
-          {
-            "question": "Can I use seedancetwo videos for commercial purposes?",
-            "answer": "All videos created with seedancetwo are available for commercial use including ads, product pages, and social campaigns. See the seedance2 terms of service for complete seedancetwo licensing details."
+            "question": "How do I contact the support team?",
+            "answer": "Please email support@seedancetwo.com for configuration and customization support."
           }
         ]
       },
       "cta": {
         "id": "cta",
-        "title": "Launch your first seedancetwo seedance video experience",
-        "description": "Start creating seedance video with seedancetwo and shape it into your own cinematic AI video product.",
+        "title": "Start Building Your seedancetwo Experience",
+        "description": "Build on this quick start and create your own cinematic AI video product.",
         "buttons": [
           {
             "title": "Explore Features",

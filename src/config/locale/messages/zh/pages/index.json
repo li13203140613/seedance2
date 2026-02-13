@@ -17,6 +17,11 @@
         "title": "SeeDanceTwo 能听懂你表达的视频模型",
         "highlight_text": "SeeDanceTwo",
         "description": "多模态创作，从这里启程。请你们大胆想象，其余的交给它",
+        "announcement": {
+          "badge": "预告",
+          "text": "Seedance 2 预计2月24日上线 — 预售充值抢先体验",
+          "url": "/pricing"
+        },
         "buttons": [
           {
             "title": "开始体验",

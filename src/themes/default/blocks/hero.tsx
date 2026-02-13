@@ -48,8 +48,25 @@ export function Hero({
           </>
         )}
 
+        {/* Launch announcement badge - positioned near top */}
+        {section.announcement && (
+          <div className="absolute inset-x-0 top-24 z-10 flex justify-center">
+            <Link
+              href={section.announcement.url ?? '/pricing'}
+              className="group inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-white backdrop-blur-md transition-all hover:bg-white/20"
+            >
+              <span className="rounded-full bg-purple-500 px-2 py-0.5 text-xs font-semibold">
+                {section.announcement.badge}
+              </span>
+              <span>{section.announcement.text}</span>
+              <span className="transition-transform group-hover:translate-x-0.5">→</span>
+            </Link>
+          </div>
+        )}
+
         {/* Overlay text content */}
         <div className="relative z-10 mx-auto max-w-full px-4 text-center md:max-w-5xl">
+
           {texts && texts.length > 0 ? (
             <h1 className="text-4xl font-semibold text-white drop-shadow-lg sm:text-6xl">
               <div>
