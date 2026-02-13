@@ -1,31 +1,31 @@
 {
   "fields": {
     "title": "Titre",
-    "media_type": "Type de media",
+    "media_type": "Type de média",
     "provider": "Fournisseur",
-    "model": "Modele",
+    "model": "Modèle",
     "prompt": "Prompt",
     "options": "Options",
     "status": "Statut",
-    "result": "Resultat",
-    "cost_credits": "Credits consommes",
-    "created_at": "Cree le",
+    "result": "Résultat",
+    "cost_credits": "Crédits consommés",
+    "created_at": "Créé le",
     "action": "Action"
   },
   "list": {
-    "title": "Taches IA",
+    "title": "Tâches IA",
     "tabs": {
       "all": "Tout",
       "music": "Musique",
       "image": "Image",
-      "video": "Video",
+      "video": "Vidéo",
       "audio": "Audio",
       "text": "Texte"
     },
     "buttons": {
-      "view": "Voir la tache",
-      "refresh": "Actualiser la tache"
+      "view": "Voir la tâche",
+      "refresh": "Actualiser la tâche"
     },
-    "empty_message": "Aucune tache trouvee"
+    "empty_message": "Aucune tâche trouvée"
   }
 }

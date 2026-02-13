@@ -14,12 +14,12 @@
     "nav": {
       "items": [
         {
-          "title": "Fonctionnalites",
+          "title": "Fonctionnalités",
           "url": "/#features",
           "icon": "Sparkles"
         },
         {
-          "title": "Demonstrations",
+          "title": "Démonstrations",
           "url": "/showcases",
           "icon": "Box"
         },
@@ -54,7 +54,7 @@
           "icon": "CreditCard"
         },
         {
-          "title": "Activite",
+          "title": "Activité",
           "url": "/activity",
           "icon": "Activity"
         }
@@ -64,7 +64,7 @@
     "show_theme": true,
     "show_locale": true,
     "topbanner": {
-      "text": "Economisez jusqu'a 89 % sur les forfaits annuels",
+      "text": "Économisez jusqu'à 89 % sur les forfaits annuels",
       "buttonText": "Profitez de -89 % maintenant",
       "href": "/pricing",
       "countdownMinutes": 30,
@@ -75,7 +75,7 @@
     "id": "footer",
     "brand": {
       "title": "seedancetwo 2.0",
-      "description": "seedancetwo vous permet de generer rapidement des videos IA cinematographiques a partir de texte et d'images, ideal pour le marketing, la creation de contenu et les demonstrations de produits.",
+      "description": "seedancetwo vous permet de générer rapidement des vidéos IA cinématographiques à partir de texte et d'images, idéal pour le marketing, la création de contenu et les démonstrations de produits.",
       "logo": {
         "src": "/logo.png",
         "alt": "seedancetwo 2.0",
@@ -90,7 +90,7 @@
           "title": "Produit",
           "children": [
             {
-              "title": "Fonctionnalites",
+              "title": "Fonctionnalités",
               "url": "/#features",
               "target": "_self"
             },
@@ -116,7 +116,7 @@
     "agreement": {
       "items": [
         {
-          "title": "Politique de confidentialite",
+          "title": "Politique de confidentialité",
           "url": "/privacy-policy"
         },
         {

@@ -1,9 +1,9 @@
 {
-  "title": "Activite",
+  "title": "Activité",
   "nav": {
     "items": [
       {
-        "title": "Taches IA",
+        "title": "Tâches IA",
         "url": "/activity/ai-tasks",
         "icon": "RiTaskLine"
       },
@@ -17,12 +17,12 @@
   "top_nav": {
     "items": [
       {
-        "title": "Activite",
+        "title": "Activité",
         "url": "/activity",
         "icon": "Activity"
       },
       {
-        "title": "Parametres",
+        "title": "Paramètres",
         "url": "/settings",
         "icon": "Settings"
       }

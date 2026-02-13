@@ -5,18 +5,18 @@
     "amount": "Montant",
     "remaining": "Restant",
     "type": "Type",
-    "scene": "Scene",
+    "scene": "Scène",
     "description": "Description",
-    "created_at": "Cree le",
+    "created_at": "Créé le",
     "expires_at": "Expire le",
-    "metadata": "Metadonnees",
+    "metadata": "Métadonnées",
     "action": "Action"
   },
   "list": {
-    "title": "Credits",
+    "title": "Crédits",
     "crumbs": {
       "admin": "Admin",
-      "credits": "Credits"
+      "credits": "Crédits"
     },
     "tabs": {
       "all": "Tout",

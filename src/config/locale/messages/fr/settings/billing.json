@@ -3,24 +3,24 @@
     "subscription_no": "N° d'abonnement",
     "interval": "Intervalle",
     "provider": "Fournisseur",
-    "current_period": "Periode en cours",
+    "current_period": "Période en cours",
     "plan": "Forfait",
     "status": "Statut",
     "amount": "Montant",
-    "created_at": "Cree le",
+    "created_at": "Créé le",
     "end_time": "Date de fin",
     "action": "Action"
   },
   "view": {
     "title": "Forfait actuel",
-    "tip": "Votre abonnement sera automatiquement renouvele le {date}",
-    "end_tip": "Votre abonnement sera automatiquement resilie le {date}",
+    "tip": "Votre abonnement sera automatiquement renouvelé le {date}",
+    "end_tip": "Votre abonnement sera automatiquement résilié le {date}",
     "no_subscription": "Aucun forfait",
     "buttons": {
       "adjust": "Modifier le forfait",
       "subscribe": "S'abonner",
-      "manage": "Gerer l'abonnement",
-      "cancel": "Resilier l'abonnement"
+      "manage": "Gérer l'abonnement",
+      "cancel": "Résilier l'abonnement"
     }
   },
   "list": {
@@ -28,32 +28,32 @@
     "tabs": {
       "all": "Tout",
       "active": "Actif",
-      "pending_cancel": "Resiliation en attente",
-      "canceled": "Resilie",
+      "pending_cancel": "Résiliation en attente",
+      "canceled": "Résilié",
       "trialing": "Essai",
       "paused": "En pause",
-      "expired": "Expire"
+      "expired": "Expiré"
     }
   },
   "cancel": {
-    "title": "Resilier l'abonnement",
-    "description": "Etes-vous sur de vouloir resilier votre abonnement ?",
+    "title": "Résilier l'abonnement",
+    "description": "Êtes-vous sûr de vouloir résilier votre abonnement ?",
     "fields": {
       "subscription_no": "N° d'abonnement",
       "subscription_amount": "Montant de l'abonnement",
       "interval_cycle": "Cycle de facturation",
-      "subscription_created_at": "Date de creation de l'abonnement",
-      "current_period": "Periode en cours",
-      "start_at": "Date de debut",
+      "subscription_created_at": "Date de création de l'abonnement",
+      "current_period": "Période en cours",
+      "start_at": "Date de début",
       "end_at": "Date de fin"
     },
     "crumbs": {
-      "settings": "Parametres",
+      "settings": "Paramètres",
       "billing": "Facturation",
-      "cancel": "Resilier l'abonnement"
+      "cancel": "Résilier l'abonnement"
     },
     "buttons": {
-      "confirm_cancel": "Confirmer la resiliation"
+      "confirm_cancel": "Confirmer la résiliation"
     }
   }
 }

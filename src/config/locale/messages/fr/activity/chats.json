@@ -2,9 +2,9 @@
   "fields": {
     "title": "Titre",
     "status": "Statut",
-    "model": "Modele",
+    "model": "Modèle",
     "provider": "Fournisseur",
-    "created_at": "Cree le",
+    "created_at": "Créé le",
     "action": "Action"
   },
   "list": {
@@ -12,13 +12,13 @@
     "tabs": {
       "all": "Tout",
       "pending": "En attente",
-      "completed": "Termine",
-      "failed": "Echoue"
+      "completed": "Terminé",
+      "failed": "Échoué"
     },
     "buttons": {
       "view": "Voir la conversation",
       "new": "Nouvelle conversation"
     },
-    "empty_message": "Aucune conversation trouvee"
+    "empty_message": "Aucune conversation trouvée"
   }
 }

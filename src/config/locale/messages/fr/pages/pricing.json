@@ -11,36 +11,36 @@
         "title": "Tarifs",
         "description": "Choisissez le forfait qui vous convient",
         "banner": {
-          "title": "Offre limitee — Economisez jusqu'a 89 % sur les forfaits annuels",
+          "title": "Offre limitée — Économisez jusqu'à 89 % sur les forfaits annuels",
           "countdown_days": 1
         },
         "groups": [
           {
             "name": "monthly",
             "title": "Mensuel",
-            "description": "Forfaits mensuels — les credits sont renouveles chaque mois, resiliez a tout moment",
+            "description": "Forfaits mensuels — les crédits sont renouvelés chaque mois, résiliez à tout moment",
             "is_featured": true
           },
           {
             "name": "yearly",
             "title": "Annuel",
-            "description": "Forfaits annuels — tous les credits livres d'avance, factures en un seul paiement",
+            "description": "Forfaits annuels — tous les crédits livrés d'avance, facturés en un seul paiement",
             "badge": "-89%"
           }
         ],
         "items": [
           {
             "title": "Basic",
-            "description": "Ideal pour commencer",
+            "description": "Idéal pour commencer",
             "features_title": "",
             "features": [
-              "Credits renouveles chaque mois",
-              "Jusqu'a 20 videos IA",
-              "Tous les modeles premium",
+              "Crédits renouvelés chaque mois",
+              "Jusqu'à 20 vidéos IA",
+              "Tous les modèles premium",
               "Sans filigrane",
-              "Licence commerciale et utilisation illimitee",
-              "Resolution video 1080p",
-              "Videos jusqu'a 12s"
+              "Licence commerciale et utilisation illimitée",
+              "Résolution vidéo 1080p",
+              "Vidéos jusqu'à 12s"
             ],
             "interval": "month",
             "amount": 990,
@@ -49,8 +49,8 @@
             "unit": "/mois",
             "is_featured": false,
             "credits": 100,
-            "credits_summary": "100 credits / mois",
-            "cost_per_100": "= $0.099 / credit",
+            "credits_summary": "100 crédits / mois",
+            "cost_per_100": "= $0.099 / crédit",
             "button": {
               "title": "S'abonner",
               "url": "/#pricing"
@@ -64,17 +64,17 @@
           {
             "title": "Pro",
             "label": "Populaire",
-            "description": "Ideal pour les createurs et professionnels",
+            "description": "Idéal pour les créateurs et professionnels",
             "features_title": "",
             "features": [
-              "Credits renouveles chaque mois",
-              "Jusqu'a 80 videos IA",
-              "Tous les modeles premium",
+              "Crédits renouvelés chaque mois",
+              "Jusqu'à 80 vidéos IA",
+              "Tous les modèles premium",
               "Sans filigrane",
               "File d'attente prioritaire",
-              "Licence commerciale et utilisation illimitee",
-              "Resolution video 1080p",
-              "Videos jusqu'a 12s"
+              "Licence commerciale et utilisation illimitée",
+              "Résolution vidéo 1080p",
+              "Vidéos jusqu'à 12s"
             ],
             "interval": "month",
             "amount": 2990,
@@ -83,8 +83,8 @@
             "unit": "/mois",
             "is_featured": true,
             "credits": 400,
-            "credits_summary": "400 credits / mois",
-            "cost_per_100": "= $0.075 / credit",
+            "credits_summary": "400 crédits / mois",
+            "cost_per_100": "= $0.075 / crédit",
             "value_badge": "-25 %",
             "button": {
               "title": "S'abonner",
@@ -98,17 +98,17 @@
           },
           {
             "title": "Ultra",
-            "description": "Pour les equipes et utilisateurs intensifs",
+            "description": "Pour les équipes et utilisateurs intensifs",
             "features_title": "",
             "features": [
-              "Credits renouveles chaque mois",
-              "Jusqu'a 280 videos IA",
-              "Tous les modeles premium",
+              "Crédits renouvelés chaque mois",
+              "Jusqu'à 280 vidéos IA",
+              "Tous les modèles premium",
               "Sans filigrane",
               "Support humain",
-              "Licence commerciale et utilisation illimitee",
-              "Resolution video 1080p",
-              "Videos jusqu'a 12s"
+              "Licence commerciale et utilisation illimitée",
+              "Résolution vidéo 1080p",
+              "Vidéos jusqu'à 12s"
             ],
             "interval": "month",
             "amount": 9900,
@@ -117,8 +117,8 @@
             "unit": "/mois",
             "is_featured": false,
             "credits": 1400,
-            "credits_summary": "1 400 credits / mois",
-            "cost_per_100": "= $0.071 / credit",
+            "credits_summary": "1 400 crédits / mois",
+            "cost_per_100": "= $0.071 / crédit",
             "value_badge": "-29 %",
             "button": {
               "title": "S'abonner",
@@ -131,11 +131,11 @@
             "plan_name": "Ultra"
           },
           {
-            "title": "A la carte",
+            "title": "À la carte",
             "description": "Achat unique, sans abonnement",
             "features_title": "",
             "features": [
-              "Les credits n'expirent jamais"
+              "Les crédits n'expirent jamais"
             ],
             "interval": "one-time",
             "amount": 100,
@@ -145,10 +145,10 @@
             "is_featured": false,
             "is_payg": true,
             "credits": 10,
-            "cost_per_100": "$1 = 10 credits",
+            "cost_per_100": "$1 = 10 crédits",
             "tip": "Paiement unique",
             "button": {
-              "title": "Acheter des credits",
+              "title": "Acheter des crédits",
               "url": "/#pricing"
             },
             "product_id": "credits-30",
@@ -158,7 +158,7 @@
             "credit_packs": [
               {
                 "credits": 10,
-                "label": "10 credits",
+                "label": "10 crédits",
                 "price": "$1",
                 "amount": 100,
                 "product_id": "credits-30",
@@ -167,7 +167,7 @@
               },
               {
                 "credits": 150,
-                "label": "150 credits",
+                "label": "150 crédits",
                 "price": "$15",
                 "amount": 1500,
                 "product_id": "credits-500",
@@ -175,7 +175,7 @@
               },
               {
                 "credits": 300,
-                "label": "300 credits",
+                "label": "300 crédits",
                 "price": "$30",
                 "amount": 3000,
                 "product_id": "credits-1200",
@@ -183,7 +183,7 @@
               },
               {
                 "credits": 600,
-                "label": "600 credits",
+                "label": "600 crédits",
                 "price": "$60",
                 "amount": 6000,
                 "product_id": "credits-2800",
@@ -191,7 +191,7 @@
               },
               {
                 "credits": 990,
-                "label": "990 credits",
+                "label": "990 crédits",
                 "price": "$99",
                 "amount": 9900,
                 "product_id": "credits-5000",
@@ -199,7 +199,7 @@
               },
               {
                 "credits": 1490,
-                "label": "1 490 credits",
+                "label": "1 490 crédits",
                 "price": "$149",
                 "amount": 14900,
                 "product_id": "credits-8500",
@@ -207,7 +207,7 @@
               },
               {
                 "credits": 2490,
-                "label": "2 490 credits",
+                "label": "2 490 crédits",
                 "price": "$249",
                 "amount": 24900,
                 "product_id": "credits-16000",
@@ -215,25 +215,25 @@
               }
             ],
             "tip_box": {
-              "title": "Astuce : Abonnez-vous pour economiser davantage",
+              "title": "Astuce : Abonnez-vous pour économiser davantage",
               "items": [
-                "Cout par credit reduit (jusqu'a -29 %)",
-                "Credits renouveles automatiquement chaque mois"
+                "Coût par crédit réduit (jusqu'à -29 %)",
+                "Crédits renouvelés automatiquement chaque mois"
               ]
             }
           },
           {
             "title": "Basic",
-            "description": "Ideal pour commencer",
+            "description": "Idéal pour commencer",
             "features_title": "",
             "features": [
-              "Tous les credits livres en une fois",
-              "Jusqu'a 240 videos IA",
-              "Tous les modeles premium",
+              "Tous les crédits livrés en une fois",
+              "Jusqu'à 240 vidéos IA",
+              "Tous les modèles premium",
               "Sans filigrane",
-              "Licence commerciale et utilisation illimitee",
-              "Resolution video 1080p",
-              "Videos jusqu'a 12s"
+              "Licence commerciale et utilisation illimitée",
+              "Résolution vidéo 1080p",
+              "Vidéos jusqu'à 12s"
             ],
             "interval": "year",
             "amount": 9480,
@@ -243,11 +243,11 @@
             "unit": "/mois",
             "is_featured": false,
             "credits": 1200,
-            "credits_summary": "1 200 credits / an",
-            "cost_per_100": "= $0.079 / credit",
-            "annual_total": "Facture annuellement $94.8",
-            "annual_savings": "Vs mensuel Economie : $24",
-            "bonus_credits": "+100 credits bonus",
+            "credits_summary": "1 200 crédits / an",
+            "cost_per_100": "= $0.079 / crédit",
+            "annual_total": "Facturé annuellement $94.8",
+            "annual_savings": "Vs mensuel Économie : $24",
+            "bonus_credits": "+100 crédits bonus",
             "annual_badge": "ANNUEL",
             "button": {
               "title": "S'abonner",
@@ -262,18 +262,18 @@
           {
             "title": "Pro",
             "label": "Populaire",
-            "description": "Ideal pour les createurs et professionnels",
+            "description": "Idéal pour les créateurs et professionnels",
             "features_title": "",
             "features": [
-              "Tous les credits livres en une fois",
-              "Jusqu'a 960 videos IA",
-              "Tous les modeles premium",
+              "Tous les crédits livrés en une fois",
+              "Jusqu'à 960 vidéos IA",
+              "Tous les modèles premium",
               "Sans filigrane",
               "File d'attente prioritaire",
               "Support prioritaire",
-              "Licence commerciale et utilisation illimitee",
-              "Resolution video 1080p",
-              "Videos jusqu'a 12s"
+              "Licence commerciale et utilisation illimitée",
+              "Résolution vidéo 1080p",
+              "Vidéos jusqu'à 12s"
             ],
             "interval": "year",
             "amount": 23880,
@@ -283,11 +283,11 @@
             "unit": "/mois",
             "is_featured": true,
             "credits": 4800,
-            "credits_summary": "4 800 credits / an",
-            "cost_per_100": "= $0.050 / credit",
-            "annual_total": "Facture annuellement $238.8",
-            "annual_savings": "Vs mensuel Economie : $120",
-            "bonus_credits": "+500 credits bonus",
+            "credits_summary": "4 800 crédits / an",
+            "cost_per_100": "= $0.050 / crédit",
+            "annual_total": "Facturé annuellement $238.8",
+            "annual_savings": "Vs mensuel Économie : $120",
+            "bonus_credits": "+500 crédits bonus",
             "annual_badge": "ANNUEL",
             "value_badge": "",
             "button": {
@@ -302,18 +302,18 @@
           },
           {
             "title": "Ultra",
-            "description": "Pour les equipes et utilisateurs intensifs",
+            "description": "Pour les équipes et utilisateurs intensifs",
             "features_title": "",
             "features": [
-              "Tous les credits livres en une fois",
-              "Jusqu'a 3 360 videos IA",
-              "Tous les modeles premium",
+              "Tous les crédits livrés en une fois",
+              "Jusqu'à 3 360 vidéos IA",
+              "Tous les modèles premium",
               "Sans filigrane",
               "Support humain",
-              "Support dedie",
-              "Licence commerciale et utilisation illimitee",
-              "Resolution video 1080p",
-              "Videos jusqu'a 12s"
+              "Support dédié",
+              "Licence commerciale et utilisation illimitée",
+              "Résolution vidéo 1080p",
+              "Vidéos jusqu'à 12s"
             ],
             "interval": "year",
             "amount": 13080,
@@ -323,11 +323,11 @@
             "unit": "/mois",
             "is_featured": false,
             "credits": 16800,
-            "credits_summary": "16 800 credits / an",
-            "cost_per_100": "= $0.008 / credit",
-            "annual_total": "Facture annuellement $130.8",
-            "annual_savings": "Vs mensuel Economie : $1 057",
-            "bonus_credits": "+5 000 credits bonus",
+            "credits_summary": "16 800 crédits / an",
+            "cost_per_100": "= $0.008 / crédit",
+            "annual_total": "Facturé annuellement $130.8",
+            "annual_savings": "Vs mensuel Économie : $1 057",
+            "bonus_credits": "+5 000 crédits bonus",
             "annual_badge": "ANNUEL",
             "button": {
               "title": "S'abonner",
@@ -340,11 +340,11 @@
             "plan_name": "Ultra"
           },
           {
-            "title": "A la carte",
+            "title": "À la carte",
             "description": "Achat unique, sans abonnement",
             "features_title": "",
             "features": [
-              "Les credits n'expirent jamais"
+              "Les crédits n'expirent jamais"
             ],
             "interval": "one-time",
             "amount": 100,
@@ -354,10 +354,10 @@
             "is_featured": false,
             "is_payg": true,
             "credits": 10,
-            "cost_per_100": "$1 = 10 credits",
+            "cost_per_100": "$1 = 10 crédits",
             "tip": "Paiement unique",
             "button": {
-              "title": "Acheter des credits",
+              "title": "Acheter des crédits",
               "url": "/#pricing"
             },
             "product_id": "credits-30",
@@ -367,7 +367,7 @@
             "credit_packs": [
               {
                 "credits": 10,
-                "label": "10 credits",
+                "label": "10 crédits",
                 "price": "$1",
                 "amount": 100,
                 "product_id": "credits-30",
@@ -376,7 +376,7 @@
               },
               {
                 "credits": 150,
-                "label": "150 credits",
+                "label": "150 crédits",
                 "price": "$15",
                 "amount": 1500,
                 "product_id": "credits-500",
@@ -384,7 +384,7 @@
               },
               {
                 "credits": 300,
-                "label": "300 credits",
+                "label": "300 crédits",
                 "price": "$30",
                 "amount": 3000,
                 "product_id": "credits-1200",
@@ -392,7 +392,7 @@
               },
               {
                 "credits": 600,
-                "label": "600 credits",
+                "label": "600 crédits",
                 "price": "$60",
                 "amount": 6000,
                 "product_id": "credits-2800",
@@ -400,7 +400,7 @@
               },
               {
                 "credits": 990,
-                "label": "990 credits",
+                "label": "990 crédits",
                 "price": "$99",
                 "amount": 9900,
                 "product_id": "credits-5000",
@@ -408,7 +408,7 @@
               },
               {
                 "credits": 1490,
-                "label": "1 490 credits",
+                "label": "1 490 crédits",
                 "price": "$149",
                 "amount": 14900,
                 "product_id": "credits-8500",
@@ -416,7 +416,7 @@
               },
               {
                 "credits": 2490,
-                "label": "2 490 credits",
+                "label": "2 490 crédits",
                 "price": "$249",
                 "amount": 24900,
                 "product_id": "credits-16000",
@@ -424,10 +424,10 @@
               }
             ],
             "tip_box": {
-              "title": "Astuce : Abonnez-vous pour economiser davantage",
+              "title": "Astuce : Abonnez-vous pour économiser davantage",
               "items": [
-                "Cout par credit reduit (jusqu'a -29 %)",
-                "Credits renouveles automatiquement chaque mois"
+                "Coût par crédit réduit (jusqu'à -29 %)",
+                "Crédits renouvelés automatiquement chaque mois"
               ]
             }
           }

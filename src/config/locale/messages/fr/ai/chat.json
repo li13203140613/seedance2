@@ -90,7 +90,7 @@
     "variant": "sidebar"
   },
   "library": {
-    "title": "Bibliotheque",
+    "title": "Bibliothèque",
     "icon": "History",
     "url": "/chat/history",
     "more": "Plus",
@@ -106,14 +106,14 @@
   },
   "history": {
     "title": "Historique des conversations",
-    "description": "Consultez et revisitez vos conversations precedentes.",
+    "description": "Consultez et revisitez vos conversations précédentes.",
     "empty": "Aucune conversation pour le moment.",
-    "error": "Echec du chargement des conversations.",
-    "retry": "Reessayer",
+    "error": "Échec du chargement des conversations.",
+    "retry": "Réessayer",
     "signin": "Connectez-vous pour voir votre historique de conversation.",
     "summary": "Affichage de {from}-{to} sur {total}",
     "perPage": "Par page",
-    "prev": "Precedent",
+    "prev": "Précédent",
     "next": "Suivant",
     "open": "Ouvrir la conversation",
     "untitled": "Conversation sans titre"

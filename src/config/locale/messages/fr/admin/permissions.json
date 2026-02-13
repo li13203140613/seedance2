@@ -6,8 +6,8 @@
     "resource": "Ressource",
     "action": "Action",
     "description": "Description",
-    "created_at": "Cree le",
-    "updated_at": "Mis a jour le"
+    "created_at": "Créé le",
+    "updated_at": "Mis à jour le"
   },
   "list": {
     "title": "Permissions",

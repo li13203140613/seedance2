@@ -3,14 +3,14 @@
     "transaction_no": "N° de transaction",
     "description": "Description",
     "type": "Type",
-    "scene": "Scene",
-    "credits": "Credits",
+    "scene": "Scène",
+    "credits": "Crédits",
     "expires_at": "Expire le",
-    "created_at": "Cree le",
+    "created_at": "Créé le",
     "action": "Action"
   },
   "list": {
-    "title": "Historique des credits",
+    "title": "Historique des crédits",
     "tabs": {
       "all": "Tout",
       "grant": "Attribution",
@@ -18,9 +18,9 @@
     }
   },
   "view": {
-    "title": "Solde de credits",
+    "title": "Solde de crédits",
     "buttons": {
-      "purchase": "Acheter des credits"
+      "purchase": "Acheter des crédits"
     }
   }
 }

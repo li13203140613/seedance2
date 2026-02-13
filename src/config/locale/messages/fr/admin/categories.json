@@ -4,49 +4,49 @@
     "title": "Titre",
     "description": "Description",
     "status": "Statut",
-    "created_at": "Cree le",
-    "updated_at": "Mis a jour le"
+    "created_at": "Créé le",
+    "updated_at": "Mis à jour le"
   },
   "list": {
-    "title": "Categories",
+    "title": "Catégories",
     "crumbs": {
       "admin": "Admin",
-      "categories": "Categories"
+      "categories": "Catégories"
     },
     "buttons": {
-      "add": "Ajouter une categorie",
-      "edit": "Modifier la categorie",
-      "view": "Voir la categorie",
-      "delete": "Supprimer la categorie"
+      "add": "Ajouter une catégorie",
+      "edit": "Modifier la catégorie",
+      "view": "Voir la catégorie",
+      "delete": "Supprimer la catégorie"
     },
     "tabs": {
       "all": "Tout",
-      "published": "Publie",
+      "published": "Publié",
       "pending": "En attente",
       "draft": "Brouillon",
-      "archived": "Archive"
+      "archived": "Archivé"
     }
   },
   "add": {
-    "title": "Ajouter une categorie",
+    "title": "Ajouter une catégorie",
     "crumbs": {
       "admin": "Admin",
-      "categories": "Categories",
-      "add": "Ajouter une categorie"
+      "categories": "Catégories",
+      "add": "Ajouter une catégorie"
     },
     "buttons": {
-      "submit": "Ajouter la categorie"
+      "submit": "Ajouter la catégorie"
     }
   },
   "edit": {
-    "title": "Modifier la categorie",
+    "title": "Modifier la catégorie",
     "crumbs": {
       "admin": "Admin",
-      "categories": "Categories",
-      "edit": "Modifier la categorie"
+      "categories": "Catégories",
+      "edit": "Modifier la catégorie"
     },
     "buttons": {
-      "submit": "Modifier la categorie"
+      "submit": "Modifier la catégorie"
     }
   }
 }

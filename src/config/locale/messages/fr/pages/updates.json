@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "Journal des mises a jour",
-    "description": "Consultez le journal des mises a jour du produit, y compris les dernieres fonctionnalites et ameliorations."
+    "title": "Journal des mises à jour",
+    "description": "Consultez le journal des mises à jour du produit, y compris les dernières fonctionnalités et améliorations."
   },
   "page": {
     "sections": {
       "updates": {
         "id": "updates",
-        "title": "Journal des mises a jour",
-        "description": "Consultez le journal des mises a jour du produit, y compris les dernieres fonctionnalites et ameliorations."
+        "title": "Journal des mises à jour",
+        "description": "Consultez le journal des mises à jour du produit, y compris les dernières fonctionnalités et améliorations."
       }
     }
   }

@@ -12,7 +12,7 @@
   },
   "main_navs": [
     {
-      "title": "Systeme",
+      "title": "Système",
       "items": [
         {
           "title": "Utilisateurs et permissions",
@@ -25,7 +25,7 @@
               "icon": "User"
             },
             {
-              "title": "Roles",
+              "title": "Rôles",
               "url": "/admin/roles",
               "icon": "Users"
             },
@@ -41,7 +41,7 @@
           "icon": "FileText",
           "children": [
             {
-              "title": "Categories",
+              "title": "Catégories",
               "icon": "Folder",
               "url": "/admin/categories"
             },
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "title": "Paiements et credits",
+          "title": "Paiements et crédits",
           "icon": "DollarSign",
           "children": [
             {
@@ -67,7 +67,7 @@
               "icon": "CreditCard"
             },
             {
-              "title": "Credits",
+              "title": "Crédits",
               "url": "/admin/credits",
               "icon": "Coins"
             }
@@ -76,10 +76,10 @@
       ]
     },
     {
-      "title": "Metier",
+      "title": "Métier",
       "items": [
         {
-          "title": "Taches IA",
+          "title": "Tâches IA",
           "url": "/admin/ai-tasks",
           "icon": "Brain"
         },
@@ -94,12 +94,12 @@
   "bottom_nav": {
     "items": [
       {
-        "title": "Parametres",
+        "title": "Paramètres",
         "url": "/admin/settings/general",
         "icon": "Settings"
       },
       {
-        "title": "Cles API",
+        "title": "Clés API",
         "url": "/admin/apikeys",
         "icon": "Key"
       }

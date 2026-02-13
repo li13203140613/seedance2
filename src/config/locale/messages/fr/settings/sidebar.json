@@ -1,5 +1,5 @@
 {
-  "title": "Parametres",
+  "title": "Paramètres",
   "nav": {
     "items": [
       {
@@ -18,12 +18,12 @@
         "icon": "DollarSign"
       },
       {
-        "title": "Credits",
+        "title": "Crédits",
         "url": "/settings/credits",
         "icon": "Coins"
       },
       {
-        "title": "Cles API",
+        "title": "Clés API",
         "url": "/settings/apikeys",
         "icon": "RiKeyLine"
       }
@@ -32,12 +32,12 @@
   "top_nav": {
     "items": [
       {
-        "title": "Activite",
+        "title": "Activité",
         "url": "/activity",
         "icon": "Activity"
       },
       {
-        "title": "Parametres",
+        "title": "Paramètres",
         "url": "/settings",
         "icon": "Settings"
       }

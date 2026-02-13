@@ -23,27 +23,27 @@
     "promotekit": "PromoteKit",
     "tawk": "Tawk",
     "crisp": "Crisp",
-    "credit": "Credit",
+    "credit": "Crédit",
     "appinfo": "Informations de l'application",
-    "user_role": "Role utilisateur",
+    "user_role": "Rôle utilisateur",
     "evolink": "EvoLink"
   },
   "edit": {
-    "title": "Parametres",
+    "title": "Paramètres",
     "crumbs": {
       "admin": "Admin",
-      "settings": "Parametres"
+      "settings": "Paramètres"
     },
     "tabs": {
-      "general": "General",
+      "general": "Général",
       "auth": "Authentification",
       "payment": "Paiement",
-      "credit": "Credit",
+      "credit": "Crédit",
       "email": "E-mail",
       "storage": "Stockage",
       "ai": "IA",
       "analytics": "Analytique",
-      "ads": "Publicites",
+      "ads": "Publicités",
       "affiliate": "Affiliation",
       "customer_service": "Service client"
     },

@@ -6,12 +6,12 @@
     "confirm_password": "Confirmer le mot de passe"
   },
   "reset_password": {
-    "title": "Reinitialiser le mot de passe",
-    "description": "Reinitialiser votre mot de passe",
-    "tip": "Nous vous enverrons un e-mail pour reinitialiser votre mot de passe.",
+    "title": "Réinitialiser le mot de passe",
+    "description": "Réinitialiser votre mot de passe",
+    "tip": "Nous vous enverrons un e-mail pour réinitialiser votre mot de passe.",
     "crumbs": {
-      "settings": "Parametres",
-      "security": "Securite"
+      "settings": "Paramètres",
+      "security": "Sécurité"
     },
     "buttons": {
       "submit": "Enregistrer"
@@ -20,10 +20,10 @@
   "delete_account": {
     "title": "Supprimer le compte",
     "description": "Supprimer votre compte",
-    "tip": "Etes-vous sur de vouloir supprimer votre compte ? Cette action est irreversible.",
+    "tip": "Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible.",
     "crumbs": {
-      "settings": "Parametres",
-      "security": "Securite"
+      "settings": "Paramètres",
+      "security": "Sécurité"
     },
     "buttons": {
       "submit": "Supprimer"

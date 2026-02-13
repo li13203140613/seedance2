@@ -5,9 +5,9 @@
     "amount": "Montant",
     "interval": "Intervalle",
     "provider": "Fournisseur",
-    "created_at": "Cree le",
-    "current_period_start": "Debut de la periode en cours",
-    "current_period_end": "Fin de la periode en cours",
+    "created_at": "Créé le",
+    "current_period_start": "Début de la période en cours",
+    "current_period_end": "Fin de la période en cours",
     "status": "Statut",
     "description": "Description",
     "action": "Action"
