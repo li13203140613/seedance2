@@ -65,3 +65,19 @@ src/config/db/migrations*
 .source
 
 .chats
+
+# temp files
+tmp-*
+*.png
+nul
+微信截图_*.png
+
+# claude
+.claude/settings.local.json
+
+# temp directories
+seedance组件/
+seedance视频/
+*组件*/
+*视频*/
+tmp-uploads/
