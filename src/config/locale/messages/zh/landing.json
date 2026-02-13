@@ -64,11 +64,11 @@
     "show_theme": true,
     "show_locale": true,
     "topbanner": {
-      "text": "年度计划最高省 89%",
-      "buttonText": "立即领取 89% 折扣",
+      "text": "🚀 Seedance 2 预计 <b>2月24日</b> 上线 — 预售充值抢先体验！",
+      "buttonText": "立即充值",
       "href": "/pricing",
-      "countdownMinutes": 30,
-      "remainingSpots": 9
+      "countdownMinutes": 0,
+      "remainingSpots": 0
     }
   },
   "footer": {
