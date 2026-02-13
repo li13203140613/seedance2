@@ -26,33 +26,39 @@ export function Hero({
       <section
         id={section.id}
         className={cn(
-          `relative min-h-screen overflow-hidden flex items-center justify-center`,
+          `relative h-[95vh] min-h-[600px] overflow-hidden flex items-center justify-center`,
           section.className,
           className
         )}
       >
         {/* Full-screen background video */}
         {section.background_video?.src && (
-          <video
-            src={section.background_video.src}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 h-full w-full object-cover"
-            preload="metadata"
-          />
+          <>
+            <video
+              src={section.background_video.src}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="absolute inset-0 h-full w-full object-cover"
+              preload="metadata"
+            />
+            {/* Top gradient for navbar readability */}
+            <div className="absolute inset-x-0 top-0 z-[1] h-40 bg-gradient-to-b from-black/70 to-transparent" />
+          </>
         )}
 
         {/* Overlay text content */}
         <div className="relative z-10 mx-auto max-w-full px-4 text-center md:max-w-5xl">
           {texts && texts.length > 0 ? (
             <h1 className="text-4xl font-semibold text-white drop-shadow-lg sm:text-6xl">
-              {texts[0]}
-              <Highlighter action="underline" color="#7C3AED">
-                {highlightText}
-              </Highlighter>
-              <span className="mt-3 block">{texts[1]}</span>
+              <div>
+                {texts[0]}
+                <Highlighter action="underline" color="#7C3AED">
+                  {highlightText}
+                </Highlighter>
+              </div>
+              <div className="mt-3">{texts[1]}</div>
             </h1>
           ) : (
             <h1 className="text-4xl font-semibold text-balance text-white drop-shadow-lg sm:text-6xl">
