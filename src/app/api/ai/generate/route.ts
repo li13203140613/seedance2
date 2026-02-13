@@ -1,5 +1,6 @@
 import { envConfigs } from '@/config';
 import { AIMediaType } from '@/extensions/ai';
+import { getVideoCreditCost } from '@/shared/constants/credits';
 import { getUuid } from '@/shared/lib/hash';
 import { respData, respErr } from '@/shared/lib/resp';
 import { createAITask, NewAITask } from '@/shared/models/ai_task';
@@ -39,11 +40,9 @@ export async function POST(request: Request) {
       throw new Error('no auth, please sign in');
     }
 
-    // todo: get cost credits from settings
     let costCredits = 2;
 
     if (mediaType === AIMediaType.IMAGE) {
-      // generate image
       if (scene === 'image-to-image') {
         costCredits = 4;
       } else if (scene === 'text-to-image') {
@@ -52,18 +51,12 @@ export async function POST(request: Request) {
         throw new Error('invalid scene');
       }
     } else if (mediaType === AIMediaType.VIDEO) {
-      // generate video
-      if (scene === 'text-to-video') {
-        costCredits = 6;
-      } else if (scene === 'image-to-video') {
-        costCredits = 8;
-      } else if (scene === 'video-to-video') {
-        costCredits = 10;
-      } else {
-        throw new Error('invalid scene');
-      }
+      // dynamic credit calculation based on quality/duration/audio
+      const quality = options?.quality || '1080p';
+      const duration = options?.duration || 12;
+      const generateAudio = options?.generate_audio !== false;
+      costCredits = getVideoCreditCost(quality, duration, generateAudio);
     } else if (mediaType === AIMediaType.MUSIC) {
-      // generate music
       costCredits = 10;
       scene = 'text-to-music';
     } else {

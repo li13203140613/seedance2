@@ -6,6 +6,7 @@ import { Coins, LayoutDashboard, Loader2, LogOut, User } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import { authClient, signOut, useSession } from '@/core/auth/client';
+import { displayCredits } from '@/shared/constants/credits';
 import { Link, useRouter } from '@/core/i18n/navigation';
 import {
   Avatar,
@@ -183,7 +184,7 @@ export function SignUser({
                   >
                     <Coins />
                     {t('credits_title', {
-                      credits: displayUser.credits?.remainingCredits || 0,
+                      credits: displayCredits(displayUser.credits?.remainingCredits || 0),
                     })}
                   </Link>
                 </DropdownMenuItem>

@@ -35,7 +35,7 @@
             "features_title": "",
             "features": [
               "Credits refresh monthly",
-              "Up to 40 AI videos",
+              "Up to 20 AI videos",
               "All premium models",
               "No watermark"
             ],
@@ -45,9 +45,9 @@
             "price": "$9.9",
             "unit": "/month",
             "is_featured": false,
-            "credits": 400,
-            "credits_summary": "400 credits / month",
-            "cost_per_100": "= $2.48",
+            "credits": 100,
+            "credits_summary": "100 credits / month",
+            "cost_per_100": "= $0.099 / credit",
             "button": {
               "title": "Subscribe",
               "url": "/#pricing"
@@ -65,7 +65,7 @@
             "features_title": "",
             "features": [
               "Credits refresh monthly",
-              "Up to 160 AI videos",
+              "Up to 80 AI videos",
               "All premium models",
               "No watermark",
               "Priority queue"
@@ -76,10 +76,10 @@
             "price": "$29.9",
             "unit": "/month",
             "is_featured": true,
-            "credits": 1600,
-            "credits_summary": "1600 credits / month",
-            "cost_per_100": "= $1.87",
-            "value_badge": "+33% value",
+            "credits": 400,
+            "credits_summary": "400 credits / month",
+            "cost_per_100": "= $0.075 / credit",
+            "value_badge": "25% off",
             "button": {
               "title": "Subscribe",
               "url": "/#pricing"
@@ -96,7 +96,7 @@
             "features_title": "",
             "features": [
               "Credits refresh monthly",
-              "Up to 560 AI videos",
+              "Up to 280 AI videos",
               "All premium models",
               "No watermark",
               "Human support",
@@ -108,10 +108,10 @@
             "price": "$99",
             "unit": "/month",
             "is_featured": false,
-            "credits": 5600,
-            "credits_summary": "5600 credits / month",
-            "cost_per_100": "= $1.76",
-            "value_badge": "+40% value",
+            "credits": 1400,
+            "credits_summary": "1,400 credits / month",
+            "cost_per_100": "= $0.071 / credit",
+            "value_badge": "29% off",
             "button": {
               "title": "Subscribe",
               "url": "/#pricing"
@@ -130,27 +130,27 @@
               "Credits never expire"
             ],
             "interval": "one-time",
-            "amount": 3000,
+            "amount": 100,
             "currency": "USD",
-            "price": "$30",
+            "price": "$1",
             "unit": "",
             "is_featured": false,
             "is_payg": true,
-            "credits": 1200,
-            "cost_per_100": "= $2.50",
+            "credits": 10,
+            "cost_per_100": "$1 = 10 credits",
             "tip": "One-time payment",
             "button": {
               "title": "Buy Credits",
               "url": "/#pricing"
             },
-            "product_id": "credits-1200",
-            "product_name": "Seedance Credits 1200",
+            "product_id": "credits-30",
+            "product_name": "Seedance Credits 30",
             "valid_days": 9999,
             "group": "monthly",
             "credit_packs": [
               {
-                "credits": 30,
-                "label": "30 credits",
+                "credits": 10,
+                "label": "10 credits",
                 "price": "$1",
                 "amount": 100,
                 "product_id": "credits-30",
@@ -158,48 +158,48 @@
                 "is_default": true
               },
               {
-                "credits": 500,
-                "label": "500 credits",
+                "credits": 150,
+                "label": "150 credits",
                 "price": "$15",
                 "amount": 1500,
                 "product_id": "credits-500",
                 "product_name": "Seedance Credits 500"
               },
               {
-                "credits": 1200,
-                "label": "1,200 credits",
+                "credits": 300,
+                "label": "300 credits",
                 "price": "$30",
                 "amount": 3000,
                 "product_id": "credits-1200",
                 "product_name": "Seedance Credits 1200"
               },
               {
-                "credits": 2800,
-                "label": "2,800 credits",
+                "credits": 600,
+                "label": "600 credits",
                 "price": "$60",
                 "amount": 6000,
                 "product_id": "credits-2800",
                 "product_name": "Seedance Credits 2800"
               },
               {
-                "credits": 5000,
-                "label": "5,000 credits",
+                "credits": 990,
+                "label": "990 credits",
                 "price": "$99",
                 "amount": 9900,
                 "product_id": "credits-5000",
                 "product_name": "Seedance Credits 5000"
               },
               {
-                "credits": 8500,
-                "label": "8,500 credits",
+                "credits": 1490,
+                "label": "1,490 credits",
                 "price": "$149",
                 "amount": 14900,
                 "product_id": "credits-8500",
                 "product_name": "Seedance Credits 8500"
               },
               {
-                "credits": 16000,
-                "label": "16,000 credits",
+                "credits": 2490,
+                "label": "2,490 credits",
                 "price": "$249",
                 "amount": 24900,
                 "product_id": "credits-16000",
@@ -209,8 +209,8 @@
             "tip_box": {
               "title": "Tip: Subscribe to save more",
               "items": [
-                "Lower cost per credit (save 40-60%)",
-                "15% off all credit pack purchases"
+                "Lower cost per credit (save up to 29%)",
+                "Credits refresh automatically every month"
               ]
             }
           },
@@ -220,8 +220,8 @@
             "features_title": "",
             "features": [
               "All credits delivered at once",
-              "Up to 520 AI videos",
-              "FLUX & Runway access",
+              "Up to 240 AI videos",
+              "All premium models",
               "No watermark",
               "Commercial license"
             ],
@@ -232,12 +232,12 @@
             "original_price": "$9.9",
             "unit": "/month",
             "is_featured": false,
-            "credits": 4800,
-            "credits_summary": "4800 credits / year",
-            "cost_per_100": "= $1.82",
+            "credits": 1200,
+            "credits_summary": "1,200 credits / year",
+            "cost_per_100": "= $0.079 / credit",
             "annual_total": "Billed annually $94.8",
-            "annual_savings": "Vs monthly Save money: $24",
-            "bonus_credits": "+400 bonus credits",
+            "annual_savings": "Vs monthly Save: $24",
+            "bonus_credits": "+100 bonus credits",
             "annual_badge": "ANNUAL",
             "button": {
               "title": "Subscribe",
@@ -256,7 +256,7 @@
             "features_title": "",
             "features": [
               "All credits delivered at once",
-              "Up to 2,120 AI videos",
+              "Up to 960 AI videos",
               "All premium models",
               "No watermark",
               "Priority queue",
@@ -269,12 +269,12 @@
             "original_price": "$29.9",
             "unit": "/month",
             "is_featured": true,
-            "credits": 19200,
-            "credits_summary": "19200 credits / year",
-            "cost_per_100": "= $1.13",
+            "credits": 4800,
+            "credits_summary": "4,800 credits / year",
+            "cost_per_100": "= $0.050 / credit",
             "annual_total": "Billed annually $238.8",
-            "annual_savings": "Vs monthly Save money: $120",
-            "bonus_credits": "+2,000 bonus credits",
+            "annual_savings": "Vs monthly Save: $120",
+            "bonus_credits": "+500 bonus credits",
             "annual_badge": "ANNUAL",
             "value_badge": "",
             "button": {
@@ -293,7 +293,7 @@
             "features_title": "",
             "features": [
               "All credits delivered at once",
-              "Up to 7,320 AI videos",
+              "Up to 3,360 AI videos",
               "All premium models",
               "No watermark",
               "Human support",
@@ -307,12 +307,12 @@
             "original_price": "$99",
             "unit": "/month",
             "is_featured": false,
-            "credits": 67200,
-            "credits_summary": "67,200 credits / year",
-            "cost_per_100": "= $1.12",
+            "credits": 16800,
+            "credits_summary": "16,800 credits / year",
+            "cost_per_100": "= $0.049 / credit",
             "annual_total": "Billed annually $828",
-            "annual_savings": "Vs monthly Save money: $360",
-            "bonus_credits": "+6,000 bonus credits",
+            "annual_savings": "Vs monthly Save: $360",
+            "bonus_credits": "+2,000 bonus credits",
             "annual_badge": "ANNUAL",
             "button": {
               "title": "Subscribe",
@@ -332,27 +332,27 @@
               "Credits never expire"
             ],
             "interval": "one-time",
-            "amount": 3000,
+            "amount": 100,
             "currency": "USD",
-            "price": "$30",
+            "price": "$1",
             "unit": "",
             "is_featured": false,
             "is_payg": true,
-            "credits": 1200,
-            "cost_per_100": "= $2.50",
+            "credits": 10,
+            "cost_per_100": "$1 = 10 credits",
             "tip": "One-time payment",
             "button": {
               "title": "Buy Credits",
               "url": "/#pricing"
             },
-            "product_id": "credits-1200",
-            "product_name": "Seedance Credits 1200",
+            "product_id": "credits-30",
+            "product_name": "Seedance Credits 30",
             "valid_days": 9999,
             "group": "yearly",
             "credit_packs": [
               {
-                "credits": 30,
-                "label": "30 credits",
+                "credits": 10,
+                "label": "10 credits",
                 "price": "$1",
                 "amount": 100,
                 "product_id": "credits-30",
@@ -360,48 +360,48 @@
                 "is_default": true
               },
               {
-                "credits": 500,
-                "label": "500 credits",
+                "credits": 150,
+                "label": "150 credits",
                 "price": "$15",
                 "amount": 1500,
                 "product_id": "credits-500",
                 "product_name": "Seedance Credits 500"
               },
               {
-                "credits": 1200,
-                "label": "1,200 credits",
+                "credits": 300,
+                "label": "300 credits",
                 "price": "$30",
                 "amount": 3000,
                 "product_id": "credits-1200",
                 "product_name": "Seedance Credits 1200"
               },
               {
-                "credits": 2800,
-                "label": "2,800 credits",
+                "credits": 600,
+                "label": "600 credits",
                 "price": "$60",
                 "amount": 6000,
                 "product_id": "credits-2800",
                 "product_name": "Seedance Credits 2800"
               },
               {
-                "credits": 5000,
-                "label": "5,000 credits",
+                "credits": 990,
+                "label": "990 credits",
                 "price": "$99",
                 "amount": 9900,
                 "product_id": "credits-5000",
                 "product_name": "Seedance Credits 5000"
               },
               {
-                "credits": 8500,
-                "label": "8,500 credits",
+                "credits": 1490,
+                "label": "1,490 credits",
                 "price": "$149",
                 "amount": 14900,
                 "product_id": "credits-8500",
                 "product_name": "Seedance Credits 8500"
               },
               {
-                "credits": 16000,
-                "label": "16,000 credits",
+                "credits": 2490,
+                "label": "2,490 credits",
                 "price": "$249",
                 "amount": 24900,
                 "product_id": "credits-16000",
@@ -411,8 +411,8 @@
             "tip_box": {
               "title": "Tip: Subscribe to save more",
               "items": [
-                "Lower cost per credit (save 40-60%)",
-                "15% off all credit pack purchases"
+                "Lower cost per credit (save up to 29%)",
+                "Credits refresh automatically every month"
               ]
             }
           }

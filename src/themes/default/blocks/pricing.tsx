@@ -444,11 +444,10 @@ export function Pricing({
                     </div>
                   )}
 
-                  {/* Cost per 100 */}
+                  {/* Cost per credit */}
                   {item.cost_per_100 && (
                     <p className="text-xs text-muted-foreground">
-                      100 credits{' '}
-                      <span className="ml-4 text-foreground">{item.cost_per_100}</span>
+                      <span className="text-foreground">{item.cost_per_100}</span>
                     </p>
                   )}
 

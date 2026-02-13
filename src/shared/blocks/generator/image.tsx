@@ -37,6 +37,7 @@ import {
 } from '@/shared/components/ui/select';
 import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
 import { Textarea } from '@/shared/components/ui/textarea';
+import { displayCredits } from '@/shared/constants/credits';
 import { useAppContext } from '@/shared/contexts/app';
 import { cn } from '@/shared/lib/utils';
 
@@ -761,27 +762,27 @@ export function ImageGenerator({
                 {!isMounted ? (
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-primary">
-                      {t('credits_cost', { credits: costCredits })}
+                      {t('credits_cost', { credits: displayCredits(costCredits) })}
                     </span>
-                    <span>{t('credits_remaining', { credits: 0 })}</span>
+                    <span>{t('credits_remaining', { credits: displayCredits(0) })}</span>
                   </div>
                 ) : user && remainingCredits > 0 ? (
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-primary">
-                      {t('credits_cost', { credits: costCredits })}
+                      {t('credits_cost', { credits: displayCredits(costCredits) })}
                     </span>
                     <span>
-                      {t('credits_remaining', { credits: remainingCredits })}
+                      {t('credits_remaining', { credits: displayCredits(remainingCredits) })}
                     </span>
                   </div>
                 ) : (
                   <div className="space-y-3">
                     <div className="flex items-center justify-between text-sm">
                       <span className="text-primary">
-                        {t('credits_cost', { credits: costCredits })}
+                        {t('credits_cost', { credits: displayCredits(costCredits) })}
                       </span>
                       <span>
-                        {t('credits_remaining', { credits: remainingCredits })}
+                        {t('credits_remaining', { credits: displayCredits(remainingCredits) })}
                       </span>
                     </div>
                     <Link href="/pricing">

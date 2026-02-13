@@ -12,6 +12,7 @@ import {
   getRemainingCredits,
 } from '@/shared/models/credit';
 import { getUserInfo } from '@/shared/models/user';
+import { displayCredits } from '@/shared/constants/credits';
 import { Tab } from '@/shared/types/blocks/common';
 import { type Table } from '@/shared/types/blocks/table';
 
@@ -132,7 +133,7 @@ export default async function CreditsPage({
         className="max-w-md"
       >
         <div className="text-primary text-3xl font-bold">
-          {remainingCredits}
+          {displayCredits(remainingCredits)}
         </div>
       </PanelCard>
       <TableCard title={t('list.title')} tabs={tabs} table={table} />

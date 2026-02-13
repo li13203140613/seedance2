@@ -34,6 +34,7 @@ import {
 import { Switch } from '@/shared/components/ui/switch';
 import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
 import { Textarea } from '@/shared/components/ui/textarea';
+import { getVideoCreditCost, displayCredits } from '@/shared/constants/credits';
 import { useAppContext } from '@/shared/contexts/app';
 
 interface VideoGeneratorProps {
@@ -65,21 +66,17 @@ const POLL_INTERVAL = 15000;
 const GENERATION_TIMEOUT = 600000; // 10 minutes for video
 const MAX_PROMPT_LENGTH = 2000;
 
-const textToVideoCredits = 6;
-const imageToVideoCredits = 8;
-const videoToVideoCredits = 10;
-
 // 分辨率配置
 const QUALITY_OPTIONS = [
   { value: '480p', label: '480p' },
+  { value: '720p', label: '720p' },
   { value: '1080p', label: '1080p' },
-  { value: '2K', label: '2K' },
 ];
 
 // 时长配置
 const DURATION_OPTIONS = [
-  { value: 5, label: '5秒' },
-  { value: 12, label: '12秒' },
+  { value: 5, label: '5s' },
+  { value: 12, label: '12s' },
 ];
 
 // 比例配置
@@ -88,13 +85,6 @@ const ASPECT_RATIO_OPTIONS = [
   { value: '9:16', label: '9:16' },
   { value: '1:1', label: '1:1' },
 ];
-
-// 积分映射表
-const CREDIT_MAP: Record<string, Record<number, number>> = {
-  '480p': { 5: 1, 12: 3 },
-  '1080p': { 5: 6, 12: 15 },
-  '2K': { 5: 12, 12: 30 },
-};
 
 // 简化的模型选项（首页用）
 const SIMPLE_MODEL_OPTIONS = [
@@ -257,7 +247,9 @@ export function VideoGenerator({
   const [activeTab, setActiveTab] =
     useState<VideoGeneratorTab>('text-to-video');
 
-  const [costCredits, setCostCredits] = useState<number>(textToVideoCredits);
+  const [costCredits, setCostCredits] = useState<number>(() =>
+    getVideoCreditCost('1080p', 12, true)
+  );
   const [provider, setProvider] = useState('evolink');
   const [model, setModel] = useState('seedance-1.5-pro');
 
@@ -292,18 +284,11 @@ export function VideoGenerator({
     setIsMounted(true);
   }, []);
 
-  // 根据分辨率和时长计算积分
+  // 根据分辨率、时长、音频计算积分
   useEffect(() => {
-    const baseCredits = CREDIT_MAP[quality]?.[duration] || 6;
-    let finalCredits = baseCredits;
-
-    // image-to-video 模式额外加 2 积分
-    if (activeTab === 'image-to-video') {
-      finalCredits += 2;
-    }
-
-    setCostCredits(finalCredits);
-  }, [quality, duration, activeTab]);
+    const credits = getVideoCreditCost(quality, duration, generateAudio);
+    setCostCredits(credits);
+  }, [quality, duration, generateAudio]);
 
   const promptLength = prompt.trim().length;
   const remainingCredits = user?.credits?.remainingCredits ?? 0;
@@ -325,11 +310,7 @@ export function VideoGenerator({
       setModel('');
     }
 
-    if (tab === 'text-to-video') {
-      setCostCredits(textToVideoCredits);
-    } else if (tab === 'image-to-video') {
-      setCostCredits(imageToVideoCredits);
-    }
+    // credits recalculated by useEffect based on quality/duration/audio
   };
 
   const handleProviderChange = (value: string) => {
@@ -880,27 +861,27 @@ export function VideoGenerator({
                 {!isMounted ? (
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-primary">
-                      {t('credits_cost', { credits: costCredits })}
+                      {t('credits_cost', { credits: displayCredits(costCredits) })}
                     </span>
-                    <span>{t('credits_remaining', { credits: 0 })}</span>
+                    <span>{t('credits_remaining', { credits: displayCredits(0) })}</span>
                   </div>
                 ) : user && remainingCredits > 0 ? (
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-primary">
-                      {t('credits_cost', { credits: costCredits })}
+                      {t('credits_cost', { credits: displayCredits(costCredits) })}
                     </span>
                     <span>
-                      {t('credits_remaining', { credits: remainingCredits })}
+                      {t('credits_remaining', { credits: displayCredits(remainingCredits) })}
                     </span>
                   </div>
                 ) : (
                   <div className="space-y-3">
                     <div className="flex items-center justify-between text-sm">
                       <span className="text-primary">
-                        {t('credits_cost', { credits: costCredits })}
+                        {t('credits_cost', { credits: displayCredits(costCredits) })}
                       </span>
                       <span>
-                        {t('credits_remaining', { credits: remainingCredits })}
+                        {t('credits_remaining', { credits: displayCredits(remainingCredits) })}
                       </span>
                     </div>
                     <Link href="/pricing">

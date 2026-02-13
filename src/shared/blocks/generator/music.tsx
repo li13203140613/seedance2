@@ -38,6 +38,7 @@ import {
 } from '@/shared/components/ui/select';
 import { Switch } from '@/shared/components/ui/switch';
 import { Textarea } from '@/shared/components/ui/textarea';
+import { displayCredits } from '@/shared/constants/credits';
 import { useAppContext } from '@/shared/contexts/app';
 import { cn } from '@/shared/lib/utils';
 
@@ -594,10 +595,10 @@ export function MusicGenerator({ className, srOnlyTitle }: SongGeneratorProps) {
                 {!isMounted ? (
                   <div className="mb-6 flex items-center justify-between text-sm">
                     <span className="text-primary">
-                      {t('generator.credits_cost', { credits: costCredits })}
+                      {t('generator.credits_cost', { credits: displayCredits(costCredits) })}
                     </span>
                     <span className="text-foreground font-medium">
-                      {t('generator.credits_remaining', { credits: 0 })}
+                      {t('generator.credits_remaining', { credits: displayCredits(0) })}
                     </span>
                   </div>
                 ) : user &&
@@ -605,20 +606,20 @@ export function MusicGenerator({ className, srOnlyTitle }: SongGeneratorProps) {
                   user.credits.remainingCredits > 0 ? (
                   <div className="mb-6 flex items-center justify-between text-sm">
                     <span className="text-primary">
-                      {t('generator.credits_cost', { credits: costCredits })}
+                      {t('generator.credits_cost', { credits: displayCredits(costCredits) })}
                     </span>
                     <span className="text-foreground font-medium">
                       {t('generator.credits_remaining', {
-                        credits: user.credits.remainingCredits,
+                        credits: displayCredits(user.credits.remainingCredits),
                       })}
                     </span>
                   </div>
                 ) : (
                   <div className="mb-6 flex items-center justify-between text-sm">
                     <span className="text-primary">
-                      {t('generator.credits_cost', { credits: costCredits })},{' '}
+                      {t('generator.credits_cost', { credits: displayCredits(costCredits) })},{' '}
                       {t('generator.credits_remaining', {
-                        credits: user?.credits?.remainingCredits || 0,
+                        credits: displayCredits(user?.credits?.remainingCredits || 0),
                       })}
                     </span>
                     <Link href="/pricing">
