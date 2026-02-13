@@ -58,7 +58,7 @@ interface BackendTask {
   taskResult: string | null;
 }
 
-type VideoGeneratorTab = 'text-to-video' | 'image-to-video' | 'video-to-video';
+type VideoGeneratorTab = 'text-to-video' | 'image-to-video';
 
 const POLL_INTERVAL = 15000;
 const GENERATION_TIMEOUT = 600000; // 10 minutes for video
@@ -67,6 +67,39 @@ const MAX_PROMPT_LENGTH = 2000;
 const textToVideoCredits = 6;
 const imageToVideoCredits = 8;
 const videoToVideoCredits = 10;
+
+// 分辨率配置
+const QUALITY_OPTIONS = [
+  { value: '480p', label: '480p' },
+  { value: '1080p', label: '1080p' },
+  { value: '2K', label: '2K' },
+];
+
+// 时长配置
+const DURATION_OPTIONS = [
+  { value: 5, label: '5秒' },
+  { value: 10, label: '10秒' },
+];
+
+// 比例配置
+const ASPECT_RATIO_OPTIONS = [
+  { value: '16:9', label: '16:9' },
+  { value: '9:16', label: '9:16' },
+  { value: '1:1', label: '1:1' },
+];
+
+// 积分映射表
+const CREDIT_MAP: Record<string, Record<number, number>> = {
+  '480p': { 5: 1, 10: 2 },
+  '1080p': { 5: 6, 10: 12 },
+  '2K': { 5: 12, 10: 24 },
+};
+
+// 简化的模型选项（首页用）
+const SIMPLE_MODEL_OPTIONS = [
+  { value: 'seedance-1.5-pro', label: 'Seedance 1.5 Pro', provider: 'evolink', available: true },
+  { value: 'seedance-2.0', label: 'Seedance 2.0', provider: 'evolink', available: false },
+];
 
 const MODEL_OPTIONS = [
   // Replicate models
@@ -226,6 +259,11 @@ export function VideoGenerator({
   const [costCredits, setCostCredits] = useState<number>(textToVideoCredits);
   const [provider, setProvider] = useState('evolink');
   const [model, setModel] = useState('seedance-1.5-pro');
+
+  // 新增参数状态
+  const [quality, setQuality] = useState('1080p');
+  const [duration, setDuration] = useState(5);
+  const [aspectRatio, setAspectRatio] = useState('16:9');
   const [prompt, setPrompt] = useState('');
   const [referenceImageItems, setReferenceImageItems] = useState<
     ImageUploaderValue[]
@@ -252,12 +290,24 @@ export function VideoGenerator({
     setIsMounted(true);
   }, []);
 
+  // 根据分辨率和时长计算积分
+  useEffect(() => {
+    const baseCredits = CREDIT_MAP[quality]?.[duration] || 6;
+    let finalCredits = baseCredits;
+
+    // image-to-video 模式额外加 2 积分
+    if (activeTab === 'image-to-video') {
+      finalCredits += 2;
+    }
+
+    setCostCredits(finalCredits);
+  }, [quality, duration, activeTab]);
+
   const promptLength = prompt.trim().length;
   const remainingCredits = user?.credits?.remainingCredits ?? 0;
   const isPromptTooLong = promptLength > MAX_PROMPT_LENGTH;
   const isTextToVideoMode = activeTab === 'text-to-video';
   const isImageToVideoMode = activeTab === 'image-to-video';
-  const isVideoToVideoMode = activeTab === 'video-to-video';
 
   const handleTabChange = (value: string) => {
     const tab = value as VideoGeneratorTab;
@@ -277,8 +327,6 @@ export function VideoGenerator({
       setCostCredits(textToVideoCredits);
     } else if (tab === 'image-to-video') {
       setCostCredits(imageToVideoCredits);
-    } else if (tab === 'video-to-video') {
-      setCostCredits(videoToVideoCredits);
     }
   };
 
@@ -513,11 +561,6 @@ export function VideoGenerator({
       return;
     }
 
-    if (isVideoToVideoMode && !referenceVideoUrl) {
-      toast.error('Please provide a reference video URL before generating.');
-      return;
-    }
-
     setIsGenerating(true);
     setProgress(15);
     setTaskStatus(AITaskStatus.PENDING);
@@ -525,14 +568,14 @@ export function VideoGenerator({
     setGenerationStartTime(Date.now());
 
     try {
-      const options: any = {};
+      const options: any = {
+        duration: duration,
+        aspect_ratio: aspectRatio,
+        quality: quality,
+      };
 
       if (isImageToVideoMode) {
         options.image_input = referenceImageUrls;
-      }
-
-      if (isVideoToVideoMode) {
-        options.video_input = [referenceVideoUrl];
       }
 
       const resp = await fetch('/api/ai/generate', {
@@ -644,31 +687,47 @@ export function VideoGenerator({
               </CardHeader>
               <CardContent className="space-y-6 pb-8">
                 <Tabs value={activeTab} onValueChange={handleTabChange}>
-                  <TabsList className="bg-primary/10 grid w-full grid-cols-3">
+                  <TabsList className="bg-primary/10 grid w-full grid-cols-2">
                     <TabsTrigger value="text-to-video">
                       {t('tabs.text-to-video')}
                     </TabsTrigger>
                     <TabsTrigger value="image-to-video">
                       {t('tabs.image-to-video')}
                     </TabsTrigger>
-                    <TabsTrigger value="video-to-video">
-                      {t('tabs.video-to-video')}
-                    </TabsTrigger>
                   </TabsList>
                 </Tabs>
 
-                <div className="hidden">
-                  <div className="space-y-2">
-                    <Label>{t('form.provider')}</Label>
-                    <Select
-                      value={provider}
-                      onValueChange={handleProviderChange}
-                    >
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder={t('form.select_provider')} />
+                {/* 参数选项：模型、分辨率、时长、比例 */}
+                <div className="flex flex-wrap items-center gap-2">
+                  {/* 模型选择 */}
+                  <div className="w-40">
+                    <Select value={model} onValueChange={setModel}>
+                      <SelectTrigger className="h-9 text-sm">
+                        <SelectValue placeholder={t('form.select_model')} />
                       </SelectTrigger>
                       <SelectContent>
-                        {PROVIDER_OPTIONS.map((option) => (
+                        {SIMPLE_MODEL_OPTIONS.map((option) => (
+                          <SelectItem
+                            key={option.value}
+                            value={option.value}
+                            disabled={!option.available}
+                          >
+                            {option.label}
+                            {!option.available && ' (即将上线)'}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* 分辨率选择 */}
+                  <div className="w-24">
+                    <Select value={quality} onValueChange={setQuality}>
+                      <SelectTrigger className="h-9 text-sm">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {QUALITY_OPTIONS.map((option) => (
                           <SelectItem key={option.value} value={option.value}>
                             {option.label}
                           </SelectItem>
@@ -677,18 +736,36 @@ export function VideoGenerator({
                     </Select>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label>{t('form.model')}</Label>
-                    <Select value={model} onValueChange={setModel}>
-                      <SelectTrigger className="w-full">
-                        <SelectValue placeholder={t('form.select_model')} />
+                  {/* 时长选择 */}
+                  <div className="w-24">
+                    <Select
+                      value={String(duration)}
+                      onValueChange={(v) => setDuration(Number(v))}
+                    >
+                      <SelectTrigger className="h-9 text-sm">
+                        <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        {MODEL_OPTIONS.filter(
-                          (option) =>
-                            option.scenes.includes(activeTab) &&
-                            option.provider === provider
-                        ).map((option) => (
+                        {DURATION_OPTIONS.map((option) => (
+                          <SelectItem
+                            key={option.value}
+                            value={String(option.value)}
+                          >
+                            {option.label}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* 比例选择 */}
+                  <div className="w-24">
+                    <Select value={aspectRatio} onValueChange={setAspectRatio}>
+                      <SelectTrigger className="h-9 text-sm">
+                        <SelectValue />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {ASPECT_RATIO_OPTIONS.map((option) => (
                           <SelectItem key={option.value} value={option.value}>
                             {option.label}
                           </SelectItem>
@@ -714,21 +791,6 @@ export function VideoGenerator({
                         {t('form.some_images_failed_to_upload')}
                       </p>
                     )}
-                  </div>
-                )}
-
-                {isVideoToVideoMode && (
-                  <div className="space-y-2">
-                    <Label htmlFor="video-url">
-                      {t('form.reference_video')}
-                    </Label>
-                    <Textarea
-                      id="video-url"
-                      value={referenceVideoUrl}
-                      onChange={(e) => setReferenceVideoUrl(e.target.value)}
-                      placeholder={t('form.reference_video_placeholder')}
-                      className="min-h-20"
-                    />
                   </div>
                 )}
 
@@ -774,8 +836,7 @@ export function VideoGenerator({
                       isPromptTooLong ||
                       isReferenceUploading ||
                       hasReferenceUploadError ||
-                      (isImageToVideoMode && referenceImageUrls.length === 0) ||
-                      (isVideoToVideoMode && !referenceVideoUrl)
+                      (isImageToVideoMode && referenceImageUrls.length === 0)
                     }
                   >
                     {isGenerating ? (
