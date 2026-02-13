@@ -248,14 +248,14 @@ export function VideoGenerator({
     useState<VideoGeneratorTab>('text-to-video');
 
   const [costCredits, setCostCredits] = useState<number>(() =>
-    getVideoCreditCost('1080p', 12, true)
+    getVideoCreditCost('480p', 5, true)
   );
   const [provider, setProvider] = useState('evolink');
   const [model, setModel] = useState('seedance-1.5-pro');
 
   // 新增参数状态
-  const [quality, setQuality] = useState('1080p');
-  const [duration, setDuration] = useState(12);
+  const [quality, setQuality] = useState('480p');
+  const [duration, setDuration] = useState(5);
   const [aspectRatio, setAspectRatio] = useState('16:9');
   const [generateAudio, setGenerateAudio] = useState(true);
   const [prompt, setPrompt] = useState('');

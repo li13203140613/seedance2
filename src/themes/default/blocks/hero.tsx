@@ -26,7 +26,7 @@ export function Hero({
       <section
         id={section.id}
         className={cn(
-          `relative h-[95vh] min-h-[600px] overflow-hidden flex items-center justify-center`,
+          `relative h-screen overflow-hidden flex items-center justify-center`,
           section.className,
           className
         )}
@@ -76,9 +76,9 @@ export function Hero({
               {section.buttons.map((button, idx) => (
                 <Button
                   asChild
-                  size={button.size || 'default'}
+                  size={button.size || 'lg'}
                   variant={button.variant || 'default'}
-                  className="px-4 text-sm"
+                  className="px-8 text-base"
                   key={idx}
                 >
                   <Link href={button.url ?? ''} target={button.target ?? '_self'}>

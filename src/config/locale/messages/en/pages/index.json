@@ -23,13 +23,6 @@
             "url": "/showcases",
             "target": "_self",
             "variant": "default"
-          },
-          {
-            "title": "Buy Credits",
-            "icon": "CreditCard",
-            "url": "/pricing",
-            "target": "_self",
-            "variant": "outline"
           }
         ],
         "show_avatars": false,
@@ -37,7 +30,7 @@
         "show_award": false,
         "show_video_generator": true,
         "background_video": {
-          "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4"
+          "src": "https://image.agent-skills.cc/uploads/video_030.mp4"
         },
         "background_image": {
           "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
