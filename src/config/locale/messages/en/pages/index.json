@@ -12,10 +12,10 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "Create Cinematic Seedance Video with seedance2-two",
-        "highlight_text": "seedance2-two",
-        "description": "seedance2-two lets you generate high-quality seedance video from text or images with multi-shot storytelling and synchronized audio.<br/>Build scenes faster with natural motion, flexible ratios, and creator-ready seedance video output.",
-        "tip": "seedance2-two supports text-to-video and image-to-video seedance video workflows.",
+        "title": "Create Cinematic Seedance Video with seedancetwo 2.0",
+        "highlight_text": "seedancetwo 2.0",
+        "description": "seedancetwo 2.0 lets you generate high-quality seedance video from text or images with multi-shot storytelling and synchronized audio.<br/>Build scenes faster with natural motion, flexible ratios, and creator-ready seedance video output.",
+        "tip": "seedancetwo 2.0 supports text-to-video and image-to-video seedance video workflows.",
         "buttons": [
           {
             "title": "View Showcases",
@@ -34,18 +34,18 @@
         },
         "background_image": {
           "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
-          "alt": "seedance2-two cinematic background"
+          "alt": "seedancetwo 2.0 cinematic background"
         }
       },
       "introduce": {
         "block": "features-list",
         "id": "introduce",
-        "title": "What is seedance2-two?",
+        "title": "What is seedancetwo 2.0?",
         "label": "Overview",
-        "description": "seedance2-two is an AI seedance video generation platform that helps teams turn prompts and images into cinematic clips quickly with powerful seedance video tools.",
+        "description": "seedancetwo 2.0 is an AI seedance video generation platform that helps teams turn prompts and images into cinematic clips quickly with powerful seedance video tools.",
         "image": {
           "src": "https://image.agent-skills.cc/uploads/video_030.mp4",
-          "alt": "seedance2-two overview"
+          "alt": "seedancetwo 2.0 overview"
         },
         "items": [
           {
@@ -77,11 +77,11 @@
           },
           {
             "title": "Fast creator workflow",
-            "description": "Iterate quickly with seedance2-two reusable prompts and practical defaults for social, product, and marketing seedance video content.",
+            "description": "Iterate quickly with seedancetwo reusable prompts and practical defaults for social, product, and marketing seedance video content.",
             "icon": "RiFlashlightLine",
             "image": {
               "src": "https://picsum.photos/seed/seedancetwo-en-introduce-4/960/640.webp",
-              "alt": "seedance2-two creator workflow"
+              "alt": "seedancetwo creator workflow"
             }
           }
         ],
@@ -90,9 +90,9 @@
       "benefits": {
         "block": "features-accordion",
         "id": "benefits",
-        "title": "Why teams choose seedance2-two",
+        "title": "Why teams choose seedancetwo 2.0",
         "label": "Benefits",
-        "description": "seedance2-two is built for creators and product teams that need high-quality short-form seedance video with reliable output speed.",
+        "description": "seedancetwo 2.0 is built for creators and product teams that need high-quality short-form seedance video with reliable output speed.",
         "items": [
           {
             "title": "Consistent multi-scene seedance video results",
@@ -192,15 +192,15 @@
         "items": [
           {
             "question": "How many credits does one seedancetwo video cost?",
-            "answer": "Each seedancetwo generation costs credits based on duration and resolution. seedance2 offers flexible credit packs from starter to professional tiers—check the pricing page to find the right seedancetwo plan for your budget."
+            "answer": "Each seedancetwo generation costs credits based on duration and resolution. seedance2 offers flexible credit packs from starter to professional tiers—check the pricing page to find the right plan for your budget."
           },
           {
             "question": "What resolution and aspect ratios does seedancetwo support?",
-            "answer": "seedancetwo outputs high-definition video in 16:9 landscape, 9:16 portrait, and 1:1 square. seedance2 formats cover YouTube, TikTok, Instagram Reels, and professional ad campaigns with seedancetwo quality."
+            "answer": "seedancetwo outputs high-definition video in 16:9 landscape, 9:16 portrait, and 1:1 square. seedance2 formats cover YouTube, TikTok, Instagram Reels, and professional ad campaigns with cinematic quality."
           },
           {
             "question": "How does seedancetwo keep characters consistent across scenes?",
-            "answer": "seedancetwo locks faces, outfits, and props using its Overall Consistency engine. With seedance2, characters stay visually identical from the first shot to the last in multi-scene seedancetwo projects."
+            "answer": "seedancetwo locks faces, outfits, and props using its Overall Consistency engine. With seedance2, characters stay visually identical from the first shot to the last across multi-scene projects."
           },
           {
             "question": "Can seedancetwo replicate camera movements from a reference video?",
@@ -226,8 +226,8 @@
       },
       "cta": {
         "id": "cta",
-        "title": "Launch your first seedance2-two seedance video experience",
-        "description": "Start creating seedance video with seedance2-two and shape it into your own cinematic AI video product.",
+        "title": "Launch your first seedancetwo seedance video experience",
+        "description": "Start creating seedance video with seedancetwo and shape it into your own cinematic AI video product.",
         "buttons": [
           {
             "title": "Explore Features",

@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "seedance2-two",
+      "title": "seedancetwo 2.0",
       "logo": {
         "src": "/logo.png",
-        "alt": "seedance2-two",
+        "alt": "seedancetwo 2.0",
         "width": 100,
         "height": 100
       },
@@ -74,11 +74,11 @@
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "seedance2-two",
-      "description": "seedance2-two helps teams create cinematic seedance video from text and images with multi-shot storytelling and synchronized audio.",
+      "title": "seedancetwo 2.0",
+      "description": "seedancetwo 2.0 helps teams create cinematic seedance video from text and images with multi-shot storytelling and synchronized audio.",
       "logo": {
         "src": "/logo.png",
-        "alt": "seedance2-two",
+        "alt": "seedancetwo 2.0",
         "width": 100,
         "height": 100
       },
