@@ -23,6 +23,7 @@
       "quality": "Quality",
       "duration": "Duration",
       "aspect_ratio": "Aspect Ratio",
+      "audio": "Audio",
       "prompt": "Prompt",
       "prompt_placeholder": "Describe the video content, such as scene, action, style, etc.",
       "reference_image": "Reference Image",

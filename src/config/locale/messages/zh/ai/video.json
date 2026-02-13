@@ -23,6 +23,7 @@
       "quality": "分辨率",
       "duration": "时长",
       "aspect_ratio": "比例",
+      "audio": "音频",
       "prompt": "提示词",
       "prompt_placeholder": "描述视频内容，如场景、动作、风格等",
       "reference_image": "参考图片",

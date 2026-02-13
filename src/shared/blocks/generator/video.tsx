@@ -31,6 +31,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/shared/components/ui/select';
+import { Switch } from '@/shared/components/ui/switch';
 import { Tabs, TabsList, TabsTrigger } from '@/shared/components/ui/tabs';
 import { Textarea } from '@/shared/components/ui/textarea';
 import { useAppContext } from '@/shared/contexts/app';
@@ -78,7 +79,7 @@ const QUALITY_OPTIONS = [
 // 时长配置
 const DURATION_OPTIONS = [
   { value: 5, label: '5秒' },
-  { value: 10, label: '10秒' },
+  { value: 12, label: '12秒' },
 ];
 
 // 比例配置
@@ -90,9 +91,9 @@ const ASPECT_RATIO_OPTIONS = [
 
 // 积分映射表
 const CREDIT_MAP: Record<string, Record<number, number>> = {
-  '480p': { 5: 1, 10: 2 },
-  '1080p': { 5: 6, 10: 12 },
-  '2K': { 5: 12, 10: 24 },
+  '480p': { 5: 1, 12: 3 },
+  '1080p': { 5: 6, 12: 15 },
+  '2K': { 5: 12, 12: 30 },
 };
 
 // 简化的模型选项（首页用）
@@ -262,8 +263,9 @@ export function VideoGenerator({
 
   // 新增参数状态
   const [quality, setQuality] = useState('1080p');
-  const [duration, setDuration] = useState(5);
+  const [duration, setDuration] = useState(12);
   const [aspectRatio, setAspectRatio] = useState('16:9');
+  const [generateAudio, setGenerateAudio] = useState(true);
   const [prompt, setPrompt] = useState('');
   const [referenceImageItems, setReferenceImageItems] = useState<
     ImageUploaderValue[]
@@ -572,6 +574,7 @@ export function VideoGenerator({
         duration: duration,
         aspect_ratio: aspectRatio,
         quality: quality,
+        generate_audio: generateAudio,
       };
 
       if (isImageToVideoMode) {
@@ -772,6 +775,18 @@ export function VideoGenerator({
                         ))}
                       </SelectContent>
                     </Select>
+                  </div>
+
+                  {/* 音频开关 */}
+                  <div className="flex items-center gap-2">
+                    <Switch
+                      id="generate-audio"
+                      checked={generateAudio}
+                      onCheckedChange={setGenerateAudio}
+                    />
+                    <Label htmlFor="generate-audio" className="text-sm cursor-pointer">
+                      {t('form.audio')}
+                    </Label>
                   </div>
                 </div>
 
