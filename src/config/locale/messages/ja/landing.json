@@ -1,0 +1,131 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "機能",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "ショーケース",
+          "url": "/showcases",
+          "icon": "Box"
+        },
+        {
+          "title": "料金プラン",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "コンテンツ",
+          "icon": "FileText",
+          "children": [
+            {
+              "title": "ブログ",
+              "description": "ブログ記事を読む",
+              "url": "/blog",
+              "icon": "Newspaper"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "お支払い",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "アクティビティ",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true,
+    "topbanner": {
+      "text": "年間プランで最大89%OFF",
+      "buttonText": "今すぐ89%OFFで購入",
+      "href": "/pricing",
+      "countdownMinutes": 30,
+      "remainingSpots": 9
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "description": "seedancetwoはテキストと画像から映画品質のAI動画を素早く生成でき、マーケティング、コンテンツ制作、製品ショーケースに最適です。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "プロダクト",
+          "children": [
+            {
+              "title": "機能",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "ユーザーマニュアル",
+              "url": "/manual",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "メール",
+          "icon": "Mail",
+          "url": "mailto:support@seedancetwo.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "プライバシーポリシー",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "利用規約",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}

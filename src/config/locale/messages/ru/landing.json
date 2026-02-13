@@ -1,0 +1,131 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Возможности",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "Примеры",
+          "url": "/showcases",
+          "icon": "Box"
+        },
+        {
+          "title": "Цены",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "Контент",
+          "icon": "FileText",
+          "children": [
+            {
+              "title": "Блог",
+              "description": "Читать статьи блога",
+              "url": "/blog",
+              "icon": "Newspaper"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Оплата",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Активность",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true,
+    "topbanner": {
+      "text": "Экономия до 89% на годовых планах",
+      "buttonText": "Получить скидку 89%",
+      "href": "/pricing",
+      "countdownMinutes": 30,
+      "remainingSpots": 9
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "description": "seedancetwo позволяет быстро создавать кинематографические AI-видео из текста и изображений — идеально для маркетинга, создания контента и презентаций продуктов.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Продукт",
+          "children": [
+            {
+              "title": "Возможности",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "Руководство пользователя",
+              "url": "/manual",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "Mail",
+          "url": "mailto:support@seedancetwo.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Политика конфиденциальности",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Условия использования",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}

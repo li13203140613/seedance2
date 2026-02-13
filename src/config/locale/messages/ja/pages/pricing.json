@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "title": "料金プラン",
+    "description": "あなたに合ったプランをお選びください"
+  },
+  "page": {
+    "title": "Seedance 料金プラン",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "title": "料金プラン",
+        "description": "あなたに合ったプランをお選びください",
+        "banner": {
+          "title": "期間限定 — 年間プランで最大89%OFF",
+          "countdown_days": 1
+        },
+        "groups": [
+          {
+            "name": "monthly",
+            "title": "月額",
+            "description": "月額プラン — クレジットは毎月更新、いつでも解約可能",
+            "is_featured": true
+          },
+          {
+            "name": "yearly",
+            "title": "年額",
+            "description": "年間プラン — すべてのクレジットが一括付与、一回払い",
+            "badge": "-89%"
+          }
+        ],
+        "items": [
+          {
+            "title": "Basic",
+            "description": "始めるのに最適",
+            "features_title": "",
+            "features": [
+              "クレジットは毎月更新",
+              "最大20本のAI動画",
+              "すべてのプレミアムモデル",
+              "ウォーターマークなし",
+              "商用ライセンス＆無制限利用",
+              "1080p動画解像度",
+              "最大12秒の動画"
+            ],
+            "interval": "month",
+            "amount": 990,
+            "currency": "USD",
+            "price": "$9.9",
+            "unit": "/月",
+            "is_featured": false,
+            "credits": 100,
+            "credits_summary": "100クレジット / 月",
+            "cost_per_100": "= $0.099 / クレジット",
+            "button": {
+              "title": "登録する",
+              "url": "/#pricing"
+            },
+            "product_id": "basic-monthly",
+            "product_name": "Seedance Basic Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Pro",
+            "label": "人気",
+            "description": "クリエイター＆プロフェッショナルに最適",
+            "features_title": "",
+            "features": [
+              "クレジットは毎月更新",
+              "最大80本のAI動画",
+              "すべてのプレミアムモデル",
+              "ウォーターマークなし",
+              "優先キュー",
+              "商用ライセンス＆無制限利用",
+              "1080p動画解像度",
+              "最大12秒の動画"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/月",
+            "is_featured": true,
+            "credits": 400,
+            "credits_summary": "400クレジット / 月",
+            "cost_per_100": "= $0.075 / クレジット",
+            "value_badge": "25% OFF",
+            "button": {
+              "title": "登録する",
+              "url": "/#pricing"
+            },
+            "product_id": "pro-monthly",
+            "product_name": "Seedance Pro Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Pro"
+          },
+          {
+            "title": "Ultra",
+            "description": "チーム＆ヘビーユーザー向け",
+            "features_title": "",
+            "features": [
+              "クレジットは毎月更新",
+              "最大280本のAI動画",
+              "すべてのプレミアムモデル",
+              "ウォーターマークなし",
+              "サポート担当者対応",
+              "商用ライセンス＆無制限利用",
+              "1080p動画解像度",
+              "最大12秒の動画"
+            ],
+            "interval": "month",
+            "amount": 9900,
+            "currency": "USD",
+            "price": "$99",
+            "unit": "/月",
+            "is_featured": false,
+            "credits": 1400,
+            "credits_summary": "1,400クレジット / 月",
+            "cost_per_100": "= $0.071 / クレジット",
+            "value_badge": "29% OFF",
+            "button": {
+              "title": "登録する",
+              "url": "/#pricing"
+            },
+            "product_id": "ultra-monthly",
+            "product_name": "Seedance Ultra Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Ultra"
+          },
+          {
+            "title": "従量課金",
+            "description": "都度購入、サブスクリプション不要",
+            "features_title": "",
+            "features": [
+              "クレジットは無期限"
+            ],
+            "interval": "one-time",
+            "amount": 100,
+            "currency": "USD",
+            "price": "$1",
+            "unit": "",
+            "is_featured": false,
+            "is_payg": true,
+            "credits": 10,
+            "cost_per_100": "$1 = 10クレジット",
+            "tip": "単発購入",
+            "button": {
+              "title": "クレジットを購入",
+              "url": "/#pricing"
+            },
+            "product_id": "credits-30",
+            "product_name": "Seedance Credits 30",
+            "valid_days": 9999,
+            "group": "monthly",
+            "credit_packs": [
+              {
+                "credits": 10,
+                "label": "10クレジット",
+                "price": "$1",
+                "amount": 100,
+                "product_id": "credits-30",
+                "product_name": "Seedance Credits 30",
+                "is_default": true
+              },
+              {
+                "credits": 150,
+                "label": "150クレジット",
+                "price": "$15",
+                "amount": 1500,
+                "product_id": "credits-500",
+                "product_name": "Seedance Credits 500"
+              },
+              {
+                "credits": 300,
+                "label": "300クレジット",
+                "price": "$30",
+                "amount": 3000,
+                "product_id": "credits-1200",
+                "product_name": "Seedance Credits 1200"
+              },
+              {
+                "credits": 600,
+                "label": "600クレジット",
+                "price": "$60",
+                "amount": 6000,
+                "product_id": "credits-2800",
+                "product_name": "Seedance Credits 2800"
+              },
+              {
+                "credits": 990,
+                "label": "990クレジット",
+                "price": "$99",
+                "amount": 9900,
+                "product_id": "credits-5000",
+                "product_name": "Seedance Credits 5000"
+              },
+              {
+                "credits": 1490,
+                "label": "1,490クレジット",
+                "price": "$149",
+                "amount": 14900,
+                "product_id": "credits-8500",
+                "product_name": "Seedance Credits 8500"
+              },
+              {
+                "credits": 2490,
+                "label": "2,490クレジット",
+                "price": "$249",
+                "amount": 24900,
+                "product_id": "credits-16000",
+                "product_name": "Seedance Credits 16000"
+              }
+            ],
+            "tip_box": {
+              "title": "ヒント：サブスクリプションでさらにお得に",
+              "items": [
+                "クレジット単価が安い（最大29%お得）",
+                "クレジットは毎月自動更新"
+              ]
+            }
+          },
+          {
+            "title": "Basic",
+            "description": "始めるのに最適",
+            "features_title": "",
+            "features": [
+              "すべてのクレジットを一括付与",
+              "最大240本のAI動画",
+              "すべてのプレミアムモデル",
+              "ウォーターマークなし",
+              "商用ライセンス＆無制限利用",
+              "1080p動画解像度",
+              "最大12秒の動画"
+            ],
+            "interval": "year",
+            "amount": 9480,
+            "currency": "USD",
+            "price": "$7.9",
+            "original_price": "$9.9",
+            "unit": "/月",
+            "is_featured": false,
+            "credits": 1200,
+            "credits_summary": "1,200クレジット / 年",
+            "cost_per_100": "= $0.079 / クレジット",
+            "annual_total": "年額一括払い $94.8",
+            "annual_savings": "月額比 節約: $24",
+            "bonus_credits": "+100ボーナスクレジット",
+            "annual_badge": "年額",
+            "button": {
+              "title": "登録する",
+              "url": "/#pricing"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Seedance Basic Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Pro",
+            "label": "人気",
+            "description": "クリエイター＆プロフェッショナルに最適",
+            "features_title": "",
+            "features": [
+              "すべてのクレジットを一括付与",
+              "最大960本のAI動画",
+              "すべてのプレミアムモデル",
+              "ウォーターマークなし",
+              "優先キュー",
+              "優先サポート",
+              "商用ライセンス＆無制限利用",
+              "1080p動画解像度",
+              "最大12秒の動画"
+            ],
+            "interval": "year",
+            "amount": 23880,
+            "currency": "USD",
+            "price": "$19.9",
+            "original_price": "$29.9",
+            "unit": "/月",
+            "is_featured": true,
+            "credits": 4800,
+            "credits_summary": "4,800クレジット / 年",
+            "cost_per_100": "= $0.050 / クレジット",
+            "annual_total": "年額一括払い $238.8",
+            "annual_savings": "月額比 節約: $120",
+            "bonus_credits": "+500ボーナスクレジット",
+            "annual_badge": "年額",
+            "value_badge": "",
+            "button": {
+              "title": "登録する",
+              "url": "/#pricing"
+            },
+            "product_id": "pro-yearly",
+            "product_name": "Seedance Pro Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Pro"
+          },
+          {
+            "title": "Ultra",
+            "description": "チーム＆ヘビーユーザー向け",
+            "features_title": "",
+            "features": [
+              "すべてのクレジットを一括付与",
+              "最大3,360本のAI動画",
+              "すべてのプレミアムモデル",
+              "ウォーターマークなし",
+              "サポート担当者対応",
+              "専任サポート",
+              "商用ライセンス＆無制限利用",
+              "1080p動画解像度",
+              "最大12秒の動画"
+            ],
+            "interval": "year",
+            "amount": 13080,
+            "currency": "USD",
+            "price": "$10.9",
+            "original_price": "$99",
+            "unit": "/月",
+            "is_featured": false,
+            "credits": 16800,
+            "credits_summary": "16,800クレジット / 年",
+            "cost_per_100": "= $0.008 / クレジット",
+            "annual_total": "年額一括払い $130.8",
+            "annual_savings": "月額比 節約: $1,057",
+            "bonus_credits": "+5,000ボーナスクレジット",
+            "annual_badge": "年額",
+            "button": {
+              "title": "登録する",
+              "url": "/#pricing"
+            },
+            "product_id": "ultra-yearly",
+            "product_name": "Seedance Ultra Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Ultra"
+          },
+          {
+            "title": "従量課金",
+            "description": "都度購入、サブスクリプション不要",
+            "features_title": "",
+            "features": [
+              "クレジットは無期限"
+            ],
+            "interval": "one-time",
+            "amount": 100,
+            "currency": "USD",
+            "price": "$1",
+            "unit": "",
+            "is_featured": false,
+            "is_payg": true,
+            "credits": 10,
+            "cost_per_100": "$1 = 10クレジット",
+            "tip": "単発購入",
+            "button": {
+              "title": "クレジットを購入",
+              "url": "/#pricing"
+            },
+            "product_id": "credits-30",
+            "product_name": "Seedance Credits 30",
+            "valid_days": 9999,
+            "group": "yearly",
+            "credit_packs": [
+              {
+                "credits": 10,
+                "label": "10クレジット",
+                "price": "$1",
+                "amount": 100,
+                "product_id": "credits-30",
+                "product_name": "Seedance Credits 30",
+                "is_default": true
+              },
+              {
+                "credits": 150,
+                "label": "150クレジット",
+                "price": "$15",
+                "amount": 1500,
+                "product_id": "credits-500",
+                "product_name": "Seedance Credits 500"
+              },
+              {
+                "credits": 300,
+                "label": "300クレジット",
+                "price": "$30",
+                "amount": 3000,
+                "product_id": "credits-1200",
+                "product_name": "Seedance Credits 1200"
+              },
+              {
+                "credits": 600,
+                "label": "600クレジット",
+                "price": "$60",
+                "amount": 6000,
+                "product_id": "credits-2800",
+                "product_name": "Seedance Credits 2800"
+              },
+              {
+                "credits": 990,
+                "label": "990クレジット",
+                "price": "$99",
+                "amount": 9900,
+                "product_id": "credits-5000",
+                "product_name": "Seedance Credits 5000"
+              },
+              {
+                "credits": 1490,
+                "label": "1,490クレジット",
+                "price": "$149",
+                "amount": 14900,
+                "product_id": "credits-8500",
+                "product_name": "Seedance Credits 8500"
+              },
+              {
+                "credits": 2490,
+                "label": "2,490クレジット",
+                "price": "$249",
+                "amount": 24900,
+                "product_id": "credits-16000",
+                "product_name": "Seedance Credits 16000"
+              }
+            ],
+            "tip_box": {
+              "title": "ヒント：サブスクリプションでさらにお得に",
+              "items": [
+                "クレジット単価が安い（最大29%お得）",
+                "クレジットは毎月自動更新"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "現在のプラン",
+    "processing": "処理中"
+  }
+}

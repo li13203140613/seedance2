@@ -1,0 +1,162 @@
+{
+  "header": {
+    "brand": {
+      "title": "Seedance",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Seedance"
+      },
+      "url": "/admin"
+    },
+    "show_trigger": false
+  },
+  "main_navs": [
+    {
+      "title": "Система",
+      "items": [
+        {
+          "title": "Пользователи и разрешения",
+          "icon": "User",
+          "is_expand": true,
+          "children": [
+            {
+              "title": "Пользователи",
+              "url": "/admin/users",
+              "icon": "User"
+            },
+            {
+              "title": "Роли",
+              "url": "/admin/roles",
+              "icon": "Users"
+            },
+            {
+              "title": "Разрешения",
+              "url": "/admin/permissions",
+              "icon": "ShieldCheck"
+            }
+          ]
+        },
+        {
+          "title": "Страницы и контент",
+          "icon": "FileText",
+          "children": [
+            {
+              "title": "Категории",
+              "icon": "Folder",
+              "url": "/admin/categories"
+            },
+            {
+              "title": "Публикации",
+              "icon": "FileText",
+              "url": "/admin/posts"
+            }
+          ]
+        },
+        {
+          "title": "Платежи и кредиты",
+          "icon": "DollarSign",
+          "children": [
+            {
+              "title": "Платежи",
+              "url": "/admin/payments",
+              "icon": "DollarSign"
+            },
+            {
+              "title": "Подписки",
+              "url": "/admin/subscriptions",
+              "icon": "CreditCard"
+            },
+            {
+              "title": "Кредиты",
+              "url": "/admin/credits",
+              "icon": "Coins"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Бизнес",
+      "items": [
+        {
+          "title": "AI-задачи",
+          "url": "/admin/ai-tasks",
+          "icon": "Brain"
+        },
+        {
+          "title": "AI-чаты",
+          "url": "/admin/chats",
+          "icon": "MessageCircle"
+        }
+      ]
+    }
+  ],
+  "bottom_nav": {
+    "items": [
+      {
+        "title": "Настройки",
+        "url": "/admin/settings/general",
+        "icon": "Settings"
+      },
+      {
+        "title": "API-ключи",
+        "url": "/admin/apikeys",
+        "icon": "Key"
+      }
+    ]
+  },
+  "user": {
+    "nav": {
+      "items": [
+        {
+          "title": "Профиль",
+          "url": "/settings/profile",
+          "icon": "User",
+          "target": "_blank"
+        }
+      ]
+    },
+    "show_email": false,
+    "show_signout": true,
+    "signout_callback": "/"
+  },
+  "footer": {
+    "nav": {
+      "items": [
+        {
+          "title": "Главная",
+          "url": "/",
+          "icon": "Home",
+          "target": "_blank"
+        },
+        {
+          "title": "GitHub",
+          "url": "https://github.com/your-app-name",
+          "icon": "Github",
+          "target": "_blank"
+        },
+        {
+          "title": "Twitter",
+          "url": "https://twitter.com/your-app-name",
+          "icon": "RiTwitterXFill",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "url": "https://discord.gg/your-app-name",
+          "icon": "RiDiscordFill",
+          "target": "_blank"
+        },
+        {
+          "title": "Email",
+          "url": "mailto:support@your-domain.com",
+          "icon": "Mail",
+          "target": "_blank"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": false
+  },
+  "variant": "sidebar"
+}

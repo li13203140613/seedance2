@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "id": "ID",
+    "code": "Código",
+    "title": "Título",
+    "resource": "Recurso",
+    "action": "Acción",
+    "description": "Descripción",
+    "created_at": "Fecha de creación",
+    "updated_at": "Fecha de actualización"
+  },
+  "list": {
+    "title": "Permisos",
+    "crumbs": {
+      "admin": "Admin",
+      "permissions": "Permisos"
+    }
+  }
+}

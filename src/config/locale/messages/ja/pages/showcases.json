@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "title": "Seedance 2 動画ショーケース - AI生成動画サンプル",
+    "description": "Seedance 2で作成された素晴らしいAI生成動画サンプルをご覧ください。シネマティックなシーンからクリエイティブなアニメーションまで、Seedance 2の実力をお確かめください。"
+  },
+  "page": {
+    "title": "動画ショーケース",
+    "sections": {
+      "showcases": {
+        "id": "showcases-flow",
+        "title": "Seedance 2 動画ギャラリー",
+        "description": "Seedance 2で作成された素晴らしいAI生成動画をご覧ください。ホバーでプレビュー、クリックでフルスクリーン再生。",
+        "groups": [
+          { "name": "all", "title": "すべて" },
+          { "name": "cinematic", "title": "シネマティック" },
+          { "name": "animation", "title": "アニメーション" },
+          { "name": "fashion", "title": "ファッション" },
+          { "name": "creative", "title": "クリエイティブ" }
+        ],
+        "items": [
+          {
+            "title": "夕暮れの洗濯",
+            "description": "ゴールデンアワーにバルコニーで優雅に洗濯物を干す女性。リアルな布の物理演算と自然な身体の動きを表現。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-1-poster.webp",
+              "alt": "夕暮れに洗濯物を干す女性"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-1.mp4"
+          },
+          {
+            "title": "都市の追跡",
+            "description": "混雑した街を駆け抜ける男性。ダイナミックなカメラトラッキング、流動的なモーション、群衆シミュレーションを展示。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-2-poster.webp",
+              "alt": "街中を走る男性"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-2.mp4"
+          },
+          {
+            "title": "帰宅",
+            "description": "廊下を歩いて玄関に向かう男性。映画的なライティングとシーン全体を通じたキャラクターの一貫性を表現。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-4-poster.webp",
+              "alt": "廊下を歩く男性"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-4.mp4"
+          },
+          {
+            "title": "京劇",
+            "description": "精巧な衣装と髪飾りをまとった中国伝統京劇の演者。舞台上での優雅な動きを表現。",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-5-poster.webp",
+              "alt": "京劇の演者"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-5.mp4"
+          },
+          {
+            "title": "商品ショーケース",
+            "description": "複数の色とパターンのエレガントなリボンボウ。商品撮影とコマーシャル動画生成のデモンストレーション。",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-8-poster.webp",
+              "alt": "カラフルなリボンボウの商品展示"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-8.mp4"
+          },
+          {
+            "title": "エレベーターシーン",
+            "description": "ヒッチコック風の緊迫したエレベーターシーン。軌道ショットやズームエフェクトを含むドラマチックなカメラワーク。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-10-poster.webp",
+              "alt": "エレベーターでのドラマチックなシーン"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-10.mp4"
+          },
+          {
+            "title": "武侠バトル",
+            "description": "秋の森での壮大な武術の決闘。3Dアニメーションスタイルで、ダイナミックな戦闘振り付けを表現。",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-14-poster.webp",
+              "alt": "秋の森での武術の戦い"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-14.mp4"
+          },
+          {
+            "title": "スーパーカー登場",
+            "description": "地下駐車場の赤いランボルギーニ。映画的なライティング、反射、オートモーティブショーケーススタイル。",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-16-poster.webp",
+              "alt": "駐車場の赤いランボルギーニ"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-16.mp4"
+          },
+          {
+            "title": "天使の覚醒",
+            "description": "石の天使像の前で光る翼を持つ幻想的な天使のファンタジーシーン。見事なVFXとライティング。",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-17-poster.webp",
+              "alt": "翼を持つ天使のファンタジーシーン"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-17.mp4"
+          },
+          {
+            "title": "ファッションルックブック",
+            "description": "ビートに同期した衣装チェンジを伴うダイナミックなファッション撮影。スタイルの切り替えとモデルポージングを展示。",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-19-poster.webp",
+              "alt": "ポーズをとるファッションモデル"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-19.mp4"
+          },
+          {
+            "title": "おもしろ馬",
+            "description": "魚眼レンズエフェクトで毛布からのぞくカートゥーンの馬。オーディオ同期アニメーションのデモンストレーション。",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-30-poster.webp",
+              "alt": "毛布をかぶったカートゥーンの馬"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-30.mp4"
+          },
+          {
+            "title": "夕暮れのランナー",
+            "description": "夕暮れの街中をジョギングする若者のアニメ風イラスト。鮮やかな色彩。",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-38-poster.webp",
+              "alt": "夕暮れのアニメランナー"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-38.mp4"
+          },
+          {
+            "title": "スパイスリラー",
+            "description": "赤いコートの女性がヨーロッパの街を歩くワンテイクトラッキングショット。スパイスリラースタイル。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-40-poster.webp",
+              "alt": "ヨーロッパの街で赤いコートの女性"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-40.mp4"
+          },
+          {
+            "title": "ファッション広告",
+            "description": "幾何学的な背景とダイナミックなテキストオーバーレイを使ったスタイリッシュなファッション広告。ビート同期編集。",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-45-poster.webp",
+              "alt": "幾何学的背景のファッションモデル"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-45.mp4"
+          },
+          {
+            "title": "体操の優美",
+            "description": "薄暗い体育館でドラマチックなスポットライトの中、平均台で演技する体操選手。流麗な身体の動きを表現。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1-poster.webp",
+              "alt": "平均台上の体操選手"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1.mp4"
+          },
+          {
+            "title": "平均台",
+            "description": "映画的なサイドアングルのフレーミングと体育館の雰囲気あるライティングの中、平均台を優雅に歩く体操選手。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2-poster.webp",
+              "alt": "平均台を歩く体操選手"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2.mp4"
+          },
+          {
+            "title": "ドラゴン決闘",
+            "description": "中国伝統武術寺院でのドラゴンボール風の武術対決。ダイナミックな3Dキャラクターアニメーション。",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals-poster.webp",
+              "alt": "ドラゴンボール風の武術の戦い"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals.mp4"
+          },
+          {
+            "title": "ストリートランナーズ",
+            "description": "都市の路地裏を疾走するアニメスタイルのキャラクター。ダイナミックなポーズと鮮やかなストリートファッション。",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong-poster.webp",
+              "alt": "街を走るアニメキャラクター"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong.mp4"
+          },
+          {
+            "title": "戦場",
+            "description": "ドラマチックな戦争シーンで街を進む軍用戦車。リアルな車両物理と大気エフェクト。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-1-poster.webp",
+              "alt": "街中の軍用戦車"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-1.mp4"
+          },
+          {
+            "title": "群衆からの脱出",
+            "description": "映画的な被写界深度とリアルな群衆ダイナミクスの中、大群衆を駆け抜ける男性。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-2-poster.webp",
+              "alt": "群衆の中を走る男性"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-2.mp4"
+          },
+          {
+            "title": "幻想の航海",
+            "description": "海の向こうの幻想的な城塞都市を見つめる船上の少年。見事な風景と幻想的な雲。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/long4ai-poster.webp",
+              "alt": "ファンタジーの城を見る船上の少年"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/long4ai.mp4"
+          },
+          {
+            "title": "ヨーロッパ散歩",
+            "description": "賑やかなヨーロッパの街を一人称視点でストリートレベルの散歩。自然な歩行者の動きと本格的な街の雰囲気。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle-poster.webp",
+              "alt": "ヨーロッパの街を歩く人々"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle.mp4"
+          },
+          {
+            "title": "古代の美女",
+            "description": "伝統的な漢服を着た二人の少女。優雅な髪飾りをつけ、趣のある古い街の夜市を背景に。",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/qhgy-poster.webp",
+              "alt": "漢服を着た少女たち"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/qhgy.mp4"
+          },
+          {
+            "title": "コートクロスオーバー",
+            "description": "プロフェッショナルコートでの激しいバスケットボールのクロスオーバーシーン。ダイナミックなカメラアングルとリアルなプレイヤーの動き。",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/sino-market-poster.webp",
+              "alt": "コート上のバスケットボールクロスオーバー"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/sino-market.mp4"
+          },
+          {
+            "title": "酒場の伏兵",
+            "description": "中国伝統の酒場で忍者を撃退する武術家。流麗な戦闘振り付けとドラマチックなライティング。",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai-poster.webp",
+              "alt": "酒場での武術の戦い"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai.mp4"
+          }
+        ]
+      }
+    }
+  }
+}

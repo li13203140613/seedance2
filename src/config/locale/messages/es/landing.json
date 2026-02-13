@@ -1,0 +1,131 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Características",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "Muestras",
+          "url": "/showcases",
+          "icon": "Box"
+        },
+        {
+          "title": "Precios",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "Contenido",
+          "icon": "FileText",
+          "children": [
+            {
+              "title": "Blog",
+              "description": "Leer publicaciones del blog",
+              "url": "/blog",
+              "icon": "Newspaper"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Facturación",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Actividad",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true,
+    "topbanner": {
+      "text": "Ahorra hasta un 89% en planes anuales",
+      "buttonText": "Obtener 89% de descuento",
+      "href": "/pricing",
+      "countdownMinutes": 30,
+      "remainingSpots": 9
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "description": "seedancetwo te permite generar rápidamente videos cinematográficos con IA a partir de texto e imágenes, perfecto para marketing, creación de contenido y presentaciones de productos.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Producto",
+          "children": [
+            {
+              "title": "Características",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "Manual de usuario",
+              "url": "/manual",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "Mail",
+          "url": "mailto:support@seedancetwo.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Política de privacidad",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Términos de servicio",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}

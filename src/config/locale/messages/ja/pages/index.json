@@ -1,0 +1,245 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "introduce",
+      "benefit-1",
+      "benefit-2",
+      "benefit-3",
+      "features",
+      "pricing",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "SeeDanceTwo\nあなたの意図を理解する動画モデル。",
+        "highlight_text": "SeeDanceTwo",
+        "description": "マルチモーダル制作はここから始まります。\n大胆に想像して、あとはおまかせ。",
+        "announcement": {
+          "badge": "NEW",
+          "text": "Seedance 2が2月24日リリース — 先行チャージで早期アクセス",
+          "url": "/pricing"
+        },
+        "buttons": [
+          {
+            "title": "始める",
+            "icon": "Zap",
+            "url": "/#video-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": false,
+        "avatars_tip": "",
+        "show_award": false,
+        "show_video_generator": true,
+        "background_video": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4"
+        },
+        "background_image": {
+          "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
+          "alt": "シネマティック背景"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "seedancetwoとは？",
+        "label": "概要",
+        "description": "Seedance twoは画像、動画、オーディオ、テキストの4つのモダリティ入力に対応し、より豊かな表現とコントロール可能な生成を実現します。",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/video_030.mp4",
+          "alt": "seedancetwo概要"
+        },
+        "items": [
+          {
+            "title": "参照画像",
+            "description": "参照画像の構図、キャラクターの細部、ビジュアルスタイルを精密に再現します。",
+            "icon": "RiImage2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-1/960/640.webp",
+              "alt": "参照画像"
+            }
+          },
+          {
+            "title": "参照動画",
+            "description": "参照動画からカメラワーク、複雑なモーションリズム、クリエイティブエフェクトを再現します。",
+            "icon": "RiMovie2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-2/960/640.webp",
+              "alt": "参照動画"
+            }
+          },
+          {
+            "title": "動画の延長",
+            "description": "ショットをスムーズに延長・接続し、プロンプトに基づいて連続的なシーンを生成します。単なる生成ではなく、「撮影を続ける」機能です。",
+            "icon": "RiTimeLine",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-3/960/640.webp",
+              "alt": "動画の延長"
+            }
+          },
+          {
+            "title": "動画編集",
+            "description": "既存の動画でキャラクターの入れ替え、要素の追加・削除を行う、ピンポイントな編集が可能です。",
+            "icon": "RiScissors2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-4/960/640.webp",
+              "alt": "動画編集"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefit-1": {
+        "block": "features-media",
+        "id": "benefit-1",
+        "image_position": "left",
+        "title": "コア機能を大幅強化：より安定、よりスムーズ、よりリアルに！",
+        "description": "マルチモーダルを超えて、Seedance 2.0は基盤レベルで大幅な改善を実現しました。より正確な物理演算、より自然で滑らかな動き、より精密な指示理解、より一貫したスタイル。複雑なアクション、連続的な動き、その他の難易度の高い生成タスクを軽々とこなし、すべての動画をよりリアルで洗練されたものに仕上げます。コア機能の真の進化です！",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_002.mp4",
+          "alt": "コア機能の大幅強化"
+        }
+      },
+      "benefit-2": {
+        "block": "features-media",
+        "id": "benefit-2",
+        "image_position": "right",
+        "title": "フルマルチモーダルアップグレード：動画制作が「自由組み合わせ」時代へ！",
+        "description": "テキスト、画像、動画、オーディオをアップロード — すべてがソース素材や参照として使用可能。あらゆるコンテンツのモーション、エフェクト、スタイル、カメラワーク、キャラクター、シーン、サウンドを参照できます。プロンプトが明確であれば、モデルが理解します。Seedance 2.0 = マルチモーダル参照能力（何でも参照可能）+ 強力なクリエイティブ生成 + 精密な指示応答（優れた理解力）。",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4",
+          "alt": "フルマルチモーダルアップグレード"
+        }
+      },
+      "benefit-3": {
+        "block": "features-media",
+        "id": "benefit-3",
+        "image_position": "left",
+        "title": "全体的な一貫性を大幅改善",
+        "description": "ショット間でキャラクターの見た目が変わる、製品の細部が失われる、小さなテキストがぼやける、シーンが飛ぶ、カメラスタイルが一貫しない... クリエイティブワークでよくあるこれらの一貫性の問題が2.0で解決されました。顔から衣服、フォントの細部まで、全体的な一貫性がより安定し正確になりました。",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_017.mp4",
+          "alt": "全体的な一貫性の大幅改善"
+        }
+      },
+      "features": {
+        "id": "features",
+        "title": "コア機能",
+        "description": "「参照能力」が最大のハイライトです。画像でビジュアルスタイルを設定し、動画でキャラクターの動きとカメラ変更を指定し、数秒のオーディオでリズムとムードを設定... プロンプトと組み合わせることで、クリエイティブプロセスがより自然に、より効率的に、本物の「ディレクター」のように制作できます。",
+        "items": [
+          {
+            "title": "全体的な一貫性",
+            "description": "キャラクターの顔、衣装、テキスト、細部が複数ショットにわたって高い一貫性を維持します。",
+            "icon": "RiShieldCheckLine"
+          },
+          {
+            "title": "カメラワークとモーションの再現",
+            "description": "参照動画をアップロードして、複雑な振り付けやカメラの動きを再現。フレームごとの記述は不要です。",
+            "icon": "RiCameraLine"
+          },
+          {
+            "title": "クリエイティブテンプレート/エフェクトの再現",
+            "description": "クリエイティブなトランジション、広告スポット、映画クリップなど、複雑なエフェクトをすべて精密に再現できます。",
+            "icon": "RiMagicLine"
+          },
+          {
+            "title": "クリエイティブとストーリーの補完",
+            "description": "モデルがストーリーラインやクリエイティブの細部を自律的に補完し、より豊かで自然なナラティブを実現します。",
+            "icon": "RiQuillPenLine"
+          },
+          {
+            "title": "動画の延長",
+            "description": "ショットをスムーズに延長・接続し、プロンプトに基づいて連続的なシーンを生成。単なる生成ではなく、撮影を続ける機能です。",
+            "icon": "RiTimeLine"
+          },
+          {
+            "title": "より正確なトーン、よりリアルな音声",
+            "description": "自然で生き生きとした音声で、対話やナレーションの表現力が大幅に向上しました。",
+            "icon": "RiVoiceprintLine"
+          },
+          {
+            "title": "よりスムーズなロングテイク",
+            "description": "長回しでも途切れなし。自然なシーン転換で連続性が大幅に向上しました。",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "実用的な動画編集",
+            "description": "既存の動画の特定のセグメントをピンポイントで編集でき、クリップ全体を再生成する必要がありません。",
+            "icon": "RiScissors2Line"
+          },
+          {
+            "title": "音楽ビートシンク",
+            "description": "オーディオのビートが画面上のアクションと精密に同期し、動画に強いリズム感を与えます。",
+            "icon": "RiMusic2Line"
+          },
+          {
+            "title": "より豊かな感情表現",
+            "description": "より繊細な表情やボディランゲージで、より強いナラティブインパクトを実現します。",
+            "icon": "RiEmotionLine"
+          }
+        ]
+      },
+      "pricing": {
+        "id": "pricing",
+        "block": "pricing",
+        "data": {}
+      },
+      "faq": {
+        "id": "faq",
+        "title": "よくある質問",
+        "description": "ヘルプが必要な場合は、メールでお問い合わせください。",
+        "items": [
+          {
+            "question": "seedancetwoとは何ですか？",
+            "answer": "seedancetwoはSeedanceモデルをベースとしたAI動画生成体験で、映画品質の動画の高速制作をサポートしています。"
+          },
+          {
+            "question": "テキストから動画と画像から動画に対応していますか？",
+            "answer": "はい。プロンプトを入力してテキストから動画を生成したり、画像をアップロードして画像から動画を生成したりできます。"
+          },
+          {
+            "question": "マルチショットシーケンスを生成できますか？",
+            "answer": "はい。ワークフローはマルチショットストーリーテリングに対応しており、1回の生成でシーンの連続性とスタイルの一貫性を維持します。"
+          },
+          {
+            "question": "音声同期に対応していますか？",
+            "answer": "はい。音声同期とリップシンクに対応しており、動画の自然な雰囲気を高めます。"
+          },
+          {
+            "question": "どのようなアスペクト比で出力できますか？",
+            "answer": "横長、縦長、正方形など一般的な比率でコンテンツを生成でき、さまざまな配信チャネルに適しています。"
+          },
+          {
+            "question": "サポートチームへの連絡方法は？",
+            "answer": "設定やカスタマイズのサポートについては、support@seedancetwo.comまでメールでお問い合わせください。"
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "seedancetwo体験を始めましょう",
+        "description": "このクイックスタートを基に、あなた自身のシネマティックAI動画プロダクトを作りましょう。",
+        "buttons": [
+          {
+            "title": "機能を見る",
+            "url": "/#features",
+            "target": "_self",
+            "icon": "Zap"
+          },
+          {
+            "title": "クレジットを購入",
+            "url": "/pricing",
+            "target": "_self",
+            "variant": "outline",
+            "icon": "CreditCard"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

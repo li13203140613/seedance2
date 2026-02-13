@@ -1,0 +1,121 @@
+{
+  "sidebar": {
+    "header": {
+      "brand": {
+        "title": "Seedance Chat",
+        "logo": {
+          "src": "/logo.png",
+          "alt": "Seedance Chat"
+        },
+        "url": "/chat"
+      },
+      "show_trigger": false
+    },
+    "buttons": [
+      {
+        "title": "Nuevo chat",
+        "icon": "Plus",
+        "url": "/chat",
+        "variant": "outline"
+      }
+    ],
+    "main_navs": [
+      {
+        "items": [
+          {
+            "title": "Historial",
+            "icon": "History",
+            "url": "/chat/history"
+          }
+        ]
+      }
+    ],
+    "bottom_nav": {
+      "items": []
+    },
+    "user": {
+      "nav": {
+        "items": [
+          {
+            "title": "Perfil",
+            "url": "/settings/profile",
+            "icon": "User",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_email": false,
+      "show_signout": true,
+      "signout_callback": "/chat",
+      "signin_callback": "/chat"
+    },
+    "footer": {
+      "nav": {
+        "items": [
+          {
+            "title": "Inicio",
+            "url": "/",
+            "icon": "Home",
+            "target": "_blank"
+          },
+          {
+            "title": "GitHub",
+            "url": "https://github.com/your-app-name",
+            "icon": "Github",
+            "target": "_blank"
+          },
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/your-app-name",
+            "icon": "RiTwitterXFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Discord",
+            "url": "https://discord.gg/your-app-name",
+            "icon": "RiDiscordFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Email",
+            "url": "mailto:support@your-domain.com",
+            "icon": "Mail",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_theme": true,
+      "show_locale": false
+    },
+    "variant": "sidebar"
+  },
+  "library": {
+    "title": "Biblioteca",
+    "icon": "History",
+    "url": "/chat/history",
+    "more": "Más",
+    "actions": {
+      "edit_title": "Editar título",
+      "share": "Compartir",
+      "delete": "Eliminar"
+    }
+  },
+  "generator": {
+    "title": "¿En qué puedo ayudarte hoy?",
+    "input_placeholder": "Puedes preguntarme lo que quieras"
+  },
+  "history": {
+    "title": "Historial de chats",
+    "description": "Revisa y vuelve a visitar tus conversaciones anteriores.",
+    "empty": "Aún no hay conversaciones.",
+    "error": "Error al cargar las conversaciones.",
+    "retry": "Intentar de nuevo",
+    "signin": "Inicia sesión para ver tu historial de chats.",
+    "summary": "Mostrando {from}-{to} de {total}",
+    "perPage": "Por página",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "open": "Abrir chat",
+    "untitled": "Conversación sin título"
+  }
+}

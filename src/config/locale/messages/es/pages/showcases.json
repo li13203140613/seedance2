@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "title": "Muestras de video Seedance 2 - Ejemplos de video generados con IA",
+    "description": "Explora impresionantes ejemplos de video generados con IA creados con Seedance 2. Desde escenas cinematográficas hasta animaciones creativas, descubre lo que Seedance 2 puede hacer."
+  },
+  "page": {
+    "title": "Muestras de video",
+    "sections": {
+      "showcases": {
+        "id": "showcases-flow",
+        "title": "Galería de video Seedance 2",
+        "description": "Explora impresionantes videos generados con IA creados con Seedance 2. Pasa el cursor para previsualizar, haz clic para ver en pantalla completa.",
+        "groups": [
+          { "name": "all", "title": "Todos" },
+          { "name": "cinematic", "title": "Cinematográfico" },
+          { "name": "animation", "title": "Animación" },
+          { "name": "fashion", "title": "Moda" },
+          { "name": "creative", "title": "Creativo" }
+        ],
+        "items": [
+          {
+            "title": "Atardecer y ropa",
+            "description": "Una chica colgando ropa elegantemente en un balcón durante la hora dorada, con física de tela realista y movimientos corporales naturales.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-1-poster.webp",
+              "alt": "Mujer colgando ropa al atardecer"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-1.mp4"
+          },
+          {
+            "title": "Persecución urbana",
+            "description": "Un hombre corriendo por calles concurridas de la ciudad con seguimiento dinámico de cámara, mostrando movimiento fluido y simulación de multitudes.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-2-poster.webp",
+              "alt": "Hombre corriendo por las calles de la ciudad"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-2.mp4"
+          },
+          {
+            "title": "Regreso a casa",
+            "description": "Un hombre caminando por un pasillo hacia la puerta principal, con iluminación cinematográfica y consistencia del personaje a lo largo de la escena.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-4-poster.webp",
+              "alt": "Hombre caminando por el pasillo"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-4.mp4"
+          },
+          {
+            "title": "Ópera china",
+            "description": "Un intérprete de ópera china tradicional con elaborado vestuario y tocado intrincado, realizando movimientos elegantes en el escenario.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-5-poster.webp",
+              "alt": "Intérprete de ópera china"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-5.mp4"
+          },
+          {
+            "title": "Muestra de producto",
+            "description": "Elegantes lazos de cinta en múltiples colores y patrones, demostrando fotografía de producto y generación de video comercial.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-8-poster.webp",
+              "alt": "Exhibición de lazos de cinta de colores"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-8.mp4"
+          },
+          {
+            "title": "Escena del elevador",
+            "description": "Una escena tensa al estilo Hitchcock en un elevador con trabajo de cámara dramático incluyendo tomas orbitales y efectos de zoom.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-10-poster.webp",
+              "alt": "Hombre en elevador, escena dramática"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-10.mp4"
+          },
+          {
+            "title": "Batalla Wuxia",
+            "description": "Un épico duelo de artes marciales en un bosque otoñal con estilo de animación 3D, con coreografía de combate dinámica.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-14-poster.webp",
+              "alt": "Pelea de artes marciales en bosque otoñal"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-14.mp4"
+          },
+          {
+            "title": "Superauto revelado",
+            "description": "Un Lamborghini rojo en un estacionamiento subterráneo con iluminación cinematográfica, reflejos y estilo de exhibición automotriz.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-16-poster.webp",
+              "alt": "Lamborghini rojo en estacionamiento"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-16.mp4"
+          },
+          {
+            "title": "Despertar del ángel",
+            "description": "Una escena de fantasía de un ángel etéreo con alas brillantes frente a una estatua de ángel de piedra, con impresionantes efectos visuales e iluminación.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-17-poster.webp",
+              "alt": "Ángel con alas, escena de fantasía"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-17.mp4"
+          },
+          {
+            "title": "Lookbook de moda",
+            "description": "Una sesión de moda dinámica con cambios de vestuario sincronizados al ritmo, mostrando transiciones de estilo y poses de modelo.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-19-poster.webp",
+              "alt": "Modelo de moda posando"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-19.mp4"
+          },
+          {
+            "title": "Caballo gracioso",
+            "description": "Un caballo de dibujos animados asomándose a través de una manta con efecto de lente ojo de pez, demostrando animación sincronizada con audio.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-30-poster.webp",
+              "alt": "Caballo de dibujos animados con manta"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-30.mp4"
+          },
+          {
+            "title": "Corredor al atardecer",
+            "description": "Una ilustración estilo anime de un joven trotando por calles de la ciudad al atardecer con colores vibrantes.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-38-poster.webp",
+              "alt": "Corredor anime al atardecer"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-38.mp4"
+          },
+          {
+            "title": "Thriller de espías",
+            "description": "Una toma de seguimiento continua de una mujer con abrigo rojo caminando por una calle europea concurrida al estilo thriller de espías.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-40-poster.webp",
+              "alt": "Mujer con abrigo rojo en calle europea"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-40.mp4"
+          },
+          {
+            "title": "Anuncio de moda",
+            "description": "Un elegante anuncio de moda con fondos geométricos y superposiciones de texto dinámicas, edición sincronizada al ritmo.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-45-poster.webp",
+              "alt": "Modelo de moda con fondo geométrico"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-45.mp4"
+          },
+          {
+            "title": "Gracia gimnástica",
+            "description": "Una gimnasta actuando en la barra de equilibrio en un gimnasio con poca luz y un foco dramático, mostrando movimientos corporales fluidos.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1-poster.webp",
+              "alt": "Gimnasta en la barra de equilibrio"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1.mp4"
+          },
+          {
+            "title": "Barra de equilibrio",
+            "description": "Una gimnasta caminando elegantemente sobre la barra de equilibrio con encuadre cinematográfico desde ángulo lateral e iluminación atmosférica del gimnasio.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2-poster.webp",
+              "alt": "Gimnasta caminando en la barra de equilibrio"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2.mp4"
+          },
+          {
+            "title": "Duelo del dragón",
+            "description": "Un enfrentamiento de artes marciales inspirado en Dragon Ball en un templo chino tradicional, con animación 3D dinámica de personajes.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals-poster.webp",
+              "alt": "Pelea estilo Dragon Ball"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals.mp4"
+          },
+          {
+            "title": "Corredores callejeros",
+            "description": "Personajes estilo anime corriendo por un callejón urbano con poses dinámicas y vibrante estética de moda urbana.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong-poster.webp",
+              "alt": "Personajes anime corriendo en la ciudad"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong.mp4"
+          },
+          {
+            "title": "Zona de guerra",
+            "description": "Tanques militares avanzando por calles de la ciudad en una escena dramática de guerra con física vehicular realista y efectos atmosféricos.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-1-poster.webp",
+              "alt": "Tanques militares en calles de la ciudad"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-1.mp4"
+          },
+          {
+            "title": "Escape de la multitud",
+            "description": "Un hombre corriendo a toda velocidad a través de una multitud masiva en las calles de la ciudad con profundidad de campo cinematográfica y dinámica de multitudes realista.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-2-poster.webp",
+              "alt": "Hombre corriendo entre la multitud"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-2.mp4"
+          },
+          {
+            "title": "Viaje fantástico",
+            "description": "Un niño en un bote contemplando una fantástica ciudad-castillo al otro lado del océano, con un paisaje impresionante y nubes atmosféricas.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/long4ai-poster.webp",
+              "alt": "Niño en bote con castillo de fantasía"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/long4ai.mp4"
+          },
+          {
+            "title": "Paseo europeo",
+            "description": "Un paseo a nivel de calle en primera persona por una concurrida ciudad europea con movimiento natural de peatones y auténtica atmósfera callejera.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle-poster.webp",
+              "alt": "Personas caminando en calle europea"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle.mp4"
+          },
+          {
+            "title": "Bellezas antiguas",
+            "description": "Dos chicas con trajes hanfu chinos tradicionales con elegantes accesorios para el cabello, en un encantador mercado nocturno de un pueblo antiguo.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/qhgy-poster.webp",
+              "alt": "Chicas con trajes hanfu chinos"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/qhgy.mp4"
+          },
+          {
+            "title": "Crossover en la cancha",
+            "description": "Una intensa escena de crossover de baloncesto en una cancha profesional con ángulos de cámara dinámicos y movimientos realistas del jugador.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/sino-market-poster.webp",
+              "alt": "Crossover de baloncesto en la cancha"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/sino-market.mp4"
+          },
+          {
+            "title": "Emboscada en la taberna",
+            "description": "Un guerrero de artes marciales defendiéndose de ninjas en una taberna china tradicional, con coreografía de combate fluida e iluminación dramática.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai-poster.webp",
+              "alt": "Pelea de artes marciales en taberna"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai.mp4"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Generador de música con IA",
+    "description": "Genera música increíble con IA"
+  },
+  "page": {
+    "title": "Generador de música con IA",
+    "description": "Genera música increíble con IA"
+  },
+  "generator": {
+    "title": "Generador de música",
+    "prompt": "Prompt",
+    "prompt_placeholder": "Una historia de amor de Romeo y Julieta",
+    "generate": "Generar música",
+    "loading": "Cargando...",
+    "generating": "Generando...",
+    "sign_in_to_generate": "Inicia sesión para generar música",
+    "credits_cost": "Costo: {credits} créditos",
+    "credits_remaining": "Restantes: {credits} créditos",
+    "buy_credits": "Comprar créditos",
+    "generation_progress": "Progreso de generación",
+    "time_cost": "Esto puede tomar de 2 a 3 minutos...",
+    "generated_song": "Canción generada",
+    "ready_to_play": "Listo para reproducir",
+    "audio_generating": "Generando audio...",
+    "generating_song": "Generando canción...",
+    "waiting_generation": "Espera mientras creamos tu obra maestra",
+    "no_song_generated": "No se generó ninguna canción",
+    "downloading": "Descargando...",
+    "download_success": "Descarga completada exitosamente",
+    "download_failed": "Error al descargar el audio",
+    "form": {
+      "custom_mode": "Modo personalizado",
+      "title": "Título",
+      "title_placeholder": "El sonido del silencio",
+      "style": "Estilo de música",
+      "style_placeholder": "indie, electrónica, sintetizadores, 120bpm, distorsión",
+      "instrumental": "Instrumental",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Una canción folk country sobre el amor",
+      "model": "Modelo",
+      "lyrics": "Letra",
+      "lyrics_placeholder": "Escribe tu propia letra, dos estrofas (8 líneas) para el mejor resultado"
+    }
+  }
+}

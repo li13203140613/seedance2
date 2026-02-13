@@ -1,0 +1,54 @@
+{
+  "groups": {
+    "email_auth": "Autenticación por correo",
+    "google_auth": "Autenticación con Google",
+    "github_auth": "Autenticación con Github",
+    "basic_payment": "Pago básico",
+    "stripe": "Stripe",
+    "creem": "Creem",
+    "paypal": "Paypal",
+    "resend": "Resend",
+    "r2": "Cloudflare R2",
+    "s3": "AWS S3",
+    "openrouter": "OpenRouter",
+    "replicate": "Replicate",
+    "fal": "Fal",
+    "google_analytics": "Google Analytics",
+    "clarity": "Clarity",
+    "plausible": "Plausible",
+    "openpanel": "OpenPanel",
+    "vercel_analytics": "Vercel Analytics",
+    "adsense": "Adsense",
+    "affonso": "Affonso",
+    "promotekit": "PromoteKit",
+    "tawk": "Tawk",
+    "crisp": "Crisp",
+    "credit": "Crédito",
+    "appinfo": "Info de la app",
+    "user_role": "Rol de usuario",
+    "evolink": "EvoLink"
+  },
+  "edit": {
+    "title": "Configuración",
+    "crumbs": {
+      "admin": "Admin",
+      "settings": "Configuración"
+    },
+    "tabs": {
+      "general": "General",
+      "auth": "Autenticación",
+      "payment": "Pago",
+      "credit": "Crédito",
+      "email": "Correo",
+      "storage": "Almacenamiento",
+      "ai": "IA",
+      "analytics": "Analítica",
+      "ads": "Anuncios",
+      "affiliate": "Afiliados",
+      "customer_service": "Atención al cliente"
+    },
+    "buttons": {
+      "submit": "Guardar"
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "title": "Примеры видео Seedance 2 — AI-сгенерированные видео",
+    "description": "Познакомьтесь с впечатляющими AI-видео, созданными с помощью Seedance 2. От кинематографических сцен до креативных анимаций — узнайте, на что способен Seedance 2."
+  },
+  "page": {
+    "title": "Примеры видео",
+    "sections": {
+      "showcases": {
+        "id": "showcases-flow",
+        "title": "Видеогалерея Seedance 2",
+        "description": "Познакомьтесь с впечатляющими AI-видео, созданными с помощью Seedance 2. Наведите для предпросмотра, нажмите для полноэкранного просмотра.",
+        "groups": [
+          { "name": "all", "title": "Все" },
+          { "name": "cinematic", "title": "Кино" },
+          { "name": "animation", "title": "Анимация" },
+          { "name": "fashion", "title": "Мода" },
+          { "name": "creative", "title": "Креатив" }
+        ],
+        "items": [
+          {
+            "title": "Закат и бельё",
+            "description": "Девушка элегантно развешивает бельё на балконе в золотой час с реалистичной физикой ткани и естественными движениями тела.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-1-poster.webp",
+              "alt": "Женщина развешивает бельё на закате"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-1.mp4"
+          },
+          {
+            "title": "Городская погоня",
+            "description": "Мужчина бежит по оживлённым городским улицам с динамическим трекингом камеры, демонстрируя плавное движение и симуляцию толпы.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-2-poster.webp",
+              "alt": "Мужчина бежит по городским улицам"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-2.mp4"
+          },
+          {
+            "title": "Возвращение домой",
+            "description": "Мужчина идёт по коридору к входной двери с кинематографическим освещением и согласованностью персонажа на протяжении всей сцены.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-4-poster.webp",
+              "alt": "Мужчина идёт по коридору"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-4.mp4"
+          },
+          {
+            "title": "Китайская опера",
+            "description": "Исполнитель традиционной китайской оперы в роскошном костюме с изысканным головным убором, выполняющий грациозные движения на сцене.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-5-poster.webp",
+              "alt": "Исполнитель китайской оперы"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-5.mp4"
+          },
+          {
+            "title": "Презентация продукта",
+            "description": "Элегантные ленточные банты разных цветов и узоров, демонстрирующие предметную съёмку и генерацию коммерческого видео.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-8-poster.webp",
+              "alt": "Цветные ленточные банты"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-8.mp4"
+          },
+          {
+            "title": "Сцена в лифте",
+            "description": "Напряжённая сцена в лифте в стиле Хичкока с драматической работой камеры, включая орбитальные и зум-эффекты.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-10-poster.webp",
+              "alt": "Мужчина в лифте, драматическая сцена"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-10.mp4"
+          },
+          {
+            "title": "Поединок воинов",
+            "description": "Эпическая дуэль боевых искусств в осеннем лесу в стиле 3D-анимации с динамичной боевой хореографией.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-14-poster.webp",
+              "alt": "Бой в осеннем лесу"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-14.mp4"
+          },
+          {
+            "title": "Суперкар",
+            "description": "Красный Lamborghini на подземной парковке с кинематографическим освещением, отражениями и стилем автомобильной презентации.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-16-poster.webp",
+              "alt": "Красный Lamborghini на парковке"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-16.mp4"
+          },
+          {
+            "title": "Пробуждение ангела",
+            "description": "Фэнтезийная сцена с неземным ангелом со светящимися крыльями перед каменной статуей ангела с потрясающими VFX и освещением.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-17-poster.webp",
+              "alt": "Ангел с крыльями, фэнтезийная сцена"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-17.mp4"
+          },
+          {
+            "title": "Модный лукбук",
+            "description": "Динамичная модная съёмка с ритмичной сменой нарядов, демонстрирующая стилевые переходы и позирование модели.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-19-poster.webp",
+              "alt": "Модель позирует"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-19.mp4"
+          },
+          {
+            "title": "Забавная лошадка",
+            "description": "Мультяшная лошадь выглядывает из-под одеяла с эффектом «рыбий глаз», демонстрируя анимацию с синхронизацией аудио.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-30-poster.webp",
+              "alt": "Мультяшная лошадь с одеялом"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-30.mp4"
+          },
+          {
+            "title": "Бегун на закате",
+            "description": "Аниме-иллюстрация молодого человека, бегущего по городским улицам на закате с яркими цветами.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-38-poster.webp",
+              "alt": "Аниме-бегун на закате"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-38.mp4"
+          },
+          {
+            "title": "Шпионский триллер",
+            "description": "Непрерывный трекинговый кадр женщины в красном пальто, идущей по оживлённой европейской улице в стиле шпионского триллера.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-40-poster.webp",
+              "alt": "Женщина в красном пальто на европейской улице"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-40.mp4"
+          },
+          {
+            "title": "Модная реклама",
+            "description": "Стильная модная реклама с геометрическими фонами и динамичными текстовыми наложениями, монтаж в ритм музыки.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-45-poster.webp",
+              "alt": "Модель с геометрическим фоном"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-45.mp4"
+          },
+          {
+            "title": "Грация гимнастки",
+            "description": "Гимнастка выступает на бревне в полутёмном зале с драматическим прожектором, демонстрируя плавные движения тела.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1-poster.webp",
+              "alt": "Гимнастка на бревне"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1.mp4"
+          },
+          {
+            "title": "На бревне",
+            "description": "Гимнастка грациозно идёт по бревну с кинематографическим боковым ракурсом и атмосферным освещением зала.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2-poster.webp",
+              "alt": "Гимнастка идёт по бревну"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2.mp4"
+          },
+          {
+            "title": "Дуэль драконов",
+            "description": "Боевая сцена в стиле Dragon Ball у традиционного китайского храма боевых искусств с динамичной 3D-анимацией персонажей.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals-poster.webp",
+              "alt": "Бой в стиле Dragon Ball"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals.mp4"
+          },
+          {
+            "title": "Уличные бегуны",
+            "description": "Аниме-персонажи бегут по грубому городскому переулку с динамичными позами и яркой уличной эстетикой.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong-poster.webp",
+              "alt": "Аниме-персонажи бегут по городу"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong.mp4"
+          },
+          {
+            "title": "Зона боевых действий",
+            "description": "Военные танки едут по городским улицам в драматичной военной сцене с реалистичной физикой техники и атмосферными эффектами.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-1-poster.webp",
+              "alt": "Военные танки на городских улицах"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-1.mp4"
+          },
+          {
+            "title": "Бегство из толпы",
+            "description": "Мужчина бежит сквозь огромную толпу на городских улицах с кинематографической глубиной резкости и реалистичной динамикой толпы.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-2-poster.webp",
+              "alt": "Мужчина бежит сквозь толпу"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-2.mp4"
+          },
+          {
+            "title": "Фэнтезийное путешествие",
+            "description": "Мальчик на лодке смотрит на фантастический город-замок по ту сторону океана с потрясающим пейзажем и атмосферными облаками.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/long4ai-poster.webp",
+              "alt": "Мальчик на лодке с фэнтезийным замком"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/long4ai.mp4"
+          },
+          {
+            "title": "Европейская прогулка",
+            "description": "Прогулка от первого лица по оживлённому европейскому городу с естественным движением пешеходов и аутентичной уличной атмосферой.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle-poster.webp",
+              "alt": "Люди на европейской улице"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle.mp4"
+          },
+          {
+            "title": "Древние красавицы",
+            "description": "Две девушки в традиционных китайских костюмах ханьфу с изысканными украшениями для волос на ночном рынке древнего городка.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/qhgy-poster.webp",
+              "alt": "Девушки в китайских костюмах ханьфу"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/qhgy.mp4"
+          },
+          {
+            "title": "Баскетбольный кроссовер",
+            "description": "Захватывающая баскетбольная сцена с кроссовером на профессиональной площадке с динамичными ракурсами камеры и реалистичными движениями игроков.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/sino-market-poster.webp",
+              "alt": "Баскетбольный кроссовер"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/sino-market.mp4"
+          },
+          {
+            "title": "Засада в таверне",
+            "description": "Воин боевых искусств отражает нападение ниндзя в традиционной китайской таверне с плавной боевой хореографией и драматическим освещением.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai-poster.webp",
+              "alt": "Бой в таверне"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai.mp4"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "sidebar": {
+    "header": {
+      "brand": {
+        "title": "Seedance チャット",
+        "logo": {
+          "src": "/logo.png",
+          "alt": "Seedance チャット"
+        },
+        "url": "/chat"
+      },
+      "show_trigger": false
+    },
+    "buttons": [
+      {
+        "title": "新規チャット",
+        "icon": "Plus",
+        "url": "/chat",
+        "variant": "outline"
+      }
+    ],
+    "main_navs": [
+      {
+        "items": [
+          {
+            "title": "履歴",
+            "icon": "History",
+            "url": "/chat/history"
+          }
+        ]
+      }
+    ],
+    "bottom_nav": {
+      "items": []
+    },
+    "user": {
+      "nav": {
+        "items": [
+          {
+            "title": "プロフィール",
+            "url": "/settings/profile",
+            "icon": "User",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_email": false,
+      "show_signout": true,
+      "signout_callback": "/chat",
+      "signin_callback": "/chat"
+    },
+    "footer": {
+      "nav": {
+        "items": [
+          {
+            "title": "ホーム",
+            "url": "/",
+            "icon": "Home",
+            "target": "_blank"
+          },
+          {
+            "title": "GitHub",
+            "url": "https://github.com/your-app-name",
+            "icon": "Github",
+            "target": "_blank"
+          },
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/your-app-name",
+            "icon": "RiTwitterXFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Discord",
+            "url": "https://discord.gg/your-app-name",
+            "icon": "RiDiscordFill",
+            "target": "_blank"
+          },
+          {
+            "title": "メール",
+            "url": "mailto:support@your-domain.com",
+            "icon": "Mail",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_theme": true,
+      "show_locale": false
+    },
+    "variant": "sidebar"
+  },
+  "library": {
+    "title": "ライブラリ",
+    "icon": "History",
+    "url": "/chat/history",
+    "more": "もっと見る",
+    "actions": {
+      "edit_title": "タイトルを編集",
+      "share": "共有",
+      "delete": "削除"
+    }
+  },
+  "generator": {
+    "title": "今日は何をお手伝いしましょうか？",
+    "input_placeholder": "何でもお気軽にお尋ねください"
+  },
+  "history": {
+    "title": "チャット履歴",
+    "description": "過去の会話を確認・再訪できます。",
+    "empty": "まだ会話はありません。",
+    "error": "会話の読み込みに失敗しました。",
+    "retry": "もう一度試す",
+    "signin": "チャット履歴を表示するにはログインしてください。",
+    "summary": "{total}件中{from}-{to}件を表示",
+    "perPage": "表示件数",
+    "prev": "前へ",
+    "next": "次へ",
+    "open": "チャットを開く",
+    "untitled": "タイトルなしの会話"
+  }
+}
