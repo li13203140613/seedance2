@@ -64,8 +64,8 @@
     "show_theme": true,
     "show_locale": true,
     "topbanner": {
-      "text": "年度计划享 30% 折扣",
-      "buttonText": "立即领取 30% 折扣",
+      "text": "年度计划最高省 89%",
+      "buttonText": "立即领取 89% 折扣",
       "href": "/pricing",
       "countdownMinutes": 30,
       "remainingSpots": 9

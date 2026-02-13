@@ -11,7 +11,7 @@
         "title": "价格",
         "description": "选择适合你的方案",
         "banner": {
-          "title": "限时优惠——年度套餐立省 30%",
+          "title": "限时优惠——年度套餐最高省 89%",
           "countdown_days": 1
         },
         "groups": [
@@ -25,7 +25,7 @@
             "name": "yearly",
             "title": "每年",
             "description": "年度计划——所有积分预先发放，一次性付款",
-            "badge": "-30%"
+            "badge": "-89%"
           }
         ],
         "items": [
@@ -300,18 +300,18 @@
               "专项支持"
             ],
             "interval": "year",
-            "amount": 82800,
+            "amount": 13080,
             "currency": "USD",
-            "price": "$69",
+            "price": "$10.9",
             "original_price": "$99",
             "unit": "/月",
             "is_featured": false,
             "credits": 16800,
             "credits_summary": "每年 16,800 积分",
-            "cost_per_100": "= $0.049 / 积分",
-            "annual_total": "年度账单 $828",
-            "annual_savings": "相比月付节省：$360",
-            "bonus_credits": "+2,000 奖励积分",
+            "cost_per_100": "= $0.008 / 积分",
+            "annual_total": "年度账单 $130.8",
+            "annual_savings": "相比月付节省：$1,057",
+            "bonus_credits": "+5,000 奖励积分",
             "annual_badge": "年度",
             "button": {
               "title": "订阅",

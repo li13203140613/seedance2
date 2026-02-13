@@ -11,7 +11,7 @@
         "title": "Pricing",
         "description": "Choose the plan that's right for you",
         "banner": {
-          "title": "Limited offer — Save 30% on yearly plans",
+          "title": "Limited offer — Save up to 89% on yearly plans",
           "countdown_days": 1
         },
         "groups": [
@@ -25,7 +25,7 @@
             "name": "yearly",
             "title": "Yearly",
             "description": "Annual plans — all credits delivered upfront, billed as a single payment",
-            "badge": "-30%"
+            "badge": "-89%"
           }
         ],
         "items": [
@@ -301,18 +301,18 @@
               "Dedicated support"
             ],
             "interval": "year",
-            "amount": 82800,
+            "amount": 13080,
             "currency": "USD",
-            "price": "$69",
+            "price": "$10.9",
             "original_price": "$99",
             "unit": "/month",
             "is_featured": false,
             "credits": 16800,
             "credits_summary": "16,800 credits / year",
-            "cost_per_100": "= $0.049 / credit",
-            "annual_total": "Billed annually $828",
-            "annual_savings": "Vs monthly Save: $360",
-            "bonus_credits": "+2,000 bonus credits",
+            "cost_per_100": "= $0.008 / credit",
+            "annual_total": "Billed annually $130.8",
+            "annual_savings": "Vs monthly Save: $1,057",
+            "bonus_credits": "+5,000 bonus credits",
             "annual_badge": "ANNUAL",
             "button": {
               "title": "Subscribe",
