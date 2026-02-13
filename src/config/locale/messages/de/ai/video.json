@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "KI-Videogenerator",
+    "description": "Generieren Sie Videos mit KI-Modellen, unterstützt Text-zu-Video, Bild-zu-Video und Video-zu-Video."
+  },
+  "page": {
+    "title": "KI-Videogenerator",
+    "description": "Generieren Sie Videos mit KI-Modellen, unterstützt Text-zu-Video, Bild-zu-Video und Video-zu-Video."
+  },
+  "generator": {
+    "title": "Videogenerator",
+    "description": "Generieren Sie Videos mit KI-Modellen, unterstützt Text-zu-Video, Bild-zu-Video und Video-zu-Video.",
+    "tabs": {
+      "text-to-video": "Text zu Video",
+      "image-to-video": "Bild zu Video",
+      "video-to-video": "Video zu Video"
+    },
+    "form": {
+      "provider": "Anbieter",
+      "model": "Modell",
+      "select_provider": "Anbieter auswählen",
+      "select_model": "Modell auswählen",
+      "quality": "Qualität",
+      "duration": "Dauer",
+      "aspect_ratio": "Seitenverhältnis",
+      "audio": "Audio",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Beschreiben Sie den Videoinhalt, wie Szene, Aktion, Stil usw.",
+      "reference_image": "Referenzbild",
+      "reference_image_placeholder": "Laden Sie ein Referenzbild für die Videogenerierung hoch",
+      "reference_video": "Referenzvideo-URL",
+      "reference_video_placeholder": "Geben Sie die URL des Referenzvideos ein",
+      "some_images_failed_to_upload": "Bild konnte nicht hochgeladen werden, bitte löschen und erneut hochladen",
+      "prompt_too_long": "Prompt ist zu lang, bitte kürzen Sie den Inhalt"
+    },
+    "generate": "Video generieren",
+    "checking_account": "Konto wird überprüft...",
+    "loading": "Laden...",
+    "generating": "Wird generiert...",
+    "sign_in_to_generate": "Anmelden, um Video zu generieren",
+    "credits_cost": "Kosten: {credits} Credits",
+    "credits_remaining": "Verbleibend: {credits} Credits",
+    "buy_credits": "Credits kaufen",
+    "progress": "Fortschritt",
+    "generated_videos": "Videovorschau",
+    "ready_to_generate": "Bereit zur Generierung",
+    "ready_for_generating": "Bereit zur Generierung",
+    "no_videos_generated": "Keine Videos generiert",
+    "preview_example": "Vorschaubeispiel",
+    "preview_hint": "Füllen Sie das Formular links aus und klicken Sie auf \u201EVideo generieren\u201C, um Ihr eigenes Video zu erstellen."
+  }
+}

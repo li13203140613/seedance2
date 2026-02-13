@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "transaction_no": "İşlem No",
+    "description": "Açıklama",
+    "type": "Tür",
+    "scene": "Sahne",
+    "credits": "Kredi",
+    "expires_at": "Son Kullanma Tarihi",
+    "created_at": "Oluşturulma Tarihi",
+    "action": "İşlem"
+  },
+  "list": {
+    "title": "Kredi Kayıtları",
+    "tabs": {
+      "all": "Tümü",
+      "grant": "Tanımlama",
+      "consume": "Harcama"
+    }
+  },
+  "view": {
+    "title": "Kredi Bakiyesi",
+    "buttons": {
+      "purchase": "Kredi Satın Al"
+    }
+  }
+}

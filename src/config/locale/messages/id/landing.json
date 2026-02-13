@@ -1,0 +1,131 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Fitur",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "Galeri",
+          "url": "/showcases",
+          "icon": "Box"
+        },
+        {
+          "title": "Harga",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "Konten",
+          "icon": "FileText",
+          "children": [
+            {
+              "title": "Blog",
+              "description": "Baca Artikel Blog",
+              "url": "/blog",
+              "icon": "Newspaper"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Tagihan",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Aktivitas",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true,
+    "topbanner": {
+      "text": "Hemat hingga 89% untuk paket tahunan",
+      "buttonText": "Dapatkan Diskon 89% Sekarang",
+      "href": "/pricing",
+      "countdownMinutes": 30,
+      "remainingSpots": 9
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "description": "seedancetwo memungkinkan Anda membuat video AI sinematik dari teks dan gambar dengan cepat, cocok untuk pemasaran, pembuatan konten, dan showcase produk.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Produk",
+          "children": [
+            {
+              "title": "Fitur",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "Panduan Pengguna",
+              "url": "/manual",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "Mail",
+          "url": "mailto:support@seedancetwo.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Kebijakan Privasi",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Ketentuan Layanan",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}

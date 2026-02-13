@@ -1,0 +1,37 @@
+{
+  "fields": {
+    "task_id": "Görev ID",
+    "media_type": "Medya Türü",
+    "provider": "Sağlayıcı",
+    "model": "Model",
+    "prompt": "Prompt",
+    "options": "Seçenekler",
+    "user": "Kullanıcı",
+    "status": "Durum",
+    "cost_credits": "Harcanan Kredi",
+    "result": "Sonuç",
+    "created_at": "Oluşturulma Tarihi",
+    "action": "İşlem",
+    "scene": "Sahne"
+  },
+  "list": {
+    "title": "AI Görevleri",
+    "crumbs": {
+      "admin": "Yönetim",
+      "ai-tasks": "AI Görevleri"
+    },
+    "tabs": {
+      "all": "Tümü",
+      "music": "Müzik",
+      "image": "Görsel",
+      "video": "Video",
+      "audio": "Ses",
+      "text": "Metin"
+    },
+    "buttons": {
+      "view": "Görevi Görüntüle",
+      "refresh": "Görevi Yenile"
+    },
+    "empty_message": "Görev bulunamadı"
+  }
+}

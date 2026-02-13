@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "title": "Preços",
+    "description": "Escolha o plano ideal para você"
+  },
+  "page": {
+    "title": "Preços do Seedance",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "title": "Preços",
+        "description": "Escolha o plano ideal para você",
+        "banner": {
+          "title": "Oferta limitada — Economize até 89% nos planos anuais",
+          "countdown_days": 1
+        },
+        "groups": [
+          {
+            "name": "monthly",
+            "title": "Mensal",
+            "description": "Planos mensais — créditos renovam todo mês, cancele quando quiser",
+            "is_featured": true
+          },
+          {
+            "name": "yearly",
+            "title": "Anual",
+            "description": "Planos anuais — todos os créditos entregues de uma vez, cobrado em pagamento único",
+            "badge": "-89%"
+          }
+        ],
+        "items": [
+          {
+            "title": "Básico",
+            "description": "Perfeito para começar",
+            "features_title": "",
+            "features": [
+              "Créditos renovam mensalmente",
+              "Até 20 vídeos com IA",
+              "Todos os modelos premium",
+              "Sem marca d'água",
+              "Licença comercial e uso ilimitado",
+              "Resolução de vídeo 1080p",
+              "Vídeos de até 12s"
+            ],
+            "interval": "month",
+            "amount": 990,
+            "currency": "USD",
+            "price": "$9.9",
+            "unit": "/mês",
+            "is_featured": false,
+            "credits": 100,
+            "credits_summary": "100 créditos / mês",
+            "cost_per_100": "= $0,099 / crédito",
+            "button": {
+              "title": "Assinar",
+              "url": "/#pricing"
+            },
+            "product_id": "basic-monthly",
+            "product_name": "Seedance Basic Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Básico"
+          },
+          {
+            "title": "Pro",
+            "label": "Popular",
+            "description": "Melhor para criadores e profissionais",
+            "features_title": "",
+            "features": [
+              "Créditos renovam mensalmente",
+              "Até 80 vídeos com IA",
+              "Todos os modelos premium",
+              "Sem marca d'água",
+              "Fila prioritária",
+              "Licença comercial e uso ilimitado",
+              "Resolução de vídeo 1080p",
+              "Vídeos de até 12s"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/mês",
+            "is_featured": true,
+            "credits": 400,
+            "credits_summary": "400 créditos / mês",
+            "cost_per_100": "= $0,075 / crédito",
+            "value_badge": "25% off",
+            "button": {
+              "title": "Assinar",
+              "url": "/#pricing"
+            },
+            "product_id": "pro-monthly",
+            "product_name": "Seedance Pro Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Pro"
+          },
+          {
+            "title": "Ultra",
+            "description": "Para equipes e usuários avançados",
+            "features_title": "",
+            "features": [
+              "Créditos renovam mensalmente",
+              "Até 280 vídeos com IA",
+              "Todos os modelos premium",
+              "Sem marca d'água",
+              "Suporte humano",
+              "Licença comercial e uso ilimitado",
+              "Resolução de vídeo 1080p",
+              "Vídeos de até 12s"
+            ],
+            "interval": "month",
+            "amount": 9900,
+            "currency": "USD",
+            "price": "$99",
+            "unit": "/mês",
+            "is_featured": false,
+            "credits": 1400,
+            "credits_summary": "1.400 créditos / mês",
+            "cost_per_100": "= $0,071 / crédito",
+            "value_badge": "29% off",
+            "button": {
+              "title": "Assinar",
+              "url": "/#pricing"
+            },
+            "product_id": "ultra-monthly",
+            "product_name": "Seedance Ultra Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Ultra"
+          },
+          {
+            "title": "Pague conforme o uso",
+            "description": "Compra avulsa, sem assinatura",
+            "features_title": "",
+            "features": [
+              "Créditos nunca expiram"
+            ],
+            "interval": "one-time",
+            "amount": 100,
+            "currency": "USD",
+            "price": "$1",
+            "unit": "",
+            "is_featured": false,
+            "is_payg": true,
+            "credits": 10,
+            "cost_per_100": "$1 = 10 créditos",
+            "tip": "Pagamento único",
+            "button": {
+              "title": "Comprar Créditos",
+              "url": "/#pricing"
+            },
+            "product_id": "credits-30",
+            "product_name": "Seedance Credits 30",
+            "valid_days": 9999,
+            "group": "monthly",
+            "credit_packs": [
+              {
+                "credits": 10,
+                "label": "10 créditos",
+                "price": "$1",
+                "amount": 100,
+                "product_id": "credits-30",
+                "product_name": "Seedance Credits 30",
+                "is_default": true
+              },
+              {
+                "credits": 150,
+                "label": "150 créditos",
+                "price": "$15",
+                "amount": 1500,
+                "product_id": "credits-500",
+                "product_name": "Seedance Credits 500"
+              },
+              {
+                "credits": 300,
+                "label": "300 créditos",
+                "price": "$30",
+                "amount": 3000,
+                "product_id": "credits-1200",
+                "product_name": "Seedance Credits 1200"
+              },
+              {
+                "credits": 600,
+                "label": "600 créditos",
+                "price": "$60",
+                "amount": 6000,
+                "product_id": "credits-2800",
+                "product_name": "Seedance Credits 2800"
+              },
+              {
+                "credits": 990,
+                "label": "990 créditos",
+                "price": "$99",
+                "amount": 9900,
+                "product_id": "credits-5000",
+                "product_name": "Seedance Credits 5000"
+              },
+              {
+                "credits": 1490,
+                "label": "1.490 créditos",
+                "price": "$149",
+                "amount": 14900,
+                "product_id": "credits-8500",
+                "product_name": "Seedance Credits 8500"
+              },
+              {
+                "credits": 2490,
+                "label": "2.490 créditos",
+                "price": "$249",
+                "amount": 24900,
+                "product_id": "credits-16000",
+                "product_name": "Seedance Credits 16000"
+              }
+            ],
+            "tip_box": {
+              "title": "Dica: Assine e economize mais",
+              "items": [
+                "Menor custo por crédito (economize até 29%)",
+                "Créditos renovam automaticamente todo mês"
+              ]
+            }
+          },
+          {
+            "title": "Básico",
+            "description": "Perfeito para começar",
+            "features_title": "",
+            "features": [
+              "Todos os créditos entregues de uma vez",
+              "Até 240 vídeos com IA",
+              "Todos os modelos premium",
+              "Sem marca d'água",
+              "Licença comercial e uso ilimitado",
+              "Resolução de vídeo 1080p",
+              "Vídeos de até 12s"
+            ],
+            "interval": "year",
+            "amount": 9480,
+            "currency": "USD",
+            "price": "$7.9",
+            "original_price": "$9.9",
+            "unit": "/mês",
+            "is_featured": false,
+            "credits": 1200,
+            "credits_summary": "1.200 créditos / ano",
+            "cost_per_100": "= $0,079 / crédito",
+            "annual_total": "Cobrado anualmente $94,8",
+            "annual_savings": "Vs mensal Economia: $24",
+            "bonus_credits": "+100 créditos bônus",
+            "annual_badge": "ANUAL",
+            "button": {
+              "title": "Assinar",
+              "url": "/#pricing"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Seedance Basic Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Básico"
+          },
+          {
+            "title": "Pro",
+            "label": "Popular",
+            "description": "Melhor para criadores e profissionais",
+            "features_title": "",
+            "features": [
+              "Todos os créditos entregues de uma vez",
+              "Até 960 vídeos com IA",
+              "Todos os modelos premium",
+              "Sem marca d'água",
+              "Fila prioritária",
+              "Suporte prioritário",
+              "Licença comercial e uso ilimitado",
+              "Resolução de vídeo 1080p",
+              "Vídeos de até 12s"
+            ],
+            "interval": "year",
+            "amount": 23880,
+            "currency": "USD",
+            "price": "$19.9",
+            "original_price": "$29.9",
+            "unit": "/mês",
+            "is_featured": true,
+            "credits": 4800,
+            "credits_summary": "4.800 créditos / ano",
+            "cost_per_100": "= $0,050 / crédito",
+            "annual_total": "Cobrado anualmente $238,8",
+            "annual_savings": "Vs mensal Economia: $120",
+            "bonus_credits": "+500 créditos bônus",
+            "annual_badge": "ANUAL",
+            "value_badge": "",
+            "button": {
+              "title": "Assinar",
+              "url": "/#pricing"
+            },
+            "product_id": "pro-yearly",
+            "product_name": "Seedance Pro Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Pro"
+          },
+          {
+            "title": "Ultra",
+            "description": "Para equipes e usuários avançados",
+            "features_title": "",
+            "features": [
+              "Todos os créditos entregues de uma vez",
+              "Até 3.360 vídeos com IA",
+              "Todos os modelos premium",
+              "Sem marca d'água",
+              "Suporte humano",
+              "Suporte dedicado",
+              "Licença comercial e uso ilimitado",
+              "Resolução de vídeo 1080p",
+              "Vídeos de até 12s"
+            ],
+            "interval": "year",
+            "amount": 13080,
+            "currency": "USD",
+            "price": "$10.9",
+            "original_price": "$99",
+            "unit": "/mês",
+            "is_featured": false,
+            "credits": 16800,
+            "credits_summary": "16.800 créditos / ano",
+            "cost_per_100": "= $0,008 / crédito",
+            "annual_total": "Cobrado anualmente $130,8",
+            "annual_savings": "Vs mensal Economia: $1.057",
+            "bonus_credits": "+5.000 créditos bônus",
+            "annual_badge": "ANUAL",
+            "button": {
+              "title": "Assinar",
+              "url": "/#pricing"
+            },
+            "product_id": "ultra-yearly",
+            "product_name": "Seedance Ultra Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Ultra"
+          },
+          {
+            "title": "Pague conforme o uso",
+            "description": "Compra avulsa, sem assinatura",
+            "features_title": "",
+            "features": [
+              "Créditos nunca expiram"
+            ],
+            "interval": "one-time",
+            "amount": 100,
+            "currency": "USD",
+            "price": "$1",
+            "unit": "",
+            "is_featured": false,
+            "is_payg": true,
+            "credits": 10,
+            "cost_per_100": "$1 = 10 créditos",
+            "tip": "Pagamento único",
+            "button": {
+              "title": "Comprar Créditos",
+              "url": "/#pricing"
+            },
+            "product_id": "credits-30",
+            "product_name": "Seedance Credits 30",
+            "valid_days": 9999,
+            "group": "yearly",
+            "credit_packs": [
+              {
+                "credits": 10,
+                "label": "10 créditos",
+                "price": "$1",
+                "amount": 100,
+                "product_id": "credits-30",
+                "product_name": "Seedance Credits 30",
+                "is_default": true
+              },
+              {
+                "credits": 150,
+                "label": "150 créditos",
+                "price": "$15",
+                "amount": 1500,
+                "product_id": "credits-500",
+                "product_name": "Seedance Credits 500"
+              },
+              {
+                "credits": 300,
+                "label": "300 créditos",
+                "price": "$30",
+                "amount": 3000,
+                "product_id": "credits-1200",
+                "product_name": "Seedance Credits 1200"
+              },
+              {
+                "credits": 600,
+                "label": "600 créditos",
+                "price": "$60",
+                "amount": 6000,
+                "product_id": "credits-2800",
+                "product_name": "Seedance Credits 2800"
+              },
+              {
+                "credits": 990,
+                "label": "990 créditos",
+                "price": "$99",
+                "amount": 9900,
+                "product_id": "credits-5000",
+                "product_name": "Seedance Credits 5000"
+              },
+              {
+                "credits": 1490,
+                "label": "1.490 créditos",
+                "price": "$149",
+                "amount": 14900,
+                "product_id": "credits-8500",
+                "product_name": "Seedance Credits 8500"
+              },
+              {
+                "credits": 2490,
+                "label": "2.490 créditos",
+                "price": "$249",
+                "amount": 24900,
+                "product_id": "credits-16000",
+                "product_name": "Seedance Credits 16000"
+              }
+            ],
+            "tip_box": {
+              "title": "Dica: Assine e economize mais",
+              "items": [
+                "Menor custo por crédito (economize até 29%)",
+                "Créditos renovam automaticamente todo mês"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "Plano Atual",
+    "processing": "Processando"
+  }
+}

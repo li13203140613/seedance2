@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "title": "Seedance 2 영상 쇼케이스 - AI 생성 영상 예시",
+    "description": "Seedance 2로 제작된 놀라운 AI 생성 영상 예시를 살펴보세요. 시네마틱 장면부터 크리에이티브 애니메이션까지, Seedance 2의 가능성을 확인하세요."
+  },
+  "page": {
+    "title": "영상 쇼케이스",
+    "sections": {
+      "showcases": {
+        "id": "showcases-flow",
+        "title": "Seedance 2 영상 갤러리",
+        "description": "Seedance 2로 제작된 놀라운 AI 생성 영상을 살펴보세요. 호버하여 미리보기, 클릭하여 전체 화면으로 감상하세요.",
+        "groups": [
+          { "name": "all", "title": "전체" },
+          { "name": "cinematic", "title": "시네마틱" },
+          { "name": "animation", "title": "애니메이션" },
+          { "name": "fashion", "title": "패션" },
+          { "name": "creative", "title": "크리에이티브" }
+        ],
+        "items": [
+          {
+            "title": "석양 속 빨래",
+            "description": "골든 아워에 발코니에서 우아하게 빨래를 널고 있는 소녀. 사실적인 천 물리와 자연스러운 신체 움직임을 보여줍니다.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-1-poster.webp",
+              "alt": "석양에 빨래를 너는 여성"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-1.mp4"
+          },
+          {
+            "title": "도시 추격",
+            "description": "붐비는 도시 거리를 역동적인 카메라 트래킹과 함께 질주하는 남자. 유려한 모션과 군중 시뮬레이션을 선보입니다.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-2-poster.webp",
+              "alt": "도시 거리를 달리는 남자"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-2.mp4"
+          },
+          {
+            "title": "귀가",
+            "description": "현관문을 향해 복도를 걸어가는 남자. 시네마틱 조명과 장면 내 캐릭터 일관성을 보여줍니다.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-4-poster.webp",
+              "alt": "복도를 걸어가는 남자"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-4.mp4"
+          },
+          {
+            "title": "경극",
+            "description": "정교한 의상과 머리 장식을 한 전통 경극 배우가 무대에서 우아한 동작을 선보입니다.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-5-poster.webp",
+              "alt": "경극 배우"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-5.mp4"
+          },
+          {
+            "title": "제품 쇼케이스",
+            "description": "다양한 색상과 패턴의 우아한 리본 보우. 제품 촬영과 상업 영상 생성을 보여줍니다.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-8-poster.webp",
+              "alt": "컬러풀한 리본 보우 제품 진열"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-8.mp4"
+          },
+          {
+            "title": "엘리베이터 장면",
+            "description": "히치콕 스타일의 긴장감 넘치는 엘리베이터 장면. 오빗 샷과 줌 효과를 포함한 드라마틱한 카메라 워크를 선보입니다.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-10-poster.webp",
+              "alt": "엘리베이터 속 남자의 드라마틱한 장면"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-10.mp4"
+          },
+          {
+            "title": "무협 대결",
+            "description": "가을 숲에서 펼쳐지는 3D 애니메이션 스타일의 서사적 무술 대결. 역동적인 전투 안무를 선보입니다.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-14-poster.webp",
+              "alt": "가을 숲에서의 무술 대결"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-14.mp4"
+          },
+          {
+            "title": "슈퍼카 공개",
+            "description": "시네마틱 조명, 반사, 자동차 쇼케이스 스타일의 지하 주차장 속 빨간 람보르기니.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-16-poster.webp",
+              "alt": "주차장 속 빨간 람보르기니"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-16.mp4"
+          },
+          {
+            "title": "천사의 각성",
+            "description": "석상 천사 앞에서 빛나는 날개를 가진 천상의 천사. 놀라운 VFX와 조명을 보여주는 판타지 장면.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-17-poster.webp",
+              "alt": "날개를 가진 천사 판타지 장면"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-17.mp4"
+          },
+          {
+            "title": "패션 룩북",
+            "description": "비트에 맞춘 의상 전환과 모델 포징을 보여주는 역동적인 패션 촬영.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-19-poster.webp",
+              "alt": "포즈를 취하는 패션 모델"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-19.mp4"
+          },
+          {
+            "title": "재미있는 말",
+            "description": "어안 렌즈 효과로 담요 사이로 내다보는 만화 말. 오디오 동기화 애니메이션을 보여줍니다.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-30-poster.webp",
+              "alt": "담요를 덮은 만화 말"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-30.mp4"
+          },
+          {
+            "title": "석양의 주자",
+            "description": "석양 무렵 도시 거리를 조깅하는 청년의 애니메이션 스타일 일러스트. 생동감 넘치는 색상이 돋보입니다.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-38-poster.webp",
+              "alt": "석양 속 애니메이션 주자"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-38.mp4"
+          },
+          {
+            "title": "스파이 스릴러",
+            "description": "스파이 스릴러 스타일로 붐비는 유럽 거리를 걸어가는 빨간 코트의 여성. 원테이크 트래킹 샷입니다.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-40-poster.webp",
+              "alt": "유럽 거리의 빨간 코트 여성"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-40.mp4"
+          },
+          {
+            "title": "패션 광고",
+            "description": "기하학적 배경과 역동적인 텍스트 오버레이, 비트 싱크 편집이 돋보이는 스타일리시한 패션 광고.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-45-poster.webp",
+              "alt": "기하학적 배경의 패션 모델"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-45.mp4"
+          },
+          {
+            "title": "체조의 우아함",
+            "description": "어두운 체육관에서 드라마틱한 스포트라이트를 받으며 평균대 위에서 연기하는 체조 선수. 유려한 신체 움직임을 보여줍니다.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1-poster.webp",
+              "alt": "평균대 위의 체조 선수"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1.mp4"
+          },
+          {
+            "title": "평균대",
+            "description": "시네마틱 사이드 앵글과 분위기 있는 체육관 조명 속에서 평균대 위를 우아하게 걷는 체조 선수.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2-poster.webp",
+              "alt": "평균대를 걷는 체조 선수"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2.mp4"
+          },
+          {
+            "title": "드래곤 대결",
+            "description": "전통 중국 무술 사원에서 벌어지는 드래곤볼 영감의 무술 대결. 역동적인 3D 캐릭터 애니메이션을 선보입니다.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals-poster.webp",
+              "alt": "드래곤볼 스타일 무술 대결"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals.mp4"
+          },
+          {
+            "title": "거리의 주자들",
+            "description": "어두운 도시 골목을 질주하는 애니메이션 스타일 캐릭터들. 역동적인 포즈와 생동감 넘치는 스트리트 패션이 돋보입니다.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong-poster.webp",
+              "alt": "도시를 달리는 애니메이션 캐릭터들"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong.mp4"
+          },
+          {
+            "title": "전쟁 지대",
+            "description": "사실적인 차량 물리와 대기 효과가 돋보이는 드라마틱한 전시 장면 속 도시 거리를 굴러가는 군용 탱크.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-1-poster.webp",
+              "alt": "도시 거리의 군용 탱크"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-1.mp4"
+          },
+          {
+            "title": "군중 탈출",
+            "description": "시네마틱 피사계 심도와 사실적인 군중 역학이 돋보이는, 도시 거리의 거대한 군중 사이를 질주하는 남자.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-2-poster.webp",
+              "alt": "군중 사이를 달리는 남자"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-2.mp4"
+          },
+          {
+            "title": "판타지 항해",
+            "description": "바다 너머 환상적인 성곽 도시를 바라보는 배 위의 소년. 멋진 풍경과 대기적 구름이 펼쳐집니다.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/long4ai-poster.webp",
+              "alt": "판타지 성과 배 위의 소년"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/long4ai.mp4"
+          },
+          {
+            "title": "유럽 산책",
+            "description": "자연스러운 보행자 움직임과 진정한 거리 분위기를 담은, 붐비는 유럽 도시의 1인칭 거리 레벨 산책.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle-poster.webp",
+              "alt": "유럽 거리를 걷는 사람들"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle.mp4"
+          },
+          {
+            "title": "고대의 미인들",
+            "description": "우아한 머리 장식을 한 전통 중국 한복 의상의 두 소녀. 매력적인 고대 마을 야시장을 배경으로 합니다.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/qhgy-poster.webp",
+              "alt": "중국 한복 의상의 소녀들"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/qhgy.mp4"
+          },
+          {
+            "title": "코트 크로스오버",
+            "description": "역동적인 카메라 앵글과 사실적인 선수 움직임이 돋보이는 프로 코트에서의 격렬한 농구 크로스오버 장면.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/sino-market-poster.webp",
+              "alt": "코트에서의 농구 크로스오버"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/sino-market.mp4"
+          },
+          {
+            "title": "주막 습격",
+            "description": "유려한 전투 안무와 드라마틱한 조명이 돋보이는, 전통 중국 주막에서 닌자를 물리치는 무술 전사.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai-poster.webp",
+              "alt": "주막에서의 무술 대결"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai.mp4"
+          }
+        ]
+      }
+    }
+  }
+}

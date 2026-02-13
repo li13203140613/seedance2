@@ -1,0 +1,49 @@
+{
+  "fields": {
+    "id": "ID",
+    "name": "Nom",
+    "title": "Titre",
+    "description": "Description",
+    "status": "Statut",
+    "sort": "Tri",
+    "created_at": "Cree le",
+    "updated_at": "Mis a jour le",
+    "permissions": "Permissions",
+    "actions": "Actions"
+  },
+  "list": {
+    "title": "Roles",
+    "crumbs": {
+      "admin": "Admin",
+      "roles": "Roles"
+    },
+    "buttons": {
+      "create": "Creer un role",
+      "edit": "Modifier le role",
+      "edit_permissions": "Modifier les permissions",
+      "delete": "Supprimer le role"
+    }
+  },
+  "edit": {
+    "title": "Modifier le role",
+    "crumbs": {
+      "admin": "Admin",
+      "roles": "Roles",
+      "edit": "Modifier le role"
+    },
+    "buttons": {
+      "submit": "Mettre a jour"
+    }
+  },
+  "edit_permissions": {
+    "title": "Modifier les permissions",
+    "crumbs": {
+      "admin": "Admin",
+      "roles": "Roles",
+      "edit_permissions": "Modifier les permissions"
+    },
+    "buttons": {
+      "submit": "Mettre a jour"
+    }
+  }
+}

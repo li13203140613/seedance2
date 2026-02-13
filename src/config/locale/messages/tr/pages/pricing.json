@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "title": "Fiyatlandırma",
+    "description": "Size uygun planı seçin"
+  },
+  "page": {
+    "title": "Seedance Fiyatlandırma",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "title": "Fiyatlandırma",
+        "description": "Size uygun planı seçin",
+        "banner": {
+          "title": "Sınırlı teklif — Yıllık planlarda %89'a varan tasarruf",
+          "countdown_days": 1
+        },
+        "groups": [
+          {
+            "name": "monthly",
+            "title": "Aylık",
+            "description": "Aylık planlar — krediler her ay yenilenir, istediğiniz zaman iptal edin",
+            "is_featured": true
+          },
+          {
+            "name": "yearly",
+            "title": "Yıllık",
+            "description": "Yıllık planlar — tüm krediler peşin teslim edilir, tek seferlik ödeme",
+            "badge": "-%89"
+          }
+        ],
+        "items": [
+          {
+            "title": "Basic",
+            "description": "Başlamak için mükemmel",
+            "features_title": "",
+            "features": [
+              "Krediler aylık yenilenir",
+              "20'ye kadar AI video",
+              "Tüm premium modeller",
+              "Filigran yok",
+              "Ticari lisans ve sınırsız kullanım",
+              "1080p video çözünürlüğü",
+              "12 saniyeye kadar videolar"
+            ],
+            "interval": "month",
+            "amount": 990,
+            "currency": "USD",
+            "price": "$9.9",
+            "unit": "/ay",
+            "is_featured": false,
+            "credits": 100,
+            "credits_summary": "100 kredi / ay",
+            "cost_per_100": "= $0.099 / kredi",
+            "button": {
+              "title": "Abone Ol",
+              "url": "/#pricing"
+            },
+            "product_id": "basic-monthly",
+            "product_name": "Seedance Basic Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Pro",
+            "label": "Popüler",
+            "description": "İçerik üreticileri ve profesyoneller için en uygun",
+            "features_title": "",
+            "features": [
+              "Krediler aylık yenilenir",
+              "80'e kadar AI video",
+              "Tüm premium modeller",
+              "Filigran yok",
+              "Öncelikli sıra",
+              "Ticari lisans ve sınırsız kullanım",
+              "1080p video çözünürlüğü",
+              "12 saniyeye kadar videolar"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/ay",
+            "is_featured": true,
+            "credits": 400,
+            "credits_summary": "400 kredi / ay",
+            "cost_per_100": "= $0.075 / kredi",
+            "value_badge": "%25 indirim",
+            "button": {
+              "title": "Abone Ol",
+              "url": "/#pricing"
+            },
+            "product_id": "pro-monthly",
+            "product_name": "Seedance Pro Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Pro"
+          },
+          {
+            "title": "Ultra",
+            "description": "Ekipler ve yoğun kullanıcılar için",
+            "features_title": "",
+            "features": [
+              "Krediler aylık yenilenir",
+              "280'e kadar AI video",
+              "Tüm premium modeller",
+              "Filigran yok",
+              "Kişisel destek",
+              "Ticari lisans ve sınırsız kullanım",
+              "1080p video çözünürlüğü",
+              "12 saniyeye kadar videolar"
+            ],
+            "interval": "month",
+            "amount": 9900,
+            "currency": "USD",
+            "price": "$99",
+            "unit": "/ay",
+            "is_featured": false,
+            "credits": 1400,
+            "credits_summary": "1.400 kredi / ay",
+            "cost_per_100": "= $0.071 / kredi",
+            "value_badge": "%29 indirim",
+            "button": {
+              "title": "Abone Ol",
+              "url": "/#pricing"
+            },
+            "product_id": "ultra-monthly",
+            "product_name": "Seedance Ultra Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Ultra"
+          },
+          {
+            "title": "Kullandıkça Öde",
+            "description": "Tek seferlik satın alma, abonelik yok",
+            "features_title": "",
+            "features": [
+              "Kredilerin süresi dolmaz"
+            ],
+            "interval": "one-time",
+            "amount": 100,
+            "currency": "USD",
+            "price": "$1",
+            "unit": "",
+            "is_featured": false,
+            "is_payg": true,
+            "credits": 10,
+            "cost_per_100": "$1 = 10 kredi",
+            "tip": "Tek seferlik ödeme",
+            "button": {
+              "title": "Kredi Satın Al",
+              "url": "/#pricing"
+            },
+            "product_id": "credits-30",
+            "product_name": "Seedance Credits 30",
+            "valid_days": 9999,
+            "group": "monthly",
+            "credit_packs": [
+              {
+                "credits": 10,
+                "label": "10 kredi",
+                "price": "$1",
+                "amount": 100,
+                "product_id": "credits-30",
+                "product_name": "Seedance Credits 30",
+                "is_default": true
+              },
+              {
+                "credits": 150,
+                "label": "150 kredi",
+                "price": "$15",
+                "amount": 1500,
+                "product_id": "credits-500",
+                "product_name": "Seedance Credits 500"
+              },
+              {
+                "credits": 300,
+                "label": "300 kredi",
+                "price": "$30",
+                "amount": 3000,
+                "product_id": "credits-1200",
+                "product_name": "Seedance Credits 1200"
+              },
+              {
+                "credits": 600,
+                "label": "600 kredi",
+                "price": "$60",
+                "amount": 6000,
+                "product_id": "credits-2800",
+                "product_name": "Seedance Credits 2800"
+              },
+              {
+                "credits": 990,
+                "label": "990 kredi",
+                "price": "$99",
+                "amount": 9900,
+                "product_id": "credits-5000",
+                "product_name": "Seedance Credits 5000"
+              },
+              {
+                "credits": 1490,
+                "label": "1.490 kredi",
+                "price": "$149",
+                "amount": 14900,
+                "product_id": "credits-8500",
+                "product_name": "Seedance Credits 8500"
+              },
+              {
+                "credits": 2490,
+                "label": "2.490 kredi",
+                "price": "$249",
+                "amount": 24900,
+                "product_id": "credits-16000",
+                "product_name": "Seedance Credits 16000"
+              }
+            ],
+            "tip_box": {
+              "title": "İpucu: Abone olarak daha fazla tasarruf edin",
+              "items": [
+                "Kredi başına daha düşük maliyet (%29'a varan tasarruf)",
+                "Krediler her ay otomatik olarak yenilenir"
+              ]
+            }
+          },
+          {
+            "title": "Basic",
+            "description": "Başlamak için mükemmel",
+            "features_title": "",
+            "features": [
+              "Tüm krediler tek seferde teslim edilir",
+              "240'a kadar AI video",
+              "Tüm premium modeller",
+              "Filigran yok",
+              "Ticari lisans ve sınırsız kullanım",
+              "1080p video çözünürlüğü",
+              "12 saniyeye kadar videolar"
+            ],
+            "interval": "year",
+            "amount": 9480,
+            "currency": "USD",
+            "price": "$7.9",
+            "original_price": "$9.9",
+            "unit": "/ay",
+            "is_featured": false,
+            "credits": 1200,
+            "credits_summary": "1.200 kredi / yıl",
+            "cost_per_100": "= $0.079 / kredi",
+            "annual_total": "Yıllık faturalandırma $94.8",
+            "annual_savings": "Aylığa göre tasarruf: $24",
+            "bonus_credits": "+100 bonus kredi",
+            "annual_badge": "YILLIK",
+            "button": {
+              "title": "Abone Ol",
+              "url": "/#pricing"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Seedance Basic Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Pro",
+            "label": "Popüler",
+            "description": "İçerik üreticileri ve profesyoneller için en uygun",
+            "features_title": "",
+            "features": [
+              "Tüm krediler tek seferde teslim edilir",
+              "960'a kadar AI video",
+              "Tüm premium modeller",
+              "Filigran yok",
+              "Öncelikli sıra",
+              "Öncelikli destek",
+              "Ticari lisans ve sınırsız kullanım",
+              "1080p video çözünürlüğü",
+              "12 saniyeye kadar videolar"
+            ],
+            "interval": "year",
+            "amount": 23880,
+            "currency": "USD",
+            "price": "$19.9",
+            "original_price": "$29.9",
+            "unit": "/ay",
+            "is_featured": true,
+            "credits": 4800,
+            "credits_summary": "4.800 kredi / yıl",
+            "cost_per_100": "= $0.050 / kredi",
+            "annual_total": "Yıllık faturalandırma $238.8",
+            "annual_savings": "Aylığa göre tasarruf: $120",
+            "bonus_credits": "+500 bonus kredi",
+            "annual_badge": "YILLIK",
+            "value_badge": "",
+            "button": {
+              "title": "Abone Ol",
+              "url": "/#pricing"
+            },
+            "product_id": "pro-yearly",
+            "product_name": "Seedance Pro Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Pro"
+          },
+          {
+            "title": "Ultra",
+            "description": "Ekipler ve yoğun kullanıcılar için",
+            "features_title": "",
+            "features": [
+              "Tüm krediler tek seferde teslim edilir",
+              "3.360'a kadar AI video",
+              "Tüm premium modeller",
+              "Filigran yok",
+              "Kişisel destek",
+              "Özel destek",
+              "Ticari lisans ve sınırsız kullanım",
+              "1080p video çözünürlüğü",
+              "12 saniyeye kadar videolar"
+            ],
+            "interval": "year",
+            "amount": 13080,
+            "currency": "USD",
+            "price": "$10.9",
+            "original_price": "$99",
+            "unit": "/ay",
+            "is_featured": false,
+            "credits": 16800,
+            "credits_summary": "16.800 kredi / yıl",
+            "cost_per_100": "= $0.008 / kredi",
+            "annual_total": "Yıllık faturalandırma $130.8",
+            "annual_savings": "Aylığa göre tasarruf: $1.057",
+            "bonus_credits": "+5.000 bonus kredi",
+            "annual_badge": "YILLIK",
+            "button": {
+              "title": "Abone Ol",
+              "url": "/#pricing"
+            },
+            "product_id": "ultra-yearly",
+            "product_name": "Seedance Ultra Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Ultra"
+          },
+          {
+            "title": "Kullandıkça Öde",
+            "description": "Tek seferlik satın alma, abonelik yok",
+            "features_title": "",
+            "features": [
+              "Kredilerin süresi dolmaz"
+            ],
+            "interval": "one-time",
+            "amount": 100,
+            "currency": "USD",
+            "price": "$1",
+            "unit": "",
+            "is_featured": false,
+            "is_payg": true,
+            "credits": 10,
+            "cost_per_100": "$1 = 10 kredi",
+            "tip": "Tek seferlik ödeme",
+            "button": {
+              "title": "Kredi Satın Al",
+              "url": "/#pricing"
+            },
+            "product_id": "credits-30",
+            "product_name": "Seedance Credits 30",
+            "valid_days": 9999,
+            "group": "yearly",
+            "credit_packs": [
+              {
+                "credits": 10,
+                "label": "10 kredi",
+                "price": "$1",
+                "amount": 100,
+                "product_id": "credits-30",
+                "product_name": "Seedance Credits 30",
+                "is_default": true
+              },
+              {
+                "credits": 150,
+                "label": "150 kredi",
+                "price": "$15",
+                "amount": 1500,
+                "product_id": "credits-500",
+                "product_name": "Seedance Credits 500"
+              },
+              {
+                "credits": 300,
+                "label": "300 kredi",
+                "price": "$30",
+                "amount": 3000,
+                "product_id": "credits-1200",
+                "product_name": "Seedance Credits 1200"
+              },
+              {
+                "credits": 600,
+                "label": "600 kredi",
+                "price": "$60",
+                "amount": 6000,
+                "product_id": "credits-2800",
+                "product_name": "Seedance Credits 2800"
+              },
+              {
+                "credits": 990,
+                "label": "990 kredi",
+                "price": "$99",
+                "amount": 9900,
+                "product_id": "credits-5000",
+                "product_name": "Seedance Credits 5000"
+              },
+              {
+                "credits": 1490,
+                "label": "1.490 kredi",
+                "price": "$149",
+                "amount": 14900,
+                "product_id": "credits-8500",
+                "product_name": "Seedance Credits 8500"
+              },
+              {
+                "credits": 2490,
+                "label": "2.490 kredi",
+                "price": "$249",
+                "amount": 24900,
+                "product_id": "credits-16000",
+                "product_name": "Seedance Credits 16000"
+              }
+            ],
+            "tip_box": {
+              "title": "İpucu: Abone olarak daha fazla tasarruf edin",
+              "items": [
+                "Kredi başına daha düşük maliyet (%29'a varan tasarruf)",
+                "Krediler her ay otomatik olarak yenilenir"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "Mevcut Plan",
+    "processing": "İşleniyor"
+  }
+}

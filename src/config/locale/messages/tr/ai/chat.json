@@ -1,0 +1,121 @@
+{
+  "sidebar": {
+    "header": {
+      "brand": {
+        "title": "Seedance Sohbet",
+        "logo": {
+          "src": "/logo.png",
+          "alt": "Seedance Sohbet"
+        },
+        "url": "/chat"
+      },
+      "show_trigger": false
+    },
+    "buttons": [
+      {
+        "title": "Yeni Sohbet",
+        "icon": "Plus",
+        "url": "/chat",
+        "variant": "outline"
+      }
+    ],
+    "main_navs": [
+      {
+        "items": [
+          {
+            "title": "Geçmiş",
+            "icon": "History",
+            "url": "/chat/history"
+          }
+        ]
+      }
+    ],
+    "bottom_nav": {
+      "items": []
+    },
+    "user": {
+      "nav": {
+        "items": [
+          {
+            "title": "Profil",
+            "url": "/settings/profile",
+            "icon": "User",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_email": false,
+      "show_signout": true,
+      "signout_callback": "/chat",
+      "signin_callback": "/chat"
+    },
+    "footer": {
+      "nav": {
+        "items": [
+          {
+            "title": "Ana Sayfa",
+            "url": "/",
+            "icon": "Home",
+            "target": "_blank"
+          },
+          {
+            "title": "GitHub",
+            "url": "https://github.com/your-app-name",
+            "icon": "Github",
+            "target": "_blank"
+          },
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/your-app-name",
+            "icon": "RiTwitterXFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Discord",
+            "url": "https://discord.gg/your-app-name",
+            "icon": "RiDiscordFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Email",
+            "url": "mailto:support@your-domain.com",
+            "icon": "Mail",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_theme": true,
+      "show_locale": false
+    },
+    "variant": "sidebar"
+  },
+  "library": {
+    "title": "Kütüphane",
+    "icon": "History",
+    "url": "/chat/history",
+    "more": "Daha Fazla",
+    "actions": {
+      "edit_title": "Başlığı Düzenle",
+      "share": "Paylaş",
+      "delete": "Sil"
+    }
+  },
+  "generator": {
+    "title": "Bugün size nasıl yardımcı olabilirim?",
+    "input_placeholder": "Bana her şeyi sorabilirsiniz"
+  },
+  "history": {
+    "title": "Sohbet geçmişi",
+    "description": "Önceki konuşmalarınızı inceleyin ve tekrar ziyaret edin.",
+    "empty": "Henüz konuşma yok.",
+    "error": "Konuşmalar yüklenemedi.",
+    "retry": "Tekrar dene",
+    "signin": "Sohbet geçmişinizi görmek için giriş yapın.",
+    "summary": "{from}-{to} / {total} gösteriliyor",
+    "perPage": "Sayfa başına",
+    "prev": "Önceki",
+    "next": "Sonraki",
+    "open": "Sohbeti aç",
+    "untitled": "Başlıksız konuşma"
+  }
+}

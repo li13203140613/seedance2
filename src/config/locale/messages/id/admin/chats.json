@@ -1,0 +1,29 @@
+{
+  "fields": {
+    "title": "Judul",
+    "user": "Pengguna",
+    "status": "Status",
+    "model": "Model",
+    "provider": "Penyedia",
+    "created_at": "Dibuat Pada",
+    "action": "Aksi"
+  },
+  "list": {
+    "title": "Obrolan AI",
+    "crumbs": {
+      "admin": "Admin",
+      "chats": "Obrolan AI"
+    },
+    "tabs": {
+      "all": "Semua",
+      "pending": "Menunggu",
+      "completed": "Selesai",
+      "failed": "Gagal"
+    },
+    "buttons": {
+      "view": "Lihat Obrolan",
+      "new": "Obrolan Baru"
+    },
+    "empty_message": "Tidak ada obrolan ditemukan"
+  }
+}

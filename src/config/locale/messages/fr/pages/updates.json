@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Journal des mises a jour",
+    "description": "Consultez le journal des mises a jour du produit, y compris les dernieres fonctionnalites et ameliorations."
+  },
+  "page": {
+    "sections": {
+      "updates": {
+        "id": "updates",
+        "title": "Journal des mises a jour",
+        "description": "Consultez le journal des mises a jour du produit, y compris les dernieres fonctionnalites et ameliorations."
+      }
+    }
+  }
+}

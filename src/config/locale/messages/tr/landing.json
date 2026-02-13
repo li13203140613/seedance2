@@ -1,0 +1,131 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Özellikler",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "Vitrini",
+          "url": "/showcases",
+          "icon": "Box"
+        },
+        {
+          "title": "Fiyatlandırma",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "İçerik",
+          "icon": "FileText",
+          "children": [
+            {
+              "title": "Blog",
+              "description": "Blog Yazılarını Okuyun",
+              "url": "/blog",
+              "icon": "Newspaper"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Faturalandırma",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "Etkinlik",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true,
+    "topbanner": {
+      "text": "Yıllık planlarda %89'a varan tasarruf",
+      "buttonText": "%89 İndirimli Al",
+      "href": "/pricing",
+      "countdownMinutes": 30,
+      "remainingSpots": 9
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "description": "seedancetwo ile metin ve görsellerden hızla sinematik AI videoları oluşturabilirsiniz; pazarlama, içerik üretimi ve ürün tanıtımları için idealdir.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Ürün",
+          "children": [
+            {
+              "title": "Özellikler",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "Kullanım Kılavuzu",
+              "url": "/manual",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "Mail",
+          "url": "mailto:support@seedancetwo.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Gizlilik Politikası",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Hizmet Şartları",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}

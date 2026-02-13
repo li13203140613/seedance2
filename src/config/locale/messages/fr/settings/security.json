@@ -1,0 +1,32 @@
+{
+  "fields": {
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "new_password": "Nouveau mot de passe",
+    "confirm_password": "Confirmer le mot de passe"
+  },
+  "reset_password": {
+    "title": "Reinitialiser le mot de passe",
+    "description": "Reinitialiser votre mot de passe",
+    "tip": "Nous vous enverrons un e-mail pour reinitialiser votre mot de passe.",
+    "crumbs": {
+      "settings": "Parametres",
+      "security": "Securite"
+    },
+    "buttons": {
+      "submit": "Enregistrer"
+    }
+  },
+  "delete_account": {
+    "title": "Supprimer le compte",
+    "description": "Supprimer votre compte",
+    "tip": "Etes-vous sur de vouloir supprimer votre compte ? Cette action est irreversible.",
+    "crumbs": {
+      "settings": "Parametres",
+      "security": "Securite"
+    },
+    "buttons": {
+      "submit": "Supprimer"
+    }
+  }
+}

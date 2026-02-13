@@ -1,0 +1,54 @@
+{
+  "groups": {
+    "email_auth": "Email Kimlik Doğrulama",
+    "google_auth": "Google Kimlik Doğrulama",
+    "github_auth": "Github Kimlik Doğrulama",
+    "basic_payment": "Temel Ödeme",
+    "stripe": "Stripe",
+    "creem": "Creem",
+    "paypal": "Paypal",
+    "resend": "Resend",
+    "r2": "Cloudflare R2",
+    "s3": "AWS S3",
+    "openrouter": "OpenRouter",
+    "replicate": "Replicate",
+    "fal": "Fal",
+    "google_analytics": "Google Analytics",
+    "clarity": "Clarity",
+    "plausible": "Plausible",
+    "openpanel": "OpenPanel",
+    "vercel_analytics": "Vercel Analytics",
+    "adsense": "Adsense",
+    "affonso": "Affonso",
+    "promotekit": "PromoteKit",
+    "tawk": "Tawk",
+    "crisp": "Crisp",
+    "credit": "Kredi",
+    "appinfo": "Uygulama Bilgisi",
+    "user_role": "Kullanıcı Rolü",
+    "evolink": "EvoLink"
+  },
+  "edit": {
+    "title": "Ayarlar",
+    "crumbs": {
+      "admin": "Yönetim",
+      "settings": "Ayarlar"
+    },
+    "tabs": {
+      "general": "Genel",
+      "auth": "Kimlik Doğrulama",
+      "payment": "Ödeme",
+      "credit": "Kredi",
+      "email": "Email",
+      "storage": "Depolama",
+      "ai": "AI",
+      "analytics": "Analitik",
+      "ads": "Reklamlar",
+      "affiliate": "Ortaklık",
+      "customer_service": "Müşteri Hizmetleri"
+    },
+    "buttons": {
+      "submit": "Kaydet"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "fields": {
+    "title": "Başlık",
+    "key": "Anahtar",
+    "user": "Kullanıcı",
+    "status": "Durum",
+    "created_at": "Oluşturulma Tarihi",
+    "action": "İşlem"
+  },
+  "list": {
+    "title": "API Anahtarları",
+    "crumbs": {
+      "admin": "Yönetim",
+      "apikeys": "API Anahtarları"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "Gerador de Vídeo com IA",
+    "description": "Gere vídeos com modelos de IA, com suporte a texto para vídeo, imagem para vídeo e vídeo para vídeo."
+  },
+  "page": {
+    "title": "Gerador de Vídeo com IA",
+    "description": "Gere vídeos com modelos de IA, com suporte a texto para vídeo, imagem para vídeo e vídeo para vídeo."
+  },
+  "generator": {
+    "title": "Gerador de Vídeo",
+    "description": "Gere vídeos com modelos de IA, com suporte a texto para vídeo, imagem para vídeo e vídeo para vídeo.",
+    "tabs": {
+      "text-to-video": "Texto para Vídeo",
+      "image-to-video": "Imagem para Vídeo",
+      "video-to-video": "Vídeo para Vídeo"
+    },
+    "form": {
+      "provider": "Provedor",
+      "model": "Modelo",
+      "select_provider": "Selecionar Provedor",
+      "select_model": "Selecionar Modelo",
+      "quality": "Qualidade",
+      "duration": "Duração",
+      "aspect_ratio": "Proporção",
+      "audio": "Áudio",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Descreva o conteúdo do vídeo, como cena, ação, estilo, etc.",
+      "reference_image": "Imagem de Referência",
+      "reference_image_placeholder": "Envie uma imagem de referência para geração do vídeo",
+      "reference_video": "URL do Vídeo de Referência",
+      "reference_video_placeholder": "Insira a URL do vídeo de referência",
+      "some_images_failed_to_upload": "A imagem falhou ao enviar, por favor exclua e envie novamente",
+      "prompt_too_long": "O prompt é muito longo, por favor remova parte do conteúdo"
+    },
+    "generate": "Gerar Vídeo",
+    "checking_account": "Verificando Conta...",
+    "loading": "Carregando...",
+    "generating": "Gerando...",
+    "sign_in_to_generate": "Entre para Gerar Vídeo",
+    "credits_cost": "Custo de {credits} créditos",
+    "credits_remaining": "{credits} créditos restantes",
+    "buy_credits": "Comprar Créditos",
+    "progress": "Progresso",
+    "generated_videos": "Pré-visualização do Vídeo",
+    "ready_to_generate": "Pronto para Gerar",
+    "ready_for_generating": "Pronto para Geração",
+    "no_videos_generated": "Nenhum Vídeo Gerado",
+    "preview_example": "Exemplo de Pré-visualização",
+    "preview_hint": "Preencha o formulário à esquerda e clique em \"Gerar Vídeo\" para criar seu próprio vídeo."
+  }
+}

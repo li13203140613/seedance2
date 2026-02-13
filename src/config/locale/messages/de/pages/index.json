@@ -1,0 +1,245 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "introduce",
+      "benefit-1",
+      "benefit-2",
+      "benefit-3",
+      "features",
+      "pricing",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "SeeDanceTwo\nDas Videomodell, das versteht, was Sie meinen.",
+        "highlight_text": "SeeDanceTwo",
+        "description": "Multimodale Kreation beginnt hier.\nStellen Sie sich kühn vor — den Rest übernimmt es.",
+        "announcement": {
+          "badge": "NEU",
+          "text": "Seedance 2 startet am 24. Feb. — Vorab-Aufladung für frühen Zugang",
+          "url": "/pricing"
+        },
+        "buttons": [
+          {
+            "title": "Jetzt starten",
+            "icon": "Zap",
+            "url": "/#video-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": false,
+        "avatars_tip": "",
+        "show_award": false,
+        "show_video_generator": true,
+        "background_video": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4"
+        },
+        "background_image": {
+          "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
+          "alt": "filmischer Hintergrund"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "Was ist seedancetwo?",
+        "label": "Überblick",
+        "description": "Seedance two akzeptiert vier Modalitätseingaben — Bild, Video, Audio und Text — für reichhaltigere Ausdrucksmöglichkeiten und kontrolliertere Generierung.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/video_030.mp4",
+          "alt": "seedancetwo Überblick"
+        },
+        "items": [
+          {
+            "title": "Referenzbild",
+            "description": "Reproduzieren Sie präzise Komposition, Charakterdetails und visuellen Stil aus einem Referenzbild.",
+            "icon": "RiImage2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-1/960/640.webp",
+              "alt": "Referenzbild"
+            }
+          },
+          {
+            "title": "Referenzvideo",
+            "description": "Replizieren Sie Kamerabewegungen, komplexe Bewegungsrhythmen und kreative Effekte aus einem Referenzvideo.",
+            "icon": "RiMovie2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-2/960/640.webp",
+              "alt": "Referenzvideo"
+            }
+          },
+          {
+            "title": "Videoverlängerung",
+            "description": "Verlängern und verbinden Sie Aufnahmen nahtlos — generieren Sie fortlaufende Szenen nach Ihren Vorgaben. Nicht nur Generierung, sondern \u201EWeiterdrehen\u201C.",
+            "icon": "RiTimeLine",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-3/960/640.webp",
+              "alt": "Videoverlängerung"
+            }
+          },
+          {
+            "title": "Videobearbeitung",
+            "description": "Tauschen Sie Charaktere aus, entfernen oder fügen Sie Elemente in bestehenden Videos mit gezielten Bearbeitungen hinzu.",
+            "icon": "RiScissors2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-4/960/640.webp",
+              "alt": "Videobearbeitung"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefit-1": {
+        "block": "features-media",
+        "id": "benefit-1",
+        "image_position": "left",
+        "title": "Kernfähigkeiten deutlich verbessert: Stabiler, flüssiger, realistischer!",
+        "description": "Über multimodale Fähigkeiten hinaus liefert Seedance 2.0 grundlegende Verbesserungen — präzisere Physik, natürlichere und flüssigere Bewegungen, genauere Befolgung von Anweisungen und konsistenterer Stil. Komplexe Aktionen, kontinuierliche Bewegungen und andere anspruchsvolle Generierungsaufgaben werden mühelos bewältigt, sodass jedes Video realistischer und ausgefeilter wird. Eine echte Evolution der Kernfähigkeiten!",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_002.mp4",
+          "alt": "Kernfähigkeiten deutlich verbessert"
+        }
+      },
+      "benefit-2": {
+        "block": "features-media",
+        "id": "benefit-2",
+        "image_position": "right",
+        "title": "Vollständiges multimodales Upgrade: Videoproduktion betritt die Ära der \u201Efreien Kombination\u201C!",
+        "description": "Laden Sie Text, Bilder, Video oder Audio hoch — alles kann als Quellmaterial oder Referenz dienen. Referenzieren Sie Bewegung, Effekte, Stil, Kameraführung, Charaktere, Szenen oder Klang beliebiger Inhalte. Solange Ihre Vorgaben klar sind, versteht das Modell. Seedance 2.0 = Multimodale Referenzfähigkeit (alles referenzieren) + Starke kreative Generierung + Präzise Anweisungsbefolgung (hervorragendes Verständnis).",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4",
+          "alt": "vollständiges multimodales Upgrade"
+        }
+      },
+      "benefit-3": {
+        "block": "features-media",
+        "id": "benefit-3",
+        "image_position": "left",
+        "title": "Gesamtkonsistenz vollständig verbessert",
+        "description": "Charaktere, die zwischen Aufnahmen unterschiedlich aussehen, verlorene Produktdetails, verschwommene kleine Texte, Szenensprünge, inkonsistente Kamerastile... Diese häufigen Konsistenzprobleme in der kreativen Arbeit sind in 2.0 gelöst. Von Gesichtern über Kleidung bis hin zu Schriftdetails ist die Gesamtkonsistenz stabiler und genauer.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_017.mp4",
+          "alt": "Gesamtkonsistenz vollständig verbessert"
+        }
+      },
+      "features": {
+        "id": "features",
+        "title": "Kernfähigkeiten",
+        "description": "Die \u201EReferenzfähigkeit\u201C ist das größte Highlight. Verwenden Sie ein Bild, um den visuellen Stil festzulegen, ein Video, um Charakterbewegungen und Kameraänderungen vorzugeben, einige Sekunden Audio, um Rhythmus und Stimmung zu bestimmen... Kombiniert mit Prompts wird der kreative Prozess natürlicher, effizienter und fühlt sich mehr an wie ein echter \u201ERegisseur\u201C.",
+        "items": [
+          {
+            "title": "Gesamtkonsistenz",
+            "description": "Gesichter, Outfits, Text und Details der Charaktere bleiben über mehrere Aufnahmen hinweg hochgradig konsistent.",
+            "icon": "RiShieldCheckLine"
+          },
+          {
+            "title": "Kamera- & Bewegungsreplikation",
+            "description": "Laden Sie ein Referenzvideo hoch, um komplexe Choreografien und Kamerabewegungen zu replizieren — keine Einzelbildbeschreibungen nötig.",
+            "icon": "RiCameraLine"
+          },
+          {
+            "title": "Kreativvorlage / Effektreplikation",
+            "description": "Kreative Übergänge, Werbespots, Filmclips und andere komplexe Effekte können alle präzise reproduziert werden.",
+            "icon": "RiMagicLine"
+          },
+          {
+            "title": "Kreative & Story-Vervollständigung",
+            "description": "Das Modell vervollständigt eigenständig Handlungsstränge und kreative Details und macht Erzählungen reichhaltiger und natürlicher.",
+            "icon": "RiQuillPenLine"
+          },
+          {
+            "title": "Videoverlängerung",
+            "description": "Verlängern und verbinden Sie Aufnahmen nahtlos — generieren Sie fortlaufende Szenen nach Vorgaben. Nicht nur Generierung, sondern Weiterdrehen.",
+            "icon": "RiTimeLine"
+          },
+          {
+            "title": "Genauerer Ton, realistischere Stimme",
+            "description": "Natürliches und lebensechtes Stimmtimbre mit stark verbesserter Ausdruckskraft für Dialog und Erzählung.",
+            "icon": "RiVoiceprintLine"
+          },
+          {
+            "title": "Flüssigere Plansequenzen",
+            "description": "Keine Unterbrechungen bei langen Aufnahmen — natürliche Szenenübergänge mit stark verbesserter Kontinuität.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "Hochgradig nutzbare Videobearbeitung",
+            "description": "Nehmen Sie gezielte Änderungen an bestimmten Abschnitten vorhandener Videos vor, ohne den gesamten Clip neu zu generieren.",
+            "icon": "RiScissors2Line"
+          },
+          {
+            "title": "Musik-Beat-Synchronisation",
+            "description": "Audio-Beats passen sich präzise an die Aktionen auf dem Bildschirm an und verleihen Videos ein starkes Rhythmusgefühl.",
+            "icon": "RiMusic2Line"
+          },
+          {
+            "title": "Bessere emotionale Darstellung",
+            "description": "Nuanciertere Gesichtsausdrücke und Körpersprache für stärkere erzählerische Wirkung.",
+            "icon": "RiEmotionLine"
+          }
+        ]
+      },
+      "pricing": {
+        "id": "pricing",
+        "block": "pricing",
+        "data": {}
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Häufig gestellte Fragen",
+        "description": "Wenn Sie Hilfe benötigen, kontaktieren Sie uns bitte per E-Mail.",
+        "items": [
+          {
+            "question": "Was ist seedancetwo?",
+            "answer": "seedancetwo ist ein KI-Videogenerierungserlebnis basierend auf dem Seedance-Modell, das die schnelle Erstellung filmischer Videos unterstützt."
+          },
+          {
+            "question": "Unterstützt es Text-zu-Video und Bild-zu-Video?",
+            "answer": "Ja. Sie können Prompts für Text-zu-Video eingeben oder Bilder für die Bild-zu-Video-Generierung hochladen."
+          },
+          {
+            "question": "Können Mehrszenen-Sequenzen generiert werden?",
+            "answer": "Ja. Der Workflow unterstützt Mehrszenen-Erzählungen und behält Szenenkontinuität und Stilkonsistenz innerhalb einer einzelnen Generierung bei."
+          },
+          {
+            "question": "Unterstützt es Audio-Video-Synchronisation?",
+            "answer": "Ja — das Produkt unterstützt Audio-Video-Synchronisation und Lippensynchronisation und verbessert das natürliche Gefühl der Videos."
+          },
+          {
+            "question": "Welche Ausgabe-Seitenverhältnisse sind verfügbar?",
+            "answer": "Inhalte können in gängigen Verhältnissen generiert werden, einschließlich Querformat, Hochformat und Quadrat, geeignet für verschiedene Veröffentlichungskanäle."
+          },
+          {
+            "question": "Wie kontaktiere ich das Support-Team?",
+            "answer": "Bitte senden Sie eine E-Mail an support@seedancetwo.com für Konfigurations- und Anpassungsunterstützung."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Starten Sie Ihr seedancetwo-Erlebnis",
+        "description": "Bauen Sie auf diesem Schnellstart auf und erstellen Sie Ihr eigenes filmisches KI-Videoprodukt.",
+        "buttons": [
+          {
+            "title": "Funktionen entdecken",
+            "url": "/#features",
+            "target": "_self",
+            "icon": "Zap"
+          },
+          {
+            "title": "Credits kaufen",
+            "url": "/pricing",
+            "target": "_self",
+            "variant": "outline",
+            "icon": "CreditCard"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

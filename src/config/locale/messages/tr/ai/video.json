@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "AI Video Oluşturucu",
+    "description": "AI modelleri ile video oluşturun; metinden videoya, görselden videoya ve videodan videoya desteği."
+  },
+  "page": {
+    "title": "AI Video Oluşturucu",
+    "description": "AI modelleri ile video oluşturun; metinden videoya, görselden videoya ve videodan videoya desteği."
+  },
+  "generator": {
+    "title": "Video Oluşturucu",
+    "description": "AI modelleri ile video oluşturun; metinden videoya, görselden videoya ve videodan videoya desteği.",
+    "tabs": {
+      "text-to-video": "Metinden Videoya",
+      "image-to-video": "Görselden Videoya",
+      "video-to-video": "Videodan Videoya"
+    },
+    "form": {
+      "provider": "Sağlayıcı",
+      "model": "Model",
+      "select_provider": "Sağlayıcı Seçin",
+      "select_model": "Model Seçin",
+      "quality": "Kalite",
+      "duration": "Süre",
+      "aspect_ratio": "En Boy Oranı",
+      "audio": "Ses",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Video içeriğini tanımlayın; sahne, hareket, tarz vb.",
+      "reference_image": "Referans Görsel",
+      "reference_image_placeholder": "Video oluşturma için bir referans görsel yükleyin",
+      "reference_video": "Referans Video URL",
+      "reference_video_placeholder": "Referans videonun URL adresini girin",
+      "some_images_failed_to_upload": "Görsel yüklenemedi, lütfen silin ve tekrar yükleyin",
+      "prompt_too_long": "Prompt çok uzun, lütfen bazı içerikleri silin"
+    },
+    "generate": "Video Oluştur",
+    "checking_account": "Hesap Kontrol Ediliyor...",
+    "loading": "Yükleniyor...",
+    "generating": "Oluşturuluyor...",
+    "sign_in_to_generate": "Video Oluşturmak İçin Giriş Yapın",
+    "credits_cost": "{credits} kredi harcanır",
+    "credits_remaining": "{credits} kredi kaldı",
+    "buy_credits": "Kredi Satın Al",
+    "progress": "İlerleme",
+    "generated_videos": "Video Önizleme",
+    "ready_to_generate": "Oluşturmaya Hazır",
+    "ready_for_generating": "Oluşturma İçin Hazır",
+    "no_videos_generated": "Video Oluşturulmadı",
+    "preview_example": "Örnek Önizleme",
+    "preview_hint": "Soldaki formu doldurun ve kendi videonuzu oluşturmak için \"Video Oluştur\" butonuna tıklayın."
+  }
+}

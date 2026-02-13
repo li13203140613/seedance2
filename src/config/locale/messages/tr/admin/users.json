@@ -1,0 +1,77 @@
+{
+  "fields": {
+    "id": "ID",
+    "name": "Ad",
+    "avatar": "Avatar",
+    "email": "Email",
+    "email_verified": "Email Doğrulandı",
+    "remaining_credits": "Kalan Kredi",
+    "created_at": "Oluşturulma Tarihi",
+    "actions": "İşlemler",
+    "roles": "Roller",
+    "ip": "IP",
+    "locale": "Dil",
+    "utm_source": "UTM Kaynağı"
+  },
+  "list": {
+    "title": "Kullanıcılar",
+    "crumbs": {
+      "admin": "Yönetim",
+      "users": "Kullanıcılar"
+    },
+    "buttons": {
+      "add": "Kullanıcı Ekle",
+      "edit": "Kullanıcıyı Düzenle",
+      "view": "Kullanıcıyı Görüntüle",
+      "delete": "Kullanıcıyı Sil",
+      "edit_roles": "Rolleri Düzenle",
+      "grant_credits": "Kredi Tanımla"
+    },
+    "search": {
+      "email": {
+        "title": "Email",
+        "placeholder": "Email"
+      }
+    }
+  },
+  "edit": {
+    "title": "Kullanıcıyı Düzenle",
+    "crumbs": {
+      "admin": "Yönetim",
+      "users": "Kullanıcılar",
+      "edit": "Düzenle"
+    },
+    "buttons": {
+      "submit": "Güncelle"
+    }
+  },
+  "edit_roles": {
+    "title": "Rolleri Düzenle",
+    "crumbs": {
+      "admin": "Yönetim",
+      "users": "Kullanıcılar",
+      "edit_roles": "Rolleri Düzenle"
+    },
+    "buttons": {
+      "submit": "Güncelle"
+    }
+  },
+  "grant_credits": {
+    "title": "Kredi Tanımla",
+    "crumbs": {
+      "admin": "Yönetim",
+      "users": "Kullanıcılar",
+      "grant_credits": "Kredi Tanımla"
+    },
+    "buttons": {
+      "submit": "Tanımla"
+    },
+    "fields": {
+      "credits": "Kredi Miktarı",
+      "valid_days": "Kredi Geçerlilik Süresi (Gün)",
+      "valid_days_tip": "0, süresiz anlamına gelir",
+      "description": "Kredi Tanımlama Açıklaması",
+      "description_placeholder": "Yönetici kredi tanımlaması"
+    }
+  }
+}

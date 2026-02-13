@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "title": "AI Görsel Oluşturucu",
+    "description": "AI modelleri ile görsel oluşturun; metinden görsele ve görselden görsele desteği."
+  },
+  "page": {
+    "title": "AI Görsel Oluşturucu",
+    "description": "AI modelleri ile görsel oluşturun; metinden görsele ve görselden görsele desteği."
+  },
+  "generator": {
+    "title": "Görsel Oluşturucu",
+    "description": "AI modelleri ile görsel oluşturun; metinden görsele ve görselden görsele desteği.",
+    "tabs": {
+      "text-to-image": "Metinden Görsele",
+      "image-to-image": "Görselden Görsele"
+    },
+    "form": {
+      "provider": "Sağlayıcı",
+      "model": "Model",
+      "select_provider": "Sağlayıcı Seçin",
+      "select_model": "Model Seçin",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Görselin ayrıntılarını tanımlayın; renk, şekil, doku vb.",
+      "reference_image": "Referans Görsel",
+      "reference_image_placeholder": "Referans görseller yükleyin, birden fazla görsel desteklenir",
+      "some_images_failed_to_upload": "Bazı görseller yüklenemedi, lütfen silin ve tekrar yükleyin",
+      "prompt_too_long": "Prompt çok uzun, lütfen bazı içerikleri silin"
+    },
+    "generate": "Görsel Oluştur",
+    "checking_account": "Hesap Kontrol Ediliyor...",
+    "loading": "Yükleniyor...",
+    "generating": "Oluşturuluyor...",
+    "sign_in_to_generate": "Görsel Oluşturmak İçin Giriş Yapın",
+    "credits_cost": "{credits} kredi harcanır",
+    "credits_remaining": "{credits} kredi kaldı",
+    "buy_credits": "Kredi Satın Al",
+    "progress": "İlerleme",
+    "generated_images": "Görsel Önizleme",
+    "ready_to_generate": "Oluşturmaya Hazır",
+    "ready_for_generating": "Oluşturma İçin Hazır",
+    "no_images_generated": "Görsel Oluşturulmadı"
+  }
+}

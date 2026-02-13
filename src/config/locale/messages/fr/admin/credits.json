@@ -1,0 +1,27 @@
+{
+  "fields": {
+    "transaction_no": "N° de transaction",
+    "user": "Utilisateur",
+    "amount": "Montant",
+    "remaining": "Restant",
+    "type": "Type",
+    "scene": "Scene",
+    "description": "Description",
+    "created_at": "Cree le",
+    "expires_at": "Expire le",
+    "metadata": "Metadonnees",
+    "action": "Action"
+  },
+  "list": {
+    "title": "Credits",
+    "crumbs": {
+      "admin": "Admin",
+      "credits": "Credits"
+    },
+    "tabs": {
+      "all": "Tout",
+      "grant": "Attribution",
+      "consume": "Consommation"
+    }
+  }
+}

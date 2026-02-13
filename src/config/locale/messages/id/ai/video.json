@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "Generator Video AI",
+    "description": "Buat video dengan model AI, mendukung teks ke video, gambar ke video, dan video ke video."
+  },
+  "page": {
+    "title": "Generator Video AI",
+    "description": "Buat video dengan model AI, mendukung teks ke video, gambar ke video, dan video ke video."
+  },
+  "generator": {
+    "title": "Generator Video",
+    "description": "Buat video dengan model AI, mendukung teks ke video, gambar ke video, dan video ke video.",
+    "tabs": {
+      "text-to-video": "Teks ke Video",
+      "image-to-video": "Gambar ke Video",
+      "video-to-video": "Video ke Video"
+    },
+    "form": {
+      "provider": "Penyedia",
+      "model": "Model",
+      "select_provider": "Pilih Penyedia",
+      "select_model": "Pilih Model",
+      "quality": "Kualitas",
+      "duration": "Durasi",
+      "aspect_ratio": "Rasio Aspek",
+      "audio": "Audio",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Deskripsikan konten video, seperti adegan, aksi, gaya, dll.",
+      "reference_image": "Gambar Referensi",
+      "reference_image_placeholder": "Unggah gambar referensi untuk pembuatan video",
+      "reference_video": "URL Video Referensi",
+      "reference_video_placeholder": "Masukkan URL video referensi",
+      "some_images_failed_to_upload": "Gambar gagal diunggah, silakan hapus dan unggah ulang",
+      "prompt_too_long": "Prompt terlalu panjang, silakan hapus sebagian konten"
+    },
+    "generate": "Buat Video",
+    "checking_account": "Memeriksa Akun...",
+    "loading": "Memuat...",
+    "generating": "Membuat...",
+    "sign_in_to_generate": "Masuk untuk Membuat Video",
+    "credits_cost": "Biaya {credits} kredit",
+    "credits_remaining": "Sisa {credits} kredit",
+    "buy_credits": "Beli Kredit",
+    "progress": "Progres",
+    "generated_videos": "Pratinjau Video",
+    "ready_to_generate": "Siap Membuat",
+    "ready_for_generating": "Siap untuk Membuat",
+    "no_videos_generated": "Belum Ada Video yang Dibuat",
+    "preview_example": "Contoh Pratinjau",
+    "preview_hint": "Isi formulir di sebelah kiri dan klik \"Buat Video\" untuk membuat video Anda sendiri."
+  }
+}

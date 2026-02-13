@@ -1,0 +1,245 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "introduce",
+      "benefit-1",
+      "benefit-2",
+      "benefit-3",
+      "features",
+      "pricing",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "SeeDanceTwo\nO modelo de vídeo que entende o que você quer dizer.",
+        "highlight_text": "SeeDanceTwo",
+        "description": "A criação multimodal começa aqui.\nImagine com ousadia — deixe o resto por conta dele.",
+        "announcement": {
+          "badge": "NOVO",
+          "text": "Seedance 2 lançamento em 24 de fev — Recarga antecipada para acesso prioritário",
+          "url": "/pricing"
+        },
+        "buttons": [
+          {
+            "title": "Começar Agora",
+            "icon": "Zap",
+            "url": "/#video-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": false,
+        "avatars_tip": "",
+        "show_award": false,
+        "show_video_generator": true,
+        "background_video": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4"
+        },
+        "background_image": {
+          "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
+          "alt": "fundo cinematográfico"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "O que é o seedancetwo?",
+        "label": "Visão Geral",
+        "description": "O Seedance two aceita quatro modalidades de entrada — imagem, vídeo, áudio e texto — para uma expressão mais rica e geração mais controlável.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/video_030.mp4",
+          "alt": "visão geral do seedancetwo"
+        },
+        "items": [
+          {
+            "title": "Imagem de Referência",
+            "description": "Reproduza com precisão composição, detalhes de personagens e estilo visual a partir de uma imagem de referência.",
+            "icon": "RiImage2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-1/960/640.webp",
+              "alt": "imagem de referência"
+            }
+          },
+          {
+            "title": "Vídeo de Referência",
+            "description": "Replique movimentos de câmera, ritmos de movimento complexos e efeitos criativos a partir de um vídeo de referência.",
+            "icon": "RiMovie2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-2/960/640.webp",
+              "alt": "vídeo de referência"
+            }
+          },
+          {
+            "title": "Extensão de Vídeo",
+            "description": "Estenda e conecte cenas suavemente — gere cenas contínuas guiadas pelos seus prompts. Não é apenas geração, mas \"continuar filmando\".",
+            "icon": "RiTimeLine",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-3/960/640.webp",
+              "alt": "extensão de vídeo"
+            }
+          },
+          {
+            "title": "Edição de Vídeo",
+            "description": "Troque personagens, remova ou adicione elementos em vídeos existentes com edições direcionadas.",
+            "icon": "RiScissors2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-4/960/640.webp",
+              "alt": "edição de vídeo"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefit-1": {
+        "block": "features-media",
+        "id": "benefit-1",
+        "image_position": "left",
+        "title": "Capacidades Principais Significativamente Aprimoradas: Mais Estável, Mais Fluido, Mais Realista!",
+        "description": "Além do multimodal, o Seedance 2.0 traz melhorias importantes no nível fundamental — física mais precisa, movimento mais natural e fluido, seguimento de instruções mais preciso e estilo mais consistente. Ele lida com ações complexas, movimentos contínuos e outras tarefas desafiadoras de geração com facilidade, tornando cada vídeo mais realista e polido. Uma verdadeira evolução nas capacidades principais!",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_002.mp4",
+          "alt": "capacidades principais significativamente aprimoradas"
+        }
+      },
+      "benefit-2": {
+        "block": "features-media",
+        "id": "benefit-2",
+        "image_position": "right",
+        "title": "Upgrade Multimodal Completo: A Criação de Vídeo Entra na Era da \"Combinação Livre\"!",
+        "description": "Envie texto, imagens, vídeo ou áudio — tudo pode servir como material de origem ou referência. Referencie o movimento, efeitos, estilo, trabalho de câmera, personagens, cenas ou som de qualquer conteúdo. Desde que seus prompts sejam claros, o modelo entende. Seedance 2.0 = Capacidade de referência multimodal (referencie qualquer coisa) + Geração criativa forte + Resposta precisa a instruções (excelente compreensão).",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4",
+          "alt": "upgrade multimodal completo"
+        }
+      },
+      "benefit-3": {
+        "block": "features-media",
+        "id": "benefit-3",
+        "image_position": "left",
+        "title": "Consistência Geral Totalmente Aprimorada",
+        "description": "Personagens com aparência diferente entre cenas, detalhes de produtos perdidos, texto pequeno borrado, saltos de cena, estilos de câmera inconsistentes... Esses problemas comuns de consistência em trabalhos criativos agora estão resolvidos na versão 2.0. De rostos a roupas e detalhes de fontes, a consistência geral é mais estável e precisa.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_017.mp4",
+          "alt": "consistência geral totalmente aprimorada"
+        }
+      },
+      "features": {
+        "id": "features",
+        "title": "Capacidades Principais",
+        "description": "\"Capacidade de referência\" é o maior destaque. Use uma imagem para definir o estilo visual, um vídeo para especificar movimentos de personagens e mudanças de câmera, alguns segundos de áudio para definir o ritmo e a atmosfera... Combinado com prompts, o processo criativo se torna mais natural, mais eficiente e mais parecido com ser um verdadeiro \"diretor\".",
+        "items": [
+          {
+            "title": "Consistência Geral",
+            "description": "Rostos, roupas, texto e detalhes dos personagens permanecem altamente consistentes em múltiplas cenas.",
+            "icon": "RiShieldCheckLine"
+          },
+          {
+            "title": "Replicação de Câmera e Movimento",
+            "description": "Envie um vídeo de referência para replicar coreografias complexas e movimentos de câmera — sem necessidade de descrições quadro a quadro.",
+            "icon": "RiCameraLine"
+          },
+          {
+            "title": "Replicação de Template / Efeito Criativo",
+            "description": "Transições criativas, spots publicitários, clipes de filmes e outros efeitos complexos podem ser reproduzidos com precisão.",
+            "icon": "RiMagicLine"
+          },
+          {
+            "title": "Conclusão Criativa e de História",
+            "description": "O modelo completa autonomamente enredos e detalhes criativos, tornando as narrativas mais ricas e naturais.",
+            "icon": "RiQuillPenLine"
+          },
+          {
+            "title": "Extensão de Vídeo",
+            "description": "Estenda e conecte cenas suavemente — gere cenas contínuas guiadas por prompts. Não é apenas geração, mas continuar filmando.",
+            "icon": "RiTimeLine"
+          },
+          {
+            "title": "Tom Mais Preciso, Voz Mais Realista",
+            "description": "Timbre de voz natural e realista com expressividade grandemente aprimorada para diálogos e narração.",
+            "icon": "RiVoiceprintLine"
+          },
+          {
+            "title": "Planos-Sequência Mais Fluidos",
+            "description": "Sem interrupções em planos longos — transições de cena naturais com continuidade grandemente aprimorada.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "Edição de Vídeo Altamente Utilizável",
+            "description": "Faça edições direcionadas em segmentos específicos de vídeos existentes sem regenerar o clipe inteiro.",
+            "icon": "RiScissors2Line"
+          },
+          {
+            "title": "Sincronização com Batida Musical",
+            "description": "As batidas do áudio se alinham precisamente com as ações na tela, dando aos vídeos um forte senso de ritmo.",
+            "icon": "RiMusic2Line"
+          },
+          {
+            "title": "Melhor Performance Emocional",
+            "description": "Expressões faciais e linguagem corporal mais sutis para um impacto narrativo mais forte.",
+            "icon": "RiEmotionLine"
+          }
+        ]
+      },
+      "pricing": {
+        "id": "pricing",
+        "block": "pricing",
+        "data": {}
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Perguntas Frequentes",
+        "description": "Se precisar de ajuda, entre em contato conosco por e-mail.",
+        "items": [
+          {
+            "question": "O que é o seedancetwo?",
+            "answer": "seedancetwo é uma experiência de geração de vídeo com IA baseada no modelo Seedance, com suporte à criação rápida de vídeos cinematográficos."
+          },
+          {
+            "question": "Ele suporta texto para vídeo e imagem para vídeo?",
+            "answer": "Sim. Você pode inserir prompts para texto para vídeo, ou enviar imagens para geração de imagem para vídeo."
+          },
+          {
+            "question": "Ele pode gerar sequências com múltiplas cenas?",
+            "answer": "Sim. O fluxo de trabalho suporta narrativa multi-cena, mantendo a continuidade de cena e consistência de estilo em uma única geração."
+          },
+          {
+            "question": "Ele suporta sincronização audiovisual?",
+            "answer": "Sim — o produto suporta sincronização audiovisual e sincronização labial, aprimorando a naturalidade dos vídeos."
+          },
+          {
+            "question": "Quais proporções de saída estão disponíveis?",
+            "answer": "O conteúdo pode ser gerado em proporções comuns, incluindo paisagem, retrato e quadrado, adequadas para diversos canais de publicação."
+          },
+          {
+            "question": "Como entro em contato com a equipe de suporte?",
+            "answer": "Envie um e-mail para support@seedancetwo.com para suporte de configuração e personalização."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Comece a Criar Sua Experiência seedancetwo",
+        "description": "Construa a partir deste início rápido e crie seu próprio produto de vídeo cinematográfico com IA.",
+        "buttons": [
+          {
+            "title": "Explorar Recursos",
+            "url": "/#features",
+            "target": "_self",
+            "icon": "Zap"
+          },
+          {
+            "title": "Comprar Créditos",
+            "url": "/pricing",
+            "target": "_self",
+            "variant": "outline",
+            "icon": "CreditCard"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

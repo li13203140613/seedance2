@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "title": "Galeri Video Seedance 2 - Contoh Video Buatan AI",
+    "description": "Jelajahi contoh video buatan AI yang menakjubkan, dibuat dengan Seedance 2. Dari adegan sinematik hingga animasi kreatif, lihat kemampuan Seedance 2."
+  },
+  "page": {
+    "title": "Galeri Video",
+    "sections": {
+      "showcases": {
+        "id": "showcases-flow",
+        "title": "Galeri Video Seedance 2",
+        "description": "Jelajahi video buatan AI yang menakjubkan, dibuat dengan Seedance 2. Arahkan kursor untuk pratinjau, klik untuk menonton layar penuh.",
+        "groups": [
+          { "name": "all", "title": "Semua" },
+          { "name": "cinematic", "title": "Sinematik" },
+          { "name": "animation", "title": "Animasi" },
+          { "name": "fashion", "title": "Mode" },
+          { "name": "creative", "title": "Kreatif" }
+        ],
+        "items": [
+          {
+            "title": "Menjemur Senja",
+            "description": "Seorang gadis dengan anggun menjemur pakaian di balkon saat golden hour, dengan fisika kain yang realistis dan gerakan tubuh alami.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-1-poster.webp",
+              "alt": "Wanita menjemur pakaian saat matahari terbenam"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-1.mp4"
+          },
+          {
+            "title": "Pengejaran Urban",
+            "description": "Seorang pria berlari melewati jalanan kota yang ramai dengan kamera pelacak dinamis, menampilkan gerakan halus dan simulasi kerumunan.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-2-poster.webp",
+              "alt": "Pria berlari melewati jalanan kota"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-2.mp4"
+          },
+          {
+            "title": "Pulang ke Rumah",
+            "description": "Seorang pria berjalan menyusuri lorong menuju pintu depan, dengan pencahayaan sinematik dan konsistensi karakter di seluruh adegan.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-4-poster.webp",
+              "alt": "Pria berjalan menyusuri lorong"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-4.mp4"
+          },
+          {
+            "title": "Opera Tiongkok",
+            "description": "Pemain opera Tiongkok tradisional dengan kostum mewah dan hiasan kepala rumit, melakukan gerakan anggun di atas panggung.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-5-poster.webp",
+              "alt": "Pemain opera Tiongkok"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-5.mp4"
+          },
+          {
+            "title": "Showcase Produk",
+            "description": "Pita hias elegan dalam berbagai warna dan pola, menunjukkan fotografi produk dan pembuatan video komersial.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-8-poster.webp",
+              "alt": "Tampilan produk pita warna-warni"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-8.mp4"
+          },
+          {
+            "title": "Adegan Lift",
+            "description": "Adegan lift menegangkan bergaya Hitchcock dengan teknik kamera dramatis termasuk bidikan orbit dan efek zoom.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-10-poster.webp",
+              "alt": "Pria dalam adegan lift dramatis"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-10.mp4"
+          },
+          {
+            "title": "Pertarungan Wuxia",
+            "description": "Duel seni bela diri epik di hutan musim gugur bergaya animasi 3D, menampilkan koreografi pertarungan dinamis.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-14-poster.webp",
+              "alt": "Pertarungan seni bela diri di hutan musim gugur"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-14.mp4"
+          },
+          {
+            "title": "Peluncuran Supercar",
+            "description": "Lamborghini merah di garasi parkir bawah tanah dengan pencahayaan sinematik, refleksi, dan gaya showcase otomotif.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-16-poster.webp",
+              "alt": "Lamborghini merah di garasi parkir"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-16.mp4"
+          },
+          {
+            "title": "Kebangkitan Malaikat",
+            "description": "Adegan fantasi malaikat etereal dengan sayap bercahaya di depan patung malaikat batu, dengan VFX dan pencahayaan memukau.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-17-poster.webp",
+              "alt": "Adegan fantasi malaikat bersayap"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-17.mp4"
+          },
+          {
+            "title": "Lookbook Mode",
+            "description": "Pemotretan mode dinamis dengan pergantian pakaian sinkron irama, menampilkan transisi gaya dan pose model.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-19-poster.webp",
+              "alt": "Model mode berpose"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-19.mp4"
+          },
+          {
+            "title": "Kuda Lucu",
+            "description": "Kuda kartun mengintip dari balik selimut dengan efek lensa fisheye, menunjukkan animasi tersinkronisasi audio.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-30-poster.webp",
+              "alt": "Kuda kartun dengan selimut"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-30.mp4"
+          },
+          {
+            "title": "Pelari Senja",
+            "description": "Ilustrasi bergaya anime seorang pemuda berlari menyusuri jalanan kota saat matahari terbenam dengan warna-warna cerah.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-38-poster.webp",
+              "alt": "Pelari anime saat matahari terbenam"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-38.mp4"
+          },
+          {
+            "title": "Thriller Mata-mata",
+            "description": "Bidikan pelacak satu-take seorang wanita bermantel merah berjalan melewati jalanan Eropa yang ramai bergaya thriller mata-mata.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-40-poster.webp",
+              "alt": "Wanita bermantel merah di jalanan Eropa"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-40.mp4"
+          },
+          {
+            "title": "Iklan Mode",
+            "description": "Iklan mode stylish dengan latar belakang geometris dan overlay teks dinamis, editing sinkron irama.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-45-poster.webp",
+              "alt": "Model mode dengan latar belakang geometris"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-45.mp4"
+          },
+          {
+            "title": "Keanggunan Pesenam",
+            "description": "Pesenam tampil di balok keseimbangan dalam gimnasium berpencahayaan redup dengan sorotan dramatis, menampilkan gerakan tubuh yang halus.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1-poster.webp",
+              "alt": "Pesenam di balok keseimbangan"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1.mp4"
+          },
+          {
+            "title": "Balok Keseimbangan",
+            "description": "Pesenam berjalan anggun di balok keseimbangan dengan framing sudut samping sinematik dan pencahayaan gimnasium atmosferik.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2-poster.webp",
+              "alt": "Pesenam berjalan di balok keseimbangan"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2.mp4"
+          },
+          {
+            "title": "Duel Naga",
+            "description": "Pertarungan seni bela diri terinspirasi Dragon Ball di kuil silat Tiongkok tradisional, dengan animasi karakter 3D dinamis.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals-poster.webp",
+              "alt": "Pertarungan seni bela diri gaya Dragon Ball"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals.mp4"
+          },
+          {
+            "title": "Pelari Jalanan",
+            "description": "Karakter bergaya anime berlari melewati gang urban yang gelap, dengan pose dinamis dan estetika mode jalanan yang cerah.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong-poster.webp",
+              "alt": "Karakter anime berlari di kota"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong.mp4"
+          },
+          {
+            "title": "Zona Perang",
+            "description": "Tank militer melintasi jalanan kota dalam adegan perang dramatis dengan fisika kendaraan realistis dan efek atmosferik.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-1-poster.webp",
+              "alt": "Tank militer di jalanan kota"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-1.mp4"
+          },
+          {
+            "title": "Pelarian Kerumunan",
+            "description": "Seorang pria berlari melewati kerumunan besar di jalanan kota dengan depth of field sinematik dan dinamika kerumunan realistis.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-2-poster.webp",
+              "alt": "Pria berlari melewati kerumunan"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-2.mp4"
+          },
+          {
+            "title": "Perjalanan Fantasi",
+            "description": "Seorang anak laki-laki di atas perahu menatap kota kastil fantastis di seberang lautan, dengan lanskap menakjubkan dan awan atmosferik.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/long4ai-poster.webp",
+              "alt": "Anak laki-laki di perahu dengan kastil fantasi"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/long4ai.mp4"
+          },
+          {
+            "title": "Jalan-jalan Eropa",
+            "description": "Berjalan di level jalan sudut pandang pertama melalui kota Eropa yang ramai dengan pergerakan pejalan kaki alami dan suasana jalanan autentik.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle-poster.webp",
+              "alt": "Orang berjalan di jalanan Eropa"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle.mp4"
+          },
+          {
+            "title": "Kecantikan Kuno",
+            "description": "Dua gadis berkostum hanfu Tiongkok tradisional dengan aksesori rambut elegan, di pasar malam kota kuno yang menawan.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/qhgy-poster.webp",
+              "alt": "Gadis-gadis berkostum hanfu Tiongkok"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/qhgy.mp4"
+          },
+          {
+            "title": "Crossover Lapangan",
+            "description": "Adegan crossover basket yang intens di lapangan profesional dengan sudut kamera dinamis dan gerakan pemain realistis.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/sino-market-poster.webp",
+              "alt": "Crossover basket di lapangan"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/sino-market.mp4"
+          },
+          {
+            "title": "Penyergapan Kedai",
+            "description": "Pendekar bela diri melawan ninja di kedai Tiongkok tradisional, dengan koreografi pertarungan halus dan pencahayaan dramatis.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai-poster.webp",
+              "alt": "Pertarungan seni bela diri di kedai"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai.mp4"
+          }
+        ]
+      }
+    }
+  }
+}

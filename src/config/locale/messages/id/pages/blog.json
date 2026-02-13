@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "title": "Blog",
+    "description": "Baca fitur produk terbaru, solusi, dan pembaruan."
+  },
+  "page": {
+    "title": "Blog Seedance",
+    "sections": {
+      "blog": {
+        "id": "blog",
+        "title": "Blog",
+        "description": "Baca fitur produk terbaru, solusi, dan pembaruan."
+      }
+    }
+  },
+  "messages": {
+    "all": "Semua",
+    "no_content": "Tidak Ada Konten",
+    "crumb": "Blog",
+    "toc": "Daftar Isi"
+  }
+}

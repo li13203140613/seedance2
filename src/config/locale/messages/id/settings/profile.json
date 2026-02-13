@@ -1,0 +1,18 @@
+{
+  "fields": {
+    "email": "Email",
+    "name": "Nama",
+    "avatar": "Avatar"
+  },
+  "edit": {
+    "title": "Profil",
+    "description": "Perbarui profil Anda",
+    "crumbs": {
+      "settings": "Pengaturan",
+      "profile": "Profil"
+    },
+    "buttons": {
+      "submit": "Simpan"
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "introduce",
+      "benefit-1",
+      "benefit-2",
+      "benefit-3",
+      "features",
+      "pricing",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "SeeDanceTwo\nModel video yang memahami maksud Anda.",
+        "highlight_text": "SeeDanceTwo",
+        "description": "Kreasi multimodal dimulai di sini.\nBayangkan dengan berani — serahkan sisanya.",
+        "announcement": {
+          "badge": "BARU",
+          "text": "Seedance 2 diluncurkan 24 Feb — Isi ulang pra-penjualan untuk akses awal",
+          "url": "/pricing"
+        },
+        "buttons": [
+          {
+            "title": "Mulai Sekarang",
+            "icon": "Zap",
+            "url": "/#video-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": false,
+        "avatars_tip": "",
+        "show_award": false,
+        "show_video_generator": true,
+        "background_video": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4"
+        },
+        "background_image": {
+          "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
+          "alt": "latar belakang sinematik"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "Apa itu seedancetwo?",
+        "label": "Gambaran Umum",
+        "description": "Seedance two menerima empat jenis input modalitas — gambar, video, audio, dan teks — untuk ekspresi yang lebih kaya dan pembuatan yang lebih terkontrol.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/video_030.mp4",
+          "alt": "gambaran umum seedancetwo"
+        },
+        "items": [
+          {
+            "title": "Gambar Referensi",
+            "description": "Mereproduksi komposisi, detail karakter, dan gaya visual dari gambar referensi secara presisi.",
+            "icon": "RiImage2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-1/960/640.webp",
+              "alt": "gambar referensi"
+            }
+          },
+          {
+            "title": "Video Referensi",
+            "description": "Mereplikasi pergerakan kamera, ritme gerakan kompleks, dan efek kreatif dari video referensi.",
+            "icon": "RiMovie2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-2/960/640.webp",
+              "alt": "video referensi"
+            }
+          },
+          {
+            "title": "Perpanjangan Video",
+            "description": "Memperpanjang dan menghubungkan shot dengan mulus — menghasilkan adegan berkelanjutan yang dipandu oleh prompt Anda. Bukan sekadar membuat, tetapi \"terus merekam.\"",
+            "icon": "RiTimeLine",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-3/960/640.webp",
+              "alt": "perpanjangan video"
+            }
+          },
+          {
+            "title": "Pengeditan Video",
+            "description": "Mengganti karakter, menghapus atau menambahkan elemen dalam video yang ada dengan pengeditan tertarget.",
+            "icon": "RiScissors2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-4/960/640.webp",
+              "alt": "pengeditan video"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefit-1": {
+        "block": "features-media",
+        "id": "benefit-1",
+        "image_position": "left",
+        "title": "Kemampuan Inti Ditingkatkan Secara Signifikan: Lebih Stabil, Lebih Halus, Lebih Realistis!",
+        "description": "Lebih dari sekadar multimodal, Seedance 2.0 memberikan peningkatan besar pada level fondasi — fisika lebih akurat, gerakan lebih alami dan halus, mengikuti instruksi lebih presisi, dan gaya lebih konsisten. Menangani aksi kompleks, gerakan berkelanjutan, dan tugas pembuatan menantang lainnya dengan mudah, menjadikan setiap video lebih realistis dan sempurna. Evolusi sejati dalam kemampuan inti!",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_002.mp4",
+          "alt": "kemampuan inti ditingkatkan secara signifikan"
+        }
+      },
+      "benefit-2": {
+        "block": "features-media",
+        "id": "benefit-2",
+        "image_position": "right",
+        "title": "Peningkatan Multimodal Penuh: Pembuatan Video Memasuki Era \"Kombinasi Bebas\"!",
+        "description": "Unggah teks, gambar, video, atau audio — semuanya bisa menjadi bahan sumber atau referensi. Referensikan gerakan, efek, gaya, teknik kamera, karakter, adegan, atau suara dari konten apa pun. Selama prompt Anda jelas, model akan memahami. Seedance 2.0 = Kemampuan referensi multimodal (referensi apa saja) + Pembuatan kreatif yang kuat + Respons instruksi presisi (pemahaman yang sangat baik).",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4",
+          "alt": "peningkatan multimodal penuh"
+        }
+      },
+      "benefit-3": {
+        "block": "features-media",
+        "id": "benefit-3",
+        "image_position": "left",
+        "title": "Konsistensi Keseluruhan Ditingkatkan Sepenuhnya",
+        "description": "Karakter yang terlihat berbeda antar shot, detail produk hilang, teks kecil kabur, lompatan adegan, gaya kamera tidak konsisten... Masalah konsistensi umum dalam karya kreatif ini kini teratasi di 2.0. Dari wajah hingga pakaian hingga detail font, konsistensi keseluruhan lebih stabil dan akurat.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_017.mp4",
+          "alt": "konsistensi keseluruhan ditingkatkan sepenuhnya"
+        }
+      },
+      "features": {
+        "id": "features",
+        "title": "Kemampuan Inti",
+        "description": "\"Kemampuan referensi\" adalah sorotan terbesar. Gunakan gambar untuk menentukan gaya visual, video untuk menentukan gerakan karakter dan perubahan kamera, beberapa detik audio untuk menentukan ritme dan suasana... Dikombinasikan dengan prompt, proses kreatif menjadi lebih alami, lebih efisien, dan lebih seperti menjadi \"sutradara\" sungguhan.",
+        "items": [
+          {
+            "title": "Konsistensi Keseluruhan",
+            "description": "Wajah karakter, pakaian, teks, dan detail tetap sangat konsisten di berbagai shot.",
+            "icon": "RiShieldCheckLine"
+          },
+          {
+            "title": "Replikasi Kamera & Gerakan",
+            "description": "Unggah video referensi untuk mereplikasi koreografi kompleks dan pergerakan kamera — tanpa perlu deskripsi frame-by-frame.",
+            "icon": "RiCameraLine"
+          },
+          {
+            "title": "Replikasi Template / Efek Kreatif",
+            "description": "Transisi kreatif, spot iklan, klip film, dan efek kompleks lainnya semuanya bisa direproduksi secara presisi.",
+            "icon": "RiMagicLine"
+          },
+          {
+            "title": "Penyelesaian Kreatif & Cerita",
+            "description": "Model secara mandiri melengkapi alur cerita dan detail kreatif, menjadikan narasi lebih kaya dan alami.",
+            "icon": "RiQuillPenLine"
+          },
+          {
+            "title": "Perpanjangan Video",
+            "description": "Memperpanjang dan menghubungkan shot dengan mulus — menghasilkan adegan berkelanjutan yang dipandu prompt. Bukan sekadar membuat, tetapi terus merekam.",
+            "icon": "RiTimeLine"
+          },
+          {
+            "title": "Nada Lebih Akurat, Suara Lebih Realistis",
+            "description": "Timbre suara alami dan hidup dengan ekspresivitas yang sangat ditingkatkan untuk dialog dan narasi.",
+            "icon": "RiVoiceprintLine"
+          },
+          {
+            "title": "Long Take Lebih Halus",
+            "description": "Tanpa jeda dalam bidikan panjang — transisi adegan alami dengan kontinuitas yang sangat ditingkatkan.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "Pengeditan Video Sangat Fungsional",
+            "description": "Lakukan pengeditan tertarget pada segmen tertentu dari video yang ada tanpa membuat ulang seluruh klip.",
+            "icon": "RiScissors2Line"
+          },
+          {
+            "title": "Sinkronisasi Irama Musik",
+            "description": "Ketukan audio selaras secara presisi dengan aksi di layar, memberikan video nuansa ritme yang kuat.",
+            "icon": "RiMusic2Line"
+          },
+          {
+            "title": "Performa Emosional Lebih Baik",
+            "description": "Ekspresi wajah dan bahasa tubuh lebih bernuansa untuk dampak naratif yang lebih kuat.",
+            "icon": "RiEmotionLine"
+          }
+        ]
+      },
+      "pricing": {
+        "id": "pricing",
+        "block": "pricing",
+        "data": {}
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Pertanyaan yang Sering Diajukan",
+        "description": "Jika Anda membutuhkan bantuan, silakan hubungi kami melalui email.",
+        "items": [
+          {
+            "question": "Apa itu seedancetwo?",
+            "answer": "seedancetwo adalah pengalaman pembuatan video AI berbasis model Seedance, mendukung pembuatan cepat video sinematik."
+          },
+          {
+            "question": "Apakah mendukung teks ke video dan gambar ke video?",
+            "answer": "Ya. Anda dapat memasukkan prompt untuk teks ke video, atau mengunggah gambar untuk pembuatan gambar ke video."
+          },
+          {
+            "question": "Bisakah menghasilkan urutan multi-shot?",
+            "answer": "Ya. Alur kerja mendukung narasi multi-shot, menjaga kontinuitas adegan dan konsistensi gaya dalam satu kali pembuatan."
+          },
+          {
+            "question": "Apakah mendukung sinkronisasi audio-visual?",
+            "answer": "Ya — produk mendukung sinkronisasi audio-visual dan sinkronisasi bibir, meningkatkan nuansa alami video."
+          },
+          {
+            "question": "Rasio aspek output apa saja yang tersedia?",
+            "answer": "Konten dapat dihasilkan dalam rasio umum termasuk lanskap, potret, dan persegi, cocok untuk berbagai saluran penerbitan."
+          },
+          {
+            "question": "Bagaimana cara menghubungi tim dukungan?",
+            "answer": "Silakan email support@seedancetwo.com untuk dukungan konfigurasi dan kustomisasi."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Mulai Bangun Pengalaman seedancetwo Anda",
+        "description": "Bangun dari panduan cepat ini dan buat produk video AI sinematik Anda sendiri.",
+        "buttons": [
+          {
+            "title": "Jelajahi Fitur",
+            "url": "/#features",
+            "target": "_self",
+            "icon": "Zap"
+          },
+          {
+            "title": "Beli Kredit",
+            "url": "/pricing",
+            "target": "_self",
+            "variant": "outline",
+            "icon": "CreditCard"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

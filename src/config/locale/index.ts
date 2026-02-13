@@ -6,9 +6,15 @@ export const localeNames: any = {
   ja: '日本語',
   es: 'Español',
   ru: 'Русский',
+  pt: 'Português',
+  ko: '한국어',
+  de: 'Deutsch',
+  fr: 'Français',
+  tr: 'Türkçe',
+  id: 'Bahasa Indonesia',
 };
 
-export const locales = ['en', 'zh', 'ja', 'es', 'ru'];
+export const locales = ['en', 'zh', 'ja', 'es', 'ru', 'pt', 'ko', 'de', 'fr', 'tr', 'id'];
 
 export const defaultLocale = envConfigs.locale;
 

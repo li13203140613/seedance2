@@ -1,0 +1,32 @@
+{
+  "fields": {
+    "email": "Email",
+    "password": "Şifre",
+    "new_password": "Yeni Şifre",
+    "confirm_password": "Şifre Onayı"
+  },
+  "reset_password": {
+    "title": "Şifre Sıfırlama",
+    "description": "Şifrenizi sıfırlayın",
+    "tip": "Şifrenizi sıfırlamak için size bir email göndereceğiz.",
+    "crumbs": {
+      "settings": "Ayarlar",
+      "security": "Güvenlik"
+    },
+    "buttons": {
+      "submit": "Kaydet"
+    }
+  },
+  "delete_account": {
+    "title": "Hesabı Sil",
+    "description": "Hesabınızı silin",
+    "tip": "Hesabınızı silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "crumbs": {
+      "settings": "Ayarlar",
+      "security": "Güvenlik"
+    },
+    "buttons": {
+      "submit": "Sil"
+    }
+  }
+}

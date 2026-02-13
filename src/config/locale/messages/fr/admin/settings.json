@@ -1,0 +1,54 @@
+{
+  "groups": {
+    "email_auth": "Authentification par e-mail",
+    "google_auth": "Authentification Google",
+    "github_auth": "Authentification GitHub",
+    "basic_payment": "Paiement de base",
+    "stripe": "Stripe",
+    "creem": "Creem",
+    "paypal": "Paypal",
+    "resend": "Resend",
+    "r2": "Cloudflare R2",
+    "s3": "AWS S3",
+    "openrouter": "OpenRouter",
+    "replicate": "Replicate",
+    "fal": "Fal",
+    "google_analytics": "Google Analytics",
+    "clarity": "Clarity",
+    "plausible": "Plausible",
+    "openpanel": "OpenPanel",
+    "vercel_analytics": "Vercel Analytics",
+    "adsense": "Adsense",
+    "affonso": "Affonso",
+    "promotekit": "PromoteKit",
+    "tawk": "Tawk",
+    "crisp": "Crisp",
+    "credit": "Credit",
+    "appinfo": "Informations de l'application",
+    "user_role": "Role utilisateur",
+    "evolink": "EvoLink"
+  },
+  "edit": {
+    "title": "Parametres",
+    "crumbs": {
+      "admin": "Admin",
+      "settings": "Parametres"
+    },
+    "tabs": {
+      "general": "General",
+      "auth": "Authentification",
+      "payment": "Paiement",
+      "credit": "Credit",
+      "email": "E-mail",
+      "storage": "Stockage",
+      "ai": "IA",
+      "analytics": "Analytique",
+      "ads": "Publicites",
+      "affiliate": "Affiliation",
+      "customer_service": "Service client"
+    },
+    "buttons": {
+      "submit": "Enregistrer"
+    }
+  }
+}

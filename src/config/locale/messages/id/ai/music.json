@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "Generator Musik AI",
+    "description": "Buat musik menakjubkan dengan AI"
+  },
+  "page": {
+    "title": "Generator Musik AI",
+    "description": "Buat musik menakjubkan dengan AI"
+  },
+  "generator": {
+    "title": "Generator Musik",
+    "prompt": "Prompt",
+    "prompt_placeholder": "Kisah cinta Romeo dan Juliet",
+    "generate": "Buat Musik",
+    "loading": "Memuat...",
+    "generating": "Membuat...",
+    "sign_in_to_generate": "Masuk untuk Membuat Musik",
+    "credits_cost": "{credits} kredit terpakai",
+    "credits_remaining": "{credits} kredit tersisa",
+    "buy_credits": "Beli Kredit",
+    "generation_progress": "Progres Pembuatan",
+    "time_cost": "Proses ini memakan waktu hingga 2-3 menit...",
+    "generated_song": "Lagu yang Dihasilkan",
+    "ready_to_play": "Siap Diputar",
+    "audio_generating": "Membuat Audio...",
+    "generating_song": "Membuat Lagu...",
+    "waiting_generation": "Harap tunggu sementara kami membuat karya Anda",
+    "no_song_generated": "Belum Ada Lagu yang Dibuat",
+    "downloading": "Mengunduh...",
+    "download_success": "Unduhan berhasil diselesaikan",
+    "download_failed": "Gagal mengunduh audio",
+    "form": {
+      "custom_mode": "Mode Kustom",
+      "title": "Judul",
+      "title_placeholder": "The Sound of Silence",
+      "style": "Gaya Musik",
+      "style_placeholder": "indie, elektronik, synth, 120bpm, distorsi",
+      "instrumental": "Instrumental",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Lagu folk country tentang cinta",
+      "model": "Model",
+      "lyrics": "Lirik",
+      "lyrics_placeholder": "Tulis lirik Anda sendiri, dua bait (8 baris) untuk hasil terbaik"
+    }
+  }
+}

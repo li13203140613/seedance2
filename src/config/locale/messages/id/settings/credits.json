@@ -1,0 +1,26 @@
+{
+  "fields": {
+    "transaction_no": "No. Transaksi",
+    "description": "Deskripsi",
+    "type": "Jenis",
+    "scene": "Adegan",
+    "credits": "Kredit",
+    "expires_at": "Kedaluwarsa Pada",
+    "created_at": "Dibuat Pada",
+    "action": "Aksi"
+  },
+  "list": {
+    "title": "Riwayat Kredit",
+    "tabs": {
+      "all": "Semua",
+      "grant": "Pemberian",
+      "consume": "Pemakaian"
+    }
+  },
+  "view": {
+    "title": "Saldo Kredit",
+    "buttons": {
+      "purchase": "Beli Kredit"
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "introduce",
+      "benefit-1",
+      "benefit-2",
+      "benefit-3",
+      "features",
+      "pricing",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "SeeDanceTwo\n당신의 의도를 이해하는 영상 모델.",
+        "highlight_text": "SeeDanceTwo",
+        "description": "멀티모달 창작이 여기서 시작됩니다.\n대담하게 상상하세요 — 나머지는 맡겨 두세요.",
+        "announcement": {
+          "badge": "NEW",
+          "text": "Seedance 2 2월 24일 출시 — 사전 충전으로 얼리 액세스 확보",
+          "url": "/pricing"
+        },
+        "buttons": [
+          {
+            "title": "시작하기",
+            "icon": "Zap",
+            "url": "/#video-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": false,
+        "avatars_tip": "",
+        "show_award": false,
+        "show_video_generator": true,
+        "background_video": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4"
+        },
+        "background_image": {
+          "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
+          "alt": "시네마틱 배경"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "seedancetwo란?",
+        "label": "개요",
+        "description": "Seedance two는 이미지, 영상, 오디오, 텍스트의 4가지 모달리티 입력을 받아 더 풍부한 표현과 제어 가능한 생성을 지원합니다.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/video_030.mp4",
+          "alt": "seedancetwo 개요"
+        },
+        "items": [
+          {
+            "title": "참조 이미지",
+            "description": "참조 이미지의 구도, 캐릭터 디테일, 시각적 스타일을 정밀하게 재현합니다.",
+            "icon": "RiImage2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-1/960/640.webp",
+              "alt": "참조 이미지"
+            }
+          },
+          {
+            "title": "참조 영상",
+            "description": "참조 영상의 카메라 움직임, 복잡한 모션 리듬, 창의적 효과를 재현합니다.",
+            "icon": "RiMovie2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-2/960/640.webp",
+              "alt": "참조 영상"
+            }
+          },
+          {
+            "title": "영상 확장",
+            "description": "프롬프트에 따라 장면을 자연스럽게 확장하고 연결합니다. 단순한 생성이 아닌 \"계속 촬영\"입니다.",
+            "icon": "RiTimeLine",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-3/960/640.webp",
+              "alt": "영상 확장"
+            }
+          },
+          {
+            "title": "영상 편집",
+            "description": "기존 영상에서 캐릭터를 교체하거나 요소를 제거 및 추가하는 타겟 편집이 가능합니다.",
+            "icon": "RiScissors2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-4/960/640.webp",
+              "alt": "영상 편집"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefit-1": {
+        "block": "features-media",
+        "id": "benefit-1",
+        "image_position": "left",
+        "title": "핵심 역량 대폭 강화: 더 안정적이고, 더 매끄럽고, 더 사실적으로!",
+        "description": "멀티모달을 넘어 Seedance 2.0은 기초 수준에서 대대적인 개선을 이루었습니다. 더 정확한 물리, 더 자연스럽고 유려한 동작, 더 정밀한 지시 따르기, 더 일관된 스타일. 복잡한 동작, 연속 모션 등 까다로운 생성 작업을 손쉽게 처리하여 모든 영상을 더 사실적이고 완성도 높게 만듭니다. 핵심 역량의 진정한 진화!",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_002.mp4",
+          "alt": "핵심 역량 대폭 강화"
+        }
+      },
+      "benefit-2": {
+        "block": "features-media",
+        "id": "benefit-2",
+        "image_position": "right",
+        "title": "완전한 멀티모달 업그레이드: 영상 제작이 \"자유 조합\" 시대에 진입!",
+        "description": "텍스트, 이미지, 영상, 오디오를 업로드하면 모두 소스 자료 또는 참조로 사용할 수 있습니다. 모든 콘텐츠의 모션, 효과, 스타일, 카메라 워크, 캐릭터, 장면, 사운드를 참조할 수 있습니다. 프롬프트가 명확하기만 하면 모델이 이해합니다. Seedance 2.0 = 멀티모달 참조 능력(모든 것을 참조) + 강력한 창의적 생성 + 정밀한 지시 반응(우수한 이해력).",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4",
+          "alt": "완전한 멀티모달 업그레이드"
+        }
+      },
+      "benefit-3": {
+        "block": "features-media",
+        "id": "benefit-3",
+        "image_position": "left",
+        "title": "전체 일관성 완벽 개선",
+        "description": "장면 간 캐릭터가 다르게 보이거나, 제품 디테일이 손실되거나, 작은 텍스트가 흐릿하거나, 장면 점프, 일관되지 않는 카메라 스타일 등... 이러한 일반적인 일관성 문제들이 2.0에서 해결되었습니다. 얼굴부터 의상, 폰트 디테일까지 전체적인 일관성이 더 안정적이고 정확해졌습니다.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_017.mp4",
+          "alt": "전체 일관성 완벽 개선"
+        }
+      },
+      "features": {
+        "id": "features",
+        "title": "핵심 기능",
+        "description": "\"참조 능력\"이 최대 하이라이트입니다. 이미지로 비주얼 스타일을 설정하고, 영상으로 캐릭터 움직임과 카메라 변화를 지정하고, 몇 초의 오디오로 리듬과 분위기를 설정하세요. 프롬프트와 결합하면 창작 과정이 더 자연스럽고, 더 효율적이며, 진정한 \"감독\"이 되는 것과 같습니다.",
+        "items": [
+          {
+            "title": "전체 일관성",
+            "description": "캐릭터의 얼굴, 의상, 텍스트, 디테일이 여러 장면에서 높은 일관성을 유지합니다.",
+            "icon": "RiShieldCheckLine"
+          },
+          {
+            "title": "카메라 및 모션 재현",
+            "description": "참조 영상을 업로드하면 복잡한 안무와 카메라 움직임을 재현합니다. 프레임별 설명이 필요 없습니다.",
+            "icon": "RiCameraLine"
+          },
+          {
+            "title": "크리에이티브 템플릿/효과 재현",
+            "description": "창의적 전환, 광고 스팟, 영화 클립 등 복잡한 효과를 정밀하게 재현할 수 있습니다.",
+            "icon": "RiMagicLine"
+          },
+          {
+            "title": "크리에이티브 및 스토리 완성",
+            "description": "모델이 스토리라인과 크리에이티브 디테일을 자율적으로 완성하여 내러티브를 더 풍부하고 자연스럽게 만듭니다.",
+            "icon": "RiQuillPenLine"
+          },
+          {
+            "title": "영상 확장",
+            "description": "프롬프트에 따라 장면을 자연스럽게 확장하고 연결합니다. 단순한 생성이 아닌 계속 촬영입니다.",
+            "icon": "RiTimeLine"
+          },
+          {
+            "title": "더 정확한 음색, 더 사실적인 목소리",
+            "description": "자연스럽고 생동감 있는 음색으로 대사와 내레이션의 표현력이 크게 향상되었습니다.",
+            "icon": "RiVoiceprintLine"
+          },
+          {
+            "title": "더 매끄러운 롱테이크",
+            "description": "롱샷에서 끊김이 없습니다. 자연스러운 장면 전환으로 연속성이 크게 향상되었습니다.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "실용적인 영상 편집",
+            "description": "전체 클립을 재생성하지 않고 기존 영상의 특정 구간을 타겟 편집할 수 있습니다.",
+            "icon": "RiScissors2Line"
+          },
+          {
+            "title": "음악 비트 싱크",
+            "description": "오디오 비트가 화면의 동작과 정밀하게 일치하여 영상에 강한 리듬감을 부여합니다.",
+            "icon": "RiMusic2Line"
+          },
+          {
+            "title": "더 나은 감정 연기",
+            "description": "더 섬세한 표정과 몸짓으로 내러티브 임팩트가 강화되었습니다.",
+            "icon": "RiEmotionLine"
+          }
+        ]
+      },
+      "pricing": {
+        "id": "pricing",
+        "block": "pricing",
+        "data": {}
+      },
+      "faq": {
+        "id": "faq",
+        "title": "자주 묻는 질문",
+        "description": "도움이 필요하시면 이메일로 문의해 주세요.",
+        "items": [
+          {
+            "question": "seedancetwo란 무엇인가요?",
+            "answer": "seedancetwo는 Seedance 모델 기반의 AI 영상 생성 서비스로, 시네마틱 영상의 빠른 제작을 지원합니다."
+          },
+          {
+            "question": "텍스트-영상 변환과 이미지-영상 변환을 지원하나요?",
+            "answer": "네. 프롬프트를 입력하여 텍스트-영상 변환을 하거나, 이미지를 업로드하여 이미지-영상 변환을 할 수 있습니다."
+          },
+          {
+            "question": "멀티 샷 시퀀스를 생성할 수 있나요?",
+            "answer": "네. 워크플로우는 멀티 샷 스토리텔링을 지원하며, 한 번의 생성으로 장면의 연속성과 스타일 일관성을 유지합니다."
+          },
+          {
+            "question": "오디오-비주얼 동기화를 지원하나요?",
+            "answer": "네 — 오디오-비주얼 동기화와 립싱크를 지원하여 영상의 자연스러움을 높입니다."
+          },
+          {
+            "question": "어떤 출력 화면 비율을 사용할 수 있나요?",
+            "answer": "가로, 세로, 정사각형 등 일반적인 비율로 콘텐츠를 생성할 수 있어 다양한 배포 채널에 적합합니다."
+          },
+          {
+            "question": "고객 지원팀에 어떻게 연락하나요?",
+            "answer": "설정 및 커스터마이징 지원은 support@seedancetwo.com으로 이메일을 보내주세요."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "나만의 seedancetwo 경험을 시작하세요",
+        "description": "이 퀵스타트를 기반으로 나만의 시네마틱 AI 영상 제품을 만들어 보세요.",
+        "buttons": [
+          {
+            "title": "기능 탐색",
+            "url": "/#features",
+            "target": "_self",
+            "icon": "Zap"
+          },
+          {
+            "title": "크레딧 구매",
+            "url": "/pricing",
+            "target": "_self",
+            "variant": "outline",
+            "icon": "CreditCard"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

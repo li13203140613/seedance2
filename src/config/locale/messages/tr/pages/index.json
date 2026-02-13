@@ -1,0 +1,245 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "introduce",
+      "benefit-1",
+      "benefit-2",
+      "benefit-3",
+      "features",
+      "pricing",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "SeeDanceTwo\nNe demek istediğinizi anlayan video modeli.",
+        "highlight_text": "SeeDanceTwo",
+        "description": "Çok modlu yaratıcılık burada başlar.\nCesurca hayal edin — gerisini ona bırakın.",
+        "announcement": {
+          "badge": "YENİ",
+          "text": "Seedance 2, 24 Şubat'ta yayınlanıyor — Erken erişim için ön satış yüklemesi",
+          "url": "/pricing"
+        },
+        "buttons": [
+          {
+            "title": "Başlayın",
+            "icon": "Zap",
+            "url": "/#video-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ],
+        "show_avatars": false,
+        "avatars_tip": "",
+        "show_award": false,
+        "show_video_generator": true,
+        "background_video": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4"
+        },
+        "background_image": {
+          "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
+          "alt": "sinematik arka plan"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "seedancetwo nedir?",
+        "label": "Genel Bakış",
+        "description": "Seedance two, daha zengin ifade ve daha kontrol edilebilir oluşturma için dört modalite girişi kabul eder: görsel, video, ses ve metin.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/video_030.mp4",
+          "alt": "seedancetwo genel bakış"
+        },
+        "items": [
+          {
+            "title": "Referans Görsel",
+            "description": "Bir referans görselden kompozisyonu, karakter detaylarını ve görsel tarzı hassas bir şekilde yeniden üretin.",
+            "icon": "RiImage2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-1/960/640.webp",
+              "alt": "referans görsel"
+            }
+          },
+          {
+            "title": "Referans Video",
+            "description": "Bir referans videodan kamera hareketlerini, karmaşık hareket ritimlerini ve yaratıcı efektleri çoğaltın.",
+            "icon": "RiMovie2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-2/960/640.webp",
+              "alt": "referans video"
+            }
+          },
+          {
+            "title": "Video Uzatma",
+            "description": "Çekimleri akıcı bir şekilde uzatın ve birleştirin — promptlarınız doğrultusunda kesintisiz sahneler oluşturun. Sadece oluşturma değil, \"çekime devam etme.\"",
+            "icon": "RiTimeLine",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-3/960/640.webp",
+              "alt": "video uzatma"
+            }
+          },
+          {
+            "title": "Video Düzenleme",
+            "description": "Mevcut videolarda karakterleri değiştirin, öğeleri kaldırın veya hedefli düzenlemelerle yeni öğeler ekleyin.",
+            "icon": "RiScissors2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-en-introduce-4/960/640.webp",
+              "alt": "video düzenleme"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefit-1": {
+        "block": "features-media",
+        "id": "benefit-1",
+        "image_position": "left",
+        "title": "Temel Yetenekler Önemli Ölçüde Geliştirildi: Daha Kararlı, Daha Akıcı, Daha Gerçekçi!",
+        "description": "Çok modlu yapının ötesinde, Seedance 2.0 temel düzeyde büyük iyileştirmeler sunar — daha doğru fizik, daha doğal ve akıcı hareket, daha hassas talimat takibi ve daha tutarlı stil. Karmaşık hareketleri, sürekli hareketi ve diğer zorlu oluşturma görevlerini kolaylıkla yönetir; her videoyu daha gerçekçi ve cilalı hale getirir. Temel yeteneklerde gerçek bir evrim!",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_002.mp4",
+          "alt": "temel yetenekler önemli ölçüde geliştirildi"
+        }
+      },
+      "benefit-2": {
+        "block": "features-media",
+        "id": "benefit-2",
+        "image_position": "right",
+        "title": "Tam Çok Modlu Yükseltme: Video Oluşturma \"Serbest Kombinasyon\" Çağına Giriyor!",
+        "description": "Metin, görsel, video veya ses yükleyin — hepsi kaynak malzeme veya referans olarak kullanılabilir. Herhangi bir içeriğin hareketi, efektleri, tarzı, kamera çalışması, karakterleri, sahneleri veya sesini referans alın. Promptlarınız net olduğu sürece model anlar. Seedance 2.0 = Çok modlu referans yeteneği (her şeyi referans al) + Güçlü yaratıcı üretim + Hassas talimat yanıtı (mükemmel anlama).",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4",
+          "alt": "tam çok modlu yükseltme"
+        }
+      },
+      "benefit-3": {
+        "block": "features-media",
+        "id": "benefit-3",
+        "image_position": "left",
+        "title": "Genel Tutarlılık Tamamen İyileştirildi",
+        "description": "Sahneler arasında farklı görünen karakterler, kaybolan ürün detayları, bulanık küçük metinler, sahne atlamaları, tutarsız kamera stilleri... Yaratıcı çalışmalardaki bu yaygın tutarlılık sorunları artık 2.0'da çözüldü. Yüzlerden giysilere, yazı tipi detaylarına kadar genel tutarlılık daha kararlı ve doğru.",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_017.mp4",
+          "alt": "genel tutarlılık tamamen iyileştirildi"
+        }
+      },
+      "features": {
+        "id": "features",
+        "title": "Temel Yetenekler",
+        "description": "\"Referans yeteneği\" en büyük öne çıkan özellik. Görsel tarzı belirlemek için bir görsel, karakter hareketlerini ve kamera değişikliklerini belirtmek için bir video, ritim ve atmosferi ayarlamak için birkaç saniyelik ses kullanın... Promptlarla birleştiğinde yaratıcı süreç daha doğal, daha verimli ve gerçek bir \"yönetmen\" olmaya daha yakın hale gelir.",
+        "items": [
+          {
+            "title": "Genel Tutarlılık",
+            "description": "Karakter yüzleri, kıyafetler, metinler ve detaylar birden fazla çekimde yüksek tutarlılığı korur.",
+            "icon": "RiShieldCheckLine"
+          },
+          {
+            "title": "Kamera ve Hareket Çoğaltma",
+            "description": "Karmaşık koreografiyi ve kamera hareketlerini çoğaltmak için bir referans video yükleyin — kare kare açıklamaya gerek yok.",
+            "icon": "RiCameraLine"
+          },
+          {
+            "title": "Yaratıcı Şablon / Efekt Çoğaltma",
+            "description": "Yaratıcı geçişler, reklam spotları, film klipleri ve diğer karmaşık efektler hassas bir şekilde yeniden üretilebilir.",
+            "icon": "RiMagicLine"
+          },
+          {
+            "title": "Yaratıcı ve Hikaye Tamamlama",
+            "description": "Model, hikaye çizgilerini ve yaratıcı detayları otonom olarak tamamlar; anlatımları daha zengin ve doğal hale getirir.",
+            "icon": "RiQuillPenLine"
+          },
+          {
+            "title": "Video Uzatma",
+            "description": "Çekimleri akıcı bir şekilde uzatın ve birleştirin — promptlar doğrultusunda kesintisiz sahneler oluşturun. Sadece oluşturma değil, çekime devam.",
+            "icon": "RiTimeLine"
+          },
+          {
+            "title": "Daha Doğru Ton, Daha Gerçekçi Ses",
+            "description": "Diyalog ve anlatım için büyük ölçüde geliştirilmiş ifade gücüyle doğal ve canlı ses tınısı.",
+            "icon": "RiVoiceprintLine"
+          },
+          {
+            "title": "Daha Akıcı Uzun Çekimler",
+            "description": "Uzun çekimlerde kesinti yok — büyük ölçüde geliştirilmiş süreklilikle doğal sahne geçişleri.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "Son Derece Kullanışlı Video Düzenleme",
+            "description": "Tüm klibi yeniden oluşturmadan mevcut videoların belirli bölümlerinde hedefli düzenlemeler yapın.",
+            "icon": "RiScissors2Line"
+          },
+          {
+            "title": "Müzik Ritim Senkronizasyonu",
+            "description": "Ses ritimleri ekrandaki hareketlerle hassas bir şekilde hizalanır; videolara güçlü bir ritim duygusu kazandırır.",
+            "icon": "RiMusic2Line"
+          },
+          {
+            "title": "Daha İyi Duygusal Performans",
+            "description": "Daha güçlü anlatı etkisi için daha nüanslı yüz ifadeleri ve beden dili.",
+            "icon": "RiEmotionLine"
+          }
+        ]
+      },
+      "pricing": {
+        "id": "pricing",
+        "block": "pricing",
+        "data": {}
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Sıkça Sorulan Sorular",
+        "description": "Yardıma ihtiyacınız varsa lütfen email ile bizimle iletişime geçin.",
+        "items": [
+          {
+            "question": "seedancetwo nedir?",
+            "answer": "seedancetwo, Seedance modeline dayalı bir AI video oluşturma deneyimidir ve sinematik videoların hızlı bir şekilde oluşturulmasını destekler."
+          },
+          {
+            "question": "Metinden videoya ve görselden videoya destekliyor mu?",
+            "answer": "Evet. Metinden videoya için prompt girebilir veya görselden videoya oluşturma için görsel yükleyebilirsiniz."
+          },
+          {
+            "question": "Çoklu sahne dizileri oluşturabilir mi?",
+            "answer": "Evet. İş akışı, tek bir oluşturma içinde sahne sürekliliğini ve stil tutarlılığını koruyarak çoklu sahne anlatımını destekler."
+          },
+          {
+            "question": "Görsel-işitsel senkronizasyonu destekliyor mu?",
+            "answer": "Evet — ürün, videoların doğal hissini artıran görsel-işitsel senkronizasyon ve dudak senkronizasyonunu destekler."
+          },
+          {
+            "question": "Hangi çıktı en boy oranları mevcut?",
+            "answer": "İçerik, çeşitli yayın kanallarına uygun olarak yatay, dikey ve kare dahil yaygın oranlarda oluşturulabilir."
+          },
+          {
+            "question": "Destek ekibiyle nasıl iletişime geçebilirim?",
+            "answer": "Yapılandırma ve özelleştirme desteği için lütfen support@seedancetwo.com adresine email gönderin."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "seedancetwo Deneyiminizi Oluşturmaya Başlayın",
+        "description": "Bu hızlı başlangıç üzerine inşa edin ve kendi sinematik AI video ürününüzü oluşturun.",
+        "buttons": [
+          {
+            "title": "Özellikleri Keşfet",
+            "url": "/#features",
+            "target": "_self",
+            "icon": "Zap"
+          },
+          {
+            "title": "Kredi Satın Al",
+            "url": "/pricing",
+            "target": "_self",
+            "variant": "outline",
+            "icon": "CreditCard"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

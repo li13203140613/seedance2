@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "title": "Blog",
+    "description": "En son ürün özellikleri, çözümler ve güncellemeleri okuyun."
+  },
+  "page": {
+    "title": "Seedance Blog",
+    "sections": {
+      "blog": {
+        "id": "blog",
+        "title": "Blog",
+        "description": "En son ürün özellikleri, çözümler ve güncellemeleri okuyun."
+      }
+    }
+  },
+  "messages": {
+    "all": "Tümü",
+    "no_content": "İçerik Yok",
+    "crumb": "Blog",
+    "toc": "İçindekiler"
+  }
+}

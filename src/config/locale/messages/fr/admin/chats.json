@@ -1,0 +1,29 @@
+{
+  "fields": {
+    "title": "Titre",
+    "user": "Utilisateur",
+    "status": "Statut",
+    "model": "Modele",
+    "provider": "Fournisseur",
+    "created_at": "Cree le",
+    "action": "Action"
+  },
+  "list": {
+    "title": "Conversations IA",
+    "crumbs": {
+      "admin": "Admin",
+      "chats": "Conversations IA"
+    },
+    "tabs": {
+      "all": "Tout",
+      "pending": "En attente",
+      "completed": "Termine",
+      "failed": "Echoue"
+    },
+    "buttons": {
+      "view": "Voir la conversation",
+      "new": "Nouvelle conversation"
+    },
+    "empty_message": "Aucune conversation trouvee"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "fields": {
+    "id": "ID",
+    "code": "Kod",
+    "title": "Başlık",
+    "resource": "Kaynak",
+    "action": "İşlem",
+    "description": "Açıklama",
+    "created_at": "Oluşturulma Tarihi",
+    "updated_at": "Güncellenme Tarihi"
+  },
+  "list": {
+    "title": "İzinler",
+    "crumbs": {
+      "admin": "Yönetim",
+      "permissions": "İzinler"
+    }
+  }
+}

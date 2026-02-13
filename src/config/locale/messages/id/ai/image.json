@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "title": "Generator Gambar AI",
+    "description": "Buat gambar dengan model AI, mendukung teks ke gambar dan gambar ke gambar."
+  },
+  "page": {
+    "title": "Generator Gambar AI",
+    "description": "Buat gambar dengan model AI, mendukung teks ke gambar dan gambar ke gambar."
+  },
+  "generator": {
+    "title": "Generator Gambar",
+    "description": "Buat gambar dengan model AI, mendukung teks ke gambar dan gambar ke gambar.",
+    "tabs": {
+      "text-to-image": "Teks ke Gambar",
+      "image-to-image": "Gambar ke Gambar"
+    },
+    "form": {
+      "provider": "Penyedia",
+      "model": "Model",
+      "select_provider": "Pilih Penyedia",
+      "select_model": "Pilih Model",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Deskripsikan detail gambar, seperti warna, bentuk, tekstur, dll.",
+      "reference_image": "Gambar Referensi",
+      "reference_image_placeholder": "Unggah gambar referensi, mendukung beberapa gambar",
+      "some_images_failed_to_upload": "Beberapa gambar gagal diunggah, silakan hapus dan unggah ulang",
+      "prompt_too_long": "Prompt terlalu panjang, silakan hapus sebagian konten"
+    },
+    "generate": "Buat Gambar",
+    "checking_account": "Memeriksa Akun...",
+    "loading": "Memuat...",
+    "generating": "Membuat...",
+    "sign_in_to_generate": "Masuk untuk Membuat Gambar",
+    "credits_cost": "Biaya {credits} kredit",
+    "credits_remaining": "Sisa {credits} kredit",
+    "buy_credits": "Beli Kredit",
+    "progress": "Progres",
+    "generated_images": "Pratinjau Gambar",
+    "ready_to_generate": "Siap Membuat",
+    "ready_for_generating": "Siap untuk Membuat",
+    "no_images_generated": "Belum Ada Gambar yang Dibuat"
+  }
+}

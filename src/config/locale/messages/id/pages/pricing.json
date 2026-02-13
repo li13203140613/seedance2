@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "title": "Harga",
+    "description": "Pilih paket yang tepat untuk Anda"
+  },
+  "page": {
+    "title": "Harga Seedance",
+    "sections": {
+      "pricing": {
+        "id": "pricing",
+        "title": "Harga",
+        "description": "Pilih paket yang tepat untuk Anda",
+        "banner": {
+          "title": "Penawaran terbatas — Hemat hingga 89% untuk paket tahunan",
+          "countdown_days": 1
+        },
+        "groups": [
+          {
+            "name": "monthly",
+            "title": "Bulanan",
+            "description": "Paket bulanan — kredit diperbarui setiap bulan, batalkan kapan saja",
+            "is_featured": true
+          },
+          {
+            "name": "yearly",
+            "title": "Tahunan",
+            "description": "Paket tahunan — semua kredit diberikan sekaligus, ditagih sebagai satu pembayaran",
+            "badge": "-89%"
+          }
+        ],
+        "items": [
+          {
+            "title": "Basic",
+            "description": "Sempurna untuk memulai",
+            "features_title": "",
+            "features": [
+              "Kredit diperbarui setiap bulan",
+              "Hingga 20 video AI",
+              "Semua model premium",
+              "Tanpa watermark",
+              "Lisensi komersial & penggunaan tak terbatas",
+              "Resolusi video 1080p",
+              "Video hingga 12 detik"
+            ],
+            "interval": "month",
+            "amount": 990,
+            "currency": "USD",
+            "price": "$9.9",
+            "unit": "/bulan",
+            "is_featured": false,
+            "credits": 100,
+            "credits_summary": "100 kredit / bulan",
+            "cost_per_100": "= $0,099 / kredit",
+            "button": {
+              "title": "Berlangganan",
+              "url": "/#pricing"
+            },
+            "product_id": "basic-monthly",
+            "product_name": "Seedance Basic Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Pro",
+            "label": "Populer",
+            "description": "Terbaik untuk kreator & profesional",
+            "features_title": "",
+            "features": [
+              "Kredit diperbarui setiap bulan",
+              "Hingga 80 video AI",
+              "Semua model premium",
+              "Tanpa watermark",
+              "Antrian prioritas",
+              "Lisensi komersial & penggunaan tak terbatas",
+              "Resolusi video 1080p",
+              "Video hingga 12 detik"
+            ],
+            "interval": "month",
+            "amount": 2990,
+            "currency": "USD",
+            "price": "$29.9",
+            "unit": "/bulan",
+            "is_featured": true,
+            "credits": 400,
+            "credits_summary": "400 kredit / bulan",
+            "cost_per_100": "= $0,075 / kredit",
+            "value_badge": "Hemat 25%",
+            "button": {
+              "title": "Berlangganan",
+              "url": "/#pricing"
+            },
+            "product_id": "pro-monthly",
+            "product_name": "Seedance Pro Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Pro"
+          },
+          {
+            "title": "Ultra",
+            "description": "Untuk tim & pengguna profesional",
+            "features_title": "",
+            "features": [
+              "Kredit diperbarui setiap bulan",
+              "Hingga 280 video AI",
+              "Semua model premium",
+              "Tanpa watermark",
+              "Dukungan langsung",
+              "Lisensi komersial & penggunaan tak terbatas",
+              "Resolusi video 1080p",
+              "Video hingga 12 detik"
+            ],
+            "interval": "month",
+            "amount": 9900,
+            "currency": "USD",
+            "price": "$99",
+            "unit": "/bulan",
+            "is_featured": false,
+            "credits": 1400,
+            "credits_summary": "1.400 kredit / bulan",
+            "cost_per_100": "= $0,071 / kredit",
+            "value_badge": "Hemat 29%",
+            "button": {
+              "title": "Berlangganan",
+              "url": "/#pricing"
+            },
+            "product_id": "ultra-monthly",
+            "product_name": "Seedance Ultra Monthly",
+            "valid_days": 30,
+            "group": "monthly",
+            "plan_name": "Ultra"
+          },
+          {
+            "title": "Bayar sesuai pemakaian",
+            "description": "Pembelian sekali, tanpa langganan",
+            "features_title": "",
+            "features": [
+              "Kredit tidak pernah kedaluwarsa"
+            ],
+            "interval": "one-time",
+            "amount": 100,
+            "currency": "USD",
+            "price": "$1",
+            "unit": "",
+            "is_featured": false,
+            "is_payg": true,
+            "credits": 10,
+            "cost_per_100": "$1 = 10 kredit",
+            "tip": "Pembayaran sekali",
+            "button": {
+              "title": "Beli Kredit",
+              "url": "/#pricing"
+            },
+            "product_id": "credits-30",
+            "product_name": "Seedance Credits 30",
+            "valid_days": 9999,
+            "group": "monthly",
+            "credit_packs": [
+              {
+                "credits": 10,
+                "label": "10 kredit",
+                "price": "$1",
+                "amount": 100,
+                "product_id": "credits-30",
+                "product_name": "Seedance Credits 30",
+                "is_default": true
+              },
+              {
+                "credits": 150,
+                "label": "150 kredit",
+                "price": "$15",
+                "amount": 1500,
+                "product_id": "credits-500",
+                "product_name": "Seedance Credits 500"
+              },
+              {
+                "credits": 300,
+                "label": "300 kredit",
+                "price": "$30",
+                "amount": 3000,
+                "product_id": "credits-1200",
+                "product_name": "Seedance Credits 1200"
+              },
+              {
+                "credits": 600,
+                "label": "600 kredit",
+                "price": "$60",
+                "amount": 6000,
+                "product_id": "credits-2800",
+                "product_name": "Seedance Credits 2800"
+              },
+              {
+                "credits": 990,
+                "label": "990 kredit",
+                "price": "$99",
+                "amount": 9900,
+                "product_id": "credits-5000",
+                "product_name": "Seedance Credits 5000"
+              },
+              {
+                "credits": 1490,
+                "label": "1.490 kredit",
+                "price": "$149",
+                "amount": 14900,
+                "product_id": "credits-8500",
+                "product_name": "Seedance Credits 8500"
+              },
+              {
+                "credits": 2490,
+                "label": "2.490 kredit",
+                "price": "$249",
+                "amount": 24900,
+                "product_id": "credits-16000",
+                "product_name": "Seedance Credits 16000"
+              }
+            ],
+            "tip_box": {
+              "title": "Tips: Berlangganan untuk lebih hemat",
+              "items": [
+                "Biaya per kredit lebih rendah (hemat hingga 29%)",
+                "Kredit diperbarui otomatis setiap bulan"
+              ]
+            }
+          },
+          {
+            "title": "Basic",
+            "description": "Sempurna untuk memulai",
+            "features_title": "",
+            "features": [
+              "Semua kredit diberikan sekaligus",
+              "Hingga 240 video AI",
+              "Semua model premium",
+              "Tanpa watermark",
+              "Lisensi komersial & penggunaan tak terbatas",
+              "Resolusi video 1080p",
+              "Video hingga 12 detik"
+            ],
+            "interval": "year",
+            "amount": 9480,
+            "currency": "USD",
+            "price": "$7.9",
+            "original_price": "$9.9",
+            "unit": "/bulan",
+            "is_featured": false,
+            "credits": 1200,
+            "credits_summary": "1.200 kredit / tahun",
+            "cost_per_100": "= $0,079 / kredit",
+            "annual_total": "Ditagih tahunan $94,8",
+            "annual_savings": "Vs bulanan Hemat: $24",
+            "bonus_credits": "+100 kredit bonus",
+            "annual_badge": "TAHUNAN",
+            "button": {
+              "title": "Berlangganan",
+              "url": "/#pricing"
+            },
+            "product_id": "basic-yearly",
+            "product_name": "Seedance Basic Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Basic"
+          },
+          {
+            "title": "Pro",
+            "label": "Populer",
+            "description": "Terbaik untuk kreator & profesional",
+            "features_title": "",
+            "features": [
+              "Semua kredit diberikan sekaligus",
+              "Hingga 960 video AI",
+              "Semua model premium",
+              "Tanpa watermark",
+              "Antrian prioritas",
+              "Dukungan prioritas",
+              "Lisensi komersial & penggunaan tak terbatas",
+              "Resolusi video 1080p",
+              "Video hingga 12 detik"
+            ],
+            "interval": "year",
+            "amount": 23880,
+            "currency": "USD",
+            "price": "$19.9",
+            "original_price": "$29.9",
+            "unit": "/bulan",
+            "is_featured": true,
+            "credits": 4800,
+            "credits_summary": "4.800 kredit / tahun",
+            "cost_per_100": "= $0,050 / kredit",
+            "annual_total": "Ditagih tahunan $238,8",
+            "annual_savings": "Vs bulanan Hemat: $120",
+            "bonus_credits": "+500 kredit bonus",
+            "annual_badge": "TAHUNAN",
+            "value_badge": "",
+            "button": {
+              "title": "Berlangganan",
+              "url": "/#pricing"
+            },
+            "product_id": "pro-yearly",
+            "product_name": "Seedance Pro Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Pro"
+          },
+          {
+            "title": "Ultra",
+            "description": "Untuk tim & pengguna profesional",
+            "features_title": "",
+            "features": [
+              "Semua kredit diberikan sekaligus",
+              "Hingga 3.360 video AI",
+              "Semua model premium",
+              "Tanpa watermark",
+              "Dukungan langsung",
+              "Dukungan khusus",
+              "Lisensi komersial & penggunaan tak terbatas",
+              "Resolusi video 1080p",
+              "Video hingga 12 detik"
+            ],
+            "interval": "year",
+            "amount": 13080,
+            "currency": "USD",
+            "price": "$10.9",
+            "original_price": "$99",
+            "unit": "/bulan",
+            "is_featured": false,
+            "credits": 16800,
+            "credits_summary": "16.800 kredit / tahun",
+            "cost_per_100": "= $0,008 / kredit",
+            "annual_total": "Ditagih tahunan $130,8",
+            "annual_savings": "Vs bulanan Hemat: $1.057",
+            "bonus_credits": "+5.000 kredit bonus",
+            "annual_badge": "TAHUNAN",
+            "button": {
+              "title": "Berlangganan",
+              "url": "/#pricing"
+            },
+            "product_id": "ultra-yearly",
+            "product_name": "Seedance Ultra Yearly",
+            "valid_days": 365,
+            "group": "yearly",
+            "plan_name": "Ultra"
+          },
+          {
+            "title": "Bayar sesuai pemakaian",
+            "description": "Pembelian sekali, tanpa langganan",
+            "features_title": "",
+            "features": [
+              "Kredit tidak pernah kedaluwarsa"
+            ],
+            "interval": "one-time",
+            "amount": 100,
+            "currency": "USD",
+            "price": "$1",
+            "unit": "",
+            "is_featured": false,
+            "is_payg": true,
+            "credits": 10,
+            "cost_per_100": "$1 = 10 kredit",
+            "tip": "Pembayaran sekali",
+            "button": {
+              "title": "Beli Kredit",
+              "url": "/#pricing"
+            },
+            "product_id": "credits-30",
+            "product_name": "Seedance Credits 30",
+            "valid_days": 9999,
+            "group": "yearly",
+            "credit_packs": [
+              {
+                "credits": 10,
+                "label": "10 kredit",
+                "price": "$1",
+                "amount": 100,
+                "product_id": "credits-30",
+                "product_name": "Seedance Credits 30",
+                "is_default": true
+              },
+              {
+                "credits": 150,
+                "label": "150 kredit",
+                "price": "$15",
+                "amount": 1500,
+                "product_id": "credits-500",
+                "product_name": "Seedance Credits 500"
+              },
+              {
+                "credits": 300,
+                "label": "300 kredit",
+                "price": "$30",
+                "amount": 3000,
+                "product_id": "credits-1200",
+                "product_name": "Seedance Credits 1200"
+              },
+              {
+                "credits": 600,
+                "label": "600 kredit",
+                "price": "$60",
+                "amount": 6000,
+                "product_id": "credits-2800",
+                "product_name": "Seedance Credits 2800"
+              },
+              {
+                "credits": 990,
+                "label": "990 kredit",
+                "price": "$99",
+                "amount": 9900,
+                "product_id": "credits-5000",
+                "product_name": "Seedance Credits 5000"
+              },
+              {
+                "credits": 1490,
+                "label": "1.490 kredit",
+                "price": "$149",
+                "amount": 14900,
+                "product_id": "credits-8500",
+                "product_name": "Seedance Credits 8500"
+              },
+              {
+                "credits": 2490,
+                "label": "2.490 kredit",
+                "price": "$249",
+                "amount": 24900,
+                "product_id": "credits-16000",
+                "product_name": "Seedance Credits 16000"
+              }
+            ],
+            "tip_box": {
+              "title": "Tips: Berlangganan untuk lebih hemat",
+              "items": [
+                "Biaya per kredit lebih rendah (hemat hingga 29%)",
+                "Kredit diperbarui otomatis setiap bulan"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "messages": {
+    "current_plan": "Paket Saat Ini",
+    "processing": "Memproses"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Änderungsprotokolle",
+    "description": "Sehen Sie Produkt-Änderungsprotokolle, einschließlich neuester Funktionen und Verbesserungen."
+  },
+  "page": {
+    "sections": {
+      "updates": {
+        "id": "updates",
+        "title": "Änderungsprotokolle",
+        "description": "Sehen Sie Produkt-Änderungsprotokolle, einschließlich neuester Funktionen und Verbesserungen."
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "title": "AI Müzik Oluşturucu",
+    "description": "AI ile harika müzikler oluşturun"
+  },
+  "page": {
+    "title": "AI Müzik Oluşturucu",
+    "description": "AI ile harika müzikler oluşturun"
+  },
+  "generator": {
+    "title": "Müzik Oluşturucu",
+    "prompt": "Prompt",
+    "prompt_placeholder": "Romeo ve Juliet'in aşk hikayesi",
+    "generate": "Müzik Oluştur",
+    "loading": "Yükleniyor...",
+    "generating": "Oluşturuluyor...",
+    "sign_in_to_generate": "Müzik Oluşturmak İçin Giriş Yapın",
+    "credits_cost": "{credits} kredi harcanır",
+    "credits_remaining": "{credits} kredi kaldı",
+    "buy_credits": "Kredi Satın Al",
+    "generation_progress": "Oluşturma İlerlemesi",
+    "time_cost": "Bu işlem 2-3 dakika sürebilir...",
+    "generated_song": "Oluşturulan Şarkı",
+    "ready_to_play": "Çalmaya Hazır",
+    "audio_generating": "Ses Oluşturuluyor...",
+    "generating_song": "Şarkı Oluşturuluyor...",
+    "waiting_generation": "Başyapıtınız oluşturulurken lütfen bekleyin",
+    "no_song_generated": "Şarkı Oluşturulmadı",
+    "downloading": "İndiriliyor...",
+    "download_success": "İndirme başarıyla tamamlandı",
+    "download_failed": "Ses indirilemedi",
+    "form": {
+      "custom_mode": "Özel Mod",
+      "title": "Başlık",
+      "title_placeholder": "The Sound of Silence",
+      "style": "Müzik Tarzı",
+      "style_placeholder": "indie, electronic, synths, 120bpm, distorted",
+      "instrumental": "Enstrümantal",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Aşk hakkında bir country folk şarkısı",
+      "model": "Model",
+      "lyrics": "Sözler",
+      "lyrics_placeholder": "Kendi sözlerinizi yazın, en iyi sonuç için iki kıta (8 satır)"
+    }
+  }
+}

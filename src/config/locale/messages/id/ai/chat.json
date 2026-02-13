@@ -1,0 +1,121 @@
+{
+  "sidebar": {
+    "header": {
+      "brand": {
+        "title": "Seedance Chat",
+        "logo": {
+          "src": "/logo.png",
+          "alt": "Seedance Chat"
+        },
+        "url": "/chat"
+      },
+      "show_trigger": false
+    },
+    "buttons": [
+      {
+        "title": "Obrolan Baru",
+        "icon": "Plus",
+        "url": "/chat",
+        "variant": "outline"
+      }
+    ],
+    "main_navs": [
+      {
+        "items": [
+          {
+            "title": "Riwayat",
+            "icon": "History",
+            "url": "/chat/history"
+          }
+        ]
+      }
+    ],
+    "bottom_nav": {
+      "items": []
+    },
+    "user": {
+      "nav": {
+        "items": [
+          {
+            "title": "Profil",
+            "url": "/settings/profile",
+            "icon": "User",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_email": false,
+      "show_signout": true,
+      "signout_callback": "/chat",
+      "signin_callback": "/chat"
+    },
+    "footer": {
+      "nav": {
+        "items": [
+          {
+            "title": "Beranda",
+            "url": "/",
+            "icon": "Home",
+            "target": "_blank"
+          },
+          {
+            "title": "GitHub",
+            "url": "https://github.com/your-app-name",
+            "icon": "Github",
+            "target": "_blank"
+          },
+          {
+            "title": "Twitter",
+            "url": "https://twitter.com/your-app-name",
+            "icon": "RiTwitterXFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Discord",
+            "url": "https://discord.gg/your-app-name",
+            "icon": "RiDiscordFill",
+            "target": "_blank"
+          },
+          {
+            "title": "Email",
+            "url": "mailto:support@your-domain.com",
+            "icon": "Mail",
+            "target": "_blank"
+          }
+        ]
+      },
+      "show_theme": true,
+      "show_locale": false
+    },
+    "variant": "sidebar"
+  },
+  "library": {
+    "title": "Perpustakaan",
+    "icon": "History",
+    "url": "/chat/history",
+    "more": "Selengkapnya",
+    "actions": {
+      "edit_title": "Edit Judul",
+      "share": "Bagikan",
+      "delete": "Hapus"
+    }
+  },
+  "generator": {
+    "title": "Ada yang bisa saya bantu hari ini?",
+    "input_placeholder": "Anda bisa bertanya apa saja"
+  },
+  "history": {
+    "title": "Riwayat obrolan",
+    "description": "Tinjau dan kunjungi kembali percakapan Anda sebelumnya.",
+    "empty": "Belum ada percakapan.",
+    "error": "Gagal memuat percakapan.",
+    "retry": "Coba lagi",
+    "signin": "Masuk untuk melihat riwayat obrolan Anda.",
+    "summary": "Menampilkan {from}-{to} dari {total}",
+    "perPage": "Per halaman",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "open": "Buka obrolan",
+    "untitled": "Percakapan tanpa judul"
+  }
+}

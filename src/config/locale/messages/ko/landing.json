@@ -1,0 +1,131 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "기능",
+          "url": "/#features",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "쇼케이스",
+          "url": "/showcases",
+          "icon": "Box"
+        },
+        {
+          "title": "가격",
+          "url": "/pricing",
+          "icon": "DollarSign"
+        },
+        {
+          "title": "콘텐츠",
+          "icon": "FileText",
+          "children": [
+            {
+              "title": "블로그",
+              "description": "블로그 글 읽기",
+              "url": "/blog",
+              "icon": "Newspaper"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": true,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "결제",
+          "url": "/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "title": "활동",
+          "url": "/activity",
+          "icon": "Activity"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true,
+    "topbanner": {
+      "text": "연간 요금제 최대 89% 할인",
+      "buttonText": "89% 할인 받기",
+      "href": "/pricing",
+      "countdownMinutes": 30,
+      "remainingSpots": 9
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "seedancetwo 2.0",
+      "description": "seedancetwo로 텍스트와 이미지에서 시네마틱 AI 영상을 빠르게 생성하세요. 마케팅, 콘텐츠 제작, 제품 쇼케이스에 적합합니다.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "seedancetwo 2.0",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "제품",
+          "children": [
+            {
+              "title": "기능",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "사용 설명서",
+              "url": "/manual",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "Mail",
+          "url": "mailto:support@seedancetwo.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "개인정보처리방침",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "이용약관",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_theme": true,
+    "show_locale": true
+  }
+}

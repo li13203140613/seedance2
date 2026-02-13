@@ -1,0 +1,17 @@
+{
+  "fields": {
+    "title": "Judul",
+    "key": "Kunci",
+    "user": "Pengguna",
+    "status": "Status",
+    "created_at": "Dibuat Pada",
+    "action": "Aksi"
+  },
+  "list": {
+    "title": "API Key",
+    "crumbs": {
+      "admin": "Admin",
+      "apikeys": "API Key"
+    }
+  }
+}

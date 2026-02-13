@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "Generateur de videos IA",
+    "description": "Generez des videos avec des modeles IA, compatible texte vers video, image vers video et video vers video."
+  },
+  "page": {
+    "title": "Generateur de videos IA",
+    "description": "Generez des videos avec des modeles IA, compatible texte vers video, image vers video et video vers video."
+  },
+  "generator": {
+    "title": "Generateur de videos",
+    "description": "Generez des videos avec des modeles IA, compatible texte vers video, image vers video et video vers video.",
+    "tabs": {
+      "text-to-video": "Texte vers video",
+      "image-to-video": "Image vers video",
+      "video-to-video": "Video vers video"
+    },
+    "form": {
+      "provider": "Fournisseur",
+      "model": "Modele",
+      "select_provider": "Selectionner le fournisseur",
+      "select_model": "Selectionner le modele",
+      "quality": "Qualite",
+      "duration": "Duree",
+      "aspect_ratio": "Format d'image",
+      "audio": "Audio",
+      "prompt": "Prompt",
+      "prompt_placeholder": "Decrivez le contenu de la video : scene, action, style, etc.",
+      "reference_image": "Image de reference",
+      "reference_image_placeholder": "Telechargez une image de reference pour la generation de video",
+      "reference_video": "URL de la video de reference",
+      "reference_video_placeholder": "Saisissez l'URL de la video de reference",
+      "some_images_failed_to_upload": "Echec du telechargement de l'image, veuillez supprimer et re-telecharger",
+      "prompt_too_long": "Le prompt est trop long, veuillez supprimer une partie du contenu"
+    },
+    "generate": "Generer la video",
+    "checking_account": "Verification du compte...",
+    "loading": "Chargement...",
+    "generating": "Generation en cours...",
+    "sign_in_to_generate": "Connectez-vous pour generer une video",
+    "credits_cost": "Cout : {credits} credits",
+    "credits_remaining": "{credits} credits restants",
+    "buy_credits": "Acheter des credits",
+    "progress": "Progression",
+    "generated_videos": "Apercu de la video",
+    "ready_to_generate": "Pret a generer",
+    "ready_for_generating": "Pret pour la generation",
+    "no_videos_generated": "Aucune video generee",
+    "preview_example": "Exemple d'apercu",
+    "preview_hint": "Remplissez le formulaire a gauche et cliquez sur \u00ab Generer la video \u00bb pour creer votre propre video."
+  }
+}

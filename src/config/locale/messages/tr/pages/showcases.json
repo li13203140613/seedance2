@@ -1,0 +1,275 @@
+{
+  "metadata": {
+    "title": "Seedance 2 Video Vitrini - AI ile Oluşturulan Video Örnekleri",
+    "description": "Seedance 2 ile oluşturulan etkileyici AI video örneklerini keşfedin. Sinematik sahnelerden yaratıcı animasyonlara, Seedance 2'nin neler yapabildiğini görün."
+  },
+  "page": {
+    "title": "Video Vitrini",
+    "sections": {
+      "showcases": {
+        "id": "showcases-flow",
+        "title": "Seedance 2 Video Galerisi",
+        "description": "Seedance 2 ile oluşturulan etkileyici AI videoları keşfedin. Önizleme için üzerine gelin, tam ekran izlemek için tıklayın.",
+        "groups": [
+          { "name": "all", "title": "Tümü" },
+          { "name": "cinematic", "title": "Sinematik" },
+          { "name": "animation", "title": "Animasyon" },
+          { "name": "fashion", "title": "Moda" },
+          { "name": "creative", "title": "Yaratıcı" }
+        ],
+        "items": [
+          {
+            "title": "Gün Batımı Çamaşırı",
+            "description": "Altın saatte bir balkonda zarif bir şekilde çamaşır asan bir kız; gerçekçi kumaş fiziği ve doğal vücut hareketleri.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-1-poster.webp",
+              "alt": "Gün batımında çamaşır asan kadın"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-1.mp4"
+          },
+          {
+            "title": "Şehir Takibi",
+            "description": "Dinamik kamera takibi ile kalabalık şehir sokaklarında koşan bir adam; akıcı hareket ve kalabalık simülasyonu.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-2-poster.webp",
+              "alt": "Şehir sokaklarında koşan adam"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-2.mp4"
+          },
+          {
+            "title": "Eve Dönüş",
+            "description": "Sinematik aydınlatma ve sahne boyunca karakter tutarlılığı ile koridorda ön kapıya doğru yürüyen bir adam.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-4-poster.webp",
+              "alt": "Koridorda yürüyen adam"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-4.mp4"
+          },
+          {
+            "title": "Çin Operası",
+            "description": "Gösterişli kostüm ve zarif başlıkla sahnede zarif hareketler sergileyen geleneksel bir Çin opera sanatçısı.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-5-poster.webp",
+              "alt": "Çin opera sanatçısı"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-5.mp4"
+          },
+          {
+            "title": "Ürün Vitrini",
+            "description": "Birden fazla renk ve desende zarif kurdeleler; ürün fotoğrafçılığı ve ticari video oluşturmayı sergiliyor.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-8-poster.webp",
+              "alt": "Renkli kurdeleler ürün gösterimi"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-8.mp4"
+          },
+          {
+            "title": "Asansör Sahnesi",
+            "description": "Yörünge çekimleri ve zoom efektleri dahil dramatik kamera çalışmasıyla Hitchcock tarzı gergin bir asansör sahnesi.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-10-poster.webp",
+              "alt": "Asansörde dramatik sahne"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-10.mp4"
+          },
+          {
+            "title": "Wuxia Dövüşü",
+            "description": "Dinamik dövüş koreografisi ile sonbahar ormanında 3D animasyon tarzında epik bir dövüş sanatları düellosu.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-14-poster.webp",
+              "alt": "Sonbahar ormanında dövüş sanatları"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-14.mp4"
+          },
+          {
+            "title": "Süper Araba Tanıtımı",
+            "description": "Sinematik aydınlatma, yansımalar ve otomotiv tanıtım tarzıyla yer altı otoparkında kırmızı bir Lamborghini.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-16-poster.webp",
+              "alt": "Otoparkta kırmızı Lamborghini"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-16.mp4"
+          },
+          {
+            "title": "Melek Uyanışı",
+            "description": "Taş melek heykelinin önünde parlayan kanatlara sahip eterik bir meleğin fantastik sahnesi; etkileyici VFX ve aydınlatma.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-17-poster.webp",
+              "alt": "Kanatlı melek fantezi sahnesi"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-17.mp4"
+          },
+          {
+            "title": "Moda Kataloğu",
+            "description": "Ritme senkronize kıyafet değişimleri ile dinamik bir moda çekimi; stil geçişlerini ve model pozlarını sergiliyor.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-19-poster.webp",
+              "alt": "Poz veren moda modeli"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-19.mp4"
+          },
+          {
+            "title": "Komik At",
+            "description": "Balıkgözü lens efektiyle battaniyeden bakan çizgi film atı; sesle senkronize animasyonu sergiliyor.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-30-poster.webp",
+              "alt": "Battaniyeli çizgi film atı"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-30.mp4"
+          },
+          {
+            "title": "Gün Batımı Koşucusu",
+            "description": "Canlı renklerle gün batımında şehir sokaklarında koşan genç bir adamın anime tarzı çizimi.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-38-poster.webp",
+              "alt": "Gün batımında anime koşucu"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-38.mp4"
+          },
+          {
+            "title": "Casus Gerilimi",
+            "description": "Casus gerilim tarzında, yoğun bir Avrupa sokağında kırmızı paltolu bir kadının tek çekim takip planı.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-40-poster.webp",
+              "alt": "Avrupa sokağında kırmızı paltolu kadın"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-40.mp4"
+          },
+          {
+            "title": "Moda Reklamı",
+            "description": "Geometrik arka planlar ve dinamik metin katmanları ile şık bir moda reklamı; ritme senkronize kurgu.",
+            "group": "fashion",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/seedance2-45-poster.webp",
+              "alt": "Geometrik arka planlı moda modeli"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/seedance2-45.mp4"
+          },
+          {
+            "title": "Jimnastikçi Zarafeti",
+            "description": "Dramatik spot ışığıyla loş aydınlatılmış bir spor salonunda denge aletinde performans sergileyen jimnastikçi; akıcı vücut hareketleri.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1-poster.webp",
+              "alt": "Denge aletinde jimnastikçi"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-1.mp4"
+          },
+          {
+            "title": "Denge Aleti",
+            "description": "Sinematik yandan çekim ve atmosferik spor salonu aydınlatmasıyla denge aletinde zarif bir şekilde yürüyen jimnastikçi.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2-poster.webp",
+              "alt": "Denge aletinde yürüyen jimnastikçi"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/angry-tom-2.mp4"
+          },
+          {
+            "title": "Ejderha Düellosu",
+            "description": "Geleneksel Çin dövüş sanatları tapınağında Dragon Ball'dan esinlenen bir dövüş; dinamik 3D karakter animasyonu.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals-poster.webp",
+              "alt": "Dragon Ball tarzı dövüş sanatları"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/awesome-visuals.mp4"
+          },
+          {
+            "title": "Sokak Koşucuları",
+            "description": "Karanlık bir şehir ara sokağında koşan anime tarzı karakterler; dinamik pozlar ve canlı sokak modası estetiği.",
+            "group": "animation",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong-poster.webp",
+              "alt": "Şehirde koşan anime karakterleri"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/jinghui-dong.mp4"
+          },
+          {
+            "title": "Savaş Bölgesi",
+            "description": "Gerçekçi araç fiziği ve atmosferik efektlerle dramatik bir savaş sahnesinde şehir sokaklarında ilerleyen askeri tanklar.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-1-poster.webp",
+              "alt": "Şehir sokaklarında askeri tanklar"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-1.mp4"
+          },
+          {
+            "title": "Kalabalıktan Kaçış",
+            "description": "Sinematik alan derinliği ve gerçekçi kalabalık dinamikleriyle şehir sokaklarında devasa bir kalabalığın içinden koşan adam.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/levelsio-2-poster.webp",
+              "alt": "Kalabalıkta koşan adam"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/levelsio-2.mp4"
+          },
+          {
+            "title": "Fantastik Yolculuk",
+            "description": "Etkileyici manzara ve atmosferik bulutlarla okyanusun ötesindeki fantastik bir kale şehrine bakan teknedeki genç çocuk.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/long4ai-poster.webp",
+              "alt": "Fantezi kale ile teknedeki çocuk"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/long4ai.mp4"
+          },
+          {
+            "title": "Avrupa Gezintisi",
+            "description": "Doğal yaya hareketi ve otantik sokak atmosferiyle yoğun bir Avrupa şehrinde birinci şahıs sokak seviyesinde yürüyüş.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle-poster.webp",
+              "alt": "Avrupa sokağında yürüyen insanlar"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/melih-karakelle.mp4"
+          },
+          {
+            "title": "Antik Güzeller",
+            "description": "Büyüleyici bir antik kasaba gece pazarında zarif saç aksesuarlarıyla geleneksel Çin hanfu kostümü giymiş iki kız.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/qhgy-poster.webp",
+              "alt": "Çin hanfu kostümlü kızlar"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/qhgy.mp4"
+          },
+          {
+            "title": "Saha Çalımı",
+            "description": "Dinamik kamera açıları ve gerçekçi oyuncu hareketleriyle profesyonel bir sahada yoğun bir basketbol çalım sahnesi.",
+            "group": "creative",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/sino-market-poster.webp",
+              "alt": "Sahada basketbol çalımı"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/sino-market.mp4"
+          },
+          {
+            "title": "Meyhane Baskını",
+            "description": "Akıcı dövüş koreografisi ve dramatik aydınlatmayla geleneksel bir Çin meyhanesinde ninjalara karşı savaşan dövüş ustası.",
+            "group": "cinematic",
+            "image": {
+              "src": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai-poster.webp",
+              "alt": "Meyhanede dövüş sanatları"
+            },
+            "video": "https://image.agent-skills.cc/uploads/showcases/yangguang-ai.mp4"
+          }
+        ]
+      }
+    }
+  }
+}
