@@ -3,7 +3,9 @@
     "show_sections": [
       "hero",
       "introduce",
-      "benefits",
+      "benefit-1",
+      "benefit-2",
+      "benefit-3",
       "features",
       "pricing",
       "faq",
@@ -86,76 +88,93 @@
         ],
         "className": "bg-muted"
       },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "为什么选择 seedancetwo",
-        "label": "核心优势",
-        "description": "为内容创作者与产品团队打造，兼顾效果质量、生成速度和可控性。",
-        "items": [
-          {
-            "title": "多场景连贯输出",
-            "description": "镜头切换更自然，叙事连续性更强，减少后期拼接成本。",
-            "icon": "RiFilmLine",
-            "image": {
-              "src": "https://image.agent-skills.cc/uploads/ad7d81dd18c2e3a554f532f37c9861aa.mp4",
-              "alt": "多场景连贯输出"
-            }
-          },
-          {
-            "title": "音画同步能力",
-            "description": "支持音频节奏和口型同步方向，让成片更接近真实表达。",
-            "icon": "RiVolumeUpLine",
-            "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-zh-benefits-2/960/640.webp",
-              "alt": "音画同步能力"
-            }
-          },
-          {
-            "title": "多比例适配发布",
-            "description": "兼容横版、竖版和方形输出，适配社媒、广告与落地页场景。",
-            "icon": "RiLayoutMasonryLine",
-            "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-zh-benefits-3/960/640.webp",
-              "alt": "多比例适配发布"
-            }
-          }
-        ]
+      "benefit-1": {
+        "block": "features-media",
+        "id": "benefit-1",
+        "image_position": "left",
+        "title": "基础能力显著增强：更稳、更顺、更像真的！",
+        "description": "不只是多模态，Seedance 2.0 在基础层面显著增强，物理规律更合理、动作表现更自然流畅、指令理解更精准、风格保持更稳定，不仅能稳定完成复杂动作、连续运动等高难度生成任务，也让整体视频效果更真实、更顺滑，是一次底层能力的全面进化！",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_002.mp4",
+          "alt": "基础能力显著增强"
+        }
+      },
+      "benefit-2": {
+        "block": "features-media",
+        "id": "benefit-2",
+        "image_position": "right",
+        "title": "多模态全面升级：视频创作进入「自由组合」时代！",
+        "description": "支持上传文本、图片、视频、音频，这些素材都可以被用作使用对象或参考对象。你可以参考任何内容的动作、特效、形式、运镜、人物、场景、声音，只要提示词写得清楚，模型都能理解。Seedance 2.0 = 多模态参考能力（可参考万物）+ 强创意生成 + 指令响应精准（理解力很棒）",
+        "image": {
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4",
+          "alt": "多模态全面升级"
+        }
+      },
+      "benefit-3": {
+        "block": "features-media",
+        "id": "benefit-3",
+        "image_position": "left",
+        "title": "一致性全面提升",
+        "description": "画面里人物前后长得不一样、商品细节丢了、小字模糊、场景跳变、镜头风格无法统一……这些在创作中常见的一致性问题，现在在 2.0 中都能被解决。从人脸到服装，再到字体细节，整体一致性更稳、更准。",
+        "image": {
+          "src": "https://picsum.photos/seed/seedancetwo-zh-benefits-3/960/640.webp",
+          "alt": "一致性全面提升"
+        }
       },
       "features": {
         "id": "features",
         "title": "核心能力",
-        "description": "覆盖 AI 视频生成首版上线所需的关键能力。",
+        "description": "“参考能力”是最大亮点，你可以用一张图定下画面风格，用一个视频指定角色的动作和镜头的变化，再用几秒音频带起节奏氛围……搭配提示词，让创作过程变得更自然、更高效，也更像真正的“导演”",
         "items": [
           {
-            "title": "文生视频",
-            "description": "通过文本描述快速生成镜头、动作与场景变化。",
-            "icon": "RiVideoLine"
+            "title": "一致性全面提升",
+            "description": "角色面部、服装、字体等细节在多镜头间高度一致，不再前后变样。",
+            "icon": "RiShieldCheckLine"
           },
           {
-            "title": "图生视频",
-            "description": "基于图片生成动态视频，保留主体结构和视觉风格。",
-            "icon": "RiImageAddLine"
+            "title": "运镜与动作精准复刻",
+            "description": "上传参考视频即可复刻复杂走位和运镜，无需逐帧描述。",
+            "icon": "RiCameraLine"
           },
           {
-            "title": "多镜头连贯叙事",
-            "description": "在一个生成序列中维持角色一致性与叙事连续性。",
-            "icon": "RiStoryboardLine"
+            "title": "创意模版 / 特效复刻",
+            "description": "创意转场、广告成片、电影片段等复杂效果均可精准还原。",
+            "icon": "RiMagicLine"
           },
           {
-            "title": "电影感输出",
-            "description": "面向高质量展示场景，适配营销内容和产品演示。",
-            "icon": "RiMovieLine"
+            "title": "创意与剧情补全",
+            "description": "模型自主补全剧情走向与创意细节，叙事更饱满自然。",
+            "icon": "RiQuillPenLine"
           },
           {
-            "title": "动作与节奏控制",
-            "description": "通过提示词控制镜头运动、节奏与画面重点。",
-            "icon": "RiFocus3Line"
+            "title": "视频延长",
+            "description": "平滑延长与衔接，按提示生成连续镜头，不止生成还能接着拍。",
+            "icon": "RiTimeLine"
           },
           {
-            "title": "高效迭代流程",
-            "description": "可重复的参数组合和流程配置，便于持续优化结果。",
-            "icon": "RiLoopLeftLine"
+            "title": "音色更准，声音更真",
+            "description": "语音音色自然逼真，对白和旁白表现力大幅提升。",
+            "icon": "RiVoiceprintLine"
+          },
+          {
+            "title": "一镜到底更流畅",
+            "description": "长镜头无断裂，场景衔接自然，镜头连贯性大幅增强。",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "视频编辑可用度高",
+            "description": "对已有视频定向修改指定片段，无需重新生成整段内容。",
+            "icon": "RiScissors2Line"
+          },
+          {
+            "title": "音乐卡点",
+            "description": "音频节奏与画面动作精准对齐，视频更具韵律感。",
+            "icon": "RiMusic2Line"
+          },
+          {
+            "title": "情绪演绎更好",
+            "description": "角色表情、肢体语言更到位，叙事感染力更强。",
+            "icon": "RiEmotionLine"
           }
         ]
       },

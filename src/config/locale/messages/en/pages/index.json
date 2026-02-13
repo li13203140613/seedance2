@@ -125,38 +125,58 @@
       },
       "features": {
         "id": "features",
-        "title": "seedance2-two core capabilities",
-        "description": "Everything needed for a practical seedance video generation workflow powered by seedance2-two.",
+        "title": "Core Capabilities",
+        "description": "Ten major upgrades from consistency to emotional performance—making AI video creation more natural and efficient.",
         "items": [
           {
-            "title": "Text-to-seedance-video",
-            "description": "Convert detailed prompts into cinematic seedance video clips with camera motion, subject behavior, and scene transitions.",
-            "icon": "RiVideoLine"
+            "title": "Overall Consistency",
+            "description": "Faces, outfits, text, and scene details stay coherent across multi-shot sequences.",
+            "icon": "RiShieldCheckLine"
           },
           {
-            "title": "Image-to-seedance-video",
-            "description": "Turn still images into dynamic seedance video sequences while preserving key visual composition cues.",
-            "icon": "RiImageAddLine"
+            "title": "Camera & Motion Replication",
+            "description": "Upload a reference video to replicate complex camera work and choreography precisely.",
+            "icon": "RiCameraLine"
           },
           {
-            "title": "Multi-shot narrative continuity",
-            "description": "Generate connected shots that keep style and character consistency across the full seedance video sequence.",
-            "icon": "RiStoryboardLine"
+            "title": "Creative Template Replication",
+            "description": "Reproduce creative transitions, ad edits, and film clips from reference media.",
+            "icon": "RiMagicLine"
           },
           {
-            "title": "Cinematic quality seedance video output",
-            "description": "Target high-quality seedance video exports suitable for social, marketing, and concept demonstration workflows.",
-            "icon": "RiMovieLine"
+            "title": "Creative Story Completion",
+            "description": "The model fills in narrative details and creative nuances autonomously.",
+            "icon": "RiQuillPenLine"
           },
           {
-            "title": "Prompt-level motion control",
-            "description": "Guide pacing, camera intent, and visual focus directly through seedance2-two prompt strategy and shot framing.",
-            "icon": "RiFocus3Line"
+            "title": "Video Extension",
+            "description": "Smoothly extend and continue shots with prompt-guided generation.",
+            "icon": "RiTimeLine"
           },
           {
-            "title": "Fast seedance video iteration loop",
-            "description": "Refine seedance video ideas quickly with repeatable parameters and simple controls for teams and solo creators.",
-            "icon": "RiLoopLeftLine"
+            "title": "Accurate Voice & Tone",
+            "description": "Natural and lifelike voice timbre for dialogue and narration.",
+            "icon": "RiVoiceprintLine"
+          },
+          {
+            "title": "Long-Take Continuity",
+            "description": "Seamless long takes with fluid scene transitions and no visual breaks.",
+            "icon": "RiFilmLine"
+          },
+          {
+            "title": "Practical Video Editing",
+            "description": "Make targeted edits to existing videos without full regeneration.",
+            "icon": "RiScissors2Line"
+          },
+          {
+            "title": "Music Beat Sync",
+            "description": "Align visual actions precisely to audio beats for rhythmic videos.",
+            "icon": "RiMusic2Line"
+          },
+          {
+            "title": "Better Emotional Performance",
+            "description": "Improved expressions and body language for stronger narrative impact.",
+            "icon": "RiEmotionLine"
           }
         ]
       },

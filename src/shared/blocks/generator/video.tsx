@@ -62,6 +62,14 @@ interface BackendTask {
 
 type VideoGeneratorTab = 'text-to-video' | 'image-to-video';
 
+const SHOWCASE_VIDEOS = [
+  'https://image.agent-skills.cc/uploads/manual/video_032.mp4',
+  'https://image.agent-skills.cc/uploads/manual/video_001.mp4',
+  'https://image.agent-skills.cc/uploads/manual/video_003.mp4',
+  'https://image.agent-skills.cc/uploads/manual/video_005.mp4',
+  'https://image.agent-skills.cc/uploads/manual/video_010.mp4',
+];
+
 const POLL_INTERVAL = 15000;
 const GENERATION_TIMEOUT = 600000; // 10 minutes for video
 const MAX_PROMPT_LENGTH = 2000;
@@ -276,6 +284,7 @@ export function VideoGenerator({
     null
   );
   const [isMounted, setIsMounted] = useState(false);
+  const [showcaseIndex, setShowcaseIndex] = useState(0);
 
   const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
     useAppContext();
@@ -954,17 +963,34 @@ export function VideoGenerator({
                     ))}
                   </div>
                 ) : (
-                  <div className="relative overflow-hidden rounded-lg">
+                  <div className="space-y-4">
+                    <div className="relative overflow-hidden rounded-lg">
                       <video
-                        src="https://image.agent-skills.cc/uploads/manual/video_032.mp4"
+                        key={showcaseIndex}
+                        src={SHOWCASE_VIDEOS[showcaseIndex]}
                         autoPlay
                         loop
                         muted
                         playsInline
-                        className="h-full w-full object-cover rounded-lg"
+                        className="h-full w-full rounded-lg object-cover"
                         preload="metadata"
                       />
                     </div>
+                    <div className="flex items-center justify-center gap-2">
+                      {SHOWCASE_VIDEOS.map((_, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => setShowcaseIndex(idx)}
+                          className={`h-2.5 rounded-full transition-all ${
+                            idx === showcaseIndex
+                              ? 'bg-primary w-6'
+                              : 'bg-muted-foreground/30 hover:bg-muted-foreground/50 w-2.5'
+                          }`}
+                          aria-label={`Showcase video ${idx + 1}`}
+                        />
+                      ))}
+                    </div>
+                  </div>
                 )}
               </CardContent>
             </Card>
