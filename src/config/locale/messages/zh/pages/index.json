@@ -36,14 +36,6 @@
         "avatars_tip": "",
         "show_award": false,
         "show_video_generator": true,
-        "image": {
-          "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4",
-          "alt": "seedancetwo hero video"
-        },
-        "image_invert": {
-          "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4",
-          "alt": "seedancetwo hero video dark"
-        },
         "background_video": {
           "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4"
         },
