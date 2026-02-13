@@ -41,6 +41,7 @@ export function Hero({
             <Highlighter action="underline" color="#7C3AED">
               {highlightText}
             </Highlighter>
+            <br />
             {texts[1]}
           </h1>
         ) : (
