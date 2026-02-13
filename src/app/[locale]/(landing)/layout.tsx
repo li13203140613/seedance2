@@ -28,7 +28,7 @@ export default async function LandingLayout({
       <LocaleDetector />
       {header.topbanner && header.topbanner.text && (
         <TopBanner
-          id="topbanner"
+          id="seedance2-launch-feb24"
           text={header.topbanner?.text}
           buttonText={header.topbanner?.buttonText}
           href={header.topbanner?.href}

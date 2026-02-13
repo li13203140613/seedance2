@@ -187,32 +187,40 @@
       },
       "faq": {
         "id": "faq",
-        "title": "Frequently asked questions about seedance2-two",
-        "description": "Need help planning your first seedance video? Contact us by email.",
+        "title": "Frequently Asked Questions About seedancetwo",
+        "description": "Everything you need to know about seedancetwo before creating your first seedance2 AI video. Reach out by email anytime.",
         "items": [
           {
-            "question": "What is seedance2-two?",
-            "answer": "seedance2-two is an AI-powered seedance video generator for creating cinematic clips from text or image inputs."
+            "question": "How many credits does one seedancetwo video cost?",
+            "answer": "Each seedancetwo generation costs credits based on duration and resolution. seedance2 offers flexible credit packs from starter to professional tiers—check the pricing page to find the right seedancetwo plan for your budget."
           },
           {
-            "question": "Does seedance2-two support both text and image inputs?",
-            "answer": "Yes. You can start from a prompt for text-to-seedance-video or upload a still image for image-to-seedance-video generation."
+            "question": "What resolution and aspect ratios does seedancetwo support?",
+            "answer": "seedancetwo outputs high-definition video in 16:9 landscape, 9:16 portrait, and 1:1 square. seedance2 formats cover YouTube, TikTok, Instagram Reels, and professional ad campaigns with seedancetwo quality."
           },
           {
-            "question": "Can seedance2-two create multi-scene seedance video?",
-            "answer": "Yes. seedance2-two is designed for multi-shot storytelling so one generation can include coherent scene changes in your seedance video."
+            "question": "How does seedancetwo keep characters consistent across scenes?",
+            "answer": "seedancetwo locks faces, outfits, and props using its Overall Consistency engine. With seedance2, characters stay visually identical from the first shot to the last in multi-scene seedancetwo projects."
           },
           {
-            "question": "Is audio synchronization supported in seedance2-two?",
-            "answer": "seedance2-two supports synchronized audio and lip-sync style output for more natural seedance video results."
+            "question": "Can seedancetwo replicate camera movements from a reference video?",
+            "answer": "Yes. Upload a reference clip and seedancetwo reproduces the panning, zooming, and choreography. seedance2 Camera Replication matches professional-grade shots accurately in your seedancetwo workflow."
           },
           {
-            "question": "What seedance video formats can I export?",
-            "answer": "seedance2-two lets you generate seedance video assets for common use cases such as landscape, portrait, and square workflows."
+            "question": "Does seedancetwo sync video cuts to background music beats?",
+            "answer": "seedancetwo aligns visual actions and transitions precisely to your audio rhythm. seedance2 Music Beat Sync is ideal for TikTok, Reels, and rhythm-driven seedancetwo showcase content."
           },
           {
-            "question": "How can I get seedance2-two support?",
-            "answer": "Email us at support@seedancetwo.com for seedance2-two setup and customization questions."
+            "question": "Can I edit parts of a seedancetwo video without regenerating it entirely?",
+            "answer": "Yes. seedancetwo supports practical video editing—modify targeted sections without re-rendering the full clip. seedance2 saves you credits by refining specific frames in your seedancetwo output."
+          },
+          {
+            "question": "Does seedancetwo support lip-sync dialogue and voiceover?",
+            "answer": "seedancetwo generates accurate lip-sync with natural voice timbre for dialogue and narration. seedance2 Voice & Tone technology makes character speech feel authentic in seedancetwo videos."
+          },
+          {
+            "question": "Can I use seedancetwo videos for commercial purposes?",
+            "answer": "All videos created with seedancetwo are available for commercial use including ads, product pages, and social campaigns. See the seedance2 terms of service for complete seedancetwo licensing details."
           }
         ]
       },
