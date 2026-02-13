@@ -12,9 +12,9 @@
     "sections": {
       "hero": {
         "id": "hero",
-        "title": "用 seedancetwo 生成电影感 AI 视频",
-        "highlight_text": "seedancetwo",
-        "description": "支持文生视频与图生视频，快速生成多镜头叙事内容并保持音画同步。<br/>适合内容创作、营销素材和产品演示等高频场景。",
+        "title": "SeeDanceTwo 能听懂你表达的视频模型",
+        "highlight_text": "SeeDanceTwo",
+        "description": "最突出的参考能力，用视频指定角色的动作和镜头变化<br/>加上几秒音频带起节奏氛围……搭配提示词，让创作过程变得更自然、更高效，也更像真正的导演在创作",
         "buttons": [
           {
             "title": "开始体验",
@@ -36,7 +36,7 @@
         "show_award": false,
         "show_video_generator": true,
         "background_video": {
-          "src": "https://image.agent-skills.cc/uploads/seedance-hero-showcase-hd.mp4"
+          "src": "https://image.agent-skills.cc/uploads/video_030.mp4"
         },
         "background_image": {
           "src": "https://picsum.photos/seed/seedancetwo-zh-hero-bg/1600/900.webp",
@@ -48,46 +48,46 @@
         "id": "introduce",
         "title": "什么是 seedancetwo？",
         "label": "产品简介",
-        "description": "seedancetwo 参考 Seedance 风格流程，帮助团队把文本和图片快速转成电影感视频片段。",
+        "description": "Seedance two 支持图像、视频、音频、文本四种模态输入，表达方式更丰富，生成也更可控",
         "image": {
           "src": "https://image.agent-skills.cc/uploads/seedance-hero-main.mp4",
           "alt": "seedancetwo 产品简介"
         },
         "items": [
           {
-            "title": "多镜头叙事",
-            "description": "一次输入可生成连贯的多场景片段，角色与画面风格保持一致。",
-            "icon": "RiMovie2Line",
-            "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-zh-introduce-1/960/640.webp",
-              "alt": "多镜头叙事"
-            }
-          },
-          {
-            "title": "文生视频",
-            "description": "通过自然语言描述镜头和动作，即可快速得到高质量视频草案。",
-            "icon": "RiQuillPenAiLine",
-            "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-zh-introduce-2/960/640.webp",
-              "alt": "文生视频"
-            }
-          },
-          {
-            "title": "图生视频",
-            "description": "上传参考图片即可生成动态镜头，保留画面主体和构图风格。",
+            "title": "参考图像",
+            "description": "精准还原画面构图、角色细节",
             "icon": "RiImage2Line",
             "image": {
-              "src": "https://picsum.photos/seed/seedancetwo-zh-introduce-3/960/640.webp",
-              "alt": "图生视频"
+              "src": "https://picsum.photos/seed/seedancetwo-zh-introduce-1/960/640.webp",
+              "alt": "参考图像"
             }
           },
           {
-            "title": "快速迭代",
-            "description": "支持短周期反复调参，适配内容团队和产品团队的高频创作节奏。",
-            "icon": "RiFlashlightLine",
+            "title": "参考视频",
+            "description": "支持镜头语言、复杂的动作节奏、创意特效的复刻",
+            "icon": "RiMovie2Line",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-zh-introduce-2/960/640.webp",
+              "alt": "参考视频"
+            }
+          },
+          {
+            "title": "视频延长",
+            "description": "支持平滑延长与衔接，可按用户提示生成连续镜头，不止生成，还能「接着拍」",
+            "icon": "RiTimeLine",
+            "image": {
+              "src": "https://picsum.photos/seed/seedancetwo-zh-introduce-3/960/640.webp",
+              "alt": "视频延长"
+            }
+          },
+          {
+            "title": "视频编辑",
+            "description": "支持对已有视频进行角色更替、删减、增加",
+            "icon": "RiScissors2Line",
             "image": {
               "src": "https://picsum.photos/seed/seedancetwo-zh-introduce-4/960/640.webp",
-              "alt": "快速迭代"
+              "alt": "视频编辑"
             }
           }
         ],
