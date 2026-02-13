@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 
 import { LazyImage, SmartIcon } from '@/shared/blocks/common';
+import { LazyVideo } from '@/shared/blocks/common/lazy-video';
 import { cn } from '@/shared/lib/utils';
 import { Section } from '@/shared/types/blocks/landing';
 
@@ -46,11 +47,18 @@ export function FeaturesMedia({ section }: { section: Section }) {
               ease: [0.22, 1, 0.36, 1] as const,
             }}
           >
-            <LazyImage
-              src={section.image?.src ?? ''}
-              className="rounded-2xl"
-              alt={section.image?.alt ?? ''}
-            />
+            {section.image?.src?.endsWith('.mp4') ? (
+              <LazyVideo
+                src={section.image.src}
+                className="w-full rounded-2xl"
+              />
+            ) : (
+              <LazyImage
+                src={section.image?.src ?? ''}
+                className="rounded-2xl"
+                alt={section.image?.alt ?? ''}
+              />
+            )}
           </motion.div>
 
           <motion.div

@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
+  ChevronLeft,
+  ChevronRight,
   CreditCard,
   Download,
   Loader2,
@@ -63,11 +65,8 @@ interface BackendTask {
 type VideoGeneratorTab = 'text-to-video' | 'image-to-video';
 
 const SHOWCASE_VIDEOS = [
+  'https://image.agent-skills.cc/uploads/manual/v2_021.mp4',
   'https://image.agent-skills.cc/uploads/manual/video_032.mp4',
-  'https://image.agent-skills.cc/uploads/manual/video_001.mp4',
-  'https://image.agent-skills.cc/uploads/manual/video_003.mp4',
-  'https://image.agent-skills.cc/uploads/manual/video_005.mp4',
-  'https://image.agent-skills.cc/uploads/manual/video_010.mp4',
 ];
 
 const POLL_INTERVAL = 15000;
@@ -975,6 +974,21 @@ export function VideoGenerator({
                         className="h-full w-full rounded-lg object-cover"
                         preload="metadata"
                       />
+                      {/* Left/Right arrows */}
+                      <button
+                        onClick={() => setShowcaseIndex((prev) => (prev - 1 + SHOWCASE_VIDEOS.length) % SHOWCASE_VIDEOS.length)}
+                        className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-1.5 text-white backdrop-blur-sm transition-colors hover:bg-black/60"
+                        aria-label="Previous video"
+                      >
+                        <ChevronLeft className="h-5 w-5" />
+                      </button>
+                      <button
+                        onClick={() => setShowcaseIndex((prev) => (prev + 1) % SHOWCASE_VIDEOS.length)}
+                        className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/40 p-1.5 text-white backdrop-blur-sm transition-colors hover:bg-black/60"
+                        aria-label="Next video"
+                      >
+                        <ChevronRight className="h-5 w-5" />
+                      </button>
                     </div>
                     <div className="flex items-center justify-center gap-2">
                       {SHOWCASE_VIDEOS.map((_, idx) => (

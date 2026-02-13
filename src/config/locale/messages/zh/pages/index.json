@@ -31,7 +31,7 @@
         "show_award": false,
         "show_video_generator": true,
         "background_video": {
-          "src": "https://image.agent-skills.cc/uploads/video_030.mp4"
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4"
         },
         "background_image": {
           "src": "https://picsum.photos/seed/seedancetwo-zh-hero-bg/1600/900.webp",
@@ -45,7 +45,7 @@
         "label": "产品简介",
         "description": "Seedance two 支持图像、视频、音频、文本四种模态输入，表达方式更丰富，生成也更可控",
         "image": {
-          "src": "https://image.agent-skills.cc/uploads/seedance-hero-main.mp4",
+          "src": "https://image.agent-skills.cc/uploads/video_030.mp4",
           "alt": "seedancetwo 产品简介"
         },
         "items": [
@@ -117,7 +117,7 @@
         "title": "一致性全面提升",
         "description": "画面里人物前后长得不一样、商品细节丢了、小字模糊、场景跳变、镜头风格无法统一……这些在创作中常见的一致性问题，现在在 2.0 中都能被解决。从人脸到服装，再到字体细节，整体一致性更稳、更准。",
         "image": {
-          "src": "https://picsum.photos/seed/seedancetwo-zh-benefits-3/960/640.webp",
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_017.mp4",
           "alt": "一致性全面提升"
         }
       },

@@ -30,7 +30,7 @@
         "show_award": false,
         "show_video_generator": true,
         "background_video": {
-          "src": "https://image.agent-skills.cc/uploads/video_030.mp4"
+          "src": "https://image.agent-skills.cc/uploads/manual/v2_005.mp4"
         },
         "background_image": {
           "src": "https://picsum.photos/seed/seedancetwo-en-hero-bg/1600/900.webp",
@@ -44,7 +44,7 @@
         "label": "Overview",
         "description": "seedance2-two is an AI seedance video generation platform that helps teams turn prompts and images into cinematic clips quickly with powerful seedance video tools.",
         "image": {
-          "src": "https://image.agent-skills.cc/uploads/seedance-hero-main.mp4",
+          "src": "https://image.agent-skills.cc/uploads/video_030.mp4",
           "alt": "seedance2-two overview"
         },
         "items": [
