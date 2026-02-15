@@ -31,6 +31,7 @@ function VideoCard({
 }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isHovered, setIsHovered] = useState(false);
+  const [isVideoReady, setIsVideoReady] = useState(false);
   const aspectClass = ASPECT_PATTERNS[index % ASPECT_PATTERNS.length];
 
   const handleMouseEnter = () => {
@@ -47,6 +48,8 @@ function VideoCard({
       videoRef.current.pause();
     }
   };
+
+  const showVideo = isHovered && isVideoReady;
 
   return (
     <motion.div
@@ -71,7 +74,7 @@ function VideoCard({
           decoding="async"
           className={cn(
             'absolute inset-0 h-full w-full object-cover transition-all duration-500',
-            isHovered && item.video ? 'scale-105 opacity-0' : 'opacity-100'
+            showVideo ? 'scale-105 opacity-0' : 'opacity-100'
           )}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
@@ -81,12 +84,13 @@ function VideoCard({
             src={item.video}
             className={cn(
               'absolute inset-0 h-full w-full object-cover transition-opacity duration-500',
-              isHovered ? 'opacity-100' : 'opacity-0'
+              showVideo ? 'opacity-100' : 'opacity-0'
             )}
             muted
             loop
             playsInline
             preload="none"
+            onCanPlay={() => setIsVideoReady(true)}
           />
         )}
         {item.video && !isHovered && (
