@@ -93,7 +93,13 @@ const backlinks = [
   },
   { href: 'https://acidtools.com', label: 'Acid Tools' },
   { href: 'https://www.showmysites.com', label: 'ShowMySites' },
-  { href: 'https://submitaitools.org', label: 'Submit AI Tools' },
+  {
+    href: 'https://submitaitools.org',
+    img: 'https://submitaitools.org/static_submitaitools/images/submitaitools.png',
+    alt: 'Submit AI Tools – The ultimate platform to discover, submit, and explore the best AI tools across various categories.',
+    width: 200,
+    height: 60,
+  },
   {
     href: 'https://aiagentsdirectory.com/agent/xiaofei-li?utm_source=badge&utm_medium=referral&utm_campaign=free_listing&utm_content=xiaofei-li',
     img: 'https://aiagentsdirectory.com/featured-badge.svg?v=2024',
