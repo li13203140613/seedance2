@@ -138,40 +138,32 @@
               "Les crédits n'expirent jamais"
             ],
             "interval": "one-time",
-            "amount": 100,
+            "amount": 1500,
             "currency": "USD",
-            "price": "$1",
+            "price": "$15",
             "unit": "",
             "is_featured": false,
             "is_payg": true,
-            "credits": 10,
-            "cost_per_100": "$1 = 10 crédits",
+            "credits": 150,
+            "cost_per_100": "$15 = 150 crédits",
             "tip": "Paiement unique",
             "button": {
               "title": "Acheter des crédits",
               "url": "/#pricing"
             },
-            "product_id": "credits-30",
-            "product_name": "Seedance Credits 30",
+            "product_id": "credits-500",
+            "product_name": "Seedance Credits 500",
             "valid_days": 9999,
             "group": "monthly",
             "credit_packs": [
-              {
-                "credits": 10,
-                "label": "10 crédits",
-                "price": "$1",
-                "amount": 100,
-                "product_id": "credits-30",
-                "product_name": "Seedance Credits 30",
-                "is_default": true
-              },
               {
                 "credits": 150,
                 "label": "150 crédits",
                 "price": "$15",
                 "amount": 1500,
                 "product_id": "credits-500",
-                "product_name": "Seedance Credits 500"
+                "product_name": "Seedance Credits 500",
+                "is_default": true
               },
               {
                 "credits": 300,
@@ -347,40 +339,32 @@
               "Les crédits n'expirent jamais"
             ],
             "interval": "one-time",
-            "amount": 100,
+            "amount": 1500,
             "currency": "USD",
-            "price": "$1",
+            "price": "$15",
             "unit": "",
             "is_featured": false,
             "is_payg": true,
-            "credits": 10,
-            "cost_per_100": "$1 = 10 crédits",
+            "credits": 150,
+            "cost_per_100": "$15 = 150 crédits",
             "tip": "Paiement unique",
             "button": {
               "title": "Acheter des crédits",
               "url": "/#pricing"
             },
-            "product_id": "credits-30",
-            "product_name": "Seedance Credits 30",
+            "product_id": "credits-500",
+            "product_name": "Seedance Credits 500",
             "valid_days": 9999,
             "group": "yearly",
             "credit_packs": [
-              {
-                "credits": 10,
-                "label": "10 crédits",
-                "price": "$1",
-                "amount": 100,
-                "product_id": "credits-30",
-                "product_name": "Seedance Credits 30",
-                "is_default": true
-              },
               {
                 "credits": 150,
                 "label": "150 crédits",
                 "price": "$15",
                 "amount": 1500,
                 "product_id": "credits-500",
-                "product_name": "Seedance Credits 500"
+                "product_name": "Seedance Credits 500",
+                "is_default": true
               },
               {
                 "credits": 300,
