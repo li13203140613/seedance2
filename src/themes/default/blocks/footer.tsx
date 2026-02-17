@@ -107,7 +107,13 @@ const backlinks = [
     height: 50,
   },
   { href: 'https://aiagentsdirectory.com/agent/seedance-20', label: 'AI Agents Directory - Seedance' },
-  { href: 'https://code.market', label: 'Code Market' },
+  {
+    href: 'https://code.market?code.market-verified',
+    img: 'https://code.market/assets/manage-product/featured-logo-bright.svg',
+    alt: 'ai tools code.market',
+    width: 140,
+    height: 39,
+  },
   { href: 'https://startupfa.st', label: 'Startup Fast' },
   { href: 'https://dironix.com', label: 'Dironix' },
   { href: 'https://dofollow.tools', label: 'Dofollow Tools' },
@@ -260,6 +266,17 @@ export function Footer({ footer }: { footer: FooterType }) {
             </div>
           ) : null}
         </div>
+      </div>
+
+      {/* Code.Market partners widget */}
+      <div className="container mt-8">
+        <div
+          data-codemarket-widget="seedancetwocom"
+          data-theme-bg="#ffffff"
+          data-theme-text="slate-600"
+          data-layout="grid"
+          data-show-branding="false"
+        />
       </div>
 
       {/* Scrolling backlinks marquee */}

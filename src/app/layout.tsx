@@ -2,6 +2,7 @@ import '@/config/style/global.css';
 
 import { Inter, JetBrains_Mono, Merriweather } from 'next/font/google';
 import { getLocale, setRequestLocale } from 'next-intl/server';
+import Script from 'next/script';
 import NextTopLoader from 'nextjs-toploader';
 
 import { envConfigs } from '@/config';
@@ -176,6 +177,9 @@ export default async function RootLayout({
 
         {/* inject customer service body scripts */}
         {customerServiceBodyScripts}
+
+        {/* Code.Market partners widget */}
+        <Script src="https://code.market/widget.min.js" strategy="afterInteractive" />
       </body>
     </html>
   );
