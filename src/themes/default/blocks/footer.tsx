@@ -65,13 +65,12 @@ const backlinks = [
     height: 54,
   },
   {
-    href: 'https://findly.tools/seedream-5-0-1',
+    href: 'https://findly.tools/seedancetwo2-0?utm_source=seedancetwo2-0',
     img: 'https://findly.tools/badges/findly-tools-badge-light.svg',
     alt: 'Featured on findly.tools',
     width: 150,
     height: 54,
   },
-  { href: 'https://findly.tools/seedance2-0', label: 'Findly Tools - Seedance' },
   {
     href: 'https://goodaitools.com',
     img: 'https://goodaitools.com/assets/images/badge-dark.png',
