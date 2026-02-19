@@ -115,8 +115,8 @@ pre {
 .footer-marquee {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
-  padding: 0 1.25rem;
+  gap: 1.5rem;
+  padding: 0 0.75rem;
 }
 @keyframes footer-scroll {
   from {

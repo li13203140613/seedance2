@@ -100,6 +100,16 @@
               "target": "_self"
             }
           ]
+        },
+        {
+          "title": "联系我们",
+          "children": [
+            {
+              "title": "support@seedancetwo.com",
+              "url": "mailto:support@seedancetwo.com",
+              "target": "_self"
+            }
+          ]
         }
       ]
     },

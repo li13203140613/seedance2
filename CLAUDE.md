@@ -6,6 +6,8 @@ This file provides guidance to Claude Code when working with this codebase.
 
 | Date | Module | Changes | Scope | Note |
 |------|----------|----------|----------|------|
+| 2026-02-19 | Styles | Modified: global.css | src/config/style/global.css | AI Auto |
+| 2026-02-19 | Other | Modified: footer.tsx | src/themes/default/blocks/footer.tsx | AI Auto |
 | 2026-02-10 | Other | Modified: landing.json | src/config/locale/messages/en/landing.json | AI Auto |
 | 2026-02-10 | Other | Modified: tmp-check-manual.py | tmp-check-manual.py | AI Auto |
 | 2026-02-10 | Other | Modified: upload-v2-videos-r2.mjs | scripts/upload-v2-videos-r2.mjs | AI Auto |

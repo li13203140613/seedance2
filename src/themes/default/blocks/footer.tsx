@@ -140,16 +140,17 @@ function BacklinkItem({ item }: { item: (typeof backlinks)[number] }) {
       className={
         'img' in item
           ? 'shrink-0'
-          : 'text-muted-foreground hover:text-primary shrink-0 text-sm duration-150'
+          : 'text-muted-foreground hover:text-primary shrink-0 text-xs duration-150'
       }
     >
       {'img' in item ? (
         <img
           src={item.img}
           alt={item.alt}
-          width={item.width}
-          height={item.height}
+          width={Math.round(item.width * 0.7)}
+          height={Math.round(item.height * 0.7)}
           loading="lazy"
+          className="h-auto"
         />
       ) : (
         item.label
@@ -259,17 +260,6 @@ export function Footer({ footer }: { footer: FooterType }) {
             </div>
           ) : null}
         </div>
-      </div>
-
-      {/* Code.Market partners widget */}
-      <div className="container mt-8">
-        <div
-          data-codemarket-widget="seedancetwocom"
-          data-theme-bg="#ffffff"
-          data-theme-text="slate-600"
-          data-layout="grid"
-          data-show-branding="false"
-        />
       </div>
 
       {/* Scrolling backlinks marquee */}
