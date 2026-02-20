@@ -1,84 +1,73 @@
 'use client';
 
-import { useCallback, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useLocale } from 'next-intl';
-import { useSearchParams } from 'next/navigation';
 
 import { usePathname, useRouter } from '@/core/i18n/navigation';
 import { envConfigs } from '@/config';
 import { locales } from '@/config/locale';
-import { cacheGet, cacheSet } from '@/shared/lib/cache';
 
-const PREFERRED_LOCALE_KEY = 'locale';
+const MANUAL_LOCALE_KEY = 'locale';
+const AUTO_LOCALE_KEY = 'locale-auto';
+
+function detectBrowserLocale(): string | null {
+  if (typeof window === 'undefined') return null;
+
+  const browserLang = navigator.language || (navigator as any).userLanguage;
+  if (!browserLang) return null;
+
+  const langCode = browserLang.split('-')[0].toLowerCase();
+
+  // Chinese language (zh-CN, zh-TW, zh-HK, etc.)
+  if (langCode === 'zh') return 'zh';
+
+  // China region via timezone
+  try {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    if (
+      tz === 'Asia/Shanghai' ||
+      tz === 'Asia/Chongqing' ||
+      tz === 'Asia/Urumqi' ||
+      tz === 'Asia/Harbin'
+    ) {
+      return 'zh';
+    }
+  } catch {}
+
+  // Other supported locales
+  if (locales.includes(langCode)) return langCode;
+
+  return null;
+}
 
 export function LocaleDetector() {
-  if (envConfigs.locale_detect_enabled !== 'true') {
-    return null;
-  }
-
   const currentLocale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const hasCheckedRef = useRef(false);
 
-  const detectBrowserLocale = (): string | null => {
-    if (typeof window === 'undefined') return null;
-
-    const browserLang = navigator.language || (navigator as any).userLanguage;
-    const langCode = browserLang.split('-')[0].toLowerCase();
-
-    // Map to supported locale; default to 'en' if unsupported
-    if (locales.includes(langCode)) {
-      return langCode;
-    }
-
-    return 'en';
-  };
-
-  const switchToLocale = useCallback(
-    (locale: string) => {
-      const query = searchParams?.toString?.() ?? '';
-      const href = query ? `${pathname}?${query}` : pathname;
-      router.replace(href, { locale });
-      cacheSet(PREFERRED_LOCALE_KEY, locale);
-    },
-    [router, pathname, searchParams]
-  );
-
   useEffect(() => {
-    // Only run once
-    if (hasCheckedRef.current) {
-      return;
-    }
+    if (envConfigs.locale_detect_enabled !== 'true') return;
+    if (hasCheckedRef.current) return;
     hasCheckedRef.current = true;
 
-    // If user has previously set a locale preference, use that
-    const preferredLocale = cacheGet(PREFERRED_LOCALE_KEY);
-    if (
-      preferredLocale &&
-      preferredLocale !== currentLocale &&
-      locales.includes(preferredLocale)
-    ) {
-      switchToLocale(preferredLocale);
+    // If user explicitly chose a locale via locale selector, respect that
+    const isManualChoice = localStorage.getItem('locale-manual');
+    const savedLocale = localStorage.getItem(MANUAL_LOCALE_KEY);
+    if (isManualChoice && savedLocale && locales.includes(savedLocale)) {
+      if (savedLocale !== currentLocale) {
+        router.replace(pathname, { locale: savedLocale });
+      }
       return;
     }
 
-    // If user already has a preference matching current locale, do nothing
-    if (preferredLocale === currentLocale) {
-      return;
-    }
-
-    // Auto-detect and switch based on browser language
+    // Auto-detect browser locale
     const detectedLocale = detectBrowserLocale();
     if (detectedLocale && detectedLocale !== currentLocale) {
-      switchToLocale(detectedLocale);
-    } else if (detectedLocale) {
-      // Store current locale as preference to avoid re-detection
-      cacheSet(PREFERRED_LOCALE_KEY, currentLocale);
+      localStorage.setItem(AUTO_LOCALE_KEY, detectedLocale);
+      router.replace(pathname, { locale: detectedLocale });
     }
-  }, [currentLocale, switchToLocale]);
+  }, [currentLocale, router, pathname]);
 
-  // No UI to render - auto-switch happens silently
   return null;
 }

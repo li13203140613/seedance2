@@ -33,8 +33,9 @@ export function LocaleSelector({
 
   const handleSwitchLanguage = (value: string) => {
     if (value !== currentLocale) {
-      // Update localStorage to sync with locale detector
+      // Mark as manual choice so auto-detection won't override
       cacheSet('locale', value);
+      localStorage.setItem('locale-manual', '1');
       const query = searchParams?.toString?.() ?? '';
       const href = query ? `${pathname}?${query}` : pathname;
       router.push(href, {

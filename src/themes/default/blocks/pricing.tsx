@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { Check, ChevronDown, Clock, Gift, Loader2, Zap } from 'lucide-react';
+import Image from 'next/image';
 import { useLocale, useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 
@@ -415,6 +416,11 @@ export function Pricing({
                       {item.tip && (
                         <p className="mt-1 text-xs text-muted-foreground">{item.tip}</p>
                       )}
+                      <div className="mt-2 flex items-center gap-1.5">
+                        <Image src="/imgs/icons/alipay.svg" alt="Alipay" width={18} height={18} className="rounded" />
+                        <Image src="/imgs/icons/stripe.png" alt="Stripe" width={18} height={18} className="rounded-full" />
+                        <span className="text-[10px] text-muted-foreground/60">& more</span>
+                      </div>
                     </div>
                   )}
 
