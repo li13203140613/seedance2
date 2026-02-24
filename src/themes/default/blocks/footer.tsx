@@ -141,6 +141,7 @@ const backlinks = [
   { href: 'https://fast-wan.com/', label: 'Fast Wan' },
   { href: 'https://viesearch.com/', label: 'Viesearch' },
   { href: 'https://allinai.tools', label: 'All in AI Tools' },
+  { href: 'https://aihustle.tools', label: 'AI Hustle Tools' },
   { href: 'https://nano-banana.cn', label: 'Nano Banana' },
   { href: 'https://agent-skills.cc', label: 'Agent Skills' },
   {
