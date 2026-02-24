@@ -129,12 +129,18 @@ const backlinks = [
   { href: 'https://allinai.tools', label: 'All in AI Tools' },
   { href: 'https://nano-banana.cn', label: 'Nano Banana' },
   { href: 'https://agent-skills.cc', label: 'Agent Skills' },
+  {
+    href: 'https://thatsmy.ai',
+    title: 'Best and Latest AI Tools in 2025',
+    label: 'AI Nav Site',
+  },
 ] as const;
 
 function BacklinkItem({ item }: { item: (typeof backlinks)[number] }) {
   return (
     <a
       href={item.href}
+      title={'title' in item ? item.title : undefined}
       target="_blank"
       rel="noopener noreferrer"
       className={
