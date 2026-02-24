@@ -47,6 +47,13 @@ const backlinks = [
     width: 200,
     height: 54,
   },
+  {
+    href: 'https://www.toolpilot.ai/',
+    img: 'https://www.toolpilot.ai/cdn/shop/files/toolpilot-badge-w.png',
+    alt: 'Featured on ToolPilot',
+    width: 200,
+    height: 54,
+  },
   // --- Text links ---
   { href: 'https://www.agenthunter.io', label: 'AgentHunter' },
   {
