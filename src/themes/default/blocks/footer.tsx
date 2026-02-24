@@ -40,6 +40,13 @@ const backlinks = [
     width: 220,
     height: 60,
   },
+  {
+    href: 'https://tooldirs.com',
+    img: 'https://tooldirs.com/badge/badge_light.svg',
+    alt: 'Featured on ToolDirs',
+    width: 200,
+    height: 54,
+  },
   // --- Text links ---
   { href: 'https://www.agenthunter.io', label: 'AgentHunter' },
   {
