@@ -16,6 +16,10 @@ export interface PricingCurrency {
   original_price: string; // original price text
   payment_product_id?: string;
   payment_providers?: string[];
+  cost_per_100?: string; // cost per credit text
+  annual_total?: string; // annual billing total text
+  annual_savings?: string; // annual savings text
+  credit_packs?: CreditPack[]; // currency-specific credit packs
 }
 
 export interface CreditPack {

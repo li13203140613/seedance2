@@ -59,7 +59,37 @@
             "product_name": "Seedance Basic Monthly",
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "Básico"
+            "plan_name": "Básico",
+            "currencies": [
+              {
+                "currency": "CNY",
+                "amount": 6900,
+                "price": "¥69",
+                "original_price": "",
+                "cost_per_100": "= ¥0.69 / credit"
+              },
+              {
+                "currency": "EUR",
+                "amount": 890,
+                "price": "€8.9",
+                "original_price": "",
+                "cost_per_100": "= €0.089 / credit"
+              },
+              {
+                "currency": "GBP",
+                "amount": 790,
+                "price": "£7.9",
+                "original_price": "",
+                "cost_per_100": "= £0.079 / credit"
+              },
+              {
+                "currency": "JPY",
+                "amount": 1500,
+                "price": "¥1,500",
+                "original_price": "",
+                "cost_per_100": "= ¥15 / credit"
+              }
+            ]
           },
           {
             "title": "Pro",
@@ -94,7 +124,37 @@
             "product_name": "Seedance Pro Monthly",
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "Pro"
+            "plan_name": "Pro",
+            "currencies": [
+              {
+                "currency": "CNY",
+                "amount": 20900,
+                "price": "¥209",
+                "original_price": "",
+                "cost_per_100": "= ¥0.52 / credit"
+              },
+              {
+                "currency": "EUR",
+                "amount": 2690,
+                "price": "€26.9",
+                "original_price": "",
+                "cost_per_100": "= €0.067 / credit"
+              },
+              {
+                "currency": "GBP",
+                "amount": 2390,
+                "price": "£23.9",
+                "original_price": "",
+                "cost_per_100": "= £0.060 / credit"
+              },
+              {
+                "currency": "JPY",
+                "amount": 4500,
+                "price": "¥4,500",
+                "original_price": "",
+                "cost_per_100": "= ¥11.25 / credit"
+              }
+            ]
           },
           {
             "title": "Ultra",
@@ -128,7 +188,37 @@
             "product_name": "Seedance Ultra Monthly",
             "valid_days": 30,
             "group": "monthly",
-            "plan_name": "Ultra"
+            "plan_name": "Ultra",
+            "currencies": [
+              {
+                "currency": "CNY",
+                "amount": 69900,
+                "price": "¥699",
+                "original_price": "",
+                "cost_per_100": "= ¥0.50 / credit"
+              },
+              {
+                "currency": "EUR",
+                "amount": 8990,
+                "price": "€89.9",
+                "original_price": "",
+                "cost_per_100": "= €0.064 / credit"
+              },
+              {
+                "currency": "GBP",
+                "amount": 7890,
+                "price": "£78.9",
+                "original_price": "",
+                "cost_per_100": "= £0.056 / credit"
+              },
+              {
+                "currency": "JPY",
+                "amount": 14900,
+                "price": "¥14,900",
+                "original_price": "",
+                "cost_per_100": "= ¥10.6 / credit"
+              }
+            ]
           },
           {
             "title": "Pague conforme o uso",
@@ -212,7 +302,84 @@
                 "Menor custo por crédito (economize até 29%)",
                 "Créditos renovam automaticamente todo mês"
               ]
-            }
+            },
+            "currencies": [
+              {
+                "currency": "CNY",
+                "amount": 10500,
+                "price": "¥105",
+                "original_price": "",
+                "credit_packs": [
+                  {
+                    "credits": 150,
+                    "label": "150 créditos",
+                    "price": "¥105",
+                    "amount": 10500,
+                    "product_id": "credits-500",
+                    "product_name": "Seedance Credits 500",
+                    "is_default": true
+                  },
+                  {
+                    "credits": 300,
+                    "label": "300 créditos",
+                    "price": "¥199",
+                    "amount": 19900,
+                    "product_id": "credits-1200",
+                    "product_name": "Seedance Credits 1200"
+                  },
+                  {
+                    "credits": 600,
+                    "label": "600 créditos",
+                    "price": "¥379",
+                    "amount": 37900,
+                    "product_id": "credits-2800",
+                    "product_name": "Seedance Credits 2800"
+                  },
+                  {
+                    "credits": 990,
+                    "label": "990 créditos",
+                    "price": "¥599",
+                    "amount": 59900,
+                    "product_id": "credits-5000",
+                    "product_name": "Seedance Credits 5000"
+                  },
+                  {
+                    "credits": 1490,
+                    "label": "1.490 créditos",
+                    "price": "¥859",
+                    "amount": 85900,
+                    "product_id": "credits-8500",
+                    "product_name": "Seedance Credits 8500"
+                  },
+                  {
+                    "credits": 2490,
+                    "label": "2.490 créditos",
+                    "price": "¥1,349",
+                    "amount": 134900,
+                    "product_id": "credits-16000",
+                    "product_name": "Seedance Credits 16000"
+                  }
+                ]
+              },
+              {
+                "currency": "EUR",
+                "amount": 1390,
+                "price": "€13.9",
+                "original_price": ""
+              },
+              {
+                "currency": "GBP",
+                "amount": 1190,
+                "price": "£11.9",
+                "original_price": ""
+              },
+              {
+                "currency": "JPY",
+                "amount": 2300,
+                "price": "¥2,300",
+                "original_price": ""
+              }
+            ]
           },
           {
             "title": "Básico",
@@ -249,7 +416,45 @@
             "product_name": "Seedance Basic Yearly",
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Básico"
+            "plan_name": "Básico",
+            "currencies": [
+              {
+                "currency": "CNY",
+                "amount": 66800,
+                "price": "¥55.7",
+                "original_price": "¥69",
+                "cost_per_100": "= ¥0.56 / credit",
+                "annual_total": "Billed annually ¥668",
+                "annual_savings": "Vs monthly Save: ¥160"
+              },
+              {
+                "currency": "EUR",
+                "amount": 8580,
+                "price": "€7.15",
+                "original_price": "€8.9",
+                "cost_per_100": "= €0.072 / credit",
+                "annual_total": "Billed annually €85.8",
+                "annual_savings": "Vs monthly Save: €21"
+              },
+              {
+                "currency": "GBP",
+                "amount": 7580,
+                "price": "£6.3",
+                "original_price": "£7.9",
+                "cost_per_100": "= £0.063 / credit",
+                "annual_total": "Billed annually £75.8",
+                "annual_savings": "Vs monthly Save: £19"
+              },
+              {
+                "currency": "JPY",
+                "amount": 14300,
+                "price": "¥1,192",
+                "original_price": "¥1,500",
+                "cost_per_100": "= ¥11.9 / credit",
+                "annual_total": "Billed annually ¥14,300",
+                "annual_savings": "Vs monthly Save: ¥3,700"
+              }
+            ]
           },
           {
             "title": "Pro",
@@ -290,7 +495,45 @@
             "product_name": "Seedance Pro Yearly",
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Pro"
+            "plan_name": "Pro",
+            "currencies": [
+              {
+                "currency": "CNY",
+                "amount": 168800,
+                "price": "¥140.7",
+                "original_price": "¥209",
+                "cost_per_100": "= ¥0.35 / credit",
+                "annual_total": "Billed annually ¥1,688",
+                "annual_savings": "Vs monthly Save: ¥820"
+              },
+              {
+                "currency": "EUR",
+                "amount": 21580,
+                "price": "€17.98",
+                "original_price": "€26.9",
+                "cost_per_100": "= €0.045 / credit",
+                "annual_total": "Billed annually €215.8",
+                "annual_savings": "Vs monthly Save: €107"
+              },
+              {
+                "currency": "GBP",
+                "amount": 18980,
+                "price": "£15.8",
+                "original_price": "£23.9",
+                "cost_per_100": "= £0.040 / credit",
+                "annual_total": "Billed annually £189.8",
+                "annual_savings": "Vs monthly Save: £97"
+              },
+              {
+                "currency": "JPY",
+                "amount": 35900,
+                "price": "¥2,992",
+                "original_price": "¥4,500",
+                "cost_per_100": "= ¥7.5 / credit",
+                "annual_total": "Billed annually ¥35,900",
+                "annual_savings": "Vs monthly Save: ¥18,100"
+              }
+            ]
           },
           {
             "title": "Ultra",
@@ -329,7 +572,45 @@
             "product_name": "Seedance Ultra Yearly",
             "valid_days": 365,
             "group": "yearly",
-            "plan_name": "Ultra"
+            "plan_name": "Ultra",
+            "currencies": [
+              {
+                "currency": "CNY",
+                "amount": 92800,
+                "price": "¥77.3",
+                "original_price": "¥699",
+                "cost_per_100": "= ¥0.055 / credit",
+                "annual_total": "Billed annually ¥928",
+                "annual_savings": "Vs monthly Save: ¥7,460"
+              },
+              {
+                "currency": "EUR",
+                "amount": 11880,
+                "price": "€9.9",
+                "original_price": "€89.9",
+                "cost_per_100": "= €0.007 / credit",
+                "annual_total": "Billed annually €118.8",
+                "annual_savings": "Vs monthly Save: €960"
+              },
+              {
+                "currency": "GBP",
+                "amount": 10380,
+                "price": "£8.65",
+                "original_price": "£78.9",
+                "cost_per_100": "= £0.006 / credit",
+                "annual_total": "Billed annually £103.8",
+                "annual_savings": "Vs monthly Save: £843"
+              },
+              {
+                "currency": "JPY",
+                "amount": 19700,
+                "price": "¥1,642",
+                "original_price": "¥14,900",
+                "cost_per_100": "= ¥1.2 / credit",
+                "annual_total": "Billed annually ¥19,700",
+                "annual_savings": "Vs monthly Save: ¥159,100"
+              }
+            ]
           },
           {
             "title": "Pague conforme o uso",
@@ -413,8 +694,92 @@
                 "Menor custo por crédito (economize até 29%)",
                 "Créditos renovam automaticamente todo mês"
               ]
-            }
+            },
+            "currencies": [
+              {
+                "currency": "CNY",
+                "amount": 10500,
+                "price": "¥105",
+                "original_price": "",
+                "credit_packs": [
+                  {
+                    "credits": 150,
+                    "label": "150 créditos",
+                    "price": "¥105",
+                    "amount": 10500,
+                    "product_id": "credits-500",
+                    "product_name": "Seedance Credits 500",
+                    "is_default": true
+                  },
+                  {
+                    "credits": 300,
+                    "label": "300 créditos",
+                    "price": "¥199",
+                    "amount": 19900,
+                    "product_id": "credits-1200",
+                    "product_name": "Seedance Credits 1200"
+                  },
+                  {
+                    "credits": 600,
+                    "label": "600 créditos",
+                    "price": "¥379",
+                    "amount": 37900,
+                    "product_id": "credits-2800",
+                    "product_name": "Seedance Credits 2800"
+                  },
+                  {
+                    "credits": 990,
+                    "label": "990 créditos",
+                    "price": "¥599",
+                    "amount": 59900,
+                    "product_id": "credits-5000",
+                    "product_name": "Seedance Credits 5000"
+                  },
+                  {
+                    "credits": 1490,
+                    "label": "1.490 créditos",
+                    "price": "¥859",
+                    "amount": 85900,
+                    "product_id": "credits-8500",
+                    "product_name": "Seedance Credits 8500"
+                  },
+                  {
+                    "credits": 2490,
+                    "label": "2.490 créditos",
+                    "price": "¥1,349",
+                    "amount": 134900,
+                    "product_id": "credits-16000",
+                    "product_name": "Seedance Credits 16000"
+                  }
+                ]
+              },
+              {
+                "currency": "EUR",
+                "amount": 1390,
+                "price": "€13.9",
+                "original_price": ""
+              },
+              {
+                "currency": "GBP",
+                "amount": 1190,
+                "price": "£11.9",
+                "original_price": ""
+              },
+              {
+                "currency": "JPY",
+                "amount": 2300,
+                "price": "¥2,300",
+                "original_price": ""
+              }
+            ]
           }
+        ],
+        "supported_currencies": [
+          "USD",
+          "CNY",
+          "EUR",
+          "GBP",
+          "JPY"
         ]
       }
     }

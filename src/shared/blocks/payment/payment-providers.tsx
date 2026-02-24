@@ -22,6 +22,7 @@ export function PaymentProviders({
   loading,
   setLoading,
   pricingItem,
+  selectedCurrency,
   onCheckout,
   className,
 }: {
@@ -30,18 +31,19 @@ export function PaymentProviders({
   loading: boolean;
   setLoading: (loading: boolean) => void;
   pricingItem: PricingItem | null;
+  selectedCurrency?: string;
   onCheckout: (item: PricingItem, paymentProvider?: string) => void;
   className?: string;
 }) {
   const t = useTranslations('common.payment');
   const router = useRouter();
+  const locale = useLocale();
 
   const { setIsShowPaymentModal } = useAppContext();
 
   const [paymentProvider, setPaymentProvider] = useState<string | null>(null);
 
   if (callbackUrl) {
-    const locale = useLocale();
     if (
       locale !== defaultLocale &&
       callbackUrl.startsWith('/') &&
@@ -107,6 +109,11 @@ export function PaymentProviders({
     });
   }
 
+  const shouldShowCnWalletHint = (providerName?: string) =>
+    providerName === 'stripe' &&
+    !!pricingItem?.is_payg &&
+    (selectedCurrency || 'USD').toUpperCase() === 'CNY';
+
   return (
     <div
       className={cn(
@@ -119,7 +126,7 @@ export function PaymentProviders({
         <Button
           key={provider.name}
           variant="outline"
-          className={cn('w-full gap-2')}
+          className={cn('w-full justify-between gap-2')}
           disabled={loading}
           onClick={() => {
             if (!provider.onClick || !provider.name) {
@@ -131,19 +138,43 @@ export function PaymentProviders({
             provider.onClick();
           }}
         >
-          {provider.icon_url && (
-            <Image
-              src={provider.icon_url}
-              alt={provider.title || provider.name || ''}
-              width={24}
-              height={24}
-              className="rounded-full"
-            />
-          )}
-          <h3>{provider.title}</h3>
-          {paymentProvider === provider.name && loading && (
-            <Loader2 className="size-4 animate-spin" />
-          )}
+          <div className="flex items-center gap-2">
+            {provider.icon_url && (
+              <Image
+                src={provider.icon_url}
+                alt={provider.title || provider.name || ''}
+                width={24}
+                height={24}
+                className="rounded-full"
+              />
+            )}
+            <h3>{provider.title}</h3>
+          </div>
+
+          <div className="flex items-center gap-1.5">
+            {shouldShowCnWalletHint(provider.name) && (
+              <>
+                <Image
+                  src="/imgs/icons/alipay.svg"
+                  alt="Alipay"
+                  width={20}
+                  height={20}
+                  className="rounded"
+                />
+                <Image
+                  src="/imgs/icons/wechat.svg"
+                  alt="WeChat Pay"
+                  width={20}
+                  height={20}
+                  className="rounded"
+                />
+              </>
+            )}
+
+            {paymentProvider === provider.name && loading && (
+              <Loader2 className="size-4 animate-spin" />
+            )}
+          </div>
         </Button>
       ))}
     </div>

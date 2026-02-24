@@ -28,10 +28,12 @@ import { PaymentProviders } from './payment-providers';
 export function PaymentModal({
   isLoading,
   pricingItem,
+  selectedCurrency,
   onCheckout,
 }: {
   isLoading: boolean;
   pricingItem: PricingItem | null;
+  selectedCurrency?: string;
   onCheckout: (item: PricingItem, paymentProvider?: string) => void;
 }) {
   const t = useTranslations('common.payment');
@@ -59,6 +61,7 @@ export function PaymentModal({
             loading={isLoading}
             setLoading={() => {}}
             pricingItem={pricingItem}
+            selectedCurrency={selectedCurrency}
             onCheckout={onCheckout}
           />
         </DialogContent>
@@ -81,6 +84,7 @@ export function PaymentModal({
           loading={isLoading}
           setLoading={() => {}}
           pricingItem={pricingItem}
+          selectedCurrency={selectedCurrency}
           onCheckout={onCheckout}
           className="px-4"
         />

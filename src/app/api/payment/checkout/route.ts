@@ -86,17 +86,24 @@ export async function POST(req: Request) {
       return respErr('no payment provider configured');
     }
 
+    // PayPal in current deployment does not support CNY.
+    // Force USD as an effective checkout currency to avoid CURRENCY_NOT_SUPPORTED.
+    const requestedCurrency =
+      paymentProviderName === 'paypal' && currency?.toLowerCase() === 'cny'
+        ? 'usd'
+        : currency?.toLowerCase();
+
     // Validate payment provider against allowed providers
     // First check currency-specific payment_providers if currency is provided
     let allowedProviders: string[] | undefined;
 
     if (
-      currency &&
-      currency.toLowerCase() !== (pricingItem.currency || 'usd').toLowerCase()
+      requestedCurrency &&
+      requestedCurrency !== (pricingItem.currency || 'usd').toLowerCase()
     ) {
       const selectedCurrencyData = pricingItem.currencies?.find(
         (c: PricingCurrency) =>
-          c.currency.toLowerCase() === currency.toLowerCase()
+          c.currency.toLowerCase() === requestedCurrency
       );
       allowedProviders = selectedCurrencyData?.payment_providers;
     }
@@ -130,9 +137,7 @@ export async function POST(req: Request) {
     let checkoutAmount = pricingItem.amount;
 
     // If currency is provided, validate it and find corresponding amount from server-side data
-    if (currency) {
-      const requestedCurrency = currency.toLowerCase();
-
+    if (requestedCurrency) {
       // Check if requested currency is the default currency
       if (requestedCurrency === defaultCurrency) {
         checkoutCurrency = defaultCurrency;
@@ -145,7 +150,27 @@ export async function POST(req: Request) {
         if (selectedCurrencyData) {
           // Valid currency found, use it
           checkoutCurrency = requestedCurrency;
-          checkoutAmount = selectedCurrencyData.amount;
+          let resolvedCurrencyAmount = selectedCurrencyData.amount;
+
+          // For PAYG packs, prefer currency-specific pack amount if defined.
+          if (pricingItem.is_payg && selectedCurrencyData.credit_packs?.length) {
+            const matchedCurrencyPack = selectedCurrencyData.credit_packs.find(
+              (pack: any) => pack.product_id === pricingItem.product_id
+            );
+            if (matchedCurrencyPack?.amount) {
+              resolvedCurrencyAmount = matchedCurrencyPack.amount;
+              pricingItem = {
+                ...pricingItem,
+                amount: matchedCurrencyPack.amount,
+                price: matchedCurrencyPack.price || pricingItem.price,
+                credits: matchedCurrencyPack.credits || pricingItem.credits,
+                product_name:
+                  matchedCurrencyPack.product_name || pricingItem.product_name,
+              };
+            }
+          }
+
+          checkoutAmount = resolvedCurrencyAmount;
         }
         // If currency not found in list, fallback to default (already set above)
       }
@@ -169,10 +194,10 @@ export async function POST(req: Request) {
     let paymentProductId = '';
 
     // If currency is provided and different from default, check currency-specific payment_product_id
-    if (currency && currency.toLowerCase() !== defaultCurrency) {
+    if (requestedCurrency && requestedCurrency !== defaultCurrency) {
       const selectedCurrencyData = pricingItem.currencies?.find(
         (c: PricingCurrency) =>
-          c.currency.toLowerCase() === currency.toLowerCase()
+          c.currency.toLowerCase() === requestedCurrency
       );
       if (selectedCurrencyData?.payment_product_id) {
         paymentProductId = selectedCurrencyData.payment_product_id;
