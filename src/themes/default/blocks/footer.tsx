@@ -48,6 +48,13 @@ const backlinks = [
     height: 54,
   },
   {
+    href: 'https://toolfame.com/item/seedancetwo20',
+    img: 'https://toolfame.com/badge-light.svg',
+    alt: 'Featured on toolfame.com',
+    width: 200,
+    height: 54,
+  },
+  {
     href: 'https://www.toolpilot.ai/',
     img: 'https://www.toolpilot.ai/cdn/shop/files/toolpilot-badge-w.png',
     alt: 'Featured on ToolPilot',
