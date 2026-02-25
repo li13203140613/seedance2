@@ -39,6 +39,11 @@
               "icon": "Newspaper"
             }
           ]
+        },
+        {
+          "title": "AI任务",
+          "url": "/activity/ai-tasks",
+          "icon": "Activity"
         }
       ]
     },

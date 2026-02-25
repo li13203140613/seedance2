@@ -8,6 +8,82 @@ import { getUserInfo } from '@/shared/models/user';
 import { Button, Tab } from '@/shared/types/blocks/common';
 import { type Table } from '@/shared/types/blocks/table';
 
+function safeParseJson(value: string | null) {
+  if (!value) {
+    return null;
+  }
+
+  try {
+    return JSON.parse(value);
+  } catch {
+    return null;
+  }
+}
+
+function normalizeVideoUrl(value: any): string | null {
+  if (!value) {
+    return null;
+  }
+
+  if (typeof value === 'string') {
+    return value;
+  }
+
+  if (typeof value === 'object') {
+    const candidate =
+      value.videoUrl ?? value.url ?? value.uri ?? value.video ?? value.src;
+    if (typeof candidate === 'string') {
+      return candidate;
+    }
+  }
+
+  return null;
+}
+
+function collectVideoUrls(value: any): string[] {
+  if (!value) {
+    return [];
+  }
+
+  if (Array.isArray(value)) {
+    return value
+      .map((item) => normalizeVideoUrl(item))
+      .filter((url): url is string => Boolean(url));
+  }
+
+  const url = normalizeVideoUrl(value);
+  return url ? [url] : [];
+}
+
+function extractVideoUrls(taskInfo: any, taskResult: any): string[] {
+  const urlsFromTaskInfo = collectVideoUrls(taskInfo?.videos);
+  const urlsFromTaskResult = [
+    ...collectVideoUrls(taskResult?.videos),
+    ...collectVideoUrls(taskResult?.results),
+    ...collectVideoUrls(taskResult?.output),
+    ...collectVideoUrls(taskResult?.video),
+    ...collectVideoUrls(taskResult?.data),
+  ];
+
+  // taskInfo is normalized by provider adapters. Prefer it to avoid duplicate
+  // entries coming from raw taskResult payloads.
+  const sourceUrls =
+    urlsFromTaskInfo.length > 0 ? urlsFromTaskInfo : urlsFromTaskResult;
+
+  const dedupedMap = new Map<string, string>();
+  for (const rawUrl of sourceUrls) {
+    const normalizedKey = rawUrl
+      .replace(/[#?].*$/, '')
+      .replace(/\/+$/, '')
+      .toLowerCase();
+    if (!dedupedMap.has(normalizedKey)) {
+      dedupedMap.set(normalizedKey, rawUrl);
+    }
+  }
+
+  return Array.from(dedupedMap.values());
+}
+
 export default async function AiTasksPage({
   searchParams,
 }: {
@@ -41,7 +117,6 @@ export default async function AiTasksPage({
     columns: [
       { name: 'prompt', title: t('fields.prompt'), type: 'copy' },
       { name: 'mediaType', title: t('fields.media_type'), type: 'label' },
-      { name: 'provider', title: t('fields.provider'), type: 'label' },
       { name: 'model', title: t('fields.model'), type: 'label' },
       // { name: 'options', title: t('fields.options'), type: 'copy' },
       { name: 'status', title: t('fields.status'), type: 'label' },
@@ -50,48 +125,91 @@ export default async function AiTasksPage({
         name: 'result',
         title: t('fields.result'),
         callback: (item: AITask) => {
-          if (item.taskInfo) {
-            const taskInfo = JSON.parse(item.taskInfo);
-            if (taskInfo.errorMessage) {
-              return (
-                <div className="text-red-500">
-                  Failed: {taskInfo.errorMessage}
-                </div>
-              );
-            } else if (taskInfo.songs && taskInfo.songs.length > 0) {
-              const songs: any[] = taskInfo.songs.filter(
-                (song: any) => song.audioUrl
-              );
-              if (songs.length > 0) {
-                return (
-                  <div className="flex flex-col gap-2">
-                    {songs.map((song: any) => (
-                      <AudioPlayer
-                        key={song.id}
-                        src={song.audioUrl}
-                        title={song.title}
-                        className="w-80"
-                      />
-                    ))}
-                  </div>
-                );
-              }
-            } else if (taskInfo.images && taskInfo.images.length > 0) {
+          const taskInfo = safeParseJson(item.taskInfo);
+          const taskResult = safeParseJson(item.taskResult);
+
+          if (taskInfo?.errorMessage) {
+            return (
+              <div className="text-red-500">Failed: {taskInfo.errorMessage}</div>
+            );
+          }
+
+          if (taskInfo?.songs?.length > 0) {
+            const songs: any[] = taskInfo.songs.filter(
+              (song: any) => song.audioUrl
+            );
+
+            if (songs.length > 0) {
               return (
                 <div className="flex flex-col gap-2">
-                  {taskInfo.images.map((image: any, index: number) => (
-                    <LazyImage
-                      key={index}
-                      src={image.imageUrl}
-                      alt="Generated image"
-                      className="h-32 w-auto"
+                  {songs.map((song: any) => (
+                    <AudioPlayer
+                      key={song.id}
+                      src={song.audioUrl}
+                      title={song.title}
+                      className="w-80"
                     />
                   ))}
                 </div>
               );
-            } else {
-              return '-';
             }
+          }
+
+          if (taskInfo?.images?.length > 0) {
+            return (
+              <div className="flex flex-col gap-2">
+                {taskInfo.images.map((image: any, index: number) => (
+                  <LazyImage
+                    key={index}
+                    src={image.imageUrl}
+                    alt="Generated image"
+                    className="h-32 w-auto"
+                  />
+                ))}
+              </div>
+            );
+          }
+
+          const videoUrls = extractVideoUrls(taskInfo, taskResult);
+          const displayVideoUrls = videoUrls.slice(0, 1);
+          if (displayVideoUrls.length > 0) {
+            return (
+              <div className="flex flex-col gap-3">
+                {displayVideoUrls.map((videoUrl, index) => {
+                  const proxyUrl = `/api/proxy/file?url=${encodeURIComponent(videoUrl)}`;
+                  return (
+                    <div
+                      key={`${item.id}-video-${index}`}
+                      className="flex flex-col gap-1"
+                    >
+                      <video
+                        src={videoUrl}
+                        controls
+                        preload="metadata"
+                        className="h-24 w-44 rounded-md border bg-black"
+                      />
+                      <div className="flex items-center gap-3 text-xs">
+                        <a
+                          href={videoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary underline-offset-2 hover:underline"
+                        >
+                          Open
+                        </a>
+                        <a
+                          href={proxyUrl}
+                          download
+                          className="text-primary underline-offset-2 hover:underline"
+                        >
+                          Download
+                        </a>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            );
           }
 
           return '-';
