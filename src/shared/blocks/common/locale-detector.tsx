@@ -18,23 +18,7 @@ function detectBrowserLocale(): string | null {
 
   const langCode = browserLang.split('-')[0].toLowerCase();
 
-  // Chinese language (zh-CN, zh-TW, zh-HK, etc.)
-  if (langCode === 'zh') return 'zh';
-
-  // China region via timezone
-  try {
-    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    if (
-      tz === 'Asia/Shanghai' ||
-      tz === 'Asia/Chongqing' ||
-      tz === 'Asia/Urumqi' ||
-      tz === 'Asia/Harbin'
-    ) {
-      return 'zh';
-    }
-  } catch {}
-
-  // Other supported locales
+  // Match browser language to supported locales (e.g. zh-CN → zh, en-US → en, ja-JP → ja)
   if (locales.includes(langCode)) return langCode;
 
   return null;
