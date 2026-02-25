@@ -17,11 +17,6 @@
         "title": "SeeDanceTwo\n당신의 의도를 이해하는 영상 모델.",
         "highlight_text": "SeeDanceTwo",
         "description": "멀티모달 창작이 여기서 시작됩니다.\n대담하게 상상하세요 — 나머지는 맡겨 두세요.",
-        "announcement": {
-          "badge": "NEW",
-          "text": "Seedance 2 2월 24일 출시 — 사전 충전으로 얼리 액세스 확보",
-          "url": "/pricing"
-        },
         "buttons": [
           {
             "title": "시작하기",

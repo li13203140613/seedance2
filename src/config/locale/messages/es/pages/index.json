@@ -17,11 +17,6 @@
         "title": "SeeDanceTwo\nEl modelo de video que entiende lo que quieres decir.",
         "highlight_text": "SeeDanceTwo",
         "description": "La creación multimodal empieza aquí.\nImagina sin límites — deja el resto en sus manos.",
-        "announcement": {
-          "badge": "NUEVO",
-          "text": "Seedance 2 se lanza el 24 de feb — Recarga anticipada para acceso temprano",
-          "url": "/pricing"
-        },
         "buttons": [
           {
             "title": "Comenzar",

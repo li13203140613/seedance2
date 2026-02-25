@@ -17,11 +17,6 @@
         "title": "SeeDanceTwo\nあなたの意図を理解する動画モデル。",
         "highlight_text": "SeeDanceTwo",
         "description": "マルチモーダル制作はここから始まります。\n大胆に想像して、あとはおまかせ。",
-        "announcement": {
-          "badge": "NEW",
-          "text": "Seedance 2が2月24日リリース — 先行チャージで早期アクセス",
-          "url": "/pricing"
-        },
         "buttons": [
           {
             "title": "始める",
