@@ -86,8 +86,8 @@ const backlinks = [
   },
   { href: 'https://fazier.com/launches/www.seedance2.art', label: 'Fazier' },
   {
-    href: 'https://turbo0.com/item/seedance',
-    img: 'https://img.turbo0.com/badge-listed-dark.svg',
+    href: 'https://turbo0.com/item/seedancetwo-20',
+    img: 'https://img.turbo0.com/badge-listed-light.svg',
     alt: 'Listed on Turbo0',
     width: 150,
     height: 54,
@@ -104,6 +104,7 @@ const backlinks = [
   { href: 'https://theonestartup.com', label: 'The One Startup' },
   { href: 'https://dayslaunch.com', label: 'Days Launch' },
   { href: 'https://logicballs.com', label: 'LogicBalls' },
+  { href: 'https://wtai.cc/', label: 'WTAI' },
   {
     href: 'https://similarlabs.com/',
     img: 'https://similarlabs.com/similarlabs-embed-badge-light.svg',
