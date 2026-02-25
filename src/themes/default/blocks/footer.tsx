@@ -20,9 +20,9 @@ const backlinks = [
     height: 54,
   },
   {
-    href: 'https://startupfa.me/s/nano-banana-pro-2',
+    href: 'https://startupfa.me/s/seedancetwo.com-604?utm_source=www.seedancetwo.com',
     img: 'https://startupfa.me/badges/featured-badge-small.webp',
-    alt: 'Featured on Startup Fame',
+    alt: 'seedancetwo2.0 - Featured on Startup Fame',
     width: 224,
     height: 36,
   },
