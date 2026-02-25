@@ -50,6 +50,12 @@ export function Header({ header }: { header: HeaderType }) {
   const scrollRafRef = useRef<number | null>(null);
   const isLarge = useMedia('(min-width: 64rem)');
   const pathname = usePathname();
+  const normalizedPath = pathname.replace(/[#?].*$/, '').replace(/\/+$/, '');
+  const isHomePage =
+    normalizedPath === '' ||
+    normalizedPath === '/' ||
+    /^\/[a-z]{2}(?:-[A-Z]{2})?$/.test(normalizedPath);
+  const useSolidHeader = isScrolled || !isHomePage;
 
   useEffect(() => {
     // Listen to scroll event to enable header styles on scroll
@@ -254,7 +260,7 @@ export function Header({ header }: { header: HeaderType }) {
         <div
           className={cn(
             'absolute inset-x-0 top-0 z-50 h-18 border-transparent ring-1 ring-transparent transition-all duration-300',
-            isScrolled
+            useSolidHeader
               ? 'border-foreground/5 bg-background/75 border-b text-foreground backdrop-blur'
               : 'text-white',
             'has-data-[state=open]:ring-foreground/5 has-data-[state=open]:bg-card/75 has-data-[state=open]:h-[calc(var(--navigation-menu-viewport-height)+3.4rem)] has-data-[state=open]:border-b has-data-[state=open]:shadow-lg has-data-[state=open]:shadow-black/10 has-data-[state=open]:backdrop-blur',
