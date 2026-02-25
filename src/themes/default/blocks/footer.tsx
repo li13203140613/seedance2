@@ -41,6 +41,13 @@ const backlinks = [
     height: 60,
   },
   {
+    href: 'https://lovableapp.org',
+    img: 'https://lovableapp.org/lovable-app-badge.svg',
+    alt: 'Lovable App Badge',
+    width: 160,
+    height: 54,
+  },
+  {
     href: 'https://tooldirs.com',
     img: 'https://tooldirs.com/badge/badge_light.svg',
     alt: 'Featured on ToolDirs',
