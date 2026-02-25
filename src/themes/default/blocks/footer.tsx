@@ -84,6 +84,13 @@ const backlinks = [
     width: 200,
     height: 54,
   },
+  {
+    href: 'https://www.freeai.run',
+    img: 'https://www.freeai.run/badge/badge_dark.svg',
+    alt: 'Featured on FreeAI',
+    width: 200,
+    height: 54,
+  },
   { href: 'https://fazier.com/launches/www.seedance2.art', label: 'Fazier' },
   {
     href: 'https://turbo0.com/item/seedancetwo-20',
