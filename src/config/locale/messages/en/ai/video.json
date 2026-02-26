@@ -47,7 +47,12 @@
     "ready_for_generating": "Ready for Generating",
     "no_videos_generated": "No Videos Generated",
     "preview_example": "Preview Example",
-    "preview_hint": "Fill in the form on the left and click \"Generate Video\" to create your own video."
+    "preview_hint": "Fill in the form on the left and click \"Generate Video\" to create your own video.",
+    "task_pending": "Waiting for the model to start...",
+    "task_processing": "Generating... Results will appear in My Works. You can generate more videos now.",
+    "completed_videos": "Completed Videos",
+    "submitting": "Submitting...",
+    "max_concurrent_tasks": "Maximum 5 concurrent tasks. Please wait for current tasks to complete."
   }
 }
 

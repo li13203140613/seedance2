@@ -1,12 +1,13 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ChevronLeft,
   ChevronRight,
   CreditCard,
   Download,
   Loader2,
+  Play,
   Sparkles,
   User,
   Video,
@@ -62,6 +63,16 @@ interface BackendTask {
   taskResult: string | null;
 }
 
+interface VideoTask {
+  id: string;
+  prompt: string;
+  status: AITaskStatus;
+  progress: number;
+  startTime: number;
+  videos: GeneratedVideo[];
+  errorMessage?: string;
+}
+
 type VideoGeneratorTab = 'text-to-video' | 'image-to-video';
 
 const SHOWCASE_VIDEOS = [
@@ -72,6 +83,8 @@ const SHOWCASE_VIDEOS = [
 const POLL_INTERVAL = 15000;
 const GENERATION_TIMEOUT = 600000; // 10 minutes for video
 const MAX_PROMPT_LENGTH = 2000;
+const MAX_CONCURRENT_TASKS = 5;
+const MAX_TASK_HISTORY = 20;
 
 // 分辨率配置
 const QUALITY_OPTIONS = [
@@ -261,7 +274,7 @@ export function VideoGenerator({
   const [provider, setProvider] = useState('evolink');
   const [model, setModel] = useState('seedance-1.5-pro');
 
-  // 新增参数状态
+  // 参数状态
   const [quality, setQuality] = useState('480p');
   const [duration, setDuration] = useState(5);
   const [aspectRatio, setAspectRatio] = useState('16:9');
@@ -272,14 +285,12 @@ export function VideoGenerator({
   >([]);
   const [referenceImageUrls, setReferenceImageUrls] = useState<string[]>([]);
   const [referenceVideoUrl, setReferenceVideoUrl] = useState<string>('');
-  const [generatedVideos, setGeneratedVideos] = useState<GeneratedVideo[]>([]);
-  const [isGenerating, setIsGenerating] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [taskId, setTaskId] = useState<string | null>(null);
-  const [generationStartTime, setGenerationStartTime] = useState<number | null>(
-    null
-  );
-  const [taskStatus, setTaskStatus] = useState<AITaskStatus | null>(null);
+
+  // 多任务状态
+  const [tasks, setTasks] = useState<VideoTask[]>([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [selectedVideo, setSelectedVideo] = useState<GeneratedVideo | null>(null);
+
   const [downloadingVideoId, setDownloadingVideoId] = useState<string | null>(
     null
   );
@@ -288,6 +299,33 @@ export function VideoGenerator({
 
   const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
     useAppContext();
+
+  // Refs for stable access in callbacks
+  const tasksRef = useRef(tasks);
+  tasksRef.current = tasks;
+  const fetchUserCreditsRef = useRef(fetchUserCredits);
+  fetchUserCreditsRef.current = fetchUserCredits;
+
+  // 派生值
+  const activeTasks = useMemo(
+    () =>
+      tasks.filter(
+        (t) =>
+          t.status === AITaskStatus.PENDING ||
+          t.status === AITaskStatus.PROCESSING
+      ),
+    [tasks]
+  );
+
+  const allCompletedVideos = useMemo(
+    () =>
+      tasks
+        .filter((t) => t.status === AITaskStatus.SUCCESS)
+        .flatMap((t) => t.videos),
+    [tasks]
+  );
+
+  const hasActiveTasks = activeTasks.length > 0;
 
   useEffect(() => {
     setIsMounted(true);
@@ -298,6 +336,17 @@ export function VideoGenerator({
     const credits = getVideoCreditCost(quality, duration, generateAudio);
     setCostCredits(credits);
   }, [quality, duration, generateAudio]);
+
+  // 首个视频完成时自动选中
+  useEffect(() => {
+    if (selectedVideo) return;
+    const completedVideos = tasks
+      .filter((t) => t.status === AITaskStatus.SUCCESS)
+      .flatMap((t) => t.videos);
+    if (completedVideos.length > 0) {
+      setSelectedVideo(completedVideos[0]);
+    }
+  }, [tasks, selectedVideo]);
 
   const promptLength = prompt.trim().length;
   const remainingCredits = user?.credits?.remainingCredits ?? 0;
@@ -318,8 +367,6 @@ export function VideoGenerator({
     } else {
       setModel('');
     }
-
-    // credits recalculated by useEffect based on quality/duration/audio
   };
 
   const handleProviderChange = (value: string) => {
@@ -335,25 +382,6 @@ export function VideoGenerator({
       setModel('');
     }
   };
-
-  const taskStatusLabel = useMemo(() => {
-    if (!taskStatus) {
-      return '';
-    }
-
-    switch (taskStatus) {
-      case AITaskStatus.PENDING:
-        return 'Waiting for the model to start';
-      case AITaskStatus.PROCESSING:
-        return 'Generating your video...';
-      case AITaskStatus.SUCCESS:
-        return 'Video generation completed';
-      case AITaskStatus.FAILED:
-        return 'Generation failed';
-      default:
-        return '';
-    }
-  }, [taskStatus]);
 
   const handleReferenceImagesChange = useCallback(
     (items: ImageUploaderValue[]) => {
@@ -376,159 +404,178 @@ export function VideoGenerator({
     [referenceImageItems]
   );
 
-  const resetTaskState = useCallback(() => {
-    setIsGenerating(false);
-    setProgress(0);
-    setTaskId(null);
-    setGenerationStartTime(null);
-    setTaskStatus(null);
-  }, []);
+  // 轮询单个任务状态
+  const pollSingleTask = useCallback(async (taskId: string) => {
+    const currentTasks = tasksRef.current;
+    const task = currentTasks.find((t) => t.id === taskId);
+    if (!task) return;
 
-  const pollTaskStatus = useCallback(
-    async (id: string) => {
-      try {
-        if (
-          generationStartTime &&
-          Date.now() - generationStartTime > GENERATION_TIMEOUT
-        ) {
-          resetTaskState();
-          toast.error('Video generation timed out. Please try again.');
-          return true;
-        }
-
-        const resp = await fetch('/api/ai/query', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ taskId: id }),
-        });
-
-        if (!resp.ok) {
-          throw new Error(`request failed with status: ${resp.status}`);
-        }
-
-        const { code, message, data } = await resp.json();
-        if (code !== 0) {
-          throw new Error(message || 'Query task failed');
-        }
-
-        const task = data as BackendTask;
-        const currentStatus = task.status as AITaskStatus;
-        setTaskStatus(currentStatus);
-
-        const parsedResult = parseTaskResult(task.taskInfo);
-        const videoUrls = extractVideoUrls(parsedResult);
-
-        if (currentStatus === AITaskStatus.PENDING) {
-          setProgress((prev) => Math.max(prev, 20));
-          return false;
-        }
-
-        if (currentStatus === AITaskStatus.PROCESSING) {
-          if (videoUrls.length > 0) {
-            setGeneratedVideos(
-              videoUrls.map((url, index) => ({
-                id: `${task.id}-${index}`,
-                url,
-                provider: task.provider,
-                model: task.model,
-                prompt: task.prompt ?? undefined,
-              }))
-            );
-            setProgress((prev) => Math.max(prev, 85));
-          } else {
-            setProgress((prev) => Math.min(prev + 5, 80));
-          }
-          return false;
-        }
-
-        if (currentStatus === AITaskStatus.SUCCESS) {
-          if (videoUrls.length === 0) {
-            toast.error('The provider returned no videos. Please retry.');
-          } else {
-            setGeneratedVideos(
-              videoUrls.map((url, index) => ({
-                id: `${task.id}-${index}`,
-                url,
-                provider: task.provider,
-                model: task.model,
-                prompt: task.prompt ?? undefined,
-              }))
-            );
-            toast.success('Video generated successfully');
-          }
-
-          setProgress(100);
-          resetTaskState();
-          return true;
-        }
-
-        if (currentStatus === AITaskStatus.FAILED) {
-          const errorMessage =
-            parsedResult?.errorMessage || 'Generate video failed';
-          toast.error(errorMessage);
-          resetTaskState();
-
-          fetchUserCredits();
-
-          return true;
-        }
-
-        setProgress((prev) => Math.min(prev + 3, 95));
-        return false;
-      } catch (error: any) {
-        console.error('Error polling video task:', error);
-        toast.error(`Query task failed: ${error.message}`);
-        resetTaskState();
-
-        fetchUserCredits();
-
-        return true;
-      }
-    },
-    [generationStartTime, resetTaskState]
-  );
-
-  useEffect(() => {
-    if (!taskId || !isGenerating) {
+    // 超时检测
+    if (Date.now() - task.startTime > GENERATION_TIMEOUT) {
+      setTasks((prev) =>
+        prev.map((t) =>
+          t.id === taskId
+            ? { ...t, status: AITaskStatus.FAILED, errorMessage: 'Timed out' }
+            : t
+        )
+      );
+      toast.error('Video generation timed out. Please try again.');
       return;
     }
 
+    try {
+      const resp = await fetch('/api/ai/query', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ taskId }),
+      });
+
+      if (!resp.ok) {
+        throw new Error(`request failed with status: ${resp.status}`);
+      }
+
+      const { code, message, data } = await resp.json();
+      if (code !== 0) {
+        throw new Error(message || 'Query task failed');
+      }
+
+      const backendTask = data as BackendTask;
+      const currentStatus = backendTask.status as AITaskStatus;
+      const parsedResult = parseTaskResult(backendTask.taskInfo);
+      const videoUrls = extractVideoUrls(parsedResult);
+
+      setTasks((prev) =>
+        prev.map((t) => {
+          if (t.id !== taskId) return t;
+
+          if (currentStatus === AITaskStatus.PENDING) {
+            return {
+              ...t,
+              status: currentStatus,
+              progress: Math.max(t.progress, 20),
+            };
+          }
+
+          if (currentStatus === AITaskStatus.PROCESSING) {
+            const videos =
+              videoUrls.length > 0
+                ? videoUrls.map((url, i) => ({
+                    id: `${taskId}-${i}`,
+                    url,
+                    provider: backendTask.provider,
+                    model: backendTask.model,
+                    prompt: backendTask.prompt ?? undefined,
+                  }))
+                : t.videos;
+            const progress =
+              videoUrls.length > 0
+                ? Math.max(t.progress, 85)
+                : Math.min(t.progress + 5, 80);
+            return { ...t, status: currentStatus, progress, videos };
+          }
+
+          if (currentStatus === AITaskStatus.SUCCESS) {
+            const videos =
+              videoUrls.length > 0
+                ? videoUrls.map((url, i) => ({
+                    id: `${taskId}-${i}`,
+                    url,
+                    provider: backendTask.provider,
+                    model: backendTask.model,
+                    prompt: backendTask.prompt ?? undefined,
+                  }))
+                : t.videos;
+            return { ...t, status: currentStatus, progress: 100, videos };
+          }
+
+          if (currentStatus === AITaskStatus.FAILED) {
+            const errorMsg =
+              parsedResult?.errorMessage || 'Generate video failed';
+            return { ...t, status: currentStatus, errorMessage: errorMsg };
+          }
+
+          return { ...t, progress: Math.min(t.progress + 3, 95) };
+        })
+      );
+
+      if (currentStatus === AITaskStatus.SUCCESS) {
+        if (videoUrls.length > 0) {
+          toast.success('Video generated successfully');
+        } else {
+          toast.error('The provider returned no videos. Please retry.');
+        }
+        fetchUserCreditsRef.current();
+      }
+
+      if (currentStatus === AITaskStatus.FAILED) {
+        const errorMsg = parsedResult?.errorMessage || 'Generate video failed';
+        toast.error(errorMsg);
+        fetchUserCreditsRef.current();
+      }
+    } catch (error: any) {
+      console.error('Error polling video task:', error);
+      setTasks((prev) =>
+        prev.map((t) =>
+          t.id === taskId
+            ? {
+                ...t,
+                status: AITaskStatus.FAILED,
+                errorMessage: error.message,
+              }
+            : t
+        )
+      );
+      toast.error(`Query task failed: ${error.message}`);
+      fetchUserCreditsRef.current();
+    }
+  }, []);
+
+  // 多任务轮询 effect
+  useEffect(() => {
+    if (!hasActiveTasks) return;
+
     let cancelled = false;
 
-    const tick = async () => {
-      if (!taskId) {
-        return;
-      }
-      const completed = await pollTaskStatus(taskId);
-      if (completed) {
-        cancelled = true;
+    const pollAll = async () => {
+      if (cancelled) return;
+      const currentTasks = tasksRef.current;
+      const activeIds = currentTasks
+        .filter(
+          (t) =>
+            t.status === AITaskStatus.PENDING ||
+            t.status === AITaskStatus.PROCESSING
+        )
+        .map((t) => t.id);
+
+      for (const id of activeIds) {
+        if (cancelled) break;
+        await pollSingleTask(id);
       }
     };
 
-    tick();
-
-    const interval = setInterval(async () => {
-      if (cancelled || !taskId) {
-        clearInterval(interval);
-        return;
-      }
-      const completed = await pollTaskStatus(taskId);
-      if (completed) {
-        clearInterval(interval);
-      }
-    }, POLL_INTERVAL);
+    pollAll();
+    const interval = setInterval(pollAll, POLL_INTERVAL);
 
     return () => {
       cancelled = true;
       clearInterval(interval);
     };
-  }, [taskId, isGenerating, pollTaskStatus]);
+  }, [hasActiveTasks, pollSingleTask]);
 
   const handleGenerate = async () => {
     if (!user) {
       setIsShowSignModal(true);
+      return;
+    }
+
+    // 并发任务数限制
+    const currentActiveTasks = tasks.filter(
+      (t) =>
+        t.status === AITaskStatus.PENDING ||
+        t.status === AITaskStatus.PROCESSING
+    );
+    if (currentActiveTasks.length >= MAX_CONCURRENT_TASKS) {
+      toast.error(t('max_concurrent_tasks'));
       return;
     }
 
@@ -553,11 +600,7 @@ export function VideoGenerator({
       return;
     }
 
-    setIsGenerating(true);
-    setProgress(15);
-    setTaskStatus(AITaskStatus.PENDING);
-    setGeneratedVideos([]);
-    setGenerationStartTime(Date.now());
+    setIsSubmitting(true);
 
     try {
       const options: any = {
@@ -600,36 +643,51 @@ export function VideoGenerator({
         throw new Error('Task id missing in response');
       }
 
+      // 同步返回结果的情况（provider 直接返回）
       if (data.status === AITaskStatus.SUCCESS && data.taskInfo) {
         const parsedResult = parseTaskResult(data.taskInfo);
         const videoUrls = extractVideoUrls(parsedResult);
 
         if (videoUrls.length > 0) {
-          setGeneratedVideos(
-            videoUrls.map((url, index) => ({
-              id: `${newTaskId}-${index}`,
-              url,
-              provider,
-              model,
-              prompt: trimmedPrompt,
-            }))
-          );
+          const videos = videoUrls.map((url, index) => ({
+            id: `${newTaskId}-${index}`,
+            url,
+            provider,
+            model,
+            prompt: trimmedPrompt,
+          }));
+          const newTask: VideoTask = {
+            id: newTaskId,
+            prompt: trimmedPrompt,
+            status: AITaskStatus.SUCCESS,
+            progress: 100,
+            startTime: Date.now(),
+            videos,
+          };
+          setTasks((prev) => [newTask, ...prev].slice(0, MAX_TASK_HISTORY));
           toast.success('Video generated successfully');
-          setProgress(100);
-          resetTaskState();
           await fetchUserCredits();
           return;
         }
       }
 
-      setTaskId(newTaskId);
-      setProgress(25);
+      // 异步任务，添加到任务列表进行轮询
+      const newTask: VideoTask = {
+        id: newTaskId,
+        prompt: trimmedPrompt,
+        status: AITaskStatus.PENDING,
+        progress: 15,
+        startTime: Date.now(),
+        videos: [],
+      };
+      setTasks((prev) => [newTask, ...prev].slice(0, MAX_TASK_HISTORY));
 
       await fetchUserCredits();
     } catch (error: any) {
       console.error('Failed to generate video:', error);
       toast.error(`Failed to generate video: ${error.message}`);
-      resetTaskState();
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -836,7 +894,7 @@ export function VideoGenerator({
                     className="w-full"
                     onClick={handleGenerate}
                     disabled={
-                      isGenerating ||
+                      isSubmitting ||
                       (isTextToVideoMode && !prompt.trim()) ||
                       isPromptTooLong ||
                       isReferenceUploading ||
@@ -844,10 +902,10 @@ export function VideoGenerator({
                       (isImageToVideoMode && referenceImageUrls.length === 0)
                     }
                   >
-                    {isGenerating ? (
+                    {isSubmitting ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        {t('generating')}
+                        {t('submitting')}
                       </>
                     ) : (
                       <>
@@ -902,18 +960,64 @@ export function VideoGenerator({
                   </div>
                 )}
 
-                {isGenerating && (
-                  <div className="space-y-2 rounded-lg border p-4">
-                    <div className="flex items-center justify-between text-sm">
-                      <span>{t('progress')}</span>
-                      <span>{progress}%</span>
+                {/* 活跃任务进度条 */}
+                {activeTasks.length > 0 && (
+                  <div className="space-y-3">
+                    {activeTasks.map((task) => (
+                      <div
+                        key={task.id}
+                        className="space-y-1.5 rounded-lg border p-3"
+                      >
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-muted-foreground max-w-[200px] truncate">
+                            {task.prompt || t('generating')}
+                          </span>
+                          <span className="text-xs font-medium">
+                            {task.progress}%
+                          </span>
+                        </div>
+                        <Progress value={task.progress} />
+                      </div>
+                    ))}
+                    <p className="text-muted-foreground text-center text-xs">
+                      {activeTasks.some(
+                        (task) => task.status === AITaskStatus.PROCESSING
+                      )
+                        ? t('task_processing')
+                        : t('task_pending')}
+                    </p>
+                  </div>
+                )}
+
+                {/* 已完成视频缩略图 */}
+                {allCompletedVideos.length > 0 && (
+                  <div className="space-y-2">
+                    <p className="text-sm font-medium">
+                      {t('completed_videos')}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {allCompletedVideos.map((video) => (
+                        <button
+                          key={video.id}
+                          onClick={() => setSelectedVideo(video)}
+                          className={`relative h-16 w-16 overflow-hidden rounded-md border-2 transition-colors ${
+                            selectedVideo?.id === video.id
+                              ? 'border-primary'
+                              : 'border-transparent hover:border-primary/50'
+                          }`}
+                        >
+                          <video
+                            src={video.url}
+                            className="h-full w-full object-cover"
+                            preload="metadata"
+                            muted
+                          />
+                          <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                            <Play className="h-3 w-3 fill-white text-white" />
+                          </div>
+                        </button>
+                      ))}
                     </div>
-                    <Progress value={progress} />
-                    {taskStatusLabel && (
-                      <p className="text-muted-foreground text-center text-xs">
-                        {taskStatusLabel}
-                      </p>
-                    )}
                   </div>
                 )}
               </CardContent>
@@ -927,40 +1031,38 @@ export function VideoGenerator({
                 </CardTitle>
               </CardHeader>
               <CardContent className="pb-8">
-                {generatedVideos.length > 0 ? (
-                  <div className="space-y-6">
-                    {generatedVideos.map((video) => (
-                      <div key={video.id} className="space-y-3">
-                        <div className="relative overflow-hidden rounded-lg border">
-                          <video
-                            src={video.url}
-                            controls
-                            className="h-auto w-full"
-                            preload="metadata"
-                          />
+                {selectedVideo ? (
+                  <div className="space-y-3">
+                    <div className="relative overflow-hidden rounded-lg border">
+                      <video
+                        key={selectedVideo.id}
+                        src={selectedVideo.url}
+                        controls
+                        autoPlay
+                        className="h-auto w-full"
+                        preload="metadata"
+                      />
 
-                          <div className="absolute right-2 bottom-2 flex justify-end text-sm">
-                            <Button
-                              size="sm"
-                              variant="ghost"
-                              className="ml-auto"
-                              onClick={() => handleDownloadVideo(video)}
-                              disabled={downloadingVideoId === video.id}
-                            >
-                              {downloadingVideoId === video.id ? (
-                                <>
-                                  <Loader2 className="h-4 w-4 animate-spin" />
-                                </>
-                              ) : (
-                                <>
-                                  <Download className="h-4 w-4" />
-                                </>
-                              )}
-                            </Button>
-                          </div>
-                        </div>
+                      <div className="absolute right-2 bottom-2 flex justify-end text-sm">
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="ml-auto"
+                          onClick={() => handleDownloadVideo(selectedVideo)}
+                          disabled={downloadingVideoId === selectedVideo.id}
+                        >
+                          {downloadingVideoId === selectedVideo.id ? (
+                            <>
+                              <Loader2 className="h-4 w-4 animate-spin" />
+                            </>
+                          ) : (
+                            <>
+                              <Download className="h-4 w-4" />
+                            </>
+                          )}
+                        </Button>
                       </div>
-                    ))}
+                    </div>
                   </div>
                 ) : (
                   <div className="space-y-4">

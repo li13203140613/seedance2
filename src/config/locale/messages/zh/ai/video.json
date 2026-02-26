@@ -47,7 +47,12 @@
     "ready_for_generating": "准备生成",
     "no_videos_generated": "没有生成视频",
     "preview_example": "预览示例",
-    "preview_hint": "在左侧填写表单并点击\"生成视频\"来创建你自己的视频。"
+    "preview_hint": "在左侧填写表单并点击\"生成视频\"来创建你自己的视频。",
+    "task_pending": "正在排队等待模型启动...",
+    "task_processing": "正在生成中，完成后会在「我的作品」里展示，您也可以继续生成其他视频",
+    "completed_videos": "已完成的视频",
+    "submitting": "提交中...",
+    "max_concurrent_tasks": "最多同时生成 5 个视频，请等待当前任务完成"
   }
 }
 
