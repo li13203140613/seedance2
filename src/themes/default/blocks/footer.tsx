@@ -55,6 +55,13 @@ const backlinks = [
     height: 54,
   },
   {
+    href: 'https://newtool.site/item/seedance-20-wwwseedancetwocom',
+    img: 'https://newtool.site/badges/newtool-light.svg',
+    alt: 'Featured on NewTool.site',
+    width: 210,
+    height: 54,
+  },
+  {
     href: 'https://toolfame.com/item/seedancetwo20',
     img: 'https://toolfame.com/badge-light.svg',
     alt: 'Featured on toolfame.com',
