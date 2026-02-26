@@ -71,6 +71,7 @@ interface VideoTask {
   startTime: number;
   videos: GeneratedVideo[];
   errorMessage?: string;
+  retryCount?: number;
 }
 
 type VideoGeneratorTab = 'text-to-video' | 'image-to-video';
@@ -80,11 +81,15 @@ const SHOWCASE_VIDEOS = [
   'https://image.agent-skills.cc/uploads/manual/video_032.mp4',
 ];
 
-const POLL_INTERVAL = 15000;
+const POLL_INTERVAL = 10000;
 const GENERATION_TIMEOUT = 600000; // 10 minutes for video
 const MAX_PROMPT_LENGTH = 2000;
 const MAX_CONCURRENT_TASKS = 5;
 const MAX_TASK_HISTORY = 20;
+const SIMULATED_PROGRESS_DURATION = 4 * 60 * 1000; // 4 minutes
+const SIMULATED_PROGRESS_CAP = 97;
+const SIMULATED_PROGRESS_TICK = 200;
+const MAX_QUERY_RETRY_ERRORS = 6;
 
 // 分辨率配置
 const QUALITY_OPTIONS = [
@@ -258,6 +263,35 @@ function extractVideoUrls(result: any): string[] {
   return [];
 }
 
+function getSmoothedTaskProgress(task: VideoTask, now: number): number {
+  if (task.status === AITaskStatus.SUCCESS) {
+    return 100;
+  }
+
+  const elapsed = Math.max(0, now - task.startTime);
+  const normalized = Math.min(elapsed / SIMULATED_PROGRESS_DURATION, 1);
+  const easeOut = 1 - Math.pow(1 - normalized, 3);
+
+  const startProgress = Math.max(
+    6,
+    Math.min(task.progress, SIMULATED_PROGRESS_CAP - 1)
+  );
+  const simulated =
+    startProgress +
+    (SIMULATED_PROGRESS_CAP - startProgress) * easeOut;
+
+  return Math.min(
+    SIMULATED_PROGRESS_CAP,
+    Math.max(task.progress, simulated)
+  );
+}
+
+function isTransientQueryError(message?: string): boolean {
+  if (!message) return false;
+  if (/\b(408|425|429|500|502|503|504)\b/.test(message)) return true;
+  return /network|timeout|fetch/i.test(message);
+}
+
 export function VideoGenerator({
   maxSizeMB = 50,
   srOnlyTitle,
@@ -296,6 +330,7 @@ export function VideoGenerator({
   );
   const [isMounted, setIsMounted] = useState(false);
   const [showcaseIndex, setShowcaseIndex] = useState(0);
+  const [progressNow, setProgressNow] = useState(() => Date.now());
 
   const { user, isCheckSign, setIsShowSignModal, fetchUserCredits } =
     useAppContext();
@@ -305,6 +340,7 @@ export function VideoGenerator({
   tasksRef.current = tasks;
   const fetchUserCreditsRef = useRef(fetchUserCredits);
   fetchUserCreditsRef.current = fetchUserCredits;
+  const pollAllInFlightRef = useRef(false);
 
   // 派生值
   const activeTasks = useMemo(
@@ -330,6 +366,19 @@ export function VideoGenerator({
   useEffect(() => {
     setIsMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (!hasActiveTasks) return;
+
+    setProgressNow(Date.now());
+    const timer = window.setInterval(() => {
+      setProgressNow(Date.now());
+    }, SIMULATED_PROGRESS_TICK);
+
+    return () => {
+      window.clearInterval(timer);
+    };
+  }, [hasActiveTasks]);
 
   // 根据分辨率、时长、音频计算积分
   useEffect(() => {
@@ -452,7 +501,8 @@ export function VideoGenerator({
             return {
               ...t,
               status: currentStatus,
-              progress: Math.max(t.progress, 20),
+              progress: Math.max(t.progress, 12),
+              retryCount: 0,
             };
           }
 
@@ -467,11 +517,13 @@ export function VideoGenerator({
                     prompt: backendTask.prompt ?? undefined,
                   }))
                 : t.videos;
-            const progress =
-              videoUrls.length > 0
-                ? Math.max(t.progress, 85)
-                : Math.min(t.progress + 5, 80);
-            return { ...t, status: currentStatus, progress, videos };
+            return {
+              ...t,
+              status: currentStatus,
+              progress: Math.max(t.progress, 18),
+              videos,
+              retryCount: 0,
+            };
           }
 
           if (currentStatus === AITaskStatus.SUCCESS) {
@@ -485,7 +537,13 @@ export function VideoGenerator({
                     prompt: backendTask.prompt ?? undefined,
                   }))
                 : t.videos;
-            return { ...t, status: currentStatus, progress: 100, videos };
+            return {
+              ...t,
+              status: currentStatus,
+              progress: 100,
+              videos,
+              retryCount: 0,
+            };
           }
 
           if (currentStatus === AITaskStatus.FAILED) {
@@ -494,7 +552,7 @@ export function VideoGenerator({
             return { ...t, status: currentStatus, errorMessage: errorMsg };
           }
 
-          return { ...t, progress: Math.min(t.progress + 3, 95) };
+          return t;
         })
       );
 
@@ -513,6 +571,30 @@ export function VideoGenerator({
         fetchUserCreditsRef.current();
       }
     } catch (error: any) {
+      const errorMessage = error?.message || 'Query task failed';
+      if (isTransientQueryError(errorMessage)) {
+        const currentRetry =
+          tasksRef.current.find((t) => t.id === taskId)?.retryCount ?? 0;
+        const nextRetry = currentRetry + 1;
+
+        if (nextRetry < MAX_QUERY_RETRY_ERRORS) {
+          setTasks((prev) =>
+            prev.map((t) =>
+              t.id === taskId
+                ? {
+                    ...t,
+                    retryCount: nextRetry,
+                  }
+                : t
+            )
+          );
+          console.warn(
+            `Transient query error for task ${taskId}, retry ${nextRetry}/${MAX_QUERY_RETRY_ERRORS - 1}: ${errorMessage}`
+          );
+          return;
+        }
+      }
+
       console.error('Error polling video task:', error);
       setTasks((prev) =>
         prev.map((t) =>
@@ -520,12 +602,12 @@ export function VideoGenerator({
             ? {
                 ...t,
                 status: AITaskStatus.FAILED,
-                errorMessage: error.message,
+                errorMessage,
               }
             : t
         )
       );
-      toast.error(`Query task failed: ${error.message}`);
+      toast.error(`Query task failed: ${errorMessage}`);
       fetchUserCreditsRef.current();
     }
   }, []);
@@ -537,19 +619,25 @@ export function VideoGenerator({
     let cancelled = false;
 
     const pollAll = async () => {
-      if (cancelled) return;
-      const currentTasks = tasksRef.current;
-      const activeIds = currentTasks
-        .filter(
-          (t) =>
-            t.status === AITaskStatus.PENDING ||
-            t.status === AITaskStatus.PROCESSING
-        )
-        .map((t) => t.id);
+      if (cancelled || pollAllInFlightRef.current) return;
 
-      for (const id of activeIds) {
-        if (cancelled) break;
-        await pollSingleTask(id);
+      pollAllInFlightRef.current = true;
+      try {
+        const currentTasks = tasksRef.current;
+        const activeIds = currentTasks
+          .filter(
+            (t) =>
+              t.status === AITaskStatus.PENDING ||
+              t.status === AITaskStatus.PROCESSING
+          )
+          .map((t) => t.id);
+
+        for (const id of activeIds) {
+          if (cancelled) break;
+          await pollSingleTask(id);
+        }
+      } finally {
+        pollAllInFlightRef.current = false;
       }
     };
 
@@ -663,6 +751,7 @@ export function VideoGenerator({
             progress: 100,
             startTime: Date.now(),
             videos,
+            retryCount: 0,
           };
           setTasks((prev) => [newTask, ...prev].slice(0, MAX_TASK_HISTORY));
           toast.success('Video generated successfully');
@@ -676,9 +765,10 @@ export function VideoGenerator({
         id: newTaskId,
         prompt: trimmedPrompt,
         status: AITaskStatus.PENDING,
-        progress: 15,
+        progress: 8,
         startTime: Date.now(),
         videos: [],
+        retryCount: 0,
       };
       setTasks((prev) => [newTask, ...prev].slice(0, MAX_TASK_HISTORY));
 
@@ -968,15 +1058,15 @@ export function VideoGenerator({
                         key={task.id}
                         className="space-y-1.5 rounded-lg border p-3"
                       >
-                        <div className="flex items-center justify-between text-sm">
+                        <div className="flex items-center text-sm">
                           <span className="text-muted-foreground max-w-[200px] truncate">
                             {task.prompt || t('generating')}
                           </span>
-                          <span className="text-xs font-medium">
-                            {task.progress}%
-                          </span>
                         </div>
-                        <Progress value={task.progress} />
+                        <Progress
+                          value={getSmoothedTaskProgress(task, progressNow)}
+                          indicatorClassName="duration-300 ease-linear"
+                        />
                       </div>
                     ))}
                     <p className="text-muted-foreground text-center text-xs">
