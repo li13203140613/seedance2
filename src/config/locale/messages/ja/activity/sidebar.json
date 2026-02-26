@@ -1,30 +1,21 @@
 {
-  "title": "アクティビティ",
+  "title": "マイ作品",
   "nav": {
     "items": [
       {
-        "title": "AIタスク",
+        "title": "マイ作品",
         "url": "/activity/ai-tasks",
         "icon": "RiTaskLine"
       },
       {
-        "title": "AIチャット",
-        "url": "/activity/chats",
-        "icon": "RiChat2Line"
-      }
-    ]
-  },
-  "top_nav": {
-    "items": [
-      {
-        "title": "アクティビティ",
-        "url": "/activity",
-        "icon": "Activity"
+        "title": "お支払い履歴",
+        "url": "/activity/payments",
+        "icon": "DollarSign"
       },
       {
-        "title": "設定",
-        "url": "/settings",
-        "icon": "Settings"
+        "title": "マイクレジット",
+        "url": "/activity/credits",
+        "icon": "Coins"
       }
     ]
   }

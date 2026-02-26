@@ -49,14 +49,14 @@
       "show_sign_out": true,
       "items": [
         {
-          "title": "お支払い",
-          "url": "/settings/billing",
-          "icon": "CreditCard"
+          "title": "プロフィール",
+          "url": "/settings/profile",
+          "icon": "User"
         },
         {
-          "title": "アクティビティ",
-          "url": "/activity",
-          "icon": "Activity"
+          "title": "マイ作品",
+          "url": "/activity/ai-tasks",
+          "icon": "RiTaskLine"
         }
       ]
     },

@@ -1,30 +1,21 @@
 {
-  "title": "活动",
+  "title": "我的作品",
   "nav": {
     "items": [
       {
-        "title": "AI 任务",
+        "title": "我的作品",
         "url": "/activity/ai-tasks",
         "icon": "RiTaskLine"
       },
       {
-        "title": "AI 对话",
-        "url": "/activity/chats",
-        "icon": "RiChat2Line"
-      }
-    ]
-  },
-  "top_nav": {
-    "items": [
-      {
-        "title": "活动",
-        "url": "/activity",
-        "icon": "Activity"
+        "title": "我的支付记录",
+        "url": "/activity/payments",
+        "icon": "DollarSign"
       },
       {
-        "title": "设置",
-        "url": "/settings",
-        "icon": "Settings"
+        "title": "我的积分",
+        "url": "/activity/credits",
+        "icon": "Coins"
       }
     ]
   }

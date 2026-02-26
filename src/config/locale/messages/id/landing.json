@@ -49,14 +49,14 @@
       "show_sign_out": true,
       "items": [
         {
-          "title": "Tagihan",
-          "url": "/settings/billing",
-          "icon": "CreditCard"
+          "title": "Profil",
+          "url": "/settings/profile",
+          "icon": "User"
         },
         {
-          "title": "Aktivitas",
-          "url": "/activity",
-          "icon": "Activity"
+          "title": "Karya Saya",
+          "url": "/activity/ai-tasks",
+          "icon": "RiTaskLine"
         }
       ]
     },

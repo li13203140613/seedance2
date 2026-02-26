@@ -1,30 +1,21 @@
 {
-  "title": "활동",
+  "title": "내 작품",
   "nav": {
     "items": [
       {
-        "title": "AI 작업",
+        "title": "내 작품",
         "url": "/activity/ai-tasks",
         "icon": "RiTaskLine"
       },
       {
-        "title": "AI 채팅",
-        "url": "/activity/chats",
-        "icon": "RiChat2Line"
-      }
-    ]
-  },
-  "top_nav": {
-    "items": [
-      {
-        "title": "활동",
-        "url": "/activity",
-        "icon": "Activity"
+        "title": "내 결제 내역",
+        "url": "/activity/payments",
+        "icon": "DollarSign"
       },
       {
-        "title": "설정",
-        "url": "/settings",
-        "icon": "Settings"
+        "title": "내 크레딧",
+        "url": "/activity/credits",
+        "icon": "Coins"
       }
     ]
   }

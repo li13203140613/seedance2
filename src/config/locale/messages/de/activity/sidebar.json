@@ -1,30 +1,21 @@
 {
-  "title": "Aktivität",
+  "title": "Meine Werke",
   "nav": {
     "items": [
       {
-        "title": "KI-Aufgaben",
+        "title": "Meine Werke",
         "url": "/activity/ai-tasks",
         "icon": "RiTaskLine"
       },
       {
-        "title": "KI-Chats",
-        "url": "/activity/chats",
-        "icon": "RiChat2Line"
-      }
-    ]
-  },
-  "top_nav": {
-    "items": [
-      {
-        "title": "Aktivität",
-        "url": "/activity",
-        "icon": "Activity"
+        "title": "Meine Zahlungen",
+        "url": "/activity/payments",
+        "icon": "DollarSign"
       },
       {
-        "title": "Einstellungen",
-        "url": "/settings",
-        "icon": "Settings"
+        "title": "Meine Credits",
+        "url": "/activity/credits",
+        "icon": "Coins"
       }
     ]
   }

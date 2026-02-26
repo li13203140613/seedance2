@@ -54,14 +54,14 @@
       "show_sign_out": true,
       "items": [
         {
-          "title": "Billing",
-          "url": "/settings/billing",
-          "icon": "CreditCard"
+          "title": "Profile",
+          "url": "/settings/profile",
+          "icon": "User"
         },
         {
-          "title": "Activity",
-          "url": "/activity",
-          "icon": "Activity"
+          "title": "My Works",
+          "url": "/activity/ai-tasks",
+          "icon": "RiTaskLine"
         }
       ]
     },

@@ -49,14 +49,14 @@
       "show_sign_out": true,
       "items": [
         {
-          "title": "Faturamento",
-          "url": "/settings/billing",
-          "icon": "CreditCard"
+          "title": "Perfil",
+          "url": "/settings/profile",
+          "icon": "User"
         },
         {
-          "title": "Atividade",
-          "url": "/activity",
-          "icon": "Activity"
+          "title": "Minhas Obras",
+          "url": "/activity/ai-tasks",
+          "icon": "RiTaskLine"
         }
       ]
     },

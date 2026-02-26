@@ -49,14 +49,14 @@
       "show_sign_out": true,
       "items": [
         {
-          "title": "Faturalandırma",
-          "url": "/settings/billing",
-          "icon": "CreditCard"
+          "title": "Profil",
+          "url": "/settings/profile",
+          "icon": "User"
         },
         {
-          "title": "Etkinlik",
-          "url": "/activity",
-          "icon": "Activity"
+          "title": "Eserlerim",
+          "url": "/activity/ai-tasks",
+          "icon": "RiTaskLine"
         }
       ]
     },
