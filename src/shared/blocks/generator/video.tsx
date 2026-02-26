@@ -402,6 +402,10 @@ export function VideoGenerator({
   const isPromptTooLong = promptLength > MAX_PROMPT_LENGTH;
   const isTextToVideoMode = activeTab === 'text-to-video';
   const isImageToVideoMode = activeTab === 'image-to-video';
+  const generateButtonLabel =
+    hasActiveTasks && t.has('continue_generate')
+      ? t('continue_generate')
+      : t('generate');
 
   const handleTabChange = (value: string) => {
     const tab = value as VideoGeneratorTab;
@@ -1000,7 +1004,7 @@ export function VideoGenerator({
                     ) : (
                       <>
                         <Sparkles className="mr-2 h-4 w-4" />
-                        {t('generate')}
+                        {generateButtonLabel}
                       </>
                     )}
                   </Button>

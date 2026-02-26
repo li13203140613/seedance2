@@ -52,7 +52,7 @@
     "task_processing": "正在生成中，完成后会在「我的作品」里展示，您也可以继续生成其他视频",
     "completed_videos": "已完成的视频",
     "submitting": "提交中...",
-    "max_concurrent_tasks": "最多同时生成 5 个视频，请等待当前任务完成"
+    "max_concurrent_tasks": "最多同时生成 5 个视频，请等待当前任务完成",
+    "continue_generate": "继续生成视频"
   }
 }
-

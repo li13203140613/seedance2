@@ -34,6 +34,7 @@
       "prompt_too_long": "Prompt is too long, please delete some content"
     },
     "generate": "Generate Video",
+    "continue_generate": "Continue Generating Video",
     "checking_account": "Checking Account...",
     "loading": "Loading...",
     "generating": "Generating...",
