@@ -43,9 +43,68 @@ const formatBytes = (bytes?: number) => {
   return `${mb.toFixed(2)} MB`;
 };
 
+// Vercel serverless functions have a ~4.5MB request body limit.
+// Compress images on the client side before uploading to avoid 413 errors.
+const UPLOAD_SIZE_LIMIT = 3.5 * 1024 * 1024; // 3.5MB (safe margin)
+
+const compressImage = (file: File): Promise<File> => {
+  // Skip non-compressible formats or already small files
+  if (file.size <= UPLOAD_SIZE_LIMIT) return Promise.resolve(file);
+  const compressibleTypes = ['image/jpeg', 'image/png', 'image/webp', 'image/bmp'];
+  if (!compressibleTypes.includes(file.type)) return Promise.resolve(file);
+
+  return new Promise((resolve) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      let { width, height } = img;
+
+      // Scale down large images (max 4096px on longest side)
+      const MAX_DIM = 4096;
+      if (width > MAX_DIM || height > MAX_DIM) {
+        const scale = MAX_DIM / Math.max(width, height);
+        width = Math.round(width * scale);
+        height = Math.round(height * scale);
+      }
+
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) { resolve(file); return; }
+      ctx.drawImage(img, 0, 0, width, height);
+
+      // Try progressively lower quality until under the limit
+      const tryCompress = (quality: number) => {
+        canvas.toBlob(
+          (blob) => {
+            if (!blob) { resolve(file); return; }
+            if (blob.size > UPLOAD_SIZE_LIMIT && quality > 0.3) {
+              tryCompress(quality - 0.1);
+              return;
+            }
+            const compressed = new File([blob], file.name, {
+              type: 'image/jpeg',
+              lastModified: file.lastModified,
+            });
+            resolve(compressed);
+          },
+          'image/jpeg',
+          quality
+        );
+      };
+      tryCompress(0.85);
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); resolve(file); };
+    img.src = url;
+  });
+};
+
 const uploadImageFile = async (file: File) => {
+  const compressed = await compressImage(file);
   const formData = new FormData();
-  formData.append('files', file);
+  formData.append('files', compressed);
 
   const response = await fetch('/api/storage/upload-image', {
     method: 'POST',
