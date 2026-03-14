@@ -28,6 +28,7 @@ export async function POST(req: Request) {
         name: file.name,
         type: file.type,
         size: file.size,
+        sizeKB: Math.round(file.size / 1024),
       });
     });
 

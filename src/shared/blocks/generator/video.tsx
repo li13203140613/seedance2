@@ -263,6 +263,55 @@ function extractVideoUrls(result: any): string[] {
   return [];
 }
 
+function extractTaskErrorCode(taskInfo: any, taskResult: any): string | null {
+  const candidates = [
+    taskInfo?.errorCode,
+    taskInfo?.error_code,
+    taskResult?.error?.code,
+    taskResult?.error_code,
+  ];
+  for (const c of candidates) {
+    if (typeof c === 'string' && c.trim()) return c.trim();
+  }
+  return null;
+}
+
+function extractTaskErrorMessage(taskInfo: any, taskResult: any): string | null {
+  const candidates = [
+    taskInfo?.errorMessage,
+    taskInfo?.error_message,
+    taskResult?.error?.message,
+    taskResult?.errorMessage,
+    taskResult?.error_message,
+  ];
+
+  for (const candidate of candidates) {
+    if (typeof candidate === 'string' && candidate.trim()) {
+      return candidate.trim();
+    }
+  }
+
+  return null;
+}
+
+const ERROR_CODE_MESSAGES: Record<string, string> = {
+  image_processing_error:
+    'Image processing failed. Please try a larger, clearer image (JPG/PNG, at least 720px wide).',
+  content_policy_violation:
+    'Content policy violation. Please avoid real person photos, copyrighted content, or sensitive material.',
+};
+
+function getFriendlyErrorMessage(
+  errorCode: string | null,
+  errorMessage: string | null
+): string {
+  if (errorCode && ERROR_CODE_MESSAGES[errorCode]) {
+    return ERROR_CODE_MESSAGES[errorCode];
+  }
+  if (errorMessage) return errorMessage;
+  return 'Generate video failed';
+}
+
 function getSmoothedTaskProgress(task: VideoTask, now: number): number {
   if (task.status === AITaskStatus.SUCCESS) {
     return 100;
@@ -494,8 +543,21 @@ export function VideoGenerator({
 
       const backendTask = data as BackendTask;
       const currentStatus = backendTask.status as AITaskStatus;
-      const parsedResult = parseTaskResult(backendTask.taskInfo);
-      const videoUrls = extractVideoUrls(parsedResult);
+      const parsedTaskInfo = parseTaskResult(backendTask.taskInfo);
+      const parsedTaskResult = parseTaskResult(backendTask.taskResult);
+      const videoUrlsFromTaskInfo = extractVideoUrls(parsedTaskInfo);
+      const videoUrls =
+        videoUrlsFromTaskInfo.length > 0
+          ? videoUrlsFromTaskInfo
+          : extractVideoUrls(parsedTaskResult);
+      const taskErrorCode = extractTaskErrorCode(
+        parsedTaskInfo,
+        parsedTaskResult
+      );
+      const taskErrorMessage = extractTaskErrorMessage(
+        parsedTaskInfo,
+        parsedTaskResult
+      );
 
       setTasks((prev) =>
         prev.map((t) => {
@@ -551,8 +613,7 @@ export function VideoGenerator({
           }
 
           if (currentStatus === AITaskStatus.FAILED) {
-            const errorMsg =
-              parsedResult?.errorMessage || 'Generate video failed';
+            const errorMsg = getFriendlyErrorMessage(taskErrorCode, taskErrorMessage);
             return { ...t, status: currentStatus, errorMessage: errorMsg };
           }
 
@@ -570,7 +631,7 @@ export function VideoGenerator({
       }
 
       if (currentStatus === AITaskStatus.FAILED) {
-        const errorMsg = parsedResult?.errorMessage || 'Generate video failed';
+        const errorMsg = getFriendlyErrorMessage(taskErrorCode, taskErrorMessage);
         toast.error(errorMsg);
         fetchUserCreditsRef.current();
       }

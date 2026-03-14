@@ -161,6 +161,8 @@ export class EvoLinkProvider implements AIProvider {
     }
 
     const taskStatus = this.mapStatus(data.status);
+    const errorCode = data.error?.code || data.error_code || '';
+    const errorMessage = data.error?.message || data.error_message || '';
 
     let videos: AIVideo[] | undefined = undefined;
 
@@ -225,8 +227,8 @@ export class EvoLinkProvider implements AIProvider {
       taskInfo: {
         videos,
         status: data.status,
-        errorCode: data.error_code || '',
-        errorMessage: data.error_message || '',
+        errorCode,
+        errorMessage,
         createTime: new Date(),
       },
       taskResult: data,
