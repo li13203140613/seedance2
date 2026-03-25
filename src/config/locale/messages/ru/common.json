@@ -58,7 +58,10 @@
   "payment": {
     "choose_payment_method": "Выберите способ оплаты",
     "choose_payment_method_description": "",
-    "cancel_title": "Отмена"
+    "cancel_title": "Отмена",
+    "alipay": "Alipay",
+    "wechat_pay": "WeChat Pay",
+    "card_payment": "Оплата картой"
   },
   "locale_detector": {
     "title": "Мы определили, что язык вашего браузера — {locale}. Переключить?",

@@ -58,7 +58,10 @@
   "payment": {
     "choose_payment_method": "お支払い方法を選択",
     "choose_payment_method_description": "",
-    "cancel_title": "キャンセル"
+    "cancel_title": "キャンセル",
+    "alipay": "Alipay",
+    "wechat_pay": "WeChat Pay",
+    "card_payment": "カード決済"
   },
   "locale_detector": {
     "title": "ブラウザの言語が{locale}と検出されました。切り替えますか？",

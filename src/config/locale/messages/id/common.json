@@ -58,7 +58,10 @@
   "payment": {
     "choose_payment_method": "Pilih Metode Pembayaran",
     "choose_payment_method_description": "",
-    "cancel_title": "Batal"
+    "cancel_title": "Batal",
+    "alipay": "Alipay",
+    "wechat_pay": "WeChat Pay",
+    "card_payment": "Pembayaran Kartu"
   },
   "locale_detector": {
     "title": "Kami mendeteksi bahasa browser Anda adalah {locale}. Beralih ke bahasa tersebut?",

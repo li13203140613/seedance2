@@ -58,7 +58,10 @@
   "payment": {
     "choose_payment_method": "결제 수단 선택",
     "choose_payment_method_description": "",
-    "cancel_title": "취소"
+    "cancel_title": "취소",
+    "alipay": "Alipay",
+    "wechat_pay": "WeChat Pay",
+    "card_payment": "카드 결제"
   },
   "locale_detector": {
     "title": "브라우저 언어가 {locale}(으)로 감지되었습니다. 전환하시겠습니까?",

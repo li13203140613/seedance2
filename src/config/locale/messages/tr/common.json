@@ -58,7 +58,10 @@
   "payment": {
     "choose_payment_method": "Ödeme Yöntemini Seçin",
     "choose_payment_method_description": "",
-    "cancel_title": "İptal"
+    "cancel_title": "İptal",
+    "alipay": "Alipay",
+    "wechat_pay": "WeChat Pay",
+    "card_payment": "Kart Ödeme"
   },
   "locale_detector": {
     "title": "Tarayıcı dilinizin {locale} olduğunu tespit ettik. Geçiş yapmak ister misiniz?",

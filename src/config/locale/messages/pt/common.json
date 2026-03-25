@@ -58,7 +58,10 @@
   "payment": {
     "choose_payment_method": "Escolha o Método de Pagamento",
     "choose_payment_method_description": "",
-    "cancel_title": "Cancelar"
+    "cancel_title": "Cancelar",
+    "alipay": "Alipay",
+    "wechat_pay": "WeChat Pay",
+    "card_payment": "Pagamento com cartão"
   },
   "locale_detector": {
     "title": "Detectamos que o idioma do seu navegador é {locale}. Deseja mudar?",

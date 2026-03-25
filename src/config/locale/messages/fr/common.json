@@ -37,7 +37,7 @@
     "verify_email_page_title": "Vérifiez votre e-mail",
     "verify_email_page_description": "Pour continuer, cliquez sur le lien envoyé à",
     "verify_email_continue": "Continuer",
-    "verify_email_tip": "Après vérification, cliquez sur \u00ab Continuer \u00bb.",
+    "verify_email_tip": "Après vérification, cliquez sur « Continuer ».",
     "verify_email_not_verified_yet": "Pas encore vérifié. Veuillez d'abord cliquer sur le lien dans votre e-mail.",
     "verify_email_account_mismatch": "Connecté en tant que {current}. Cette page attend {expected}.",
     "resend_verification_countdown": "Renvoyer l'e-mail de vérification ({seconds}s)",
@@ -58,7 +58,10 @@
   "payment": {
     "choose_payment_method": "Choisir le mode de paiement",
     "choose_payment_method_description": "",
-    "cancel_title": "Annuler"
+    "cancel_title": "Annuler",
+    "alipay": "Alipay",
+    "wechat_pay": "WeChat Pay",
+    "card_payment": "Paiement par carte"
   },
   "locale_detector": {
     "title": "Nous avons détecté que la langue de votre navigateur est {locale}. Passer à cette langue ?",

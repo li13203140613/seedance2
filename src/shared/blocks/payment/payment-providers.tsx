@@ -80,36 +80,40 @@ export function PaymentProviders({
     return allowedProviders.includes(providerName);
   };
 
+  const isChinese = locale === 'zh';
+
   const providers: ButtonType[] = [];
 
-  if (configs.stripe_enabled === 'true' && isProviderAllowed('stripe')) {
-    providers.push({
-      name: 'stripe',
-      title: 'Stripe',
-      icon_url: '/imgs/icons/stripe.png',
-      onClick: () => handlePayment({ provider: 'stripe' }),
-    });
-  }
-
-  if (configs.creem_enabled === 'true' && isProviderAllowed('creem')) {
-    providers.push({
-      name: 'creem',
-      title: 'Creem',
-      icon_url: '/imgs/icons/creem.png',
-      onClick: () => handlePayment({ provider: 'creem' }),
-    });
-  }
-
-  if (configs.paypal_enabled === 'true' && isProviderAllowed('paypal')) {
-    providers.push({
-      name: 'paypal',
-      title: 'Paypal',
-      icon_url: '/imgs/icons/paypal.svg',
-      onClick: () => handlePayment({ provider: 'paypal' }),
-    });
+  if (isChinese) {
+    // Chinese locale: only show Alipay and WeChat Pay (both via Stripe)
+    if (configs.stripe_enabled === 'true' && isProviderAllowed('stripe')) {
+      providers.push({
+        name: 'alipay',
+        title: t('alipay'),
+        icon_url: '/imgs/icons/alipay.svg',
+        onClick: () => handlePayment({ provider: 'stripe' }),
+      });
+      providers.push({
+        name: 'wechat',
+        title: t('wechat_pay'),
+        icon_url: '/imgs/icons/wechat.svg',
+        onClick: () => handlePayment({ provider: 'stripe' }),
+      });
+    }
+  } else {
+    // Non-Chinese locale: show Stripe as card payment
+    if (configs.stripe_enabled === 'true' && isProviderAllowed('stripe')) {
+      providers.push({
+        name: 'stripe',
+        title: t('card_payment'),
+        icon_url: '/imgs/icons/stripe.png',
+        onClick: () => handlePayment({ provider: 'stripe' }),
+      });
+    }
   }
 
   const shouldShowCnWalletHint = (providerName?: string) =>
+    !isChinese &&
     providerName === 'stripe' &&
     !!pricingItem?.is_payg &&
     (selectedCurrency || 'USD').toUpperCase() === 'CNY';
