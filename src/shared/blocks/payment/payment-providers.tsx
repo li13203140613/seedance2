@@ -101,13 +101,31 @@ export function PaymentProviders({
       });
     }
   } else {
-    // Non-Chinese locale: show Stripe as card payment
+    // Non-Chinese locale: show all enabled providers from backend config
     if (configs.stripe_enabled === 'true' && isProviderAllowed('stripe')) {
       providers.push({
         name: 'stripe',
-        title: t('card_payment'),
+        title: 'Stripe',
         icon_url: '/imgs/icons/stripe.png',
         onClick: () => handlePayment({ provider: 'stripe' }),
+      });
+    }
+
+    if (configs.creem_enabled === 'true' && isProviderAllowed('creem')) {
+      providers.push({
+        name: 'creem',
+        title: 'Creem',
+        icon_url: '/imgs/icons/creem.png',
+        onClick: () => handlePayment({ provider: 'creem' }),
+      });
+    }
+
+    if (configs.paypal_enabled === 'true' && isProviderAllowed('paypal')) {
+      providers.push({
+        name: 'paypal',
+        title: 'Paypal',
+        icon_url: '/imgs/icons/paypal.svg',
+        onClick: () => handlePayment({ provider: 'paypal' }),
       });
     }
   }
