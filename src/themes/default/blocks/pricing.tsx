@@ -271,9 +271,12 @@ export function Pricing({
     [section.groups, group]
   );
 
-  // Filtered items for current group
+  // Filtered items for current group, with pay-as-you-go first
   const visibleItems = useMemo(
-    () => section.items?.filter((item) => !item.group || item.group === group) ?? [],
+    () => {
+      const filtered = section.items?.filter((item) => !item.group || item.group === group) ?? [];
+      return [...filtered].sort((a, b) => (a.is_payg ? -1 : 0) - (b.is_payg ? -1 : 0));
+    },
     [section.items, group]
   );
 
@@ -798,6 +801,16 @@ export function Pricing({
                   </ul>
 
                 </CardContent>
+
+                {/* Chinese locale hint for subscription cards */}
+                {isZhLocale && !isPayg && (
+                  <div className="px-6 pb-2">
+                    <p className="text-xs text-muted-foreground">
+                      订阅支持国外银行卡付款。如需微信和支付宝支付，请使用
+                      <span className="font-medium text-emerald-600 dark:text-emerald-400">一次性购买</span>。
+                    </p>
+                  </div>
+                )}
 
                 {/* CTA Button — at the bottom of the card */}
                 <div className="px-6 pb-6">
