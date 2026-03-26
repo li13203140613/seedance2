@@ -81,11 +81,12 @@ export function PaymentProviders({
   };
 
   const isChinese = locale === 'zh';
+  const isPayg = !!pricingItem?.is_payg;
 
   const providers: ButtonType[] = [];
 
-  if (isChinese) {
-    // Chinese locale: only show Alipay and WeChat Pay (both via Stripe)
+  if (isChinese && isPayg) {
+    // Chinese locale + one-time purchase: show Alipay and WeChat Pay
     if (configs.stripe_enabled === 'true' && isProviderAllowed('stripe')) {
       providers.push({
         name: 'alipay',
@@ -101,7 +102,7 @@ export function PaymentProviders({
       });
     }
   } else {
-    // Non-Chinese locale: show all enabled providers from backend config
+    // Non-Chinese locale OR subscription: show all enabled providers from backend config
     if (configs.stripe_enabled === 'true' && isProviderAllowed('stripe')) {
       providers.push({
         name: 'stripe',
@@ -130,11 +131,15 @@ export function PaymentProviders({
     }
   }
 
+  // Show CN wallet hint for non-Chinese Stripe + PAYG + CNY
   const shouldShowCnWalletHint = (providerName?: string) =>
     !isChinese &&
     providerName === 'stripe' &&
-    !!pricingItem?.is_payg &&
+    isPayg &&
     (selectedCurrency || 'USD').toUpperCase() === 'CNY';
+
+  // Show subscription hint for Chinese locale + subscription
+  const showCnSubscriptionHint = isChinese && !isPayg;
 
   return (
     <div
@@ -144,6 +149,12 @@ export function PaymentProviders({
         className
       )}
     >
+      {showCnSubscriptionHint && (
+        <p className="mb-1 w-full text-xs text-muted-foreground">
+          {t('subscription_card_hint')}
+        </p>
+      )}
+
       {providers.map((provider) => (
         <Button
           key={provider.name}

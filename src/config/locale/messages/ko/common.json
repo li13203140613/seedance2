@@ -61,7 +61,8 @@
     "cancel_title": "취소",
     "alipay": "Alipay",
     "wechat_pay": "WeChat Pay",
-    "card_payment": "카드 결제"
+    "card_payment": "카드 결제",
+    "subscription_card_hint": "구독은 해외 은행 카드 결제를 지원합니다."
   },
   "locale_detector": {
     "title": "브라우저 언어가 {locale}(으)로 감지되었습니다. 전환하시겠습니까?",

@@ -61,7 +61,8 @@
     "cancel_title": "Отмена",
     "alipay": "Alipay",
     "wechat_pay": "WeChat Pay",
-    "card_payment": "Оплата картой"
+    "card_payment": "Оплата картой",
+    "subscription_card_hint": "Подписки поддерживают оплату международными банковскими картами."
   },
   "locale_detector": {
     "title": "Мы определили, что язык вашего браузера — {locale}. Переключить?",

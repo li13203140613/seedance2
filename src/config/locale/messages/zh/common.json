@@ -61,7 +61,8 @@
     "cancel_title": "取消",
     "alipay": "支付宝",
     "wechat_pay": "微信支付",
-    "card_payment": "银行卡支付"
+    "card_payment": "银行卡支付",
+    "subscription_card_hint": "订阅支持国外银行卡付款。如需微信和支付宝支付，请购买第一列的积分。"
   },
   "locale_detector": {
     "title": "检测到浏览器语言是 {locale}，是否切换？",

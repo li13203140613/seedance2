@@ -61,7 +61,8 @@
     "cancel_title": "İptal",
     "alipay": "Alipay",
     "wechat_pay": "WeChat Pay",
-    "card_payment": "Kart Ödeme"
+    "card_payment": "Kart Ödeme",
+    "subscription_card_hint": "Abonelikler uluslararası banka kartı ödemelerini destekler."
   },
   "locale_detector": {
     "title": "Tarayıcı dilinizin {locale} olduğunu tespit ettik. Geçiş yapmak ister misiniz?",

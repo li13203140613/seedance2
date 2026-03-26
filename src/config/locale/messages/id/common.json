@@ -61,7 +61,8 @@
     "cancel_title": "Batal",
     "alipay": "Alipay",
     "wechat_pay": "WeChat Pay",
-    "card_payment": "Pembayaran Kartu"
+    "card_payment": "Pembayaran Kartu",
+    "subscription_card_hint": "Langganan mendukung pembayaran kartu bank internasional."
   },
   "locale_detector": {
     "title": "Kami mendeteksi bahasa browser Anda adalah {locale}. Beralih ke bahasa tersebut?",

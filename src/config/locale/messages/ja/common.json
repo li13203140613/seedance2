@@ -61,7 +61,8 @@
     "cancel_title": "キャンセル",
     "alipay": "Alipay",
     "wechat_pay": "WeChat Pay",
-    "card_payment": "カード決済"
+    "card_payment": "カード決済",
+    "subscription_card_hint": "サブスクリプションは海外銀行カード決済に対応しています。"
   },
   "locale_detector": {
     "title": "ブラウザの言語が{locale}と検出されました。切り替えますか？",

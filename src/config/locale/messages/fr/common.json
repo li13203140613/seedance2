@@ -61,7 +61,8 @@
     "cancel_title": "Annuler",
     "alipay": "Alipay",
     "wechat_pay": "WeChat Pay",
-    "card_payment": "Paiement par carte"
+    "card_payment": "Paiement par carte",
+    "subscription_card_hint": "Les abonnements prennent en charge les paiements par carte bancaire internationale."
   },
   "locale_detector": {
     "title": "Nous avons détecté que la langue de votre navigateur est {locale}. Passer à cette langue ?",
