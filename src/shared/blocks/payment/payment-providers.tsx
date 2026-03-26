@@ -150,9 +150,11 @@ export function PaymentProviders({
       )}
     >
       {showCnSubscriptionHint && (
-        <p className="mb-1 w-full text-xs text-muted-foreground">
-          {t('subscription_card_hint')}
-        </p>
+        <div className="mb-2 w-full rounded-md border border-amber-500/30 bg-amber-50 px-3 py-2 dark:bg-amber-500/10">
+          <p className="text-xs leading-relaxed text-amber-800 dark:text-amber-300">
+            订阅<span className="font-semibold text-amber-900 dark:text-amber-200">仅支持国外银行卡</span>付款。如需微信和支付宝支付，请购买<span className="font-semibold text-amber-900 dark:text-amber-200">第一列的积分</span>。
+          </p>
+        </div>
       )}
 
       {providers.map((provider) => (

@@ -804,10 +804,9 @@ export function Pricing({
 
                 {/* Chinese locale hint for subscription cards */}
                 {isZhLocale && !isPayg && (
-                  <div className="px-6 pb-2">
-                    <p className="text-xs text-muted-foreground">
-                      订阅支持国外银行卡付款。如需微信和支付宝支付，请使用
-                      <span className="font-medium text-emerald-600 dark:text-emerald-400">一次性购买</span>。
+                  <div className="mx-6 mb-2 rounded-md border border-amber-500/30 bg-amber-50 px-3 py-2 dark:bg-amber-500/10">
+                    <p className="text-xs leading-relaxed text-amber-800 dark:text-amber-300">
+                      订阅<span className="font-semibold text-amber-900 dark:text-amber-200">仅支持国外银行卡</span>付款。如需微信和支付宝支付，请购买<span className="font-semibold text-amber-900 dark:text-amber-200">第一列的积分</span>。
                     </p>
                   </div>
                 )}
